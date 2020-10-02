@@ -1,1 +1,1 @@
-website_output_format="word_document"
+website_output_format="bookdown::gitbook"

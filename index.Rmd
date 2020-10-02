@@ -15,7 +15,13 @@ site: bookdown::bookdown_site
 biblio-style: apalike 
 ---
 
-# Note du traducteur{-}
+
+# {-}
+
+![](img/x11.png)
+
+## Note du traducteur{-}
+
 PsyToolkit est un logiciel deux-en-un permettant de faire des expériences de psychologie et de faire des enquêtes en ligne. A  notre connaissance, il n'existe pas d'autre dipositif gratuit pour l'expérimentation. Pour les questionnaires, l'offre est en revanche pléthorique, alors pourquoi prendre du temps pour apprendre à utiliser un nouvau dispositif ? Parce que psyToolkit permet des choses que ne permettent pas les autres logiciels d'enquête en ligne : 
 
 - aléatorisation de l'ordre des items dans une question, des questions ou blocs de questions
@@ -40,7 +46,7 @@ Pour citer ce document, utilisez la référence suivante :
 
 - Stoet, G. (2020) Documentation de PsyToolkit (version 3.2.0), J.M. Meunier & E. Zibetti, Trad. [https://jmeunierp8.github.io/Psytoolkit/](https://jmeunierp8.github.io/Psytoolkit/)
 
-Nous rappelons par ailleurs qu'à la demande de l'auteur que pour utiliser PsyToolkit, vous devez citer les deux articles suivants : 
+Nous rappelons par ailleurs qu'à la demande de l'auteur,  pour utiliser PsyToolkit, vous devez citer les deux articles suivants : 
 
 - Stoet, G. (2010). PsyToolkit - A software package for programming psychological experiments using Linux. Behavior Research Methods, 42(4), 1096-1104. http://link.springer.com/article/10.3758%2FBRM.42.4.1096
 
