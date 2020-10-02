@@ -1,0 +1,94 @@
+# Une enquête en ligne complète [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/questionnaire-project.html){#questionnaire-project}
+
+Voici la description complète d'un projet de recherche psychologique en ligne avec des tutoriels vidéo. Il n'utilise que des questionnaires, et n'intègre pas d'expérience sur le temps de réaction (il y a une autre leçon à ce sujet). Cette leçon vous apprendra à utiliser PsyToolkit pour faire ce qui suit :
+
+* Mettre en place une enquête en ligne
+* Rédiger des questions
+* Configurer l'écran d'accueil (y compris les informations sur l'éthique, etc.)
+* Créer un lien pour les participants
+* Inclure les questionnaires existants
+* Télécharger les données dans un format utilisable par SPSS
+* Importer et analyser des données dans SPSS
+
+## Étape 1. Hypothèse, prédiction et échelles [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/questionnaire-project.html#_step_1_hypothesis_prediction_and_scales){#step_1_hypothesis_prediction_and_scales}
+
+La première étape de votre projet consiste à réfléchir à ce que vous voulez tester. Dans un projet de recherche sérieux, cela doit être basé sur une hypothèse et des prédictions.
+
+[Lisez ceci pour vous assurer que vous savez quelle est la différence entre une hypothèse et une prédiction (en anglais)](http://datanuggets.org/wp-content/uploads/2014/01/Strode_NABT-2011-Hypothesis-Presentation.pdf)
+
+Pour cette démonstration, nous allons nous demander s'il existe une relation entre la satisfaction de la vie et les symptômes de la dépression. Nous le faisons dans le but de démontrer comment travailler avec PsyToolkit et non parce que c'est une question intéressante ! Vous pouvez réfléchir à l'hypothèse possible de l'existence d'un tel lien.
+
+La bibliothèque PsyToolkit contient des enquêtes sur la satisfaction de la vie et la dépression, et vous pouvez en apprendre davantage à ce sujet. Pour mesurer la satisfaction de la vie, nous utiliserons l'échelle brève de satisfaction de la vie ([voir ici](http://www.psytoolkit.org/survey-library/satisfaction-with-life.html)). Pour mesurer les symptômes de la dépression, nous utilisons l'échelle d'évaluation de la dépression utilisable cliniquement CUDOS ([cliquez ici](http://www.psytoolkit.org/survey-library/depression-cudos.html)). Si vous n'êtes pas familier avec ces échelles, vous pouvez les lire en premier.
+
+Ce projet vise à mesurer à la fois la satisfaction de vivre et les symptômes de la dépression et à tester la corrélation entre ces deux mesures. C'est un projet de psychologie assez simple.
+
+## Étape 2. Mise en place de l'étude en ligne [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/questionnaire-project.html#_step_2_setup_online_study){#step_2_setup_online_study}
+
+* Connectez-vous maintenant à votre compte PsyToolkit
+* Créer une nouvelle enquête
+* Appelez-le, par exemple, "depression_study".
+* Mettre en place l'écran d'introduction pour les participants
+* Veillez à sauvegarder vos paramètres
+
+Regardez la vidéo (7 minutes) pour apprendre comment effectuer les premières étapes de la mise en place de votre étude PsyToolkit en ligne.
+
+<iframe width="550" height="360" src="https://www.youtube.com/embed/21xLeEanDN4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Étape 3. Mettre en place les questions et les échelles [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/questionnaire-project.html#_step_3_setup_questions_and_scales){#step_3_setup_questions_and_scales}
+
+* Rédiger quelques questions démographiques
+* Copier et coller les enquêtes existantes
+* Enregistrez votre code
+* Compiler votre code
+
+La compilation est un terme courant en informatique. Il s'agit, en substance, du processus d'utilisation du code (que vous avez tapé) dans un code que l'ordinateur peut utiliser plus directement pour faire quelque chose, dans ce cas, présenter un questionnaire. Regardez la vidéo pour voir quand vous compilez le code de votre questionnaire.
+
+Regardez la vidéo (7 minutes) pour apprendre comment entrer les questions.
+
+<iframe width="550" height="360" src="https://www.youtube.com/embed/pgX2u7XQGnE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Étape 4. Mettez votre questionnaire en ligne et testez [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/questionnaire-project.html#_step_4_bring_your_scale_online_and_test){#step_4_bring_your_scale_online_and_test}
+
+* Mettre l'échelle en ligne
+* Mettre l'étude en mode conception pour la tester
+* Compiler et effectuer un test
+* Vérifier les données de test collectées
+
+Regardez la vidéo (5 minutes) pour voir comment vous rendez votre questionnaire accessible en ligne..
+
+<iframe width="550" height="360" src="https://www.youtube.com/embed/9Er1FubY-oo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Étape 5. Passer en mode "réel" et collecter les données [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/questionnaire-project.html#_step_5_switch_to_real_mode_and_collect_data){#step_5_switch_to_real_mode_and_collect_data}
+
+* Si vous êtes satisfait du test, effacez les données du test
+* Passer à un mode de collecte de données réel
+* Envoyez l'URL à vos participants potentiels
+
+Regardez la vidéo (1,5 minute) pour voir comment vous pouvez commencer à collecter des données réelles.
+
+<iframe width="550" height="360" src="https://www.youtube.com/embed/nY2seVIgOvM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Étape 6. Télécharger les données [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/questionnaire-project.html#_step_6_download_data){#step_6_download_data}
+
+* Lorsque vous avez terminé, mettez votre étude hors ligne
+* Téléchargez les données et enregistrez-les sur votre ordinateur
+* Vous pouvez sélectionner l'option de téléchargement de fichiers au format Excel. Ce format peut être directement chargé dans SPSS. pour d'autres logiciels, préférez le format csv qui marche presque toujours.
+
+Regardez la vidéo (2 minutes) pour voir comment vous pouvez télécharger vos données.
+
+<iframe width="550" height="360" src="https://www.youtube.com/embed/Gi9ibpgSOYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Étape 7. Importer et analyser dans SPSS [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/questionnaire-project.html#_step_7_import_and_analyze_in_spss){#step_7_import_and_analyze_in_spss}
+
+* Ouvrir SPSS
+* Lire dans les fichiers de données
+* Tracez les deux mesures dans un diagramme de dispersion
+* Calculer le coefficient de corrélation entre les deux scores
+
+Regardez la vidéo (4:32 minutes) pour voir comment vous pouvez importer et analyser vos données dans SPSS.
+
+<iframe width="550" height="360" src="https://www.youtube.com/embed/Feu2gNYTZm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Des questions ? 
+Nous espérons que cela vous aidera à mettre en place votre propre étude. Si vous avez encore des questions, n'hésitez pas à m'en faire part [par e-mail](mailto:psytoolkit@gmx.com).

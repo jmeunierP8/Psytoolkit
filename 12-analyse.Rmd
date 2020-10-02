@@ -1,0 +1,44 @@
+# Analyser vos fichiers de données [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/analyze_data.html){#analyse_data}
+
+Une fois que vous avez fait votre expérience, vous voulez examiner vos données. Voici quelques conseils.
+
+* Vous pouvez effectuer une analyse de base sur le site web, mais il est recommandé d'utiliser un programme de statistiques ou un tableur pour l'analyse des données.
+
+* Le logiciel R est entièrement gratuit, mais il faut faire un effort pour apprendre ! Le tableur LibreOffice Calc est de haute qualité et gratuit, et il fonctionne de manière presque identique à l'autre tableur bien connu (NdT. Pour un tour d'horizon des logiciels gratuits, [consultez cette page](http://www.ontostats.univ-paris8.fr/omk/s/logicielsStats/page/Typologie)).
+
+## Importer un fichier de données dans votre logiciel [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/analyze_data.html#_importing_a_data_file_into_your_software){#importing_a_data_file_into_your_software}
+
+Les données sont enregistrées au format texte, et les nombres sont séparés par des espaces. Cela signifie qu'il n'y a pas de format fixe, et que le délimiteur ou séparateur est le caractère "espace". Utilisez votre programme préféré pour importer les données textuelles.
+
+* **Dans Excel**
+  * Ouvrez le fichier, vous obtiendrez une fenêtre de dialogue, sélectionnez "fichiers texte".
+  * Vous disposez maintenant d'un "assistant d'importation de texte".
+  * Dans l'assistant, sélectionnez "délimité" et cliquez sur "suivant".
+  * Dans l'assistant, sélectionnez uniquement l'"espace" délimité
+  * Dans l'assistant, sélectionnez le format de données "général" (bien que d'autres formats puissent fonctionner, en fonction de vos données)
+  
+* **Dans LibreOffice Calc**
+  * Presque comme dans Excel, sauf que les délimiteurs sont maintenant appelés "séparateurs".
+  * Sélectionnez l'espace comme seul séparateur, ignorez tout le reste et ouvrez
+  
+* **Dans SPSS**
+  * Dans le menu "Fichier", sélectionnez "Ouvrir des données" et sélectionnez les fichiers texte de type fichier
+  * Maintenant, vous obtenez également un assistant d'importation, mais SPSS est intelligent dans la reconnaissance du fichier de données
+  * Notez que le délimiteur utilisé par PsyToolkit est l'"espace", et qu'il n'y a PAS de noms de variables en haut du fichier
+  
+* **En R**
+  * Il suffit de taper : monfichierdedonnées = read.table("nomdufichierdedonnées.txt")
+  
+
+## Distinction entre l'analyse de fichiers de données individuels et de données de groupe [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/analyze_data.html#_distinguish_between_analyzing_single_data_files_and_group_data){#distinguish_between_analyzing_single_data_files_and_group_data}
+
+En psychologie cognitive expérimentale, les chercheurs recueillent généralement des données auprès d'un certain nombre de participants et les combinent. C'est-à-dire qu'ils prennent généralement le score moyen (par exemple, le temps de réponse moyen ou le taux d'erreur) de chaque participant dans chaque condition, et analysent ces données plus en profondeur.
+
+Si chaque participant remplit les mêmes conditions, il est fort probable que vous souhaitiez effectuer une analyse de "mesures répétées" sur la variable dépendante.
+
+Vous pouvez également analyser les données de chaque participant de manière plus détaillée avant de les insérer dans l'analyse de groupe.
+
+## Comment approfondir
+
+Des détails supplémentaires sur la façon de faire de telles analyses font partie des cours de statistiques, et ceux-ci ne seraient plus spécifiques à PsyToolkit. Faites-moi savoir si vous souhaitez obtenir plus de détails en m'envoyant un courriel : [psytoolkit@gmx.com](psytoolkit@gmx.com). (NdT: pour les utilisateur de Jamovi, vous pourrez consulter [la traduction que j'ai faite du manuel de Navarro et Foxcrot](https://jmeunierp8.github.io/ManuelJamovi/index.html)
+

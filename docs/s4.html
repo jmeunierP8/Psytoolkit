@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapitre 4 Programmer des expériences | Documentation en ligne de PsyToolkit</title>
+  <meta name="description" content="Ce ebook est une traduction de la documentation de PsyToolkit" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapitre 4 Programmer des expériences | Documentation en ligne de PsyToolkit" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Ce ebook est une traduction de la documentation de PsyToolkit" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapitre 4 Programmer des expériences | Documentation en ligne de PsyToolkit" />
+  
+  <meta name="twitter:description" content="Ce ebook est une traduction de la documentation de PsyToolkit" />
+  
+
+<meta name="author" content="Gijsbert Stoet, Jean-Marc Meunier (Trad)" />
+
+
+<meta name="date" content="2020-10-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="départ-pour-débutant-absolu.html"/>
+<link rel="next" href="syntaxe-pour-les-scripts.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Documentation en ligne de PsyToolkit</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Note du traducteur</a></li>
+<li class="chapter" data-level="1" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html"><i class="fa fa-check"></i><b>1</b> Présentation de PsyToolkit <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="1.1" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#pourquoi-utiliser-psytoolkit"><i class="fa fa-check"></i><b>1.1</b> Pourquoi utiliser PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.2" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#environnement-weblogin"><i class="fa fa-check"></i><b>1.2</b> Environnement web/login <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.3" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#les-caractéristiques-de-psytoolkit-en-bref"><i class="fa fa-check"></i><b>1.3</b> Les caractéristiques de PsyToolkit en bref <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.4" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#leçons"><i class="fa fa-check"></i><b>1.4</b> Leçons <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.5" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#liens-utiles"><i class="fa fa-check"></i><b>1.5</b> Liens utiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="vue-densemble.html"><a href="vue-densemble.html"><i class="fa fa-check"></i><b>2</b> Vue d’ensemble <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="2.1" data-path="vue-densemble.html"><a href="vue-densemble.html#expériences-et-enquêtes"><i class="fa fa-check"></i><b>2.1</b> Expériences et enquêtes <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="2.1.1" data-path="vue-densemble.html"><a href="vue-densemble.html#programmation-dexpériences"><i class="fa fa-check"></i><b>2.1.1</b> Programmation d’expériences <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.1.2" data-path="vue-densemble.html"><a href="vue-densemble.html#exemples-dexpériences-avec-psytoolkit"><i class="fa fa-check"></i><b>2.1.2</b> Exemples d’expériences avec PsyToolkit <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.1.3" data-path="vue-densemble.html"><a href="vue-densemble.html#enquêtesquestionnaires-en-ligne"><i class="fa fa-check"></i><b>2.1.3</b> Enquêtes/questionnaires en ligne <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="vue-densemble.html"><a href="vue-densemble.html#expériences-en-ligne-et-hors-ligne"><i class="fa fa-check"></i><b>2.2</b> Expériences en ligne et hors ligne <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.3" data-path="vue-densemble.html"><a href="vue-densemble.html#comment-analyser-les-données"><i class="fa fa-check"></i><b>2.3</b> Comment analyser les données <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="2.3.1" data-path="vue-densemble.html"><a href="vue-densemble.html#expériences"><i class="fa fa-check"></i><b>2.3.1</b> Expériences<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.3.2" data-path="vue-densemble.html"><a href="vue-densemble.html#enquêtes"><i class="fa fa-check"></i><b>2.3.2</b> Enquêtes <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.3.3" data-path="vue-densemble.html"><a href="vue-densemble.html#enquêtes-avec-expériences-intégrées"><i class="fa fa-check"></i><b>2.3.3</b> Enquêtes avec expériences intégrées <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html"><i class="fa fa-check"></i><b>3</b> Départ pour débutant absolu <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="3.1" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#ce-que-vous-pouvez-faire-avec-psytoolkit"><i class="fa fa-check"></i><b>3.1</b> Ce que vous pouvez faire avec PsyToolkit <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="3.2" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#pour-qui-est-fait-psytoolkit"><i class="fa fa-check"></i><b>3.2</b> Pour qui est fait PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="3.3" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#combien-de-temps-faut-il-pour-apprendre"><i class="fa fa-check"></i><b>3.3</b> Combien de temps faut-il pour apprendre ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="3.4" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étapes-de-lapprentissage-de-psytoolkit"><i class="fa fa-check"></i><b>3.4</b> Étapes de l’apprentissage de PsyToolkit <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-1"><i class="fa fa-check"></i>Étape 1</a></li>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-2"><i class="fa fa-check"></i>Étape 2</a></li>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-3"><i class="fa fa-check"></i>Étape 3</a></li>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-4"><i class="fa fa-check"></i>Étape 4</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="s4.html"><a href="s4.html"><i class="fa fa-check"></i><b>4</b> Programmer des expériences</a><ul>
+<li class="chapter" data-level="4.1" data-path="s4.html"><a href="s4.html#les-scripts-ddexpérimentation-dans-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.1</b> Les Scripts d’d’expérimentation dans PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="4.1.1" data-path="s4.html"><a href="s4.html#définition-dun-script-ukflag"><i class="fa fa-check"></i><b>4.1.1</b> Définition d’un script <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.1.2" data-path="s4.html"><a href="s4.html#étapes-typiques-dune-expérience-ukflag"><i class="fa fa-check"></i><b>4.1.2</b> Étapes typiques d’une expérience <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="s4.html"><a href="s4.html#les-stimuli-dans-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.2</b> Les stimuli dans PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="4.2.1" data-path="s4.html"><a href="s4.html#comment-créer-des-stimuli-pour-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.2.1</b> Comment créer des stimuli pour PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.2" data-path="s4.html"><a href="s4.html#comment-charger-les-stimuli-ukflag"><i class="fa fa-check"></i><b>4.2.2</b> Comment charger les stimuli <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.3" data-path="s4.html"><a href="s4.html#comment-présenter-les-stimuli-ukflag"><i class="fa fa-check"></i><b>4.2.3</b> Comment présenter les stimuli <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.4" data-path="s4.html"><a href="s4.html#système-de-coordonnées-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.2.4</b> Système de coordonnées PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.5" data-path="s4.html"><a href="s4.html#questions-de-temps-ukflag"><i class="fa fa-check"></i><b>4.2.5</b> Questions de temps <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="s4.html"><a href="s4.html#syntaxe-pour-les-feedback-ukflag"><i class="fa fa-check"></i><b>4.3</b> Syntaxe pour les feedback <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="4.3.1" data-path="s4.html"><a href="s4.html#contexte-ukflag"><i class="fa fa-check"></i><b>4.3.1</b> Contexte <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.2" data-path="s4.html"><a href="s4.html#ce-dont-vous-avez-besoin-pour-pouvoir-donner-un-feedback-ukflag"><i class="fa fa-check"></i><b>4.3.2</b> Ce dont vous avez besoin pour pouvoir donner un feedback <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.3" data-path="s4.html"><a href="s4.html#syntaxe-ukflag"><i class="fa fa-check"></i><b>4.3.3</b> Syntaxe <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.4" data-path="s4.html"><a href="s4.html#text-ukflag"><i class="fa fa-check"></i><b>4.3.4</b> text <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.5" data-path="s4.html"><a href="s4.html#définir-des-variables-ukflag"><i class="fa fa-check"></i><b>4.3.5</b> définir des variables <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.6" data-path="s4.html"><a href="s4.html#lineplot-et-xyplot-ikflag"><i class="fa fa-check"></i><b>4.3.6</b> Lineplot et xyplot <span><img src="img/ukflag.png" alt="ikflag" /></span></a></li>
+<li class="chapter" data-level="4.3.7" data-path="s4.html"><a href="s4.html#wait_for_key-ikflag"><i class="fa fa-check"></i><b>4.3.7</b> wait_for_key <span><img src="img/ukflag.png" alt="ikflag" /></span></a></li>
+<li class="chapter" data-level="4.3.8" data-path="s4.html"><a href="s4.html#save-ikflag"><i class="fa fa-check"></i><b>4.3.8</b> save <span><img src="img/ukflag.png" alt="ikflag" /></span></a></li>
+<li class="chapter" data-level="4.3.9" data-path="s4.html"><a href="s4.html#exemple-complet-de-tâche-avec-feedback-ukflag"><i class="fa fa-check"></i><b>4.3.9</b> Exemple complet de tâche avec feedback <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="s4.html"><a href="s4.html#partager-une-expérience-ukflag"><i class="fa fa-check"></i><b>4.4</b> Partager une expérience <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.5" data-path="s4.html"><a href="s4.html#collecter-des-données-expérimentales-en-ligne-ukflag"><i class="fa fa-check"></i><b>4.5</b> Collecter des données expérimentales en ligne <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html"><i class="fa fa-check"></i><b>5</b> Syntaxe pour les scripts <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#comment-utiliser-cette-page-de-présentation-des-scripts-dexpériences"><i class="fa fa-check"></i><b>5.1</b> Comment utiliser cette page de présentation des scripts d’expériences <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#structure-des-scripts"><i class="fa fa-check"></i><b>5.2</b> Structure des scripts <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#option-de-base"><i class="fa fa-check"></i><b>5.3</b> Option de base <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.3.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#resolution"><i class="fa fa-check"></i><b>5.3.1</b> resolution <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#background-color"><i class="fa fa-check"></i><b>5.3.2</b> background color <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#fullscreen"><i class="fa fa-check"></i><b>5.3.3</b> fullscreen <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#mouse"><i class="fa fa-check"></i><b>5.3.4</b> mouse <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#set"><i class="fa fa-check"></i><b>5.3.5</b> set <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#start-messages"><i class="fa fa-check"></i><b>5.3.6</b> start messages <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#options-avancées"><i class="fa fa-check"></i><b>5.4</b> Options avancées <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.4.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#var-in"><i class="fa fa-check"></i><b>5.4.1</b> var in <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.4.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#var-out"><i class="fa fa-check"></i><b>5.4.2</b> var out <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.4.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#origin"><i class="fa fa-check"></i><b>5.4.3</b> origin <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.4.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#fontdirdatadirbitmapdirsounddir"><i class="fa fa-check"></i><b>5.4.4</b> fontdir,datadir,bitmapdir,sounddir <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#options-pour-linux"><i class="fa fa-check"></i><b>5.5</b> Options pour Linux <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.5.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#escape-c-seulement"><i class="fa fa-check"></i><b>5.5.1</b> escape (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#parallelport-c-seulement"><i class="fa fa-check"></i><b>5.5.2</b> parallelport (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#pcidio24-c-seulement"><i class="fa fa-check"></i><b>5.5.3</b> pcidio24 (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#cedrus-c-seulement"><i class="fa fa-check"></i><b>5.5.4</b> cedrus (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#iolab-c-seulement"><i class="fa fa-check"></i><b>5.5.5</b> iolab (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#et-linux-seulement"><i class="fa fa-check"></i><b>5.5.6</b> et (Linux seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.7" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sprites-first-linux-seulement"><i class="fa fa-check"></i><b>5.5.7</b> sprites first (Linux seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.8" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#executable"><i class="fa fa-check"></i><b>5.5.8</b> executable <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.9" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#egi-c-only"><i class="fa fa-check"></i><b>5.5.9</b> egi (C only) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.10" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#vsync-onoff"><i class="fa fa-check"></i><b>5.5.10</b> vsync on|off <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.11" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#window-c-only"><i class="fa fa-check"></i><b>5.5.11</b> window (C only) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.12" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#screensize-and-screendistance-c-only"><i class="fa fa-check"></i><b>5.5.12</b> screensize and screendistance (C only) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.13" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#version"><i class="fa fa-check"></i><b>5.5.13</b> version <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.14" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#check_refresh_rate"><i class="fa fa-check"></i><b>5.5.14</b> check_refresh_rate <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#chargement-des-stimuli"><i class="fa fa-check"></i><b>5.6</b> Chargement des stimuli <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.6.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#bitmaps"><i class="fa fa-check"></i><b>5.6.1</b> bitmaps <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#move"><i class="fa fa-check"></i><b>5.6.2</b> move <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#relocate"><i class="fa fa-check"></i><b>5.6.3</b> relocate <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sounds"><i class="fa fa-check"></i><b>5.6.4</b> sounds <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#fonts"><i class="fa fa-check"></i><b>5.6.5</b> fonts <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#videos"><i class="fa fa-check"></i><b>5.6.6</b> videos <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#les-tâches"><i class="fa fa-check"></i><b>5.7</b> Les tâches <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.7.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#comment-les-tâches-sont-structurées"><i class="fa fa-check"></i><b>5.7.1</b> Comment les tâches sont structurées <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#le-concept-de-variables"><i class="fa fa-check"></i><b>5.7.2</b> le concept de variables <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#le-concept-dhorodatage"><i class="fa fa-check"></i><b>5.7.3</b> Le concept d’horodatage <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#la-fonction-set"><i class="fa fa-check"></i><b>5.7.4</b> La fonction set <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#synthèse-de-la-fonction-set"><i class="fa fa-check"></i><b>5.7.5</b> Synthèse de la fonction set <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#instructions-de-base"><i class="fa fa-check"></i><b>5.8</b> Instructions de base <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.8.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#keys"><i class="fa fa-check"></i><b>5.8.1</b> keys <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#mouse-on-or-off"><i class="fa fa-check"></i><b>5.8.2</b> mouse on or off <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#table"><i class="fa fa-check"></i><b>5.8.3</b> table <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-imgukflag.png"><i class="fa fa-check"></i><b>5.8.4</b> show [<embed src="https://www.psytoolkit.org/doc3.2.0/syntax.html#task-show" id="task-show" /></a></li>
+<li class="chapter" data-level="5.8.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-bitmap"><i class="fa fa-check"></i><b>5.8.5</b> show bitmap <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-rectangle"><i class="fa fa-check"></i><b>5.8.6</b> show rectangle<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.7" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-circle"><i class="fa fa-check"></i><b>5.8.7</b> show circle <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.8" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-background"><i class="fa fa-check"></i><b>5.8.8</b> show background <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.9" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-text"><i class="fa fa-check"></i><b>5.8.9</b> show text <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.10" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-video"><i class="fa fa-check"></i><b>5.8.10</b> show video <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.11" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#clear"><i class="fa fa-check"></i><b>5.8.11</b> clear <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.12" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#hideunhide"><i class="fa fa-check"></i><b>5.8.12</b> hide/unhide <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.13" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#rotate"><i class="fa fa-check"></i><b>5.8.13</b> rotate</a></li>
+<li class="chapter" data-level="5.8.14" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#delay"><i class="fa fa-check"></i><b>5.8.14</b> delay <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.15" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#readkey"><i class="fa fa-check"></i><b>5.8.15</b> readkey <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.16" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#keystatus"><i class="fa fa-check"></i><b>5.8.16</b> keystatus <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.17" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#readkeys"><i class="fa fa-check"></i><b>5.8.17</b> readkeys <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.18" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#readmouse"><i class="fa fa-check"></i><b>5.8.18</b> readmouse <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.19" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#progress"><i class="fa fa-check"></i><b>5.8.19</b> progress <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.20" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#choose"><i class="fa fa-check"></i><b>5.8.20</b> choose <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.21" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#rate"><i class="fa fa-check"></i><b>5.8.21</b> rate <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.22" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#save"><i class="fa fa-check"></i><b>5.8.22</b> save <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.23" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sound"><i class="fa fa-check"></i><b>5.8.23</b> sound <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.24" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#if"><i class="fa fa-check"></i><b>5.8.24</b> if <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.25" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#while"><i class="fa fa-check"></i><b>5.8.25</b> while <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.9" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#instructions-moyennement-avancées"><i class="fa fa-check"></i><b>5.9</b> Instructions moyennement avancées <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.9.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#font"><i class="fa fa-check"></i><b>5.9.1</b> font <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.10" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#s5-10"><i class="fa fa-check"></i><b>5.10</b> Fonctions avancées</a><ul>
+<li class="chapter" data-level="5.10.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#end"><i class="fa fa-check"></i><b>5.10.1</b> end <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.10.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#timestamp"><i class="fa fa-check"></i><b>5.10.2</b> timestamp <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.10.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sprite"><i class="fa fa-check"></i><b>5.10.3</b> sprite <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.11" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#instructions-pour-les-équipements-spéciaux"><i class="fa fa-check"></i><b>5.11</b> Instructions pour les équipements spéciaux <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.11.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#cedrusreadkey"><i class="fa fa-check"></i><b>5.11.1</b> cedrus readkey</a></li>
+</ul></li>
+<li class="chapter" data-level="5.12" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#tables"><i class="fa fa-check"></i><b>5.12</b> Tables <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.13" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#block"><i class="fa fa-check"></i><b>5.13</b> block <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.13.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#blockorder"><i class="fa fa-check"></i><b>5.13.1</b> blockorder <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.13.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#include-usage-avancé-seulement"><i class="fa fa-check"></i><b>5.13.2</b> include (usage avancé seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.13.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#part-pour-utilisateur-avancé"><i class="fa fa-check"></i><b>5.13.3</b> part (pour utilisateur avancé) <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.14" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#vue-densemble-de-toutes-les-variables-du-système"><i class="fa fa-check"></i><b>5.14</b> Vue d’ensemble de toutes les variables du système <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.15" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#liens-vers-toutes-les-instructions"><i class="fa fa-check"></i><b>5.15</b> Liens vers toutes les instructions <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html"><i class="fa fa-check"></i><b>6</b> Un projet complet de recherche en ligne <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="6.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-1.-réfléchissez-à-votre-expérience-et-créez-des-stimuli"><i class="fa fa-check"></i><b>6.1</b> Étape 1. Réfléchissez à votre expérience et créez des stimuli<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-2.-créez-les-stimuli"><i class="fa fa-check"></i><b>6.2</b> Étape 2. Créez les stimuli <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-3.-créer-une-nouvelle-expérience"><i class="fa fa-check"></i><b>6.3</b> Étape 3. Créer une nouvelle expérience <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-4.-coder-lexpérience"><i class="fa fa-check"></i><b>6.4</b> Étape 4. Coder l’expérience <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="6.4.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#définition-et-mise-en-ligne-des-stimuli"><i class="fa fa-check"></i><b>6.4.1</b> Définition et mise en ligne des stimuli <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#définir-les-conditions"><i class="fa fa-check"></i><b>6.4.2</b> Définir les conditions <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#décrire-les-événements"><i class="fa fa-check"></i><b>6.4.3</b> Décrire les événements <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4.4" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#blocs"><i class="fa fa-check"></i><b>6.4.4</b> Blocs <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-5.-compiler-et-exécuter"><i class="fa fa-check"></i><b>6.5</b> Étape 5. Compiler et exécuter <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.6" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-6.-analysez-votre-dossier-de-test"><i class="fa fa-check"></i><b>6.6</b> Étape 6. Analysez votre dossier de test <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.7" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-7.-mise-en-place-du-projet-en-ligne"><i class="fa fa-check"></i><b>6.7</b> Étape 7. Mise en place du projet en ligne <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="6.7.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#mettre-en-place-une-enquête-en-ligne"><i class="fa fa-check"></i><b>6.7.1</b> Mettre en place une enquête en ligne <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.7.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#commencez-par-des-questions-et-une-enquête-test"><i class="fa fa-check"></i><b>6.7.2</b> Commencez par des questions et une enquête test <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.7.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#terminer-lenquête"><i class="fa fa-check"></i><b>6.7.3</b> Terminer l’enquête <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6.8" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-8.-analyser-les-données"><i class="fa fa-check"></i><b>6.8</b> Étape 8. Analyser les données <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="6.8.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#assurez-vous-que-lanalyse-de-votre-expérience-est-paramétrée"><i class="fa fa-check"></i><b>6.8.1</b> Assurez-vous que l’analyse de votre expérience est paramétrée <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.8.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#téléchargez-vos-données"><i class="fa fa-check"></i><b>6.8.2</b> Téléchargez vos données <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.8.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#ouvrez-votre-fichier-de-données-dans-spss"><i class="fa fa-check"></i><b>6.8.3</b> Ouvrez votre fichier de données dans SPSS <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.8.4" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#et-cest-tout"><i class="fa fa-check"></i><b>6.8.4</b> Et c’est tout</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html"><i class="fa fa-check"></i><b>7</b> Les questionnnaires <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="7.1" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#introduction"><i class="fa fa-check"></i><b>7.1</b> Introduction <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="7.2" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#comment-créer-une-enquête"><i class="fa fa-check"></i><b>7.2</b> Comment créer une enquête <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="7.3" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#réalisation-des-enquêtes"><i class="fa fa-check"></i><b>7.3</b> Réalisation des enquêtes <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="7.4" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#exemple-complet"><i class="fa fa-check"></i><b>7.4</b> Exemple complet <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="s8.html"><a href="s8.html"><i class="fa fa-check"></i><b>8</b> Les questionnaire en ligne</a><ul>
+<li class="chapter" data-level="8.1" data-path="s8.html"><a href="s8.html#structure-dun-questionnaire-ukflag"><i class="fa fa-check"></i><b>8.1</b> Structure d’un questionnaire <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="8.1.1" data-path="s8.html"><a href="s8.html#structure-générale-dune-question-ukflag"><i class="fa fa-check"></i><b>8.1.1</b> Structure générale d’une question <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="8.1.2" data-path="s8.html"><a href="s8.html#commentaires-pour-les-programmateurs-ukflag"><i class="fa fa-check"></i><b>8.1.2</b> Commentaires pour les programmateurs <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="8.1.3" data-path="s8.html"><a href="s8.html#formatage-du-texte-ukflag"><i class="fa fa-check"></i><b>8.1.3</b> Formatage du texte <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="8.1.4" data-path="s8.html"><a href="s8.html#types-de-questions-ukflagplay"><i class="fa fa-check"></i><b>8.1.4</b> Types de questions <span><img src="img/ukflag.png" alt="ukflag" /></span>{play}</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html"><i class="fa fa-check"></i><b>9</b> Audio et vidéo dans les questionnaires <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="9.1" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#introduction-1"><i class="fa fa-check"></i><b>9.1</b> Introduction <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#audiosons"><i class="fa fa-check"></i><b>9.2</b> Audio/sons <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="9.2.1" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#quel-format-sonore-utiliser"><i class="fa fa-check"></i><b>9.2.1</b> Quel format sonore utiliser ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.2" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-télécharger-un-fichier-son-sur-psytoolkit"><i class="fa fa-check"></i><b>9.2.2</b> Comment télécharger un fichier son sur PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.3" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-ajouter-laudio-à-votre-question-how_to_add_the_audio_to_your_question"><i class="fa fa-check"></i><b>9.2.3</b> Comment ajouter l’audio à votre question ? <span><img src="img/ukflag.png" /></span>{how_to_add_the_audio_to_your_question}</a></li>
+<li class="chapter" data-level="9.2.4" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-avoir-plus-dune-piste-audio-dans-votre-question"><i class="fa fa-check"></i><b>9.2.4</b> Comment avoir plus d’une piste audio dans votre question ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.5" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-un-son-une-seule-fois"><i class="fa fa-check"></i><b>9.2.5</b> Comment jouer un son une seule fois ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.6" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-un-son-à-partir-de-mon-google-drive"><i class="fa fa-check"></i><b>9.2.6</b> Comment jouer un son à partir de mon Google Drive ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.7" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-faire-jouer-un-son-de-dropbox"><i class="fa fa-check"></i><b>9.2.7</b> Comment faire jouer un son de DropBox <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.8" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-un-son-encore-et-encore-en-boucle"><i class="fa fa-check"></i><b>9.2.8</b> Comment jouer un son encore et encore (en boucle) <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#video"><i class="fa fa-check"></i><b>9.3</b> Video <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="9.3.1" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#pourquoi-ne-puis-je-pas-télécharger-un-fichier-vidéo-sur-psytoolkit"><i class="fa fa-check"></i><b>9.3.1</b> Pourquoi ne puis-je pas télécharger un fichier vidéo sur PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.2" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-avoir-plus-dune-piste-vidéo-dans-votre-question"><i class="fa fa-check"></i><b>9.3.2</b> Comment avoir plus d’une piste vidéo dans votre question ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.3" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-lire-une-vidéo-une-seule-fois"><i class="fa fa-check"></i><b>9.3.3</b> Comment lire une vidéo une seule fois ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.4" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-agrandir-la-vidéo"><i class="fa fa-check"></i><b>9.3.4</b> Comment agrandir la vidéo ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.5" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-une-vidéo-à-partir-de-mon-google-drive"><i class="fa fa-check"></i><b>9.3.5</b> Comment jouer une vidéo à partir de mon Google Drive ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.6" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-une-vidéo-de-dropbox"><i class="fa fa-check"></i><b>9.3.6</b> Comment jouer une vidéo de DropBox ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.7" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-lire-une-vidéo-encore-et-encore-en-boucle"><i class="fa fa-check"></i><b>9.3.7</b> Comment lire une vidéo encore et encore (en boucle) ? <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#vidéo-youtube"><i class="fa fa-check"></i><b>9.4</b> Vidéo YouTube <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html"><i class="fa fa-check"></i><b>10</b> Une enquête en ligne complète <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="10.1" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-1.-hypothèse-prédiction-et-échelles"><i class="fa fa-check"></i><b>10.1</b> Étape 1. Hypothèse, prédiction et échelles <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.2" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-2.-mise-en-place-de-létude-en-ligne"><i class="fa fa-check"></i><b>10.2</b> Étape 2. Mise en place de l’étude en ligne <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.3" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-3.-mettre-en-place-les-questions-et-les-échelles"><i class="fa fa-check"></i><b>10.3</b> Étape 3. Mettre en place les questions et les échelles <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.4" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-4.-mettez-votre-questionnaire-en-ligne-et-testez"><i class="fa fa-check"></i><b>10.4</b> Étape 4. Mettez votre questionnaire en ligne et testez <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.5" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-5.-passer-en-mode-réel-et-collecter-les-données"><i class="fa fa-check"></i><b>10.5</b> Étape 5. Passer en mode “réel” et collecter les données <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.6" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-6.-télécharger-les-données"><i class="fa fa-check"></i><b>10.6</b> Étape 6. Télécharger les données <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.7" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-7.-importer-et-analyser-dans-spss"><i class="fa fa-check"></i><b>10.7</b> Étape 7. Importer et analyser dans SPSS <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.8" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#des-questions"><i class="fa fa-check"></i><b>10.8</b> Des questions ?</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><i class="fa fa-check"></i><b>11</b> Echange d’informations entre les enquêtes et les expériences <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="11.1" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#comment-cela-fonctionne-t-il"><i class="fa fa-check"></i><b>11.1</b> Comment cela fonctionne-t-il ?<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.2" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#comment-le-faire-pas-à-pas"><i class="fa fa-check"></i><b>11.2</b> Comment le faire pas à pas <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.3" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#étape-1.-lexemple-de-plan-dexpérience"><i class="fa fa-check"></i><b>11.3</b> Étape 1. L’exemple de plan d’expérience <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.4" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#étape-2.-mettre-en-place-une-enquête"><i class="fa fa-check"></i><b>11.4</b> Étape 2. Mettre en place une enquête <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.5" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#étape-2.-mettre-en-place-une-expérience"><i class="fa fa-check"></i><b>11.5</b> Étape 2. Mettre en place une expérience <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.6" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#exécution-du-code"><i class="fa fa-check"></i><b>11.6</b> Exécution du code <span><img src="img.ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.7" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#code-psytoolkit"><i class="fa fa-check"></i><b>11.7</b> Code PsyToolkit <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html"><i class="fa fa-check"></i><b>12</b> Analyser vos fichiers de données <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="12.1" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html#importer-un-fichier-de-données-dans-votre-logiciel"><i class="fa fa-check"></i><b>12.1</b> Importer un fichier de données dans votre logiciel <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="12.2" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html#distinction-entre-lanalyse-de-fichiers-de-données-individuels-et-de-données-de-groupe"><i class="fa fa-check"></i><b>12.2</b> Distinction entre l’analyse de fichiers de données individuels et de données de groupe <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="12.3" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html#comment-approfondir"><i class="fa fa-check"></i><b>12.3</b> Comment approfondir</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="questions-juridiques-ukflag.html"><a href="questions-juridiques-ukflag.html"><i class="fa fa-check"></i><b>13</b> Questions juridiques <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="13.1" data-path="questions-juridiques-ukflag.html"><a href="questions-juridiques-ukflag.html#copyright"><i class="fa fa-check"></i><b>13.1</b> Copyright <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="13.2" data-path="questions-juridiques-ukflag.html"><a href="questions-juridiques-ukflag.html#des-questions-1"><i class="fa fa-check"></i><b>13.2</b> Des questions ? <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="références.html"><a href="références.html"><i class="fa fa-check"></i><b>14</b> Références</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Documentation en ligne de PsyToolkit</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="s4" class="section level1">
+<h1><span class="header-section-number">Chapitre 4</span> Programmer des expériences</h1>
+<div id="les-scripts-ddexpérimentation-dans-psytoolkit-ukflag" class="section level2">
+<h2><span class="header-section-number">4.1</span> Les Scripts d’d’expérimentation dans PsyToolkit <a href="https://www.psytoolkit.org/doc3.2.0/scripting_basics.html" id="s4-1"><img src="img/ukflag.png" alt="ukflag" /></a></h2>
+<p>Les Scripts d’expérimentation est une partie importante de PsyToolkit (à ne pas confondre avec les scripts d’enquête). Le script d’expérimentation indique à l’ordinateur quand et comment montrer les stimuli, comment mesurer les réponses et comment écrire les données dans un fichier de données.</p>
+<p>Le script d’expérimentation est comme la programmation d’un ordinateur. Vous ne pouvez l’apprendre qu’en faisant, en regardant des exemples et en étant patient. En fin de compte, il est beaucoup plus souple et plus facile à utiliser que les programmes de type “pointer-cliquer”. Au début, il peut cependant sembler beaucoup plus difficile.</p>
+<div id="définition-dun-script-ukflag" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Définition d’un script <a href="https://www.psytoolkit.org/doc3.2.0/scripting_basics.html#_definition_of_a_script" id="s4-1-1"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Un script est essentiellement un simple document textuel. Il contient toutes les informations nécessaires pour mener une expérience. Lorsque vous utilisez PsyToolkit dans le navigateur, le script s’affiche dans une zone de texte (voir image ci-dessous). Tout comme dans un éditeur de texte ordinaire, vous pouvez enregistrer le fichier. Si vous travaillez avec le navigateur, le fichier sera en fait enregistré sur le serveur PsyToolkit, et vous pourrez accéder au fichier partout dans le monde.</p>
+<div class="figure">
+<img src="img/script_example.png" alt="Un exemple de script" />
+<p class="caption">Un exemple de script</p>
+</div>
+<blockquote>
+<p>Si vous travaillez hors ligne sous Linux, vous pouvez modifier votre fichier de script dans un éditeur de texte, tel que gedit ou kate ou emacs.</p>
+</blockquote>
+</div>
+<div id="étapes-typiques-dune-expérience-ukflag" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> Étapes typiques d’une expérience <a href="https://www.psytoolkit.org/doc3.2.0/scripting_basics.html#_typical_steps_in_making_an_experiment" id="s4-1-2"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Vous passerez par un certain nombre d’étapes. PsyToolkit entre en jeu après l’étape 2 ci-dessous.</p>
+<ol style="list-style-type: decimal">
+<li>Concevez votre expérience sur papier.</li>
+</ol>
+<ul>
+<li>Pensez aux conditions expérimentales dont vous disposez</li>
+<li>Pensez aux instructions et aux stimuli que vous avez</li>
+<li>Écrivez les événements qui se produisent dans le cadre de votre expérience (quand et comment ils doivent se produire, ce que l’on attend des participants, etc.)</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Créer les stimuli sous forme de bitmaps et/ou de fichiers audio</li>
+</ol>
+<ul>
+<li>Il est recommandé de créer les stimuli sous forme de fichiers images (par exemple, au format png, bmp, jpg). Le logiciel recommandé est le suivant : <a href="www.inkscape.org">www.inkscape.org</a></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Ecrivez le code PsyToolkit. Habituellement, chaque ligne PsyToolkit correspond à un événement des étapes précédentes. Le code peut être écrit dans un navigateur ou dans un éditeur de texte. Le code PsyToolkit est juste un fichier texte combiné avec les fichiers de stimulation.</p></li>
+<li><p>Compilez le code PsyToolkit en une expérience exécutable. Si vous compilez sur un ordinateur Linux, vous pouvez exécuter le code sur un ordinateur local et même utiliser du matériel externe spécial, comme des claviers Cedrus. Si vous compilez dans un navigateur, vous pouvez exécuter le code dans un navigateur et même demander aux gens de participer en ligne.</p></li>
+</ol>
+</div>
+</div>
+<div id="les-stimuli-dans-psytoolkit-ukflag" class="section level2">
+<h2><span class="header-section-number">4.2</span> Les stimuli dans PsyToolkit <a href="https://www.psytoolkit.org/doc3.1.0/stimuli.html" id="s4-2"><img src="img/ukflag.png" alt="ukflag" /></a></h2>
+<p>Dans PsyToolkit, il y a des stimuli visuels et auditifs. Les stimuli visuels peuvent être divisés en images bitmap (chargées sous forme de fichiers bitmap dans n’importe quel format bitmap<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>), en rectangles et en texte. Les stimuli auditifs sont simplement des sons (chargés sous forme de fichiers sonores).</p>
+<div id="comment-créer-des-stimuli-pour-psytoolkit-ukflag" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Comment créer des stimuli pour PsyToolkit <a href="https://www.psytoolkit.org/doc3.1.0/stimuli.html##_how_to_create_stimuli_for_psytoolkit" id="s4-2-2"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Il faut créer des stimuli. Par exemple, les stimuli visuels sont simplement des images bitmaps. Vous pouvez en trouver beaucoup sur internet (par exemple, avec Google images, mais assurez-vous que vous travaillez dans le respect de la législation applicable en matière de droits d’auteur). Vous pouvez également utiliser les images numériques de votre appareil photo (elles sont généralement beaucoup plus grandes que la résolution de votre écran, il vous faut donc un logiciel pour les redimensionner).</p>
+<p>La taille d’écran par défaut est de 800 par 600 pixels. Vous pouvez la modifier avec l’option résolution
+Les images numériques peuvent être lourdes, surtout lorsqu’elles sont prises par un appareil photo numérique. Veillez à vérifier la taille en pixels. Un stimulus typique peut être de l’ordre de 100 par 100 pixels.</p>
+<p>Le logiciel recommandé pour créer des stimuli de haute qualité est <a href="http://www.inkscape.org/">Inkscape</a>. Ce logiciel est gratuit, peut être téléchargé, fonctionne sur tous les ordinateurs, est de haute qualité et comporte de nombreux tutoriels. Il faut peut-être une journée pour s’y habituer, mais c’est un temps d’apprentissage bien utilisé<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
+<p>Pour les stimuli auditifs, vous pouvez utiliser <a href="http://audacity.sourceforge.net/">Audacity</a>, qui est l’un des meilleurs et des plus populaires éditeurs de sons gratuits. Vous pouvez également rechercher des fichiers sonores en ligne et les couper à la bonne durée, et les modifier en utilisant Audacity.</p>
+</div>
+<div id="comment-charger-les-stimuli-ukflag" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> Comment charger les stimuli <a href="https://www.psytoolkit.org/doc3.1.0/stimuli.html#_how_to_load_stimuli" id="s4-2-3"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Il existe des instructions spéciales pour indiquer à l’ordinateur de charger des stimuli. Il y a une instruction pour les images (bitmaps), les sons et les polices de caractères. Lorsque vous chargez des stimuli, vous pouvez spécifier le nom du stimulus que vous souhaitez utiliser et le nom du fichier. Voici un exemple de chargement de stimuli. Plus tard, vous pourrez vous référer à ces deux fichiers images avec “MyBitmap” et “anotherone”.</p>
+<p><strong>Chargement des stimuli visuels, appelés bitmaps</strong></p>
+<pre><code>bitmaps
+  MyBitmap some_image.jpg
+  anotherone bitmaps/anotherimage.png</code></pre>
+<p>Dans l’instruction <em>bitmaps</em> de l’exemple, vous avez deux choses. D’abord le nom de l’image tel que vous l’utiliserez dans le code suivant (par exemple, “MyBitmap”), suivi de son nom de fichier.</p>
+<p>Si vous utilisez des bitmaps PNG, il vous suffit de donner le nom du PNG sans l’extension, et PsyToolkit reconnaîtra que pour le nom il y aura un nom de fichier sous ce nom avec l’extension PNG. Par conséquent, les fichiers PNG sont les plus pratiques à utiliser.</p>
+<p>PNG est le format d’exportation des images par défaut d’Inkscape, un programme fantastique pour dessiner des stimuli.</p>
+</div>
+<div id="comment-présenter-les-stimuli-ukflag" class="section level3">
+<h3><span class="header-section-number">4.2.3</span> Comment présenter les stimuli <a href="https://www.psytoolkit.org/doc3.1.0/stimuli.html#_how_to_present_stimuli" id="s4-2-4"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Dans PsyToolkit, vous pouvez présenter des stimuli dans la session “tâche” en utilisant la commande “show”.</p>
+<p><strong>Afficher les bitmaps</strong></p>
+<pre><code>task mytask
+   show bitmap MyBitmap ## bitmap number 1
+   show bitmap anotherone 100 300 ## bitmap number 2
+   clear 1
+   delay 1000
+   clear 2</code></pre>
+</div>
+<div id="système-de-coordonnées-psytoolkit-ukflag" class="section level3">
+<h3><span class="header-section-number">4.2.4</span> Système de coordonnées PsyToolkit <a href="https://www.psytoolkit.org/doc3.1.0/stimuli.html#_psytoolkit_coordinate_system" id="s4-2-4"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Dans PsyToolkit, un stimulus visuel est par défaut présenté exactement au centre de l’écran. Si vous souhaitez une position différente de 0,0, vous pouvez présenter les coordonnées x et y comme dans l’exemple ci-dessus (plus d’exemples ci-dessous).</p>
+<p>Par défaut, la coordonnée 0,0 réfère au centre de l’écran. Si vous souhaitez que 0,0 soit en haut à gauche de l’écran, vous pouvez le spécifier dans une option, comme dans l’exemple ci-dessous.</p>
+<p><strong>Définir un autre système de coordonnées</strong></p>
+<pre><code>options
+   origin topleft</code></pre>
+<div class="figure">
+<img src="img/coordinates.png" alt="Exemple d’affichage de stimuli" />
+<p class="caption">Exemple d’affichage de stimuli</p>
+</div>
+<p><strong>Show the stimuli in a task</strong></p>
+<pre><code>bitmaps
+  heart
+  bird
+  key
+  lock
+  smiley
+  bulb
+  flag
+  umbrella
+  bell
+
+task test
+  show bitmap smiley
+  show bitmap heart -300 -200
+  show bitmap bird 0 -200
+  show bitmap key 300 -200
+  show bitmap lock -300 0
+  show bitmap bulb 300 0
+  show bitmap flag -300 200
+  show bitmap umbrella 0 200
+  show bitmap bell 300 200
+  delay 1000
+
+ block testblock
+  tasklist
+    test 10
+  end</code></pre>
+<p>Ainsi, la coordonnée x,y 300 200 est présentée en bas à droite et la coordonnée x,y -300 -200 est présentée dans le quadrant supérieur gauche de l’écran. En d’autres termes, les coordonnées négatives réfèrent à la moitié supérieure de l’écran.</p>
+<p>J’ai dessiné le smiley et pris les autres images dans le fantastique jeu d’icônes <a href="https://en.wikipedia.org/wiki/Font_Awesome">fontawesome</a>. <a href="http://fontawesome.io/">Téléchargez ici</a>. Le jeu d’icônes fontawesome est livré avec des fichiers SVG, vous pouvez donc les importer dans Inkscape et les agrandir sans perte de qualité. <a href="http://www.hiland.com/knowledge-base/bitmap-and-vector-images-understanding-the-difference/">Lisez une explication sur la mise à l’échelle des images ici</a>.</p>
+</div>
+<div id="questions-de-temps-ukflag" class="section level3">
+<h3><span class="header-section-number">4.2.5</span> Questions de temps <a href="https://www.psytoolkit.org/doc3.1.0/stimuli.html#_timing_issues" id="s4-2-4"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Un moniteur typique se “met à jour” 60 fois par seconde, c’est-à-dire 60 Hz, ou toutes les 17 millisecondes environ. Certains moniteurs spéciaux peuvent faire beaucoup mieux. Sur la version Linux/Desktop, vous pouvez contrôler le timing des stimuli en utilisant la fonction <a href="#vsync">vsync</a> (qui est activée par défaut et qui est typique des expériences psychologiques cognitives en laboratoire). Dans la version basée sur le web, vous ne pouvez pas faire cela, ce qui signifie que vous ajouterez du bruit à vos données expérimentales.</p>
+</div>
+</div>
+<div id="syntaxe-pour-les-feedback-ukflag" class="section level2">
+<h2><span class="header-section-number">4.3</span> Syntaxe pour les feedback <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html" id="s4-3"><img src="img/ukflag.png" alt="ukflag" /></a></h2>
+<p>Le retour d’information permettra à un participant de donner son avis sur les performances, par exemple sur les temps de réponse moyens dans un bloc. Le retour d’information peut être programmé dans une section “bloc” uniquement (et non sur une base d’essai par essai).</p>
+<p>La gestion des feedback n’est pas destiné aux débutants de PsyToolkit. Le feedback est une fonction avancée du codage des expériences PsyToolkit, et vous ne devez l’utiliser qu’une fois que vous avez maîtrisé la programmation des aspects plus basiques de l’expérience. Vous en trouverez de bons exemples dans les expériences téléchargeables dans la <a href="http://www.psytoolkit.org/experiment-library/">bibliothèque d’expériences</a>.</p>
+<div id="contexte-ukflag" class="section level3">
+<h3><span class="header-section-number">4.3.1</span> Contexte <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_background" id="s4-3-1"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Les chercheurs pourraient vouloir donner aux participants un retour d’information (feedback) sur leurs performances. Voici quelques raisons de donner un feedback :</p>
+<ul>
+<li>Le feedback peut motiver les participants à répondre plus précisément ou plus rapidement</li>
+<li>Les chercheurs peuvent vouloir utiliser les informations en retour lors de la conception de la tâche (mais ne pas les donner aux participants à la fin)</li>
+</ul>
+</div>
+<div id="ce-dont-vous-avez-besoin-pour-pouvoir-donner-un-feedback-ukflag" class="section level3">
+<h3><span class="header-section-number">4.3.2</span> Ce dont vous avez besoin pour pouvoir donner un feedback <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_what_you_need_to_be_able_to_give_feedback" id="s4-3-2"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Afin d’utiliser un feedback pour les participants, vous devrez vous assurer que vous avez réfléchi aux points suivants :</p>
+<ul>
+<li>Dans quelle police de caractères souhaitez-vous présenter les informations de retour d’information ? Les commentaires utiliseront la première police spécifiée.</li>
+<li>Sur quelles données voulez-vous donner un feedback ? Vous devez vous assurer que vous avez enregistré ces données en utilisant l’instruction “save” dans la description de la tâche.</li>
+</ul>
+<p>Quel type de retour d’information souhaitez-vous donner ? Le plus souvent, il s’agit simplement d’indiquer à l’utilisateur le nombre d’erreurs qu’il a commises ou la vitesse moyenne de réponse.</p>
+</div>
+<div id="syntaxe-ukflag" class="section level3">
+<h3><span class="header-section-number">4.3.3</span> Syntaxe <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_syntax" id="s4-3-3"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Les instructions de retour d’information sont données dans la déclaration “bloc”. Dans les exemples ci-dessous, la partie “feedback” des blocs sera cependant indiquée. Vous trouverez un exemple complet en bas de cette page. Vous trouverez des exemples complets dans la bibliothèque d’expériences.
+Il y a actuellement 5 composants principaux pour donner un feedback. Il est probablement bon de regarder d’abord l’exemple ci-dessous pour avoir une impression rapide (le codage est souvent appris plus rapidement en regardant les exemples).</p>
+<ul>
+<li><a href="s4.html#feedbackset">set</a></li>
+<li><a href="s4.html#feedbacktext">text</a></li>
+<li><a href="feedbacklineplot">lineplot</a></li>
+<li><a href="feedbacklineplot">xyplot</a></li>
+<li><a href="feedbacksave">save</a></li>
+</ul>
+<p>Elles sont décrites plus en détail ci-dessous.</p>
+</div>
+<div id="text-ukflag" class="section level3">
+<h3><span class="header-section-number">4.3.4</span> text <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_text" id="feedbacktext"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Le texte vous permet de présenter des valeurs variables (la commande “set” vous permet de calculer les moyennes, les min, max et les pourcentages des réponses des participants), et plus encore (chaque fonction décrite ci-dessous).</p>
+<p>Les guillement autour d’un texte littéral dans un feedback ne sont pas obligatoires , bien qu’elles soient recommandées. Dans les commandes de la tâche “show text”, les guillemets doivent cependant être utilisés.</p>
+<p><strong>Exemple de texte</strong></p>
+<pre><code>feedback
+  text  0 -150 &quot;Press space bar to continue&quot;
+ end</code></pre>
+<p><strong>Exemple de texte</strong></p>
+<pre><code>feedback
+  set &amp;MyVar perc 10 ; select c4 == 1
+  text  0 -150 &amp;MyVar ; prefix &quot;Percentage errors (should really be below 10%):&quot; ; postfix &quot;%&quot;
+ end</code></pre>
+<p>Vous devez renvoyer à la colonne du fichier de données (dans l’exemple où nous sélectionnons la 4ème colonne, le préfixe c indique la colonne. Il s’agit de la colonne du fichier de données et non du tableau !</p>
+<p>Le mot-clé select ne fonctionne qu’avec des chiffres, pas avec des noms. Ainsi, si vous voulez sélectionner uniquement les essais d’un certain bloc, ne vérifiez pas cela avec son nom mais avec son numéro. Vous pouvez utiliser BLOCKNUMBER dans la ligne <strong>save</strong> Notez également qu’un message autonome augmente le compteur BLOCKNUMBER.</p>
+<div id="attributs-de-texte-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.4.1</span> attributs de texte <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_text_attributes"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Vous pouvez aligner le texte à gauche si nécessaire. Vous pouvez utiliser les mêmes attributs de texte dans les expériences. Par exemple :</p>
+<p><strong>Exemple de texte</strong></p>
+<pre><code> feedback
+  text color yellow
+  text align left
+  text  0 0 &quot;Line 1&quot;
+  text  0 100 &quot;Line 2 with some more text&quot;
+ end</code></pre>
+<p>Un autre exemple de texte</p>
+<pre><code> feedback
+ text align center
+ text color 00FF00
+ text  0 0 &quot;Line 1&quot;
+ text  0 100 &quot;Line 2 with some more text&quot;
+end</code></pre>
+</div>
+</div>
+<div id="définir-des-variables-ukflag" class="section level3">
+<h3><span class="header-section-number">4.3.5</span> définir des variables <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_set" id="feedbackset"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Vous pouvez définir des variables globales (utilisez le signe &amp;). Il s’agit très probablement de variables que vous n’avez pas utilisées dans les tâches ou les blocs, bien que vous puissiez les montrer ici aussi !</p>
+<p>Il existe un certain nombre de fonctions que vous pouvez utiliser, chacune étant expliquée par un exemple ci-dessous. La partie “select” d’une ligne “set” dans la section “feedback” vous permet de n’utiliser que les essais de certaines lignes (voir ci-dessous pour plus d’explications)</p>
+<div id="mean-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.5.1</span> mean <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_mean" id="feedbackmean"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Calculez la moyenne</p>
+<p><strong>Exemple avec mean</strong></p>
+<pre><code>  feedback
+    set &amp;MyVar mean c6 ; select c4 == 1
+    text  0 -150 &amp;MyVar ; prefix &quot;Mean response time:&quot; ; postfix &quot;ms.&quot;
+  end</code></pre>
+<p>Dans l’exemple ci-dessus, imaginez que la colonne 6 des données contient le temps de réaction et la colonne 4 le statut (la valeur 1 étant correcte, comme c’est le cas par défaut dans PsyToolkit). Dans ce cas, &amp;MyVar sera réglé sur le temps de réaction moyen, mais uniquement pour les essais dans lesquels aucune erreur n’a été commise (car seuls les essais pour lesquels la quatrième colonne est 1 sont pris en compte).</p>
+</div>
+<div id="min-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.5.2</span> min <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_min" id="feedbackmin"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Calculez la plus petite valeur</p>
+<p><strong>Exemple avec min </strong></p>
+<pre><code>  feedback
+    set &amp;MyVar min c6 ; select c4 == 1
+    text  0 -150 &amp;MyVar ; prefix &quot;Shortest response time:&quot; ; postfix &quot;ms.&quot;
+  end</code></pre>
+<p>Dans l’exemple ci-dessus, imaginez que la colonne 6 des données contient le temps de réaction et la colonne 4 le statut (la valeur 1 étant correcte, comme c’est le cas par défaut dans PsyToolkit). Dans ce cas, &amp;MyVar sera réglé sur le temps de réaction minimum (c’est-à-dire le plus court), mais uniquement pour les essais dans lesquels aucune erreur n’a été commise (car seuls les essais pour lesquels la quatrième colonne est 1 sont pris en compte).</p>
+</div>
+<div id="max-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.5.3</span> Max <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_max" id="feedbackmax"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Calucler la plus grande valeur</p>
+<p><strong>Exemple de maximum</strong></p>
+<pre><code>  feedback
+    set &amp;MyVar max c6 ; select c4 == 1
+    text  0 -150 &amp;MyVar ; prefix &quot;Longest response time:&quot; ; postfix &quot;ms.&quot;
+  end</code></pre>
+<p>Dans l’exemple ci-dessus, imaginez que la colonne 6 des données contient le temps de réaction et la colonne 4 le statut (la valeur 1 étant correcte, comme c’est le cas par défaut dans PsyToolkit). Dans ce cas, &amp;MyVar sera réglé sur le temps de réaction maximum (c’est-à-dire le plus long), mais uniquement pour les essais dans lesquels aucune erreur n’a été commise (car seuls les essais pour lesquels la quatrième colonne est 1 sont pris en compte)</p>
+</div>
+<div id="sum-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.5.4</span> sum <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_sum" id="feedbacksum"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Calculer la somme des valeurs</p>
+<p><strong>exemple avec sum </strong></p>
+<pre><code>  feedback
+    set &amp;MyVar sum c6 ; select c4 == 1
+    text  0 -150 &amp;MyVar ; prefix &quot;Total response time:&quot; ; postfix &quot;ms.&quot;
+  end</code></pre>
+<p>Dans l’exemple ci-dessus, imaginez que la colonne 6 des données contient le temps de réaction et la colonne 4 le statut (la valeur 1 étant correcte, comme c’est le cas par défaut dans PsyToolkit). Dans ce cas, &amp;MyVar sera fixé à la somme totale de tous les temps de réaction (pour tous les essais), mais uniquement pour les essais dans lesquels aucune erreur n’a été commise (car seuls les essais pour lesquels la quatrième colonne est 1 sont pris en compte). Bien sûr, cette fonction est rarement utilisée, mais la somme peut être une fonction pratique pour les calculs ultérieurs.</p>
+</div>
+<div id="count-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.5.5</span> count <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_count" id="feedbackcount"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Calculer le nombre d’essais</p>
+<p><strong>Exemple avec count</strong></p>
+<pre><code>  feedback
+    set &amp;MyVar count ; select c4 != 1
+    text  0 -150 &amp;MyVar ; prefix &quot;Number of errors:&quot;
+  end</code></pre>
+<p>Dans l’exemple ci-dessus, imaginez que la colonne 4 contient le statut (avec la valeur 1 étant correcte, comme c’est le cas par défaut dans PsyToolkit). Dans ce cas, &amp;MyVar sera réglé sur le nombre d’erreurs (seuls les essais pour lesquels la quatrième colonne n’est pas correcte sont comptés).</p>
+</div>
+<div id="perc-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.5.6</span> perc <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_perc" id="feedbackperc"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Il calcule le pourcentage (c’est-à-dire une valeur de 0 à 100) de l’occurrence. Cela n’a de sens qu’en combinaison avec l’option de sélection dans la même ligne (voir ci-dessous). Par défaut, le pourcentage est pris de tous les essais dans l’ensemble de données jusqu’à présent, sauf si un nombre spécifique est donné (il doit s’agir d’une valeur entière, il ne peut s’agir d’une variable).</p>
+<p>L’exemple ci-dessous calcule le pourcentage d’essais pour lesquels la valeur de la colonne 4 est égale à 1. Imaginez qu’il y ait un total de 100 essais, et que dans 90 d’entre eux, la quatrième colonne contienne un 1, et dans 10 d’entre eux un 2. Dans ce cas, MyVar contiendrait 90, sur la base de 90/100*100.</p>
+<p><strong>Exemple 1 avec perc</strong></p>
+<pre><code>  feedback
+    set &amp;MyVar perc ; select c4 == 1
+    text  0 -150 &amp;MyVar ; prefix &quot;Percentage errors:&quot; ; postfix &quot;%&quot;
+  end</code></pre>
+<p>L’exemple ci-dessous calcule le pourcentage de procès pour lesquels la valeur de la colonne 4 est égale à 1. Imaginez qu’il y ait un total de 100 procès, et que dans 90 d’entre eux, la quatrième colonne contienne un 1, et dans 10 d’entre eux un 2. Dans l’exemple, le nombre total de procès est ignoré, et la valeur 200 est utilisée à la place dans le calcul du pourcentage. Ainsi, dans ce cas, MyVar contiendrait 45, sur la base de 90/200*100. Cela est souvent utile lorsque vous souhaitez calculer un pourcentage pour un sous-ensemble d’essais dont vous connaissez le nombre d’essais.</p>
+<p><strong>Exemple 2 avec perc</strong></p>
+<pre><code>  feedback
+    set &amp;MyVar perc 200 ; select c4 == 1
+    text  0 -150 &amp;MyVar ; prefix &quot;Percentage errors:&quot; ; postfix &quot;%&quot;
+  end
+  </code></pre>
+</div>
+<div id="régler-une-variable-à-partie-de-la-valeur-dune-autre-variable-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.5.7</span> régler une variable à partie de la valeur d’une autre variable <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#__just_set_a_variable_to_the_value_of_another_variable"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p><strong>Exemple 1 de paramétrage d’une variable à partir de la valeur d’une autre variable</strong></p>
+<pre><code>feedback
+  set &amp;current_variable &amp;old_variable
+end</code></pre>
+<p>ou vous pouvez le faire après le feedback :</p>
+<p><strong>Exemple 2 de paramétrage d’une variable à partir de la valeur d’une autre variable</strong></p>
+<pre><code>  feedback
+    ...code...
+  end
+  set &amp;current_variable &amp;old_variable</code></pre>
+</div>
+<div id="montrer-la-valeur-calculée-au-sujet-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.5.8</span> Montrer la valeur calculée au sujet <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_show_calculated_values_to_participant"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p><strong>Exemple de paramétrage et de texte</strong></p>
+<pre><code>feedback
+  set &amp;StroopCompatible mean c5 ; select c6 == 1
+  set &amp;StroopIncompatible mean c5 ; select c6 == 2
+  set &amp;MyStroopEffect expression &amp;StroopIncompatible - &amp;StroopCompatible
+  text 0 -150 &amp;MyStroopEffect ; prefix &quot;Your Stroop compatibility effect:&quot; ; postfix &quot; ms&quot;
+end</code></pre>
+</div>
+<div id="paramétrage-en-bref-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.5.9</span> paramétrage en bref <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_set_in_summary"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>En bref, il y a deux types de paramétrage (set) pour le feedback :</p>
+<ol style="list-style-type: decimal">
+<li><p>Le paramétrage avec une expression pour calculer les nouvelles valeurs à afficher. C’est pratique pour montrer la différence entre les conditions comme dans l’exemple ci-dessus.</p></li>
+<li><p>Le paramétrage avec une variable globale en calculant la moyenne, le minimum, le maximum ou le pourcentage de la valeur d’une colonne dans votre fichier de données. Imaginez que la 5ème colonne de votre fichier de données contient les temps de réponse, alors vous pouvez faire ce qui suit :</p></li>
+</ol>
+<p><strong>Exemple de paramétrage</strong></p>
+<pre><code>feedback
+  set &amp;MyAverage mean c5
+  set &amp;MyAverage min c5
+  set &amp;MyAverage max c5
+  set &amp;MyAverage perc ; select c6 == 1
+  set &amp;MyAverage perc 100 ; select c6 == 1
+  set &amp;MyAverage &amp;some_other_variable
+  set &amp;MyAverage expression &amp;MyAverage * 100
+  set &amp;MyAverage expression 100
+end</code></pre>
+<p>Imaginez maintenant que la colonne 6 contienne le statut, 1 étant correct, et tout ce qui est incorrect. Imaginez également qu’il y ait 200 essais au total. Vous pouvez maintenant rechercher le pourcentage d’essais corrects, et vous pouvez aussi calculer pour les essais corrects seulement :</p>
+<p><strong>Exemple de paramétrage</strong></p>
+<pre><code>feedback
+  set &amp;MyAverage mean c5 ; select c6 == 1
+  set &amp;MySlowest min c5  ; select c6 == 1
+  set &amp;MyFastest max c5  ; select c6 == 1
+  set &amp;MyErrorRate perc  ; select c6 != 1
+  text 0 -50 &quot;Some feedback about your performance:&quot;
+  text 0 0  &amp;MyAverage ; prefix &quot;Average response time&quot; ; postfix &quot;ms&quot;
+  text 0 50 &amp;MySlowest ; prefix &quot;Slowest response time&quot; ; postfix &quot;ms&quot;
+  text 0 100 &amp;MySlowest ; prefix &quot;Slowest response time&quot; ; postfix &quot;ms&quot;
+  text 0 150 &amp;MyErrorRate ; prefix &quot;Error percentage&quot; ; postfix &quot;ms&quot;
+end</code></pre>
+<p>La fonction “perc” peut prendre un nombre supplémentaire, ou vous pouvez ne pas en tenir compte. Si vous donnez le nombre supplémentaire, il sera utilisé comme total à la place le nombre total d’essais. Cette option est utile dans certaines situations.</p>
+</div>
+<div id="select-ukflag" class="section level4">
+<h4><span class="header-section-number">4.3.5.10</span> Select <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_select" id="feedbackselect"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>L’option select d’une ligne de paramétrage vous permet de ne sélectionner que les lignes de votre fichier de données qui vous intéressent. Cette option de sélection utilise sa propre syntaxe. Chaque instruction select commence évidemment par “select”, suivi d’un certain nombre de comparaisons. Vous pouvez utiliser &amp;&amp; pour le “et” logique || pour le “ou” logique.</p>
+<p>Vous pouvez demander si les valeurs d’une colonne spécifique dans votre fichier de données (telle que créée par vos instructions “save”) ont une valeur numérique spécifique, ou la valeur d’une variable globale, ou le BLOCKNUMBER.</p>
+<p>Si vous voulez seulement sélectionner les essais du dernier bloc, vous pouvez le faire comme suit. Tout d’abord, déterminez quelle ligne de votre fichier de données représente le BLOCKNUMBER.</p>
+<p>Imaginez que la 5ème colonne représente le temps de réponse (TR), la 6ème colonne le STATUT et la première colonne le numéro d’un bloc d’essai (BLOCKNUMBER), alors Vous pouvez facilement utiliser ce qui suit pour ne prendre que les moyennes du bloc sur lequel vous donnez votre feedback :</p>
+<p><strong>Exemple d’ensemble avec des valeurs uniquement sur le dernier bloc</strong></p>
+<pre><code>feedback
+  set &amp;MyAverage mean c5 ; select c6 == 1 &amp;&amp; c1 == BLOCKNUMBER
+  set &amp;MySlowest min c5  ; select c6 == 1 &amp;&amp; c1 == BLOCKNUMBER
+  set &amp;MyFastest max c5  ; select c6 == 1 &amp;&amp; c1 == BLOCKNUMBER
+  set &amp;MyErrorRate perc  ; select c6 != 1 &amp;&amp; c1 == BLOCKNUMBER
+  text 0 -50 &quot;Some feedback about your performance:&quot;
+  text 0 0  &amp;MyAverage ; prefix &quot;Average response time&quot; ; postfix &quot;ms&quot;
+  text 0 50 &amp;MySlowest ; prefix &quot;Slowest response time&quot; ; postfix &quot;ms&quot;
+  text 0 100 &amp;MySlowest ; prefix &quot;Slowest response time&quot; ; postfix &quot;ms&quot;
+  text 0 150 &amp;MyErrorRate ; prefix &quot;Error percentage&quot; ; postfix &quot;ms&quot;
+end</code></pre>
+</div>
+</div>
+<div id="lineplot-et-xyplot-ikflag" class="section level3">
+<h3><span class="header-section-number">4.3.6</span> Lineplot et xyplot <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_lineplot_and_xyplot" id="lineplot"><img src="img/ukflag.png" alt="ikflag" /></a></h3>
+<p>Les instructions lineplot et le xyplot vous permettent de présenter les points de données sous la forme d’un tracé linéaire à l’écran. Actuellement, aucun exemple n’est encore disponible.</p>
+<p>Le point-virgule pour séparer les sections des commandes de feeback doit être entouré d’espaces (des deux côtés). Sans cela, il sera ignoré.</p>
+</div>
+<div id="wait_for_key-ikflag" class="section level3">
+<h3><span class="header-section-number">4.3.7</span> wait_for_key <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_wait-for_key"><img src="img/ukflag.png" alt="ikflag" /></a></h3>
+<p>Par défaut, le feedback reste à l’écran jusqu’à ce que la barre d’espacement soit enfoncée. Il n’est pas nécessaire d’inclure une “wait_for_key” dans la section “feedback”. Mais si vous souhaitez qu’une touche différente de l’espace soit utilisée, vous pouvez le spécifier avec “wait_for_key”.</p>
+<p>Cela peut être utile si vous utilisez un clavier externe, comme le clavier de la BlackBox.</p>
+<p><strong>Exemple de jeu de valeurs uniquement sur le dernier bloc</strong></p>
+<pre><code>feedback
+  set &amp;MyAverage mean c5 ; select c6 == 1 &amp;&amp; c1 == BLOCKNUMBER
+  set &amp;MySlowest min c5  ; select c6 == 1 &amp;&amp; c1 == BLOCKNUMBER
+  set &amp;MyFastest max c5  ; select c6 == 1 &amp;&amp; c1 == BLOCKNUMBER
+  set &amp;MyErrorRate perc  ; select c6 != 1 &amp;&amp; c1 == BLOCKNUMBER
+  text 0 -50 &quot;Some feedback about your performance:&quot;
+  text 0 0  &amp;MyAverage ; prefix &quot;Average response time&quot; ; postfix &quot;ms&quot;
+  text 0 50 &amp;MySlowest ; prefix &quot;Slowest response time&quot; ; postfix &quot;ms&quot;
+  text 0 100 &amp;MySlowest ; prefix &quot;Slowest response time&quot; ; postfix &quot;ms&quot;
+  text 0 150 &amp;MyErrorRate ; prefix &quot;Error percentage&quot; ; postfix &quot;ms&quot;
+  wait_for_key d
+end</code></pre>
+</div>
+<div id="save-ikflag" class="section level3">
+<h3><span class="header-section-number">4.3.8</span> save <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#_save" id="feedbacksave"><img src="img/ukflag.png" alt="ikflag" /></a></h3>
+<p>As in a task, you can use the save statement to save global variables. If you use this, it is highly recommended not to use save in tasks, because it may mess up your data output.</p>
+<p><strong>Exemple de paramétrage avec value et save</strong></p>
+<pre><code>feedback
+  set &amp;MyAverage mean c5 ; select c6 == 1 &amp;&amp; c1 == BLOCKNUMBER
+  set &amp;MySlowest min c5  ; select c6 == 1 &amp;&amp; c1 == BLOCKNUMBER
+  set &amp;MyFastest max c5  ; select c6 == 1 &amp;&amp; c1 == BLOCKNUMBER
+  set &amp;MyErrorRate perc  ; select c6 != 1 &amp;&amp; c1 == BLOCKNUMBER
+  text 0 -50 &quot;Some feedback about your performance:&quot;
+  text 0 0  &amp;MyAverage ; prefix &quot;Average response time&quot; ; postfix &quot;ms&quot;
+  text 0 50 &amp;MySlowest ; prefix &quot;Slowest response time&quot; ; postfix &quot;ms&quot;
+  text 0 100 &amp;MySlowest ; prefix &quot;Slowest response time&quot; ; postfix &quot;ms&quot;
+  text 0 150 &amp;MyErrorRate ; prefix &quot;Error percentage&quot; ; postfix &quot;ms&quot;
+  save BLOCKNUMBER &amp;MyAverage &amp;MySlowest &amp;MyFastest &amp;MyErrorRate
+end</code></pre>
+</div>
+<div id="exemple-complet-de-tâche-avec-feedback-ukflag" class="section level3">
+<h3><span class="header-section-number">4.3.9</span> Exemple complet de tâche avec feedback <a href="https://www.psytoolkit.org/doc3.1.0/feedback.html#complete_example"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Dans cet exemple, les participants répondent avec la touche “a” ou “l” à une flèche pointant vers la gauche ou vers la droite (un essai avec une flèche pointant vers la gauche dans l’image ci-dessous). Le retour d’information indique au participant la vitesse moyenne à laquelle il s’est trouvé dans les essais corrects, et le pourcentage d’erreur (exemple à droite dans l’image ci-dessous).</p>
+<p><img src="img/feedback-example.png" /></p>
+<p>Les scripts de feed-back paraissent relativement mystérieux au début, mais ils sont très simples.</p>
+<p><strong>Exemple de la façon d’utiliser l’instruction “feedback” dans un script PsyToolkit</strong></p>
+<pre><code># the following is an example of a Simon task with feedback about
+# error rates and response times
+
+bitmaps
+  leftarrow
+  rightarrow
+  fixpoint
+
+fonts
+  arial arial.ttf 18
+
+table simontasktable
+  &quot;L_pos L_arrow&quot; -200 1 leftarrow   1
+  &quot;R_pos R_arrow&quot;  200 2 rightarrow  2
+  &quot;R_pos L_arrow&quot;  200 3 leftarrow   1
+  &quot;L_pos R_arrow&quot; -200 4 rightarrow  2
+
+task simon
+  table simontasktable
+  keys a l
+  show bitmap fixpoint
+  delay 100
+  show bitmap @4 @2 0
+  readkey @5 2000
+  delay 5000
+  save BLOCKNAME @1 @3 TABLEROW KEY STATUS RT
+
+block mytrainingblock
+  tasklist
+    simon 20
+  end
+  feedback
+    set &amp;MyPerc perc     ; select c7 != 1
+    set &amp;MyMean mean c8  ; select c7 == 1
+    set &amp;MyCount count   ; select c7 == 1
+    text 0 -250  &quot;Error percentage and response times in training block&quot;
+    text 0 -200  &quot;(in ms = milliseconds = there are 1000 ms in one second)&quot;
+    text 0 -150 &amp;MyPerc  ; prefix &quot;Percentage errors (should really be below 10%):&quot; ; postfix &quot;%&quot;
+    text 0 -100 &amp;MyMean  ; prefix &quot;Average speed of ALL CORRECT RESPONSES:&quot; ; postfix &quot;ms&quot;
+    text 0 -50  &amp;MyCount ; prefix &quot;Total number of correct trials:&quot;
+    text 0  200  &quot;This was just training. Now press space bar of your keyboard&quot;
+    text 0  250  &quot;with the REAL data collection (will take about 5 minutes)&quot;
+  end</code></pre>
+</div>
+</div>
+<div id="partager-une-expérience-ukflag" class="section level2">
+<h2><span class="header-section-number">4.4</span> Partager une expérience <a href="https://www.psytoolkit.org/doc3.1.0/sharing.html" id="s4-4"><img src="img/ukflag.png" alt="ukflag" /></a></h2>
+<p>Imaginez que vous avez créé une belle expérience. Et qu’ensuite, vous aimeriez la donner à votre professeur, à un collègue, à un étudiant, etc. Il y a deux façons différentes de le faire :</p>
+<p>Télécharger l’expérience : Toutes les expériences peuvent être téléchargées sur votre disque dur local, puis téléchargées plus tard sur un autre compte. Ainsi, vous pouvez télécharger et envoyer le fichier d’expérience téléchargé à votre ami.</p>
+<p>Partagez l’expérience : Au lieu de télécharger et d’envoyer par e-mail, il existe un système interne qui permet d’envoyer une expérience à un autre utilisateur. Il suffit de préparer votre expérience, et lorsque vous êtes prêt, cliquez sur le bouton de partage <em>share</em> dans le menu de gauche. Cela permet d’envoyer l’état actuel de l’expérience à votre ami. L’autre utilisateur n’a plus accès à votre expérience et ne verra pas les modifications que vous apportez. Il s’agit simplement d’une façon interne d’envoyer une expérience.</p>
+<div class="figure">
+<img src="img/share_experiment.PNG" alt="Partager une expérience" />
+<p class="caption">Partager une expérience</p>
+</div>
+</div>
+<div id="collecter-des-données-expérimentales-en-ligne-ukflag" class="section level2">
+<h2><span class="header-section-number">4.5</span> Collecter des données expérimentales en ligne <a href="https://www.psytoolkit.org/doc3.2.0/online.html" id="s4-5"><img src="img/ukflag.png" alt="ukflag" /></a></h2>
+<p>Imaginez que vous avez créé une belle expérience, et que vous voulez collecter des données en ligne. Vous pouvez le faire, et c’est l’une des particularités attrayantes PsyToolkit. Voici comment cela fonctionne :</p>
+<ul>
+<li>Vous créez une expérience</li>
+<li>ou bien Vous créez une enquête et “intégrez” l’expérience</li>
+<li>Vous faites compiler l’enquête et la rendez disponible en ligne (il y a une option pour cela dans les enquêtes).</li>
+</ul>
+<p>Vous obtiendrez un lien à partir de PsyToolkit, et vous pourrez l’envoyer à vos étudiants, collègues, ou à qui vous voulez. Veillez à respecter les directives éthiques de votre établissement.</p>
+<p>Une fois que les personnes ont participé, vous pouvez télécharger les fichiers de données et les analyser sur votre propre ordinateur.</p>
+<div class="figure">
+<img src="img/collect_data.PNG" alt="Télécharger les données" />
+<p class="caption">Télécharger les données</p>
+</div>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Une image bitmap est une image vectorielle. Sur l’ordinateur, elles sont enregistrées dans des fichiers image et portent l’extension/type png, jpg, bmp, gif, etc.<a href="s4.html#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>NdT. Pour ma part, j’ai une préférence, sous windows pour <a href="https://paint-net.fr.softonic.com/">paint.net</a><a href="s4.html#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="départ-pour-débutant-absolu.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="syntaxe-pour-les-scripts.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Documentation_Psytoolkit.pdf", "Documentation_Psytoolkit.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

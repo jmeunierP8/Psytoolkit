@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapitre 8 Les questionnaire en ligne | Documentation en ligne de PsyToolkit</title>
+  <meta name="description" content="Ce ebook est une traduction de la documentation de PsyToolkit" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapitre 8 Les questionnaire en ligne | Documentation en ligne de PsyToolkit" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Ce ebook est une traduction de la documentation de PsyToolkit" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapitre 8 Les questionnaire en ligne | Documentation en ligne de PsyToolkit" />
+  
+  <meta name="twitter:description" content="Ce ebook est une traduction de la documentation de PsyToolkit" />
+  
+
+<meta name="author" content="Gijsbert Stoet, Jean-Marc Meunier (Trad)" />
+
+
+<meta name="date" content="2020-10-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="les-questionnnaires.html"/>
+<link rel="next" href="audio-et-vidéo-dans-les-questionnaires.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Documentation en ligne de PsyToolkit</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Note du traducteur</a></li>
+<li class="chapter" data-level="1" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html"><i class="fa fa-check"></i><b>1</b> Présentation de PsyToolkit <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="1.1" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#pourquoi-utiliser-psytoolkit"><i class="fa fa-check"></i><b>1.1</b> Pourquoi utiliser PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.2" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#environnement-weblogin"><i class="fa fa-check"></i><b>1.2</b> Environnement web/login <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.3" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#les-caractéristiques-de-psytoolkit-en-bref"><i class="fa fa-check"></i><b>1.3</b> Les caractéristiques de PsyToolkit en bref <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.4" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#leçons"><i class="fa fa-check"></i><b>1.4</b> Leçons <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.5" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#liens-utiles"><i class="fa fa-check"></i><b>1.5</b> Liens utiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="vue-densemble.html"><a href="vue-densemble.html"><i class="fa fa-check"></i><b>2</b> Vue d’ensemble <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="2.1" data-path="vue-densemble.html"><a href="vue-densemble.html#expériences-et-enquêtes"><i class="fa fa-check"></i><b>2.1</b> Expériences et enquêtes <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="2.1.1" data-path="vue-densemble.html"><a href="vue-densemble.html#programmation-dexpériences"><i class="fa fa-check"></i><b>2.1.1</b> Programmation d’expériences <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.1.2" data-path="vue-densemble.html"><a href="vue-densemble.html#exemples-dexpériences-avec-psytoolkit"><i class="fa fa-check"></i><b>2.1.2</b> Exemples d’expériences avec PsyToolkit <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.1.3" data-path="vue-densemble.html"><a href="vue-densemble.html#enquêtesquestionnaires-en-ligne"><i class="fa fa-check"></i><b>2.1.3</b> Enquêtes/questionnaires en ligne <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="vue-densemble.html"><a href="vue-densemble.html#expériences-en-ligne-et-hors-ligne"><i class="fa fa-check"></i><b>2.2</b> Expériences en ligne et hors ligne <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.3" data-path="vue-densemble.html"><a href="vue-densemble.html#comment-analyser-les-données"><i class="fa fa-check"></i><b>2.3</b> Comment analyser les données <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="2.3.1" data-path="vue-densemble.html"><a href="vue-densemble.html#expériences"><i class="fa fa-check"></i><b>2.3.1</b> Expériences<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.3.2" data-path="vue-densemble.html"><a href="vue-densemble.html#enquêtes"><i class="fa fa-check"></i><b>2.3.2</b> Enquêtes <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.3.3" data-path="vue-densemble.html"><a href="vue-densemble.html#enquêtes-avec-expériences-intégrées"><i class="fa fa-check"></i><b>2.3.3</b> Enquêtes avec expériences intégrées <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html"><i class="fa fa-check"></i><b>3</b> Départ pour débutant absolu <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="3.1" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#ce-que-vous-pouvez-faire-avec-psytoolkit"><i class="fa fa-check"></i><b>3.1</b> Ce que vous pouvez faire avec PsyToolkit <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="3.2" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#pour-qui-est-fait-psytoolkit"><i class="fa fa-check"></i><b>3.2</b> Pour qui est fait PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="3.3" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#combien-de-temps-faut-il-pour-apprendre"><i class="fa fa-check"></i><b>3.3</b> Combien de temps faut-il pour apprendre ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="3.4" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étapes-de-lapprentissage-de-psytoolkit"><i class="fa fa-check"></i><b>3.4</b> Étapes de l’apprentissage de PsyToolkit <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-1"><i class="fa fa-check"></i>Étape 1</a></li>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-2"><i class="fa fa-check"></i>Étape 2</a></li>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-3"><i class="fa fa-check"></i>Étape 3</a></li>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-4"><i class="fa fa-check"></i>Étape 4</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="s4.html"><a href="s4.html"><i class="fa fa-check"></i><b>4</b> Programmer des expériences</a><ul>
+<li class="chapter" data-level="4.1" data-path="s4.html"><a href="s4.html#les-scripts-ddexpérimentation-dans-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.1</b> Les Scripts d’d’expérimentation dans PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="4.1.1" data-path="s4.html"><a href="s4.html#définition-dun-script-ukflag"><i class="fa fa-check"></i><b>4.1.1</b> Définition d’un script <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.1.2" data-path="s4.html"><a href="s4.html#étapes-typiques-dune-expérience-ukflag"><i class="fa fa-check"></i><b>4.1.2</b> Étapes typiques d’une expérience <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="s4.html"><a href="s4.html#les-stimuli-dans-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.2</b> Les stimuli dans PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="4.2.1" data-path="s4.html"><a href="s4.html#comment-créer-des-stimuli-pour-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.2.1</b> Comment créer des stimuli pour PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.2" data-path="s4.html"><a href="s4.html#comment-charger-les-stimuli-ukflag"><i class="fa fa-check"></i><b>4.2.2</b> Comment charger les stimuli <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.3" data-path="s4.html"><a href="s4.html#comment-présenter-les-stimuli-ukflag"><i class="fa fa-check"></i><b>4.2.3</b> Comment présenter les stimuli <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.4" data-path="s4.html"><a href="s4.html#système-de-coordonnées-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.2.4</b> Système de coordonnées PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.5" data-path="s4.html"><a href="s4.html#questions-de-temps-ukflag"><i class="fa fa-check"></i><b>4.2.5</b> Questions de temps <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="s4.html"><a href="s4.html#syntaxe-pour-les-feedback-ukflag"><i class="fa fa-check"></i><b>4.3</b> Syntaxe pour les feedback <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="4.3.1" data-path="s4.html"><a href="s4.html#contexte-ukflag"><i class="fa fa-check"></i><b>4.3.1</b> Contexte <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.2" data-path="s4.html"><a href="s4.html#ce-dont-vous-avez-besoin-pour-pouvoir-donner-un-feedback-ukflag"><i class="fa fa-check"></i><b>4.3.2</b> Ce dont vous avez besoin pour pouvoir donner un feedback <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.3" data-path="s4.html"><a href="s4.html#syntaxe-ukflag"><i class="fa fa-check"></i><b>4.3.3</b> Syntaxe <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.4" data-path="s4.html"><a href="s4.html#text-ukflag"><i class="fa fa-check"></i><b>4.3.4</b> text <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.5" data-path="s4.html"><a href="s4.html#définir-des-variables-ukflag"><i class="fa fa-check"></i><b>4.3.5</b> définir des variables <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.6" data-path="s4.html"><a href="s4.html#lineplot-et-xyplot-ikflag"><i class="fa fa-check"></i><b>4.3.6</b> Lineplot et xyplot <span><img src="img/ukflag.png" alt="ikflag" /></span></a></li>
+<li class="chapter" data-level="4.3.7" data-path="s4.html"><a href="s4.html#wait_for_key-ikflag"><i class="fa fa-check"></i><b>4.3.7</b> wait_for_key <span><img src="img/ukflag.png" alt="ikflag" /></span></a></li>
+<li class="chapter" data-level="4.3.8" data-path="s4.html"><a href="s4.html#save-ikflag"><i class="fa fa-check"></i><b>4.3.8</b> save <span><img src="img/ukflag.png" alt="ikflag" /></span></a></li>
+<li class="chapter" data-level="4.3.9" data-path="s4.html"><a href="s4.html#exemple-complet-de-tâche-avec-feedback-ukflag"><i class="fa fa-check"></i><b>4.3.9</b> Exemple complet de tâche avec feedback <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="s4.html"><a href="s4.html#partager-une-expérience-ukflag"><i class="fa fa-check"></i><b>4.4</b> Partager une expérience <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.5" data-path="s4.html"><a href="s4.html#collecter-des-données-expérimentales-en-ligne-ukflag"><i class="fa fa-check"></i><b>4.5</b> Collecter des données expérimentales en ligne <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html"><i class="fa fa-check"></i><b>5</b> Syntaxe pour les scripts <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#comment-utiliser-cette-page-de-présentation-des-scripts-dexpériences"><i class="fa fa-check"></i><b>5.1</b> Comment utiliser cette page de présentation des scripts d’expériences <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#structure-des-scripts"><i class="fa fa-check"></i><b>5.2</b> Structure des scripts <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#option-de-base"><i class="fa fa-check"></i><b>5.3</b> Option de base <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.3.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#resolution"><i class="fa fa-check"></i><b>5.3.1</b> resolution <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#background-color"><i class="fa fa-check"></i><b>5.3.2</b> background color <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#fullscreen"><i class="fa fa-check"></i><b>5.3.3</b> fullscreen <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#mouse"><i class="fa fa-check"></i><b>5.3.4</b> mouse <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#set"><i class="fa fa-check"></i><b>5.3.5</b> set <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#start-messages"><i class="fa fa-check"></i><b>5.3.6</b> start messages <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#options-avancées"><i class="fa fa-check"></i><b>5.4</b> Options avancées <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.4.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#var-in"><i class="fa fa-check"></i><b>5.4.1</b> var in <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.4.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#var-out"><i class="fa fa-check"></i><b>5.4.2</b> var out <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.4.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#origin"><i class="fa fa-check"></i><b>5.4.3</b> origin <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.4.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#fontdirdatadirbitmapdirsounddir"><i class="fa fa-check"></i><b>5.4.4</b> fontdir,datadir,bitmapdir,sounddir <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#options-pour-linux"><i class="fa fa-check"></i><b>5.5</b> Options pour Linux <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.5.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#escape-c-seulement"><i class="fa fa-check"></i><b>5.5.1</b> escape (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#parallelport-c-seulement"><i class="fa fa-check"></i><b>5.5.2</b> parallelport (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#pcidio24-c-seulement"><i class="fa fa-check"></i><b>5.5.3</b> pcidio24 (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#cedrus-c-seulement"><i class="fa fa-check"></i><b>5.5.4</b> cedrus (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#iolab-c-seulement"><i class="fa fa-check"></i><b>5.5.5</b> iolab (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#et-linux-seulement"><i class="fa fa-check"></i><b>5.5.6</b> et (Linux seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.7" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sprites-first-linux-seulement"><i class="fa fa-check"></i><b>5.5.7</b> sprites first (Linux seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.8" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#executable"><i class="fa fa-check"></i><b>5.5.8</b> executable <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.9" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#egi-c-only"><i class="fa fa-check"></i><b>5.5.9</b> egi (C only) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.10" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#vsync-onoff"><i class="fa fa-check"></i><b>5.5.10</b> vsync on|off <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.11" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#window-c-only"><i class="fa fa-check"></i><b>5.5.11</b> window (C only) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.12" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#screensize-and-screendistance-c-only"><i class="fa fa-check"></i><b>5.5.12</b> screensize and screendistance (C only) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.13" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#version"><i class="fa fa-check"></i><b>5.5.13</b> version <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.14" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#check_refresh_rate"><i class="fa fa-check"></i><b>5.5.14</b> check_refresh_rate <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#chargement-des-stimuli"><i class="fa fa-check"></i><b>5.6</b> Chargement des stimuli <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.6.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#bitmaps"><i class="fa fa-check"></i><b>5.6.1</b> bitmaps <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#move"><i class="fa fa-check"></i><b>5.6.2</b> move <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#relocate"><i class="fa fa-check"></i><b>5.6.3</b> relocate <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sounds"><i class="fa fa-check"></i><b>5.6.4</b> sounds <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#fonts"><i class="fa fa-check"></i><b>5.6.5</b> fonts <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#videos"><i class="fa fa-check"></i><b>5.6.6</b> videos <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#les-tâches"><i class="fa fa-check"></i><b>5.7</b> Les tâches <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.7.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#comment-les-tâches-sont-structurées"><i class="fa fa-check"></i><b>5.7.1</b> Comment les tâches sont structurées <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#le-concept-de-variables"><i class="fa fa-check"></i><b>5.7.2</b> le concept de variables <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#le-concept-dhorodatage"><i class="fa fa-check"></i><b>5.7.3</b> Le concept d’horodatage <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#la-fonction-set"><i class="fa fa-check"></i><b>5.7.4</b> La fonction set <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#synthèse-de-la-fonction-set"><i class="fa fa-check"></i><b>5.7.5</b> Synthèse de la fonction set <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#instructions-de-base"><i class="fa fa-check"></i><b>5.8</b> Instructions de base <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.8.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#keys"><i class="fa fa-check"></i><b>5.8.1</b> keys <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#mouse-on-or-off"><i class="fa fa-check"></i><b>5.8.2</b> mouse on or off <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#table"><i class="fa fa-check"></i><b>5.8.3</b> table <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-imgukflag.png"><i class="fa fa-check"></i><b>5.8.4</b> show [<embed src="https://www.psytoolkit.org/doc3.2.0/syntax.html#task-show" id="task-show" /></a></li>
+<li class="chapter" data-level="5.8.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-bitmap"><i class="fa fa-check"></i><b>5.8.5</b> show bitmap <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-rectangle"><i class="fa fa-check"></i><b>5.8.6</b> show rectangle<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.7" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-circle"><i class="fa fa-check"></i><b>5.8.7</b> show circle <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.8" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-background"><i class="fa fa-check"></i><b>5.8.8</b> show background <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.9" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-text"><i class="fa fa-check"></i><b>5.8.9</b> show text <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.10" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-video"><i class="fa fa-check"></i><b>5.8.10</b> show video <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.11" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#clear"><i class="fa fa-check"></i><b>5.8.11</b> clear <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.12" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#hideunhide"><i class="fa fa-check"></i><b>5.8.12</b> hide/unhide <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.13" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#rotate"><i class="fa fa-check"></i><b>5.8.13</b> rotate</a></li>
+<li class="chapter" data-level="5.8.14" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#delay"><i class="fa fa-check"></i><b>5.8.14</b> delay <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.15" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#readkey"><i class="fa fa-check"></i><b>5.8.15</b> readkey <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.16" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#keystatus"><i class="fa fa-check"></i><b>5.8.16</b> keystatus <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.17" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#readkeys"><i class="fa fa-check"></i><b>5.8.17</b> readkeys <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.18" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#readmouse"><i class="fa fa-check"></i><b>5.8.18</b> readmouse <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.19" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#progress"><i class="fa fa-check"></i><b>5.8.19</b> progress <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.20" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#choose"><i class="fa fa-check"></i><b>5.8.20</b> choose <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.21" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#rate"><i class="fa fa-check"></i><b>5.8.21</b> rate <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.22" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#save"><i class="fa fa-check"></i><b>5.8.22</b> save <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.23" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sound"><i class="fa fa-check"></i><b>5.8.23</b> sound <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.24" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#if"><i class="fa fa-check"></i><b>5.8.24</b> if <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.25" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#while"><i class="fa fa-check"></i><b>5.8.25</b> while <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.9" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#instructions-moyennement-avancées"><i class="fa fa-check"></i><b>5.9</b> Instructions moyennement avancées <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.9.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#font"><i class="fa fa-check"></i><b>5.9.1</b> font <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.10" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#s5-10"><i class="fa fa-check"></i><b>5.10</b> Fonctions avancées</a><ul>
+<li class="chapter" data-level="5.10.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#end"><i class="fa fa-check"></i><b>5.10.1</b> end <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.10.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#timestamp"><i class="fa fa-check"></i><b>5.10.2</b> timestamp <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.10.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sprite"><i class="fa fa-check"></i><b>5.10.3</b> sprite <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.11" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#instructions-pour-les-équipements-spéciaux"><i class="fa fa-check"></i><b>5.11</b> Instructions pour les équipements spéciaux <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.11.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#cedrusreadkey"><i class="fa fa-check"></i><b>5.11.1</b> cedrus readkey</a></li>
+</ul></li>
+<li class="chapter" data-level="5.12" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#tables"><i class="fa fa-check"></i><b>5.12</b> Tables <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.13" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#block"><i class="fa fa-check"></i><b>5.13</b> block <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.13.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#blockorder"><i class="fa fa-check"></i><b>5.13.1</b> blockorder <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.13.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#include-usage-avancé-seulement"><i class="fa fa-check"></i><b>5.13.2</b> include (usage avancé seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.13.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#part-pour-utilisateur-avancé"><i class="fa fa-check"></i><b>5.13.3</b> part (pour utilisateur avancé) <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.14" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#vue-densemble-de-toutes-les-variables-du-système"><i class="fa fa-check"></i><b>5.14</b> Vue d’ensemble de toutes les variables du système <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.15" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#liens-vers-toutes-les-instructions"><i class="fa fa-check"></i><b>5.15</b> Liens vers toutes les instructions <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html"><i class="fa fa-check"></i><b>6</b> Un projet complet de recherche en ligne <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="6.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-1.-réfléchissez-à-votre-expérience-et-créez-des-stimuli"><i class="fa fa-check"></i><b>6.1</b> Étape 1. Réfléchissez à votre expérience et créez des stimuli<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-2.-créez-les-stimuli"><i class="fa fa-check"></i><b>6.2</b> Étape 2. Créez les stimuli <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-3.-créer-une-nouvelle-expérience"><i class="fa fa-check"></i><b>6.3</b> Étape 3. Créer une nouvelle expérience <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-4.-coder-lexpérience"><i class="fa fa-check"></i><b>6.4</b> Étape 4. Coder l’expérience <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="6.4.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#définition-et-mise-en-ligne-des-stimuli"><i class="fa fa-check"></i><b>6.4.1</b> Définition et mise en ligne des stimuli <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#définir-les-conditions"><i class="fa fa-check"></i><b>6.4.2</b> Définir les conditions <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#décrire-les-événements"><i class="fa fa-check"></i><b>6.4.3</b> Décrire les événements <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4.4" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#blocs"><i class="fa fa-check"></i><b>6.4.4</b> Blocs <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-5.-compiler-et-exécuter"><i class="fa fa-check"></i><b>6.5</b> Étape 5. Compiler et exécuter <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.6" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-6.-analysez-votre-dossier-de-test"><i class="fa fa-check"></i><b>6.6</b> Étape 6. Analysez votre dossier de test <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.7" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-7.-mise-en-place-du-projet-en-ligne"><i class="fa fa-check"></i><b>6.7</b> Étape 7. Mise en place du projet en ligne <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="6.7.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#mettre-en-place-une-enquête-en-ligne"><i class="fa fa-check"></i><b>6.7.1</b> Mettre en place une enquête en ligne <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.7.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#commencez-par-des-questions-et-une-enquête-test"><i class="fa fa-check"></i><b>6.7.2</b> Commencez par des questions et une enquête test <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.7.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#terminer-lenquête"><i class="fa fa-check"></i><b>6.7.3</b> Terminer l’enquête <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6.8" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-8.-analyser-les-données"><i class="fa fa-check"></i><b>6.8</b> Étape 8. Analyser les données <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="6.8.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#assurez-vous-que-lanalyse-de-votre-expérience-est-paramétrée"><i class="fa fa-check"></i><b>6.8.1</b> Assurez-vous que l’analyse de votre expérience est paramétrée <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.8.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#téléchargez-vos-données"><i class="fa fa-check"></i><b>6.8.2</b> Téléchargez vos données <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.8.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#ouvrez-votre-fichier-de-données-dans-spss"><i class="fa fa-check"></i><b>6.8.3</b> Ouvrez votre fichier de données dans SPSS <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.8.4" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#et-cest-tout"><i class="fa fa-check"></i><b>6.8.4</b> Et c’est tout</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html"><i class="fa fa-check"></i><b>7</b> Les questionnnaires <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="7.1" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#introduction"><i class="fa fa-check"></i><b>7.1</b> Introduction <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="7.2" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#comment-créer-une-enquête"><i class="fa fa-check"></i><b>7.2</b> Comment créer une enquête <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="7.3" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#réalisation-des-enquêtes"><i class="fa fa-check"></i><b>7.3</b> Réalisation des enquêtes <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="7.4" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#exemple-complet"><i class="fa fa-check"></i><b>7.4</b> Exemple complet <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="s8.html"><a href="s8.html"><i class="fa fa-check"></i><b>8</b> Les questionnaire en ligne</a><ul>
+<li class="chapter" data-level="8.1" data-path="s8.html"><a href="s8.html#structure-dun-questionnaire-ukflag"><i class="fa fa-check"></i><b>8.1</b> Structure d’un questionnaire <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="8.1.1" data-path="s8.html"><a href="s8.html#structure-générale-dune-question-ukflag"><i class="fa fa-check"></i><b>8.1.1</b> Structure générale d’une question <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="8.1.2" data-path="s8.html"><a href="s8.html#commentaires-pour-les-programmateurs-ukflag"><i class="fa fa-check"></i><b>8.1.2</b> Commentaires pour les programmateurs <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="8.1.3" data-path="s8.html"><a href="s8.html#formatage-du-texte-ukflag"><i class="fa fa-check"></i><b>8.1.3</b> Formatage du texte <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="8.1.4" data-path="s8.html"><a href="s8.html#types-de-questions-ukflagplay"><i class="fa fa-check"></i><b>8.1.4</b> Types de questions <span><img src="img/ukflag.png" alt="ukflag" /></span>{play}</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html"><i class="fa fa-check"></i><b>9</b> Audio et vidéo dans les questionnaires <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="9.1" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#introduction-1"><i class="fa fa-check"></i><b>9.1</b> Introduction <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#audiosons"><i class="fa fa-check"></i><b>9.2</b> Audio/sons <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="9.2.1" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#quel-format-sonore-utiliser"><i class="fa fa-check"></i><b>9.2.1</b> Quel format sonore utiliser ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.2" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-télécharger-un-fichier-son-sur-psytoolkit"><i class="fa fa-check"></i><b>9.2.2</b> Comment télécharger un fichier son sur PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.3" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-ajouter-laudio-à-votre-question-how_to_add_the_audio_to_your_question"><i class="fa fa-check"></i><b>9.2.3</b> Comment ajouter l’audio à votre question ? <span><img src="img/ukflag.png" /></span>{how_to_add_the_audio_to_your_question}</a></li>
+<li class="chapter" data-level="9.2.4" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-avoir-plus-dune-piste-audio-dans-votre-question"><i class="fa fa-check"></i><b>9.2.4</b> Comment avoir plus d’une piste audio dans votre question ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.5" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-un-son-une-seule-fois"><i class="fa fa-check"></i><b>9.2.5</b> Comment jouer un son une seule fois ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.6" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-un-son-à-partir-de-mon-google-drive"><i class="fa fa-check"></i><b>9.2.6</b> Comment jouer un son à partir de mon Google Drive ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.7" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-faire-jouer-un-son-de-dropbox"><i class="fa fa-check"></i><b>9.2.7</b> Comment faire jouer un son de DropBox <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.8" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-un-son-encore-et-encore-en-boucle"><i class="fa fa-check"></i><b>9.2.8</b> Comment jouer un son encore et encore (en boucle) <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#video"><i class="fa fa-check"></i><b>9.3</b> Video <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="9.3.1" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#pourquoi-ne-puis-je-pas-télécharger-un-fichier-vidéo-sur-psytoolkit"><i class="fa fa-check"></i><b>9.3.1</b> Pourquoi ne puis-je pas télécharger un fichier vidéo sur PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.2" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-avoir-plus-dune-piste-vidéo-dans-votre-question"><i class="fa fa-check"></i><b>9.3.2</b> Comment avoir plus d’une piste vidéo dans votre question ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.3" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-lire-une-vidéo-une-seule-fois"><i class="fa fa-check"></i><b>9.3.3</b> Comment lire une vidéo une seule fois ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.4" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-agrandir-la-vidéo"><i class="fa fa-check"></i><b>9.3.4</b> Comment agrandir la vidéo ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.5" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-une-vidéo-à-partir-de-mon-google-drive"><i class="fa fa-check"></i><b>9.3.5</b> Comment jouer une vidéo à partir de mon Google Drive ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.6" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-une-vidéo-de-dropbox"><i class="fa fa-check"></i><b>9.3.6</b> Comment jouer une vidéo de DropBox ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.7" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-lire-une-vidéo-encore-et-encore-en-boucle"><i class="fa fa-check"></i><b>9.3.7</b> Comment lire une vidéo encore et encore (en boucle) ? <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#vidéo-youtube"><i class="fa fa-check"></i><b>9.4</b> Vidéo YouTube <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html"><i class="fa fa-check"></i><b>10</b> Une enquête en ligne complète <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="10.1" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-1.-hypothèse-prédiction-et-échelles"><i class="fa fa-check"></i><b>10.1</b> Étape 1. Hypothèse, prédiction et échelles <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.2" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-2.-mise-en-place-de-létude-en-ligne"><i class="fa fa-check"></i><b>10.2</b> Étape 2. Mise en place de l’étude en ligne <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.3" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-3.-mettre-en-place-les-questions-et-les-échelles"><i class="fa fa-check"></i><b>10.3</b> Étape 3. Mettre en place les questions et les échelles <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.4" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-4.-mettez-votre-questionnaire-en-ligne-et-testez"><i class="fa fa-check"></i><b>10.4</b> Étape 4. Mettez votre questionnaire en ligne et testez <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.5" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-5.-passer-en-mode-réel-et-collecter-les-données"><i class="fa fa-check"></i><b>10.5</b> Étape 5. Passer en mode “réel” et collecter les données <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.6" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-6.-télécharger-les-données"><i class="fa fa-check"></i><b>10.6</b> Étape 6. Télécharger les données <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.7" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-7.-importer-et-analyser-dans-spss"><i class="fa fa-check"></i><b>10.7</b> Étape 7. Importer et analyser dans SPSS <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.8" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#des-questions"><i class="fa fa-check"></i><b>10.8</b> Des questions ?</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><i class="fa fa-check"></i><b>11</b> Echange d’informations entre les enquêtes et les expériences <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="11.1" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#comment-cela-fonctionne-t-il"><i class="fa fa-check"></i><b>11.1</b> Comment cela fonctionne-t-il ?<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.2" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#comment-le-faire-pas-à-pas"><i class="fa fa-check"></i><b>11.2</b> Comment le faire pas à pas <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.3" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#étape-1.-lexemple-de-plan-dexpérience"><i class="fa fa-check"></i><b>11.3</b> Étape 1. L’exemple de plan d’expérience <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.4" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#étape-2.-mettre-en-place-une-enquête"><i class="fa fa-check"></i><b>11.4</b> Étape 2. Mettre en place une enquête <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.5" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#étape-2.-mettre-en-place-une-expérience"><i class="fa fa-check"></i><b>11.5</b> Étape 2. Mettre en place une expérience <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.6" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#exécution-du-code"><i class="fa fa-check"></i><b>11.6</b> Exécution du code <span><img src="img.ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.7" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#code-psytoolkit"><i class="fa fa-check"></i><b>11.7</b> Code PsyToolkit <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html"><i class="fa fa-check"></i><b>12</b> Analyser vos fichiers de données <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="12.1" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html#importer-un-fichier-de-données-dans-votre-logiciel"><i class="fa fa-check"></i><b>12.1</b> Importer un fichier de données dans votre logiciel <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="12.2" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html#distinction-entre-lanalyse-de-fichiers-de-données-individuels-et-de-données-de-groupe"><i class="fa fa-check"></i><b>12.2</b> Distinction entre l’analyse de fichiers de données individuels et de données de groupe <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="12.3" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html#comment-approfondir"><i class="fa fa-check"></i><b>12.3</b> Comment approfondir</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="questions-juridiques-ukflag.html"><a href="questions-juridiques-ukflag.html"><i class="fa fa-check"></i><b>13</b> Questions juridiques <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="13.1" data-path="questions-juridiques-ukflag.html"><a href="questions-juridiques-ukflag.html#copyright"><i class="fa fa-check"></i><b>13.1</b> Copyright <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="13.2" data-path="questions-juridiques-ukflag.html"><a href="questions-juridiques-ukflag.html#des-questions-1"><i class="fa fa-check"></i><b>13.2</b> Des questions ? <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="références.html"><a href="références.html"><i class="fa fa-check"></i><b>14</b> Références</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Documentation en ligne de PsyToolkit</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="s8" class="section level1">
+<h1><span class="header-section-number">Chapitre 8</span> Les questionnaire en ligne</h1>
+<p>Pour utiliser les questionnaires en ligne, voir <a href="les-questionnnaires.html#s7">l’introduction aux questionnaires en ligne</a>.
+Le langage de script d’enquête est complètement différent du langage de script d’expérience. Si vous souhaitez intégrer une expérience dans une enquête en ligne, vous devez suivre <a href="https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#experiment">ces instructions</a>.</p>
+<div id="structure-dun-questionnaire-ukflag" class="section level2">
+<h2><span class="header-section-number">8.1</span> Structure d’un questionnaire <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#_structure_of_questionnaire" id="s8-1"><img src="img/ukflag.png" alt="ukflag" /></a></h2>
+<p>Les questionnaires sont de simples fichiers texte. Chaque ligne a une signification. L’ordinateur lit le questionnaire ligne par ligne. Le premier caractère de chaque ligne a généralement une signification particulière.</p>
+<ul>
+<li>Chaque questionnaire se compose de plusieurs questions, codées sous forme de texte simple (que vous pouvez éditer dans votre navigateur)</li>
+<li>Le questionnaire doit être saisi manuellement, ligne par ligne (exemples ci-dessous)</li>
+<li>Chaque question se compose de quelques lignes</li>
+<li>Les questions sont séparées les unes des autres par une (ou plusieurs) ligne vide</li>
+<li>Chaque question, quel qu’en soit le type, a une structure de base simple (<a href="s8.html#s8-1-1">pour en savoir plus sur la structure des questions</a>)</li>
+<li>Chaque questionnaire peut avoir des sections qui randomisent l’ordre (<a href="#">en savoir plus sur l’ordre randomisé</a>)</li>
+<li>Chaque questionnaire peut comporter des <a href="#">commentaires</a> sur les lignes commençant par le signe hashtag (#)</li>
+</ul>
+<div id="structure-générale-dune-question-ukflag" class="section level3">
+<h3><span class="header-section-number">8.1.1</span> Structure générale d’une question <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questionstructure" id="s8-1-1"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<ul>
+<li><p>Chaque question est composée d’un certain nombre de lignes de texte.</p></li>
+<li><p>Les questions sont séparées les unes des autres par une ligne vide</p></li>
+<li><p>Chaque ligne commence (généralement) par une lettre suivie d’un deux-points. La lettre décrit une caractéristique importante, comme le nom de la question ou le type de question.</p></li>
+<li><p>Chaque question comporte un ou plusieurs éléments, chacun commençant par un signe moins</p></li>
+<li><p>La première ligne d’une question commence par <strong>l:</strong>. La lettre <em>l</em> signifie “étiquette (label)”. Chaque question a une étiquette, ou un “nom”. Et ce, pour deux raisons : 1) L’ordinateur a besoin d’un moyen d’identifier une question, et il utilise le label. 2) L’utilisateur a besoin d’un moyen d’identifier les réponses aux questions, et label est le moyen le plus simple pour y parvenir.</p></li>
+<li><p>Un label ne peut comporter que des lettres (majuscules ou minuscules) et des chiffres, ainsi que le caractère de soulignement (underscore).</p></li>
+<li><p>Chaque question doit commencer par l:, mais il n’est pas nécessaire de donner une étiquette. Dans ce cas, le logiciel appellera la question "auto__" suivie d’un chiffre. C’est pratique si vous n’êtes pas disposé à étiqueter vos questions. Vous pouvez toujours les identifier par l’ensemble de la question. Et pour les sauts de question, le label n’est généralement pas nécessaire pour les utilisateurs.</p></li>
+</ul>
+<p><strong>Exemple de structure de la question. La flèche &lt;– sert uniquement pour introduire une explication</strong></p>
+<pre><code>l: MyQuestion1                   &lt;-- this is the label
+t: radio                         &lt;-- this is the type of question
+q: What is your favourite movie? &lt;-- this is text of the question the participant sees
+- Toy Story                      &lt;-- answer 1
+- Spirited Away                  &lt;-- answer 2
+- Babe                           &lt;-- answer 3
+- Ratatouille                    &lt;-- answer 4
+                                 &lt;-- the empty line separating this question from the next</code></pre>
+<ul>
+<li>Chaque question peut faire apparaître une image en haut. Vous devez télécharger le fichier image (png, bmp, gif, jpg, etc.). Voir les images.</li>
+<li>Vous pouvez utiliser la ligne d’option <strong>o: random</strong> pour rendre aléatoire l’ordre des options de réponses.</li>
+</ul>
+</div>
+<div id="commentaires-pour-les-programmateurs-ukflag" class="section level3">
+<h3><span class="header-section-number">8.1.2</span> Commentaires pour les programmateurs <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questionstructure" id="s8-1-2"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Lorsque vous programmez votre enquête, vous pouvez parfois vouloir faire un commentaire qui vous est destiné et que l’ordinateur doit ignorer. Vous pouvez utiliser le hashtag pour cela.</p>
+<p>Contrairement aux scripts d’expérimentation du PsyToolkit, le symbole de commentaire “#” doit se trouver au début d’une ligne. En d’autres termes, vous ne pouvez pas avoir de commentaires commençant au milieu d’une ligne.</p>
+</div>
+<div id="formatage-du-texte-ukflag" class="section level3">
+<h3><span class="header-section-number">8.1.3</span> Formatage du texte <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#Comments" id="s8-1-2"><img src="img/ukflag.png" alt="ukflag" /></a></h3>
+<p>Vous pouvez formater le texte en utilisant les balises HTML standard. Les plus courantes sont celles pour le gras, l’italique et la couleur du texte. La couleur générale de l’écran ne peut pas être modifiée.</p>
+<ul>
+<li>Tout ce qui se trouve entre <b> et </b> sera présenté en caractères gras.</li>
+<li>Tout ce qui se trouve entre <i> et </i> sera présenté en italique.</li>
+<li>Tout ce qui se trouve entre <font color='red'> et </font> sera présenté en rouge, etc.</li>
+</ul>
+<p><strong>Exemple de formatage du texte</strong></p>
+<pre><code>l: MyQuestion
+t: radio
+q: What is your &lt;i&gt;favourite&lt;/i&gt; movie?
+- &lt;b&gt;Toy Story&lt;/b&gt;
+- &lt;font color=&#39;blue&#39;&gt;Spirited&lt;/font&gt; Away
+- Babe
+- Ratatouille</code></pre>
+</div>
+<div id="types-de-questions-ukflagplay" class="section level3">
+<h3><span class="header-section-number">8.1.4</span> Types de questions <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questiontypes"><img src="img/ukflag.png" alt="ukflag" /></a>{play}</h3>
+<p>Il y a les types de questions suivants :</p>
+<ul>
+<li><a href="s8.html#radio">radio</a> Un choix parmi de nombreuses options</li>
+<li><a href="s8.html#check">check</a> les choix multiples parmi les nombreuses options (cases à cocher)</li>
+<li><a href="s8.html#experiment">experiment</a> Intégrer une expérience</li>
+<li><a href="s8.html#scale">scale</a> Utiliser des échelles de type Likert</li>
+<li><a href="s8.html#range">range</a> Permet à l’utilisateur de saisir une plage de nombres entre deux valeurs</li>
+<li><a href="#textiline">textline</a> Le participant peut saisir seulement une ligne de texte</li>
+<li><a href="s8.html#textbox">textbox</a> Le participant peut saisir plusieurs lignes de texte</li>
+<li><a href="s8.html#multiradio">multiradio</a> Plusieurs éléments à choix unique dans une question</li>
+</ul>
+<p>Il existe les types suivants qui ne présentent que des informations et un bouton "Continuer</p>
+<ul>
+<li><a href="#">info</a> Montrez juste quelques informations, un message, etc.</li>
+<li><a href="#">youtube</a> Montrer une vidéo YouTube</li>
+</ul>
+<p>Il existe différents items de contrôle :</p>
+<ul>
+<li><a href="#">jump</a> saut vers un label de question (conditionnel ou inconditionnel)</li>
+<li><a href="#">set</a> Fixer une étiquette de question (pour la notation et les nombres aléatoires)</li>
+<li><a href="#">random</a> aléatoriser des questions</li>
+</ul>
+<p>Vous pouvez insérer dans une question du son ou une vidéo :</p>
+<ul>
+<li><a href="s8.html#playasound">Play a sound</a> Présenter un son dans une question</li>
+<li><a href="s8.html#playavideo">Play a video</a> Présenter une vidéo dans une question</li>
+<li><a href="s8.html#youtube">youtube</a> Jouer une vidéo youtube dans une question</li>
+</ul>
+<div id="radio-sélectionner-un-parmi-plusieurs-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.1</span> Radio: Sélectionner un parmi plusieurs <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#radio" id="radio"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Utilisez cette option lorsque vous souhaitez qu’une seule réponse possible soit sélectionnée. Le nom “radio” vient des radios classiques, qui avaient un ensemble de boutons dont au maximum un pouvait être enfoncé.</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion1
+t: radio
+q: What is your favourite movie?
+- Toy Story
+- Spirited Away
+- Babe
+- Ratatouille</code></pre>
+<div class="figure">
+<img src="https://www.psytoolkit.org/doc3.1.0/question1.png" alt="exemple de bouton radio" />
+<p class="caption">exemple de bouton radio</p>
+</div>
+<p>Le paramètre “q :” est le seule qui peut s’étendre sur plusieurs lignes. Cela peut parfois être pratique pour poser des questions plus longues, comme dans l’exemple ci-dessous, qui utilise le format HTML.</p>
+<p><strong>Exemple de question sur plusieurs lignes</strong></p>
+<pre><code>l: MyQuestion1
+t: radio
+q: In the following question, we would like to which movie you like
+best. Make sure you understand the following:
+&lt;ul&gt;
+&lt;li&gt;This is only about movies
+&lt;li&gt;You are allowed to say that you are not sure.
+&lt;/ul&gt;
+- Toy Story
+- Spirited Away
+- Babe
+- Ratatouille
+- I am not sure</code></pre>
+<hr />
+<p>Au lieu d’un texte, vous pouvez afficher une image. Vous devez télécharger les images (comme pour topimage) et ensuite utiliser l’option {image=nom de fichier}. Dans les fichiers d’affichage, vous pouvez voir les noms de fichiers que vous avez déjà. N’utilisez pas les fichiers comportant des espaces. Vous devez saisir le nom de fichier complet, y compris l’extension, comme jpg, png, bmp ou gif. Cela vous permet même de télécharger de petites animations en utilisant des gifs animés.</p>
+<hr />
+<p><strong>Exemple avec des images de type radio téléchargées</strong></p>
+<pre><code>l: MyQuestion1
+t: radio
+q: In the following question, we would like to which movie you like
+best. Make sure you understand the following:
+&lt;ul&gt;
+&lt;li&gt;This is only about movies
+&lt;li&gt;You are allowed to say that you are not sure.
+&lt;/ul&gt;
+- {image=toystory.jpg}
+- {image=spirited.jpg}
+- {image=babe.png}
+- {image=ratatouille.bmp}
+- I am not sure</code></pre>
+<p>Les notes par défaut d’une question radio avec trois options de réponse sont 1, 2 et 3. Vous pouvez modifier ces scores en utilisant la méthode ci-dessous en utilisant l’option {score=?}, où ? doit être un nombre.</p>
+<p><strong>Example de changement de score</strong></p>
+<pre><code>l: weather
+t: radio
+q: What is the weather like?
+- {score=3} Very bad
+- {score=2} It could be better
+- {score=1} Very Sunny</code></pre>
+<p>Parfois, vous pouvez demander aux gens d’entrer leur propre option de réponse, vous pouvez le faire comme suit :</p>
+<p><strong>Exemple avec “autre réponse”</strong></p>
+<pre><code>l: my_question
+t: radio
+q: Where do you live?
+- New York
+- Chicago
+- St. Louis
+- San Diego
+- {other} Some where else (fill in)</code></pre>
+<p>Voici à quoi cela devrait ressembler</p>
+<div class="figure">
+<img src="https://www.psytoolkit.org/doc3.1.0/radio_other.png" alt="exemple avec autre réponse" />
+<p class="caption">exemple avec autre réponse</p>
+</div>
+<p>Parmi les questions fréquemment posées, il y a comment ajouter une option “autre” en utilisant une question séparée. <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#other">cliquez ici pour consulter la réponse</a>.</p>
+<p>Vous pouvez permettre aux gens de passer complètement la question radio en utilisant l’option “free”. C’est-à-dire que les gens sont libres de passer la question. Pour ce faire, procédez comme suit :</p>
+<pre><code>l: example
+t: radio
+o: free
+q: What food do you like?
+- Potatoes
+- Rice
+- Bread</code></pre>
+</div>
+<div id="check-sélectionner-un-ou-plus-parmi-plusieurs-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.2</span> check : sélectionner un ou plus parmi plusieurs <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#check" id="check"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion2
+t: check
+q: Which of the following did you eat today?
+- Rice
+- Meat
+- Tofu
+- Fish
+- Beans
+- Soup</code></pre>
+<p>Vous pouvez aléatoriser l’ordre des éléments dans une question check en définissant les options <strong>o: random</strong> (voir le deuxième exemple). Vous pouvez demander aux participants de sélectionner au moins une, ou au moins deux, ou au moins n des options, voir l’exemple ci-dessous. Ce n’est que lorsque les participants sélectionnent au moins deux éléments que le bouton “Continuer” devient cliquable.</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion2
+t: check
+o: require 2
+q: Which of the following food do you like? Select at least 2 items.
+- Rice
+- Meat
+- Tofu
+- Fish
+- Beans
+- Soup</code></pre>
+<p>Vous pouvez même fixer le nombre maximum d’options qu’un participant peut choisir en ajoutant un deuxième chiffre à l’option <strong>o: require</strong>. Le deuxième chiffre indique le nombre maximum d’éléments qui peuvent être sélectionnés. Par exemple, si vous voulez que les personnes sélectionnent au moins 2 mais pas plus de 3 éléments, vous pouvez le faire comme suit :</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion2
+t: check
+o: require 2 3
+q: Which of the following food do you like? Select at least 2 items, but no more than 3 items.
+- Rice
+- Meat
+- Tofu
+- Fish
+- Beans
+- Soup</code></pre>
+<div class="figure">
+<img src="https://www.psytoolkit.org/doc3.1.0/check.png" alt="utilisation de check avec contrainte sur le nombre de réponse" />
+<p class="caption">utilisation de check avec contrainte sur le nombre de réponse</p>
+</div>
+<p>Vous pouvez demander une ou plusieurs autres options, et vous pouvez définir la taille de la zone de texte avec l’option <em>lenght</em> (ou <em>size</em>).</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion2
+t: check
+o: require 2 3
+q: Which of the following food do you like? Select at least 2 items, but no more than 3 items.
+- Rice
+- Meat
+- {other,length=30} Fill in something else</code></pre>
+</div>
+<div id="rank-classer-ou-ordonner-les-articles-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.3</span> rank: Classer ou ordonner les articles <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#rank" id="rank"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p><strong>Exemple</strong></p>
+<pre><code>l: my_question
+t: rank
+q: Order of the following foods, starting with the one you like most.
+- Rice
+- Meat
+- Tofu
+- Fish
+- Beans
+- Soup</code></pre>
+<p>Vous pouvez aléatoriser l’ordre de départ des éléments d’une question de classement en définissant les options <strong>o: random</strong> (voir le deuxième exemple).</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: my_question
+t: rank
+o: random
+q: Order of the following foods, starting with the one you like most.
+- Rice
+- Meat
+- Tofu
+- Fish
+- Beans
+- Soup</code></pre>
+<p>L’option <strong>o: numbers</strong> indiquent un classement numéroté</p>
+<p><strong>Exemple avec des numéros devant les items</strong></p>
+<pre><code>l: my_question
+t: rank
+o: numbers
+q: Order of the following foods, starting with the one you like most.
+- Rice
+- Meat
+- Tofu
+- Fish
+- Beans
+- Soup</code></pre>
+</div>
+<div id="option-non-listée-pour-les-question-de-type-radio-et-check-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.4</span> Option non listée pour les question de type radio et check <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#others" id="others"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Une question fréquente est de savoir s’il est possible d’avoir une “autre” option et une ligne où les gens peuvent donner une alternative. Cela est possible pour les questions radiophoniques sur un écran, mais vous pouvez aussi facilement le configurer comme suit :</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion
+t: radio
+q: What is your favourite movie?
+- Toy Story
+- Spirited Away
+- Babe
+- Ratatouille
+- Another movie not listed here
+
+l:
+t: jump
+- if $MyQuestion != 5 then goto MyNextQuestion
+
+l: OtherFavouriteMovie
+t: textline
+q: Type the name of your favourite movie
+- My most favourite movie is
+
+l: MyNextQuestion
+t: radio
+q: Did you do sports yesterday?
+- Yes
+- No</code></pre>
+<p>Dans l’exemple ci-dessus, la ligne “if $MyQuestion != 5 then goto MyNextQuestion” peut être expliquée comme suit :</p>
+<p>$MyQuestion (le $ indique qu’il s’agit d’une variable) fait référence au numéro de ligne de l’option sélectionnée. Ainsi, si quelqu’un sélectionne “Toy Story”, il obtient la valeur 1, et un autre choix non répertorié ici obtient la valeur 5 (la cinquième ligne).</p>
+<p>Le != signifie en langage informatique n’est pas égal. Ainsi, si la ligne sélectionnée n’est pas égale à la valeur 5, alors les gens n’ont pas besoin d’entrer quoi que ce soit dans le texte. Ils sont prêts à continuer. Mais s’ils ont sélectionné la cinquième ligne, ils passeront à la question suivante où ils pourront entrer une valeur.</p>
+</div>
+<div id="info-montrer-une-information-un-message-etc.ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.5</span> info : Montrer une information, un message etc.<a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#info" id="info"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Parfois, vous voulez juste que les gens lisent quelque chose ou donnent leur avis sans poser de questions. Pour cela, vous pouvez utiliser le type info. Comme pour les autres types, vous pouvez présenter une image au-dessus. Elle ne comporte (actuellement) aucune ligne commençant par “-”. Vous pouvez utiliser le HTML pour formater le texte et vous pouvez insérer des variables comme dans les autres types de questions.</p>
+<p><strong>Exemple 1</strong></p>
+<pre><code>l: some_message
+t: info
+q: Hello&lt;br&gt;
+Here is some information without questions to answer.</code></pre>
+<p><strong>Exemple 2</strong></p>
+<pre><code>l: some_message
+i: some_image.png
+t: info
+q: Thank you. Here is some feedback.&lt;br&gt;
+Your score was: {$score}</code></pre>
+<p>Vous pouvez utiliser l’option <em>end</em> pour afficher l’information sans bouton continuer. Cette option peut être utile si vous souhaitez ne terminer l’enquête que sous certaines conditions, par exemple sous forme d’exclusion.</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: some_message
+t: info
+o: end
+q: Sorry, the survey ends here.
+Please &lt;a href=&#39;http://www.google.com&#39;&gt;click this link to leave&lt;/a&gt;, or close the window.</code></pre>
+</div>
+<div id="play-a-sound-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.6</span> Play a sound <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#sound" id="playasound"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Pour chaque type de question, vous pouvez ajouter un (ou plusieurs) fichier(s) sonore(s). Vous trouverez ci-dessous deux exemples :</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: q1
+a: horse.mp3
+t: info
+q: Play the sound. Which animal do you hear?
+- Horse
+- Pig
+- Cow</code></pre>
+<p>Les fichiers MP3 sont beaucoup plus petits que les fichiers WAV, il vaut donc mieux utiliser le MP3, bien que vous puissiez utiliser n’importe quel type de fichier sonore. Les fichiers sonores occupent une grande partie de la “bande passante”. Si possible, mettez les fichiers sonores sur un site web externe et faites-y référence en utilisant le préfixe http :, comme dans l’exemple ci-dessous.</p>
+<p><strong>Exemple 2</strong></p>
+<pre><code>l: q1
+a: http://www.my_webpage.com/sounds/horse.wav
+t: info
+q: Play the sound. Which animal do you hear?
+- Horse
+- Pig
+- Cow</code></pre>
+<p>Vous pouvez utiliser l’option <strong>o: no_sound_replay</strong> pour vous assurer qu’un son ne peut être écouté qu’une seule fois (exemple ci-dessous)</p>
+<p><strong>Exemple 3</strong></p>
+<pre><code>l: q1
+a: horse.mp3
+o: no_sound_replay
+t: info
+q: Play the sound. Which animal do you hear?
+- Horse
+- Pig
+- Cow</code></pre>
+</div>
+<div id="play-a-video-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.7</span> Play a video <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#video" id="playavideo"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Pour chaque type de question, vous pouvez ajouter une (ou plusieurs) vidéo(s). Vous trouverez ci-dessous deux exemples. <strong>Vous ne pouvez pas télécharger de fichiers vidéo sur le serveur PsyToolkit</strong>. Vous devez les placer sur votre propre serveur ou, par exemple, sur Google drive.
+Dans l’exemple 1, nous jouons simplement une vidéo qui se trouve quelque part sur un serveur :</p>
+<p>Notez que vous pouvez également visionner des vidéos sur YouTube, <a href="#Youtube">cliquez ici</a>.</p>
+<p><strong>Exemple 1</strong></p>
+<pre><code>l: newquestion1
+t: radio
+v: https://www.w3schools.com/html/mov_bbb.mp4
+q: Do you like this video clip?
+- Yes
+- No</code></pre>
+<p>Pour les vidéos, vous pouvez spécifier des options spécifiques dans votre question. Deux options sont disponibles :</p>
+<ul>
+<li>Vous pouvez définir la largeur de la vidéo avec l’option <strong>vdei_width</strong>. La largeur doit être donnée en pixels.</li>
+<li>Parfois, les gens veulent que la vidéo ne soit lue qu’une seule fois et qu’elle ne soit pas rejouée. Cela peut être fait avec l’option <strong>no_video_replay</strong></li>
+</ul>
+<p>Dans l’exemple 1, nous passons la même vidéo, mais nous montrons maintenant l’utilisation de deux options spécifiques.</p>
+<p><strong>Exemple 2</strong></p>
+<pre><code>l: newquestion1
+t: radio
+o: video_width 800
+o: no_video_replay
+v: https://www.w3schools.com/html/mov_bbb.mp4
+q: Do you like this video clip?
+- Yes
+- No</code></pre>
+<p>Il est possible d’avoir plusieurs vidéos sur un même écran. Il suffit d’avoir les différentes URL sur la ligne v : séparées par un espace. Bien que cela soit possible, il est difficile de voir en quoi cela peut être utile.
+Vous pouvez ajouter l’option ligne <strong>o: loop</strong> à votre question, ce qui permettra de lire la même vidéo en boucle.
+Vous pouvez vous-même télécharger des fichiers vidéo sur votre Google Drive. Pour les lire, vous devez utiliser quelques astuces :</p>
+<ul>
+<li>Téléchargez votre fichier vidéo sur votre Google Drive.</li>
+<li>Partagez-le sous forme de lien et copiez le lien (il y a un bouton “Copier le lien” sur votre lecteur Google dans la boîte de dialogue de partage)</li>
+<li>Copiez le lien sur votre ligne <strong>v :</strong>.</li>
+</ul>
+<p>Pour plus d’informations à ce sujet, consultez la leçon sur <a href="#s10">l’audio et la vidéo dans les enquêtes</a>.</p>
+</div>
+<div id="youtube-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.8</span> youtube <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#youtube" id="youtube"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Vous pouvez intégrer une vidéo YouTube. Sur la ligne d’option “-”, vous devez entrer le code de la vidéo, que vous pouvez obtenir à partir de l’URL. Il s’agit de la partie qui suit le mot “watch”. Ainsi dans la ligne suivante <a href="https://www.youtube.com/watch?v=m9WxvT-82Xg" class="uri">https://www.youtube.com/watch?v=m9WxvT-82Xg</a>, c’est le m9WxvT-82Xg</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion3
+t: youtube
+q: Please watch the following video
+- m9WxvT-82Xg</code></pre>
+</div>
+<div id="experiment-intégrer-une-expérience-de-temps-de-réaction-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.9</span> experiment : Intégrer une expérience de temps de réaction <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#experiment" id="experiment"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Vous pouvez utiliser le nom d’une de vos expériences. Assurez-vous qu’elle fonctionne avant de l’intégrer. Notez que vous pouvez omettre la ligne <strong>q :</strong> pour gagner de la place au-dessus de la zone où l’expérience est présentée.</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion4
+t: experiment
+q: Please do the following experiment
+- myexperiment</code></pre>
+<p><strong>Exemple sans q: ce qui préserve de la place à l’écran</strong></p>
+<pre><code>l: MyQuestion4
+t: experiment
+- myexperiment</code></pre>
+<p>Vous pouvez ajouter l’option {fullscreen} pour demander que l’expérience se déroule en plein écran. Bien entendu, c’est à l’utilisateur final de le faire, et il se peut que l’expérience ne fonctionne pas dans tous les navigateurs (mais elle fonctionne dans Firefox et Chrome).</p>
+<p><strong>Exemple d’expérience en mode plein écran</strong></p>
+<pre><code>l: MyQuestion4
+t: experiment
+- {button_above} myexperiment</code></pre>
+<p>Les enquêtes et les expériences peuvent “se parler”. Il y a toute une leçon à ce sujet. <a href="#s11">Cliquez ici pour cette leçon</a>.</p>
+</div>
+<div id="jump-passer-une-question-conditionnelement-ou-nonukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.10</span> jump : passer une question (conditionnelement ou non)<a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#jump" id="jump"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Avec jump, vous pouvez sauter de question en question dans le questionnaire. Il n’est généralement nécessaire que si vous souhaitez poser certaines questions de manière conditionnelle. Par exemple, si vous avez une question réservée aux femmes, il est pratique de demander d’abord au participant son sexe, puis, en fonction de la réponse, de passer aux questions.</p>
+<ul>
+<li>Les sauts ne doivent pas nécessairement comporter un label (bien qu’ils doivent commencer par <strong>l:</strong>), car les sauts eux-mêmes ne sont pas intéressants pour votre analyse.</li>
+<li>Les questions de saut ne comportant qu’une seule ligne “if-then” peuvent également être placées dans une ligne <strong>j:</strong> (voir l’exemple ci-dessous).</li>
+</ul>
+<p>Vous devrez avoir au moins une ligne commençant par un “-”. Dans la ligne “-”, vous pouvez avoir un “if” construit de la manière suivante. Vous pouvez avoir un “if” (conditionnel) ou juste un “goto” (saut inconditionnel) :</p>
+<ul>
+<li>if <valeur> <comparateur> <valeur> alors goto <étiquette></li>
+<li>goto <étiquette></li>
+</ul>
+<p>Dans ce qui précède, la valeur peut être un caractère $ avec une étiquette ou un chiffre (voir exemples). Le comparateur peut être l’un des éléments suivants :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Comparateur</th>
+<th>Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>==</td>
+<td>Est égale à ? (un seul “=” marche aussi)</td>
+</tr>
+<tr class="even">
+<td>!=</td>
+<td>N’est pas égal ?</td>
+</tr>
+<tr class="odd">
+<td>&lt;</td>
+<td>Est plus petit que ?</td>
+</tr>
+<tr class="even">
+<td>&gt;</td>
+<td>Est plus grand que ?</td>
+</tr>
+<tr class="odd">
+<td>&lt;=</td>
+<td>Est plus petit ou égal à ?</td>
+</tr>
+<tr class="even">
+<td>&gt;=</td>
+<td>Est plus grand ou égal à ?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Dans une instruction de type jump , vous pouvez avoir plusieurs lignes if-then, et elles sont exécutées l’une après l’autre jusqu’à ce que la condition if s’applique.</li>
+<li>Il est nécessaire que vous ayez des espaces entre les éléments de la partie comparateur (donc écrivez “si $q1 == 1”, et non “si $q==1”). Si vous n’utilisez pas d’espaces, cela ne fonctionnera pas.</li>
+<li>Le signe “dollar” de l’étiquette est important, il signifie que vous cherchez la valeur de la réponse à cette question. Cependant, après l’instruction “goto”, il n’y a pas de signe de dollar.</li>
+<li>Vous pouvez également comparer les réponses à deux questions. Cela ne fonctionne que pour les questions de type radio.</li>
+<li>Vous pouvez également utiliser and (et), or (ou), et des parenthèses pour rendre complexe les règles if-then, voir les exemples ci-dessous.</li>
+</ul>
+<p><strong>Exemple de jump</strong></p>
+<pre><code>l: sex
+t: radio
+q: What is your biological sex
+- Male
+- Female
+
+l: jump1
+t: jump
+- if $sex == 1 then goto car
+
+l: birthcontrol
+t: radio
+q: Do you take birth control pills?
+- Yes
+- No
+
+l: car
+t: radio
+q: Do you have a car?
+- Yes
+- No
+
+l: birthcontrol
+t: radio
+q: What type of birthcontrol do you use?
+- pill
+- coil
+- condoms
+- do not wish to answer this question</code></pre>
+<p>Parfois, on a juste envie de passer d’un endroit à l’autre du questionnaire. Dans l’exemple suivant, la question “blabla” ne sera jamais posée :</p>
+<p><strong>Exemple de jump inconditionnel</strong></p>
+<pre><code>l: somejump
+t: jump
+- goto myotherquestion
+
+l: blabla
+t: radio
+q: How are you?
+- Just normal
+- Fine
+
+l: myotherquestion
+t: radio
+q: What is the weather like?
+- Rain
+- Dry and overcast
+- Dry and sunny
+- Something different.</code></pre>
+<p>Si tout ce que vous voulez faire est un saut inconditionnel comme dans l’exemple ci-dessus, vous pouvez utiliser la commande <strong>j:</strong> avec juste l’étiquette vers laquelle vous voulez passer :</p>
+<p><strong>Exemple de jump inconditionnel avec une instruction courte j:</strong></p>
+<pre><code>j: myotherquestion
+
+l: blabla
+t: radio
+q: How are you?
+- Just normal
+- Fine
+
+l: myotherquestion
+t: radio
+q: What is the weather like?
+- Rain
+- Dry and overcast
+- Dry and sunny
+- Something different.</code></pre>
+<p>Parfois, vous voulez juste terminer une enquête. Pour cela, vous pouvez utiliser l’instruction <strong>end</strong> dans une déclaration <strong>if</strong>. Dans l’exemple ci-dessous, l’enquête n’est pas destinée aux hommes. Si quelqu’un indique être un homme, l’enquête se termine.
+Vous pouvez également utiliser <strong>j:</strong> pour les questions sautant d’une seule ligne, comme vous pouvez également le voir dans l’exemple ci-dessous.</p>
+<p><strong>Exemple de jump vers la fin d’un questionnaire</strong></p>
+<pre><code>l: sex
+t: radio
+q: What is your biological sex
+- Male
+- Female
+
+j: if $sex == 1 then end
+
+l: birthcontrol
+t: radio
+q: Do you take birth control pills?
+- Yes
+- No</code></pre>
+<p>Enfin, dans les questions de type <a href="s8.html#check">check</a>, vous pouvez vérifier si un élément spécifique de votre liste a été coché Voici un exemple courant :</p>
+<p><strong>Exemple de jump à partir d’un item de question de type check</strong></p>
+<pre><code>l: food
+t: check
+q: What food did you just eat?
+- Bread
+- Rice
+- Noodles
+- No food, I only drank
+- Something else
+
+l:
+t: jump
+- if $food.4 == 0 or $food.5 == 0 then goto drinkquestion
+
+l: otherfood
+t: textline
+q: Please enter what food you ate
+- The name of the food
+
+l: drinkquestion
+t: radio
+q: What did you just drink?
+- Water
+- Fruit juice
+- Fizzy drink
+- Tea
+- Coffee
+- Alcoholic beverage</code></pre>
+<ul>
+<li>La notation avec le point prend la valeur d’un sous-article. La variable $food.4 peut être 0 (non coché) ou 1 (coché). Ainsi, les sous-items cochés ont toujours pour valeur 0 ou 1.</li>
+<li>entendu, cela ne fonctionne pas pour les questions de type radio, dans lesquelles vous devez simplement vérifier la valeur de $food (qu’elle soit de 4 ou non).</li>
+<li>Pour le saut inconditionnel, il suffit également de faire <strong>j:</strong> vers la fin de l’enquête</li>
+</ul>
+<p>La possibilité d’utiliser l’instruction <strong>skip</strong> est une nouveauté depuis la version 3.0.0. Souvent, vous voulez juste avoir une question supplémentaire lorsque les gens choisissent une réponse spécifique, dans ce cas vous pouvez la coder comme suit :</p>
+<p><strong>Exemple de jump à partir d’un item de question de type check</strong></p>
+<pre><code>l: food
+t: check
+q: What food did you just eat?
+- Bread
+- Rice
+- Noodles
+- No food, I only drank
+- Something else
+
+j: if $food.4 == 0 or $food.5 == 0 then skip next
+
+l: otherfood
+t: textline
+q: Please enter what food you ate
+- The name of the food
+
+l: drinkquestion
+t: radio
+q: What did you just drink?
+- Water
+- Fruit juice
+- Fizzy drink
+- Tea
+- Coffee
+- Alcoholic beverage</code></pre>
+<p>Notez que vous pouvez également avoir différents exemples d’utilisation de la fonction “skip”. Si vous avez juste “passez à la suite”, une seule question sera ignorée si la condition est vraie. Vous pouvez aussi écrire, par exemple, <strong>skip 1</strong>, <strong>skip 2</strong>, où le nombre est le nombre de questions que vous voulez sauter.</p>
+</div>
+<div id="textline-saisie-dune-ligne-de-texte-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.11</span> textline : saisie d’une ligne de texte <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#textline" id="textline"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Parfois, vous souhaitez qu’un participant saisisse une ligne de texte, pour indiquer par exemple son numéro de participant, son âge, son adresse électronique ou son nom. Vous pouvez utiliser <strong>textline</strong> pour cela.</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion6
+t: textline
+q: Please enter your first name and surname
+- First name
+- Surname</code></pre>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion6
+t: textline
+q: Please enter your first name and surname
+- First name
+- {require} Surname</code></pre>
+<p>Vous pouvez forcer la longueur de ligne affichée à avoir un certain nombre de caractères avec l’option {length=X}, où X est un nombre entier :</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion6
+t: textline
+q: Please enter your first name and surname
+- First name
+- {require} Surname</code></pre>
+<p>Vous pouvez forcer les gens à entrer un nombre entre deux valeurs. Pour ce faire, vous devez spécifier min et max, puis le questionnaire forcera l’utilisateur à entrer un nombre.</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion6
+t: textline
+q: Please enter your first name and surname
+- First name
+- {length=10} Surname
+- {min=10,max=100} Type your age (must be numerical)</code></pre>
+<p>Vous pouvez forcer les gens à entrer une adresse électronique (facultatif ou non). L’option {email} indique au logiciel de s’assurer que les personnes saisissent une adresse électronique valide.</p>
+<p><strong>Exemple de demande d’un mail valide</strong></p>
+<pre><code>l: MyQuestion6
+t: textline
+q: We need your email address.
+- {email} Please enter a valid email address</code></pre>
+<p>Parfois, vous voulez juste avoir la question principale et pas de texte pour la ligne commençant par “-”. Cela peut être fait, voir l’exemple ci-dessous.</p>
+<p><strong>Exemple avec un élément vide</strong></p>
+<pre><code>l: MyQuestion6
+t: textline
+q: Please enter your name
+-</code></pre>
+<p>CONSEIL : L’alignement de la saisie de texte peut parfois être délicat, voici un exemple de la manière dont cela peut être fait (en utilisant des balises HTML). Il est prévu de faciliter cette opération dans les futures versions.</p>
+<p><strong>Exemple d’alignement des champs texte</strong></p>
+<pre><code>l: myquestion
+t: textline
+q: Name
+- &lt;pre style=&quot;display:inline&quot;&gt;First Name :&lt;/pre&gt;
+- &lt;pre style=&quot;display:inline&quot;&gt;Middle Name:&lt;/pre&gt;
+- &lt;pre style=&quot;display:inline&quot;&gt;Last Name  :&lt;/pre&gt;
+- &lt;pre style=&quot;display:inline&quot;&gt;Test       :&lt;/pre&gt;</code></pre>
+<p>Vous pouvez utiliser le numéro saisi plus tard dans l’enquête dans des sauts conditionnels (jump), comme celle-ci :</p>
+<p><strong>Exemple utilisant un nombre pour un saut conditionnel</strong></p>
+<pre><code>l: age
+t: textline
+q: xxx
+- {number} How old are you?
+
+j: if $x.1 &lt; 18 then end</code></pre>
+</div>
+<div id="textbox-saisie-dune-ou-plusieurs-ligne-de-texte-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.12</span> textbox : saisie d’une ou plusieurs ligne de texte <a href="https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#textbox" id="textbox"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Parfois, vous souhaitez qu’un participant saisisse un texte supplémentaire, par exemple un commentaire sur l’enquête.</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion6
+t: textline
+q: Please enter your feedback and (optionally) your name and address
+- Feedback
+- Name and address</code></pre>
+<p>Alors que <strong>textline</strong> a l’option “lenght”, <strong>textbox</strong> a une largeur (width) et une hauteur(height) qui peuvent être paramétrées de différentes façons comme dans l’exemple ci-dessous :</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: MyQuestion6
+t: textbox
+q: Please enter your feedback
+- Your first comment (note: no with or height provided)
+- {w=100,h=5} Your second comment (here we have 100 characters width and 5 lines high
+- {width=100,height=5} Options spelled out in full works too</code></pre>
+<p>Comme pour <strong>textline</strong>, une option <strong>require</strong> (obligatoire) peut être utilisée.</p>
+</div>
+<div id="range-entrer-une-valeur-numérique-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.13</span> Range : entrer une valeur numérique <a href="https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#range" id="range"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Parfois, vous souhaitez entrer une valeur numérique, comme l’âge ou la valeur sur une échelle de Likert. Avec “plage”, vous obtenez un curseur, et vous voyez le nombre dans une case jaune éclairée à droite du curseur. Les participants peuvent utiliser la souris ou les touches fléchées pour modifier le nombre.</p>
+<div class="figure">
+<img src="img/slider.png" alt="slider" />
+<p class="caption">slider</p>
+</div>
+<p>Vous pouvez spécifier la valeur minimale et maximale avec min et max comme indiqué ci-dessous. Sinon, l’échelle va de 0 à 100.
+Certains chercheurs n’aiment pas les curseurs et veulent que les gens puissent simplement entrer un nombre avec le clavier. C’est possible : Vous pouvez utiliser la ligne de texte à la place et demander un nombre. Voir <a href="s8.html#textline">textline.</a></p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: age
+t: range
+q: What is your age?
+- {min=18,max=100}
+
+l: agefamily
+t: range
+q: How old are you parents if alive
+- {min=18,max=120} Father
+- {min=18,max=120} Mother
+
+l: odd
+t: range
+q: Which number is your favorite?
+- {min=1,max=100,by=2} Favorit odd number
+- {min=2,max=100,by=2} Favorit even number
+
+l: smallnumber
+t: range
+q: Choose a number between 0 and 1
+- {min=0,max=1,by=0.1} Number between zero and one</code></pre>
+<p>Vous pouvez utiliser l’option de question “require” (obligatoire) (voir exemple ci-dessous). Certains participants se plaignent de ne pas avoir pu dépasser ce stade, et cela nécessite un nouveau test. Essayez vous-même et voyez si cela fonctionne pour vous.</p>
+<p><strong>Exemple dans lequel les sujets sont forcés de clliquer au moins une fois sur le curseur</strong></p>
+<pre><code>l: age
+t: range
+o: require
+q: What is your age?
+- {min=18,max=100}</code></pre>
+<p>IL y a de nombreuses autres options que vous pouvez spécifier dans une question <strong>range</strong> :
+* <em>left</em> et <em>right</em> spécifie le texte à gauche ou à droite du curseur
+* <em>start</em> spécifie la valeur de départ
+* <em>reverse</em> inverse le score</p>
+<p>Exemple d’utilisation de <em>reverse</em> : Si vous avez une échelle de 1 à 7, et que l’option <em>reverse</em> pour un élément est définie, alors si un participant choisit 6, le score sera de 2. Cela peut être pratique pour les items à score inversé, ce qui est assez courant dans les questionnaires psychologiques pour éviter un biais de réponse (par exemple, un participant pourrait avoir tendance à toujours obtenir la valeur maximale).</p>
+<p><strong>Exemple avec les options left, right et start</strong></p>
+<pre><code>l: coffee
+t: range
+q: How much do you like coffee?
+- {min=1,max=7,left=not at all,right=very much,start=4}</code></pre>
+<p>Cela ressemble à cela (avec Firefox) :</p>
+<div class="figure">
+<img src="img/slider2.png" alt="sllider2" />
+<p class="caption">sllider2</p>
+</div>
+<p>Il est possible de désactiver la valeur numérique à droite du curseur. Pour cela, vous pouvez utiliser l’option <em>no_number</em> comme dans l’exemple ci-dessous. Certains utilisateurs pourraient trouver cela utile.</p>
+<p><strong>Exemple avec no_number</strong></p>
+<pre><code>l: coffee
+t: range
+q: How much do you like coffee?
+- {no_number,min=1,max=7}</code></pre>
+</div>
+<div id="scale-échelles-de-type-lickert-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.14</span> scale : échelles de type lickert <a href="https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#scales" id="scale"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Un type courant de question est l’échelle de Likert. Pour cela, vous devez d’abord définir une échelle à l’aide de l’instruction <strong>scale</strong>, que vous pouvez ensuite utiliser dans une ou plusieurs questions.</p>
+<p>Jetez un coup d’œil à un exemple, il explique mieux les bases :</p>
+<p><strong>Exemple</strong></p>
+<pre><code>scale: agree
+- Disagree
+- Neither agree nor disagree
+- Agree
+
+l: my_question
+q: How much do you agree with each of the following
+t: scale agree
+- I see myself as Extraverted, enthusiastic
+- I see myself as Critical, quarrelsome
+- I see myself as Dependable, self-disciplined
+- I see myself as Anxious, easily upset</code></pre>
+<p>Cela devrait ressembler à quelque chose comme ça pour les participants :</p>
+<div class="figure">
+<img src="img/scale-example.png" alt="scale-example" />
+<p class="caption">scale-example</p>
+</div>
+<p>Il est important de noter que pour utiliser les échelles de Likert, vous avez besoin de deux éléments différents, à savoir l’échelle et la question de type échelle. L’échelle ne doit être décrite qu’une seule fois et peut, en principe, être utilisée dans de nombreuses questions différentes.</p>
+<p>La description de l’échelle donne un nom à l’échelle et vous pouvez ensuite énumérer chacun des échelons, comme “Pas d’accord” à “D’accord” dans l’exemple ci-dessus. Chacun de ces échelons commence par le caractère “-” (suivi d’un espace). Une fois définie, vous pouvez utiliser cette échelle dans autant de questions que vous le souhaitez (voir exemples ci-dessous).</p>
+<p>Maintenant que vous connaissez les bases, entrons dans les détails :</p>
+<ol style="list-style-type: decimal">
+<li>Vous devez décrire chaque échelle que vous utilisez une seule fois. L’idée est que si vous le souhaitez, vous pouvez réutiliser une échelle à plusieurs reprises dans autant de questions que vous voulez. Une erreur courante est que les utilisateurs pensent que l’échelle elle-même doit être décrite plusieurs fois.</li>
+<li>Vous pouvez utiliser plusieurs échelles différentes et les utiliser dans différentes questions. Un exemple est donné ci-dessous (échelles multiples).</li>
+<li>Si vous le souhaitez, vous pouvez aléatoriser l’ordre des éléments dans une question à échelle en définissant les options <em>o: random</em> (voir exemple ci-dessous).</li>
+</ol>
+<p>Dans l’exemple ci-dessous, vous voyez que vous ne devez définir une échelle qu’une seule fois et que vous pouvez utiliser cette échelle dans différentes questions. De plus, il est montré que vous pouvez définir plus d’une échelle. Je trouve souvent utile d’avoir les descriptions des échelles en haut de mon script d’enquête, ce que j’ai fais ici.</p>
+<p><strong>Exemple avec plusieurs échelles et questions</strong></p>
+<pre class="↨"><code>scale: agree
+- Disagree strongly
+- Disagree moderately
+- Disagree a little
+- Neither agree nor disagree
+- Agree a little
+- Agree moderately
+- Agree strongly
+
+scale: like
+- Do not like
+- Like a bit
+- Like very much
+
+l: tipi
+q: I see myself as ...
+t: scale agree
+- I see myself as Extraverted, enthusiastic
+- I see myself as Critical, quarrelsome
+- I see myself as Dependable, self-disciplined
+- I see myself as Anxious, easily upset
+- I see myself as Open to new experiences, complex
+- I see myself as Reserved, quiet
+- I see myself as Sympathetic, warm
+- I see myself as Disorganized, careless
+- I see myself as Calm, emotionally stable
+- I see myself as Conventional, uncreative
+
+l: socmedia
+q: How much do you like the following social media?
+t: scale like
+- Facetube
+- Tweeter
+- Tinderbook
+- Flopflix
+
+l: people
+t: scale agree
+q: How much do you agree the following people?
+- Gwendolyn
+- Peter
+- Greg
+- Lisa</code></pre>
+<p>Dans l’exemple ci-dessous, nous fixons les valeurs des scores. Bien que dans l’exemple, les valeurs des scores soient celles par défaut, vous pouvez les fixer à des valeurs différentes. En outre, vous pouvez même annuler la cotation des éléments de question de l’échelle individuelle (voir exemple). Dans ce cas, les différents scores doivent être séparés par des virgules, et il doit y en avoir exactement autant que dans l’échelle (dans cet exemple, 7).</p>
+<p><strong>Exemple</strong></p>
+<pre><code>scale: agree
+- {score=1} Disagree strongly
+- {score=2} Disagree moderately
+- {score=3} Disagree a little
+- {score=4} Neither agree nor disagree
+- {score=5} Agree a little
+- {score=6} Agree moderately
+- {score=7} Agree strongly
+
+l: tipi
+q: I see myself as ...
+o: random
+t: scale agree
+- I see myself as Extraverted, enthusiastic
+- I see myself as Critical, quarrelsome
+- I see myself as Dependable, self-disciplined
+- I see myself as Anxious, easily upset
+- I see myself as Open to new experiences, complex
+- I see myself as Reserved, quiet
+- I see myself as Sympathetic, warm
+- I see myself as Disorganized, careless
+- I see myself as Calm, emotionally stable
+- {reverse} I see myself as Conventional, uncreative</code></pre>
+<p>La question <em>scale</em> est présentée sous forme de “tableau” à l’écran (c’est-à-dire qu’il y a des lignes et des colonnes). Il y a différentes façons de contrôler la façon dont le tableau est formaté :</p>
+<ul>
+<li>Utiliser des sauts de ligne dans les questions (en utilisant le html <br>).</li>
+<li>Modifier la largeur avec l’option <em>width</em>. Le paramètre est le pourcentage de la largeur tableau utilisé pour l’intitulé de la question et le reste sera utilisés pour les différentes options de réponses qui auront la même largeur chacune.</li>
+</ul>
+<p>L’exemple ci-dessous a une ligne <em>o: width 50%</em>, ce qui signifie que 50% est pour le texte de l’item et le reste pour les 7 options de réponse. Chaque option obtiendra la même largeur 50/7=7,1% du tableau.</p>
+<p><strong>Exemple d’options de largeur d’échelle</strong></p>
+<pre><code>scale: agree
+- {score=1} Disagree strongly
+- {score=2} Disagree moderately
+- {score=3} Disagree a little
+- {score=4} Neither agree nor disagree
+- {score=5} Agree a little
+- {score=6} Agree moderately
+- {score=7} Agree strongly
+
+l: tipi
+q: I see myself as ...
+o: width 50%
+t: scale agree
+- I see myself as Extraverted, enthusiastic
+- I see myself as Critical, quarrelsome
+- I see myself as Dependable, self-disciplined
+- I see myself as Anxious, easily upset
+- I see myself as Open to new experiences, complex
+- I see myself as Reserved, quiet
+- I see myself as Sympathetic, warm
+- I see myself as Disorganized, careless
+- I see myself as Calm, emotionally stable
+- {reverse} I see myself as Conventional, uncreative</code></pre>
+<p>En spécifiant les 50 %, le signe % est facultatif, il est là juste pour la lisibilité. Vous pouvez cependant mettre <em>o: width 50</em>.</p>
+<p><strong>Exemple de scores spécifiques pour certains items</strong></p>
+<pre><code>scale: agree
+- {score=1} Disagree
+- {score=2} Neutral
+- {score=3} Agree
+
+l: extroversion
+q: I see myself as ...
+t: scale agree
+- I see myself as talkative
+- I see myself as outgoing
+- {reverse} I see myself as shy and quiet</code></pre>
+<p>L’exemple ci-dessous fait exactement la même chose, mais écrit avec des scores opposés</p>
+<p><strong>Exemple de scores personnalisés pour certains items</strong></p>
+<pre><code>scale: agree
+- {score=1} Disagree
+- {score=2} Neutral
+- {score=3} Agree
+
+l: extroversion
+q: I see myself as ...
+t: scale agree
+- I see myself as talkative
+- I see myself as outgoing
+- {score=3/2/1} I see myself as shy and quiet</code></pre>
+<p>Finally, the scale item is by default called “item”. Since version 2.5.3, this can differ from language to language, but the default is item. If you want to change that for a scale, you can do so as follows:</p>
+<p>Enfin, le item de l’échelle est par défaut appelé “item”. Depuis la version 2.5.3, cela peut varier d’une langue à l’autre, mais la valeur par défaut est “item”. Si vous voulez changer cela pour une échelle, vous pouvez le faire comme suit :</p>
+<p><strong>Exemple d’échelle avec le mot “Question” à la place de “Item”</strong></p>
+<pre><code>scale: agree
+item: Question
+- {score=1} Disagree
+- {score=2} Neutral
+- {score=3} Agree</code></pre>
+<p>Les scores personnalisés
+Pour chaque question de l’échelle, vous pouvez utiliser des scores personnalisés qui s’écartent de la notation standard. Cela est souvent le cas dans les questionnaires qui exigent une notation inversée pour certaines questions afin d’éviter tout biais de réponse.</p>
+<p>Dans le PsyToolkit, il y a deux façons de procéder.</p>
+<p>Vous pouvez simplement utiliser l’option inverse (ou le rév. plus court).</p>
+<p>Vous pouvez spécifier les scores. Vous trouverez ci-dessous deux exemples ayant exactement le même résultat. L’option inverse peut être utilisée dans les questions d’échelle et de gamme.</p>
+<div id="scores-personnalisés" class="section level5">
+<h5><span class="header-section-number">8.1.4.14.1</span> scores personnalisés</h5>
+<p>Pour chaque question de l’échelle, vous pouvez utiliser des scores personnalisés qui s’écartent de la notation standard. Cela est souvent le cas dans les questionnaires qui exigent une notation inversée pour certaines questions afin d’éviter tout biais de réponse.</p>
+<p>Dans le PsyToolkit, il y a deux façons de procéder.</p>
+<ul>
+<li>Vous pouvez simplement utiliser l’option <em>reverse</em> (ou en abrégé <em>rev</em>).</li>
+<li>Vous pouvez spécifier les scores. Vous trouverez ci-dessus deux exemples ayant exactement le même résultat. L’option inverse peut être utilisée dans les questions de type <em>scale</em> et <em>range</em>.</li>
+</ul>
+</div>
+</div>
+<div id="multiradio-question-à-choix-multiple-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.15</span> multiradio : question à choix multiple <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#multiradio" id="multiradio"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>La rubrique multiradio n’est pas si courante dans les questionnaires, mais on la voit parfois. Avec ce type de questionnaire, vous pouvez demander aux participants de choisir entre plusieurs paires (ou triplets, etc.). L’exemple montre son fonctionnement :</p>
+<p><strong>Exemple</strong></p>
+<pre><code>l: forcedchoices
+t: multiradio 2
+q: For each pair of situations, pick the one you like best.
+- Going to the movies
+- Going to a concert
+ - Eating icecream
+ - Eating sorbet
+- Listening to Bach
+- Listening to Bieber
+ - Drinking wine
+ - Drinking whiskey</code></pre>
+<p>Un exemple complet peut être consulté dans la démo de <a href="https://www.psytoolkit.org/survey-library/narcism-npi16.html">l’inventaire de personnalité narcissique</a>.</p>
+<ul>
+<li>Le nombre dans la commande multiradio indique combien de lignes sont prises ensemble. Dans ce cas, nous avons deux lignes prises ensemble.
+Vous pouvez utiliser l’option <em>aléatoire</em>random*.</li>
+<li>Par défaut, les scores de chaque élément d’une paire commencent par 1. Vous pouvez définir les scores en utilisant l’option “scores”.</li>
+</ul>
+<p><strong>Exemple avec ordre aléatorisé des items et score sécifique dans chaque pairs</strong></p>
+<pre><code>l: forcedchoices
+t: multiradio 2
+o: scores 0 1
+o: random
+q: For each pair of activities, pick the one you like best.
+- Going to the movies
+- Going to a concert
+ - Eating icecream
+ - Eating hotdog
+- Listening to Bach
+- Listening to Bieber
+ - Drinking water
+ - Drinking wine</code></pre>
+</div>
+<div id="images-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.16</span> images <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#images" id="images"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Chaque question peut afficher une ou plusieurs images au-dessus de la question. Vous pouvez télécharger les images via le bouton “parcourir les fichiers”, suivi de “enregistrer” sous le code du questionnaire. Assurez-vous que ces images ne sont pas trop grandes pour un site web. Une bonne taille est de 400 par 300 pixels (notez que les images standard des appareils photo) sont beaucoup trop grandes - il vous faudrait un logiciel pour les rendre plus petites).</p>
+<p><strong>Exemple avec un fichier téléchargé nommé “inkblot.png”</strong></p>
+<pre><code>l: rorschach
+i: inkblot.png
+q: What do you see?
+t: textbox
+- Describe what do you see in the drawing above</code></pre>
+<p>Les partcipants voient cela :</p>
+<div class="figure">
+<img src="img/screenshot-inkblot.png" alt="screenshot-inkblot" />
+<p class="caption">screenshot-inkblot</p>
+</div>
+<p>Vous pouvez également afficher plusieurs questions les unes à la suite des autres.</p>
+<p><strong>Exemple avec un fichier téléchargé nommé “inkblot.png”</strong></p>
+<pre><code>l: preference
+i: food1.jpg food2.jpg
+q: Which picture do you like better?
+t: radio
+- The food in the left picture
+- The food in the right picture</code></pre>
+<p><strong>Exemple avec une image externe</strong></p>
+<pre><code>l: preference
+i: food1.jpg food2.jpg
+q: Which picture do you like better?
+t: radio
+- The food in the left picture
+- The food in the right picture</code></pre>
+<p>Et enfin, vous pouvez ajouter l’option “center”. Cela centrera l’image.</p>
+<p><strong>Exemple d’image centrée avant une question</strong></p>
+<pre><code>l: preference
+i: {center} food1.jpg
+q: Do you like this?
+t: radio
+- Yes
+- No</code></pre>
+</div>
+<div id="changer-le-texte-du-bouton-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.17</span> Changer le texte du bouton <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#buttontext" id="buttontext"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Vous pouvez non seulement changer la langue des boutons, mais aussi modifier le texte du bouton “Continuer” pour chaque question, si vous le souhaitez. Vous le faites avec l’opérateur <em>b:</em>, voir l’exemple ci-dessous.</p>
+<p><strong>Exemple de texte de bouton personnalisé</strong></p>
+<pre><code>l: food
+t: radio
+b: Can you please press the button to go to the next question?
+q: What food did you just eat?
+- Bread
+- Rice
+- Potatoes</code></pre>
+</div>
+<div id="aléatoriser-lordre-des-questions-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.18</span> Aléatoriser l’ordre des questions <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#randomization" id="randomization"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Parfois, les gens veulent aléatoriser les questions d’une partie de l’enquête. Cela peut être fait facilement dans PsyToolkit. Vous devez placer chaque fois les éléments de votre enquête que vous voulez présenter dans un ordre aléatoire entre <em>random: begin</em> et <em>random: end</em>.</p>
+<ul>
+<li>Vous pouvez avoir autant de sections que vous le souhaitez entre <em>random: begin</em> et <em>random: end</em>.</li>
+<li>Dans une section à ordre aléatoire, vous pouvez faire en sorte que certaines questions suivent toujours d’autres questions (<a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#link">lire ici</a>).</li>
+<li>Assurez-vous d’avoir un espace après l’instruction <em>random:</em>, sinon cela ne fonctionnera pas. De même, avant et après l’instruction <em>random:</em>, vous devez avoir des lignes vides.</li>
+<li>Dans une section aléatorisée de votre enquête, vous ne devez généralement pas avoir d’éléments de type <em>jump</em>. En effet, les sauts supposent un ordre spécifique de questions.</li>
+</ul>
+<p>Dans l’exemple d’enquête ci-dessous, la première et la dernière question se trouvent toujours au début et à la fin. En revanche, les questions sur la nourriture, les boissons et les films seront posées dans un ordre aléatoire pour chaque participant.</p>
+<p><strong>Exemple de trois questions dans un ordre aléatoire</strong></p>
+<pre><code>l: age
+t: textline
+q: How old are you?
+- {min=18,max=100} Enter your age:
+
+random: begin
+
+l: food
+t: radio
+q: What food did you just eat?
+- Bread
+- Rice
+- Potatoes
+- Something else
+
+l: drink
+t: radio
+q: What drink did you just have
+- Tea
+- Coffee
+- Something else
+
+l: movie
+t: radio
+q: What movie did you just watch
+- Spiderman
+- Citizen Kane
+- The Orphan
+- Something else
+
+random: end
+
+l: finalquestion
+t: radio
+q: Did you enjoy the questionniare
+- yes
+- no</code></pre>
+<p>Vous pouvez utiliser <em>random: begin</em> et <em>random: end</em> aussi souvent que vous voulez.</p>
+<p><strong>Exemple avec deux section aléatorisées</strong></p>
+<pre><code>l: age
+t: textline
+q: How old are you?
+- {min=18,max=100} Enter your age:
+
+random: begin
+
+l: food
+t: radio
+q: What food did you just eat?
+- Bread
+- Rice
+- Potatoes
+- Something else
+
+l: drink
+t: radio
+q: What drink did you just have
+- Tea
+- Coffee
+- Something else
+
+random: end
+
+l: internetquestion
+t: radio
+q: Are you ready to go on with some questions about the internet?
+- Yes
+- No
+
+random: begin
+
+l: visits
+t: check
+q: Which of the following websites have you recently visited?
+- Google
+- YouTube
+- Twitter
+- BBC News
+
+l: computertype
+t: check
+q: Which of the following devices do you use to browse?
+- Mobile phone
+- Tablet
+- Laptop
+- Desktop
+
+random: end
+
+l: finalquestion
+t: radio
+q: Did you enjoy the questionniare
+- yes
+- no</code></pre>
+<p>Vous pouvez faire imposer certaines questions à la suite des d’autres questions. Cela a parfois du sens, par exemple lorsque trois questions se suivent logiquement. Si vous le souhaitez, ajoutez l’option <em>o: link</em> à cette question, et de cette façon elle suivra toujours la question qui est juste avant. Vous pouvez ainsi lier autant de questions que vous le souhaitez. Dans l’exemple ci-dessous, il y a une série de questions qui seront aléatorisées pour chaque participant, mais la question intitulée “visits” suivra toujours la question “internetquestion”. Elles sont “liées”.</p>
+<p><strong>Exemple de deux sections dans un ordre aléatoire</strong></p>
+<pre><code>l: age
+t: textline
+q: How old are you?
+- {min=18,max=100} Enter your age:
+
+random: begin
+
+l: food
+t: radio
+q: What food did you just eat?
+- Bread
+- Rice
+- Potatoes
+- Something else
+
+l: drink
+t: radio
+q: What drink did you just have
+- Tea
+- Coffee
+- Something else
+
+l: internetquestion
+t: radio
+q: Are you ready to go on with some questions about the internet?
+- Yes
+- No
+
+l: visits
+t: check
+o: link
+q: Which of the following websites have you recently visited?
+- Google
+- YouTube
+- Twitter
+- BBC News
+
+l: computertype
+t: check
+q: Which of the following devices do you use to browse?
+- Mobile phone
+- Tablet
+- Laptop
+- Desktop
+
+random: end
+
+l: finalquestion
+t: radio
+q: Did you enjoy the questionniare
+- yes
+- no</code></pre>
+</div>
+<div id="calculer-un-score-avec-set-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.19</span> Calculer un score avec “set” <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#scoring" id="scoring"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Parfois, vous pouvez avoir envie de calculer un score. Par exemple, si vous faites un inventaire de la dépression, vous pouvez calculer un score et l’enregistrer dans le fichier de données ou, en fonction de ce score, poser d’autres questions. Tout cela est possible. Pour cela, il existe un item spécial du questionnaire appelé “set”.</p>
+<p>En résumé :</p>
+<ul>
+<li><em>set</em> est un élément du questionnaire et doit avoir une étiquette</li>
+<li><em>set</em> peut calculer les réponses et les scores des autres questions et les additionner, en faire la moyenne, etc.</li>
+<li><em>set</em> fixera le label à la valeur et ceci peut être utilisé dans les sauts conditionnels, etc.</li>
+<li><em>set</em> peut calculer la moyenne, la somme, la moyenne, le max de plusieurs questions ou sous-questions</li>
+<li><em>set</em> peut fixer des nombres aléatoires</li>
+<li><em>set</em> peut faire du codage conditionnel</li>
+<li><em>set</em> peut établir des calculs personnalisés (avec votre propre formule)</li>
+<li><em>set</em> peut compter le nombre d’éléments contrôlés dans une question de de type check</li>
+</ul>
+<p><strong>Exemple d’utilisation de set</strong></p>
+<pre><code>l: food
+t: radio
+q: How much did you like the FOOD you had before?
+- disliked it very much
+- disliked it
+- neither liked nor disliked
+- liked it
+- liked it very much
+
+l: drink
+t: radio
+q: How much did you like the DRINK you had before?
+- disliked it very much
+- disliked it
+- neither liked nor disliked
+- liked it
+- liked it very much
+
+l: satisfactionscore
+t: set
+- sum $food $drink
+
+l:
+t: jump
+- if $satisfactionscore &gt; 2 then goto endquestion
+
+l: why_dislike
+t: textbox
+q: We are sorry you did not like the food. If you wish, please leave a comment here
+- Please leave a comment about why you were not so happy with the dinner
+
+l: endquestion
+t: textline
+q: If you wish, please leave your contact number
+- Contact phone number</code></pre>
+<p>Parfois, vous voulez faire la somme de toutes les questions commençant par “MyItems”. Dans ce qui suit, il y a trois questions dans MyScale et il y a une façon simple de s’y référer en utilisant un caractère de remplacement. Dans l’exemple ci-dessous, l’ensemble additionne les réponses de toutes les questions commençant par MyItems. Des exemples détaillés sont disponibles dans la bibliothèque des enquêtes.</p>
+<p>Vous ne pouvez utiliser le caractère de remplacement que comme dernier caractère, comme dans les exemples ci-dessous.</p>
+<p><strong>Exemple de set avec caractère de remplacement</strong></p>
+<pre><code>l: MyItems1
+t: radio
+q: How do you feel today?
+- good
+- neutral
+- not so good
+
+l: MyItems2
+t: radio
+q: How did you feel yesterday?
+- good
+- neutral
+- not so good
+
+l: MyItems3
+t: radio
+q: How do you feel last week?
+- good
+- neutral
+- not so good
+
+l: myscore
+t: set
+- sum $MyItems*
+
+l: score1and2
+t: set
+- sum $MyItems1 $MyItems2</code></pre>
+<p>Vous pouvez utiliser une autre fonction que <em>sum</em> (somme), par exemple <em>mean</em> (moyenne):</p>
+<p><strong>Exemple de moyenne</strong></p>
+<pre><code>l: myscore
+t: set
+- mean $MyItems*</code></pre>
+<p>Vous pouvez aussi utiliser <em>calc</em> pour faire des calculs plus complexes.</p>
+<p><strong>Exemple de calc</strong></p>
+<pre><code>l: myscore
+t: set
+- calc ( $MyItems1 + $MyItems2 ) / 2.0</code></pre>
+<p>Si vous avez des questions de type scale, vous pouvez obtenir le score correspondant à une notation par points. Vous trouverez un exemple avancé de cette notation dans <a href="https://www.psytoolkit.org/survey-library/political-conservatism.html">la bibliothèque d’enquêtes</a>. Il y a quelques règles à respecter lorsque vous utilisez <em>calc</em> :</p>
+<ul>
+<li>Tous les opérateurs doivent utiliser des espaces entre eux (comme dans l’exemple ci-dessus)</li>
+<li>Si vous voulez vous assurer que les choses ne sont pas trop arrondies dans une division comme celle qui précède, vous devez veiller à utiliser des nombres à virgule décimale (2,0 au lieu de 2 seulement).</li>
+</ul>
+<p>Vous pouvez compter le nombre d’éléments vérifiés dans une question de type check :</p>
+<p><strong>Exemple d’utilisation de count</strong></p>
+<pre><code>l: food
+t: check
+q: Please check the types of foods eaten today
+- Rice
+- Bread
+- Tomatoes
+
+l: count_foods
+t: set
+- count $food
+
+l: feedback
+t: info
+q: The number of foods you ate: {$count_foods}</code></pre>
+<p>Vous pouvez fixer des valeurs de manière conditionnelle. Cela n’a que parfois de la signification. Mais cela permet de faire des choses qui seraient autrement pratiquement impossibles. Vous trouverez ici un bon exemple d’enquête utilisant cette technique.</p>
+<p>En bref, à l’aide des règles <em>if..then</em>, vous pouvez fixer la valeur à des valeurs spécifiques. Si la règle <em>if..then</em> ne peut être satisfaite, la valeur sera zéro.</p>
+<p><strong>Exemple de if</strong></p>
+<pre><code>
+l: my_first_question
+t: radio
+q: How much do you like bread?
+- Not at all
+- A little bit
+- I like it
+- I like it very much
+- There is nothing I like more
+
+l: likes_bread_very_much
+t: set
+- if $my_first_question &lt; 4 then 0
+- if $my_first_question &gt;= 4 then 1</code></pre>
+<p>Dans cet exemple, vous pouvez attribuer un score catégorique à quelque chose. Dans ce cas, si une personne a un score de 1 pour “aime énormément le pain”, elle a un score de 4 ou plus. Il s’agit d’une option un peu plus avancée.</p>
+</div>
+<div id="utiliser-différentes-sections-section-de-questionnaire-pour-différents-participants-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.20</span> utiliser différentes sections section de questionnaire pour différents participants <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#randomjump" id="randomjump"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Certains chercheurs veulent s’assurer que les différentes personnes qui cliquent sur le même lien questionnaire/enquête font en fait des questionnaires différents. C’est une sorte d’affectation aléatoire des participants à une condition. Cela peut être fait. Voici les étapes à suivre :</p>
+<ol style="list-style-type: decimal">
+<li>Décidez du nombre de versions différentes que vous voulez ? Deux, ou peut-être plus ?</li>
+<li>Choisissez un nombre aléatoire</li>
+<li>Passez à une section du questionnaire en fonction de ce nombre aléatoire.</li>
+</ol>
+<p>Vous trouverez ci-dessous deux exemples, l’un pour une simple enquête, l’autre pour contrebalancer les groupes de participants faisant une expérience.</p>
+<p>Dans l’exemple suivant, le questionnaire fixe un élément aléatoire (<em>chooserandom</em>) à 1 ou 2, et en fonction de cela, le questionnaire saute à la partie appropriée du questionnaire.</p>
+<p><strong>Exemple d’assignement aléatoire des questionnaires</strong></p>
+<pre class="↨"><code>l: chooserandom
+t: set
+- random 1 2
+
+l:
+t: jump
+- if $chooserandom == 1 then goto drink_set1
+- if $chooserandom == 2 then goto food_set2
+
+## survey 1 about drinks ########################
+
+l: drink_set
+t: radio
+q: Do you like cola?
+- Yes
+- No
+
+l: drink2
+t: radio
+q: Do you like fanta?
+- Yes
+- No
+
+l:
+t: jump
+- goto endquestion
+
+## survey 2 about food ########################
+
+l: food_set
+t: radio
+q: Do you like bread?
+- Yes
+- No
+
+l: drink2
+t: radio
+q: Do you like pancakes?
+- Yes
+- No
+
+l: endquestion
+q: Did you like this survey?
+- Yes
+- No</code></pre>
+<div id="contrebalancer-des-groupes-ukflag" class="section level5">
+<h5><span class="header-section-number">8.1.4.20.1</span> Contrebalancer des groupes <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#counterbalancing" id="counterbalancing"><img src="img/ukflag.png" alt="ukflag" /></a></h5>
+<p>Le contrebalancement est une caractéristique importante de la réalisation d’expériences psychologiques. Cela consiste à affecter différents participants à différents items d’une expérience dans un ordre différent.</p>
+<p>Il existe différentes façons de faire des contrebalancements dans PsyToolkit :</p>
+<ol style="list-style-type: decimal">
+<li>En utilisant deux (ou plusieurs) blocs dans des ordres différents dans votre expérience. L’ordinateur choisira au hasard l’un des blocs à utiliser. C’est la façon idéale et la plus simple de faire un contrebalancement dans PsyToolkit. <a href="syntaxe-pour-les-scripts.html#blockorder">Consultez la syntaxe de l’expérience ici</a>.</li>
+<li>En choisissant différentes expériences au sein du questionaire. Un exemple de la façon dont cela peut être fait est présenté ci-dessous.</li>
+</ol>
+<p>Pour cet exemple, nous aurons deux expériences différentes, <em>experiment_order1</em> et <em>experiment_order2</em>. Nous affecterons les participants de manière aléatoire à l’une de ces conditions.</p>
+<p><strong>Exemple d’expériences de contrebalancement</strong></p>
+<pre><code>l: choose_a_number
+t: set
+- random 1 2
+
+l:
+t: jump
+- if $choose_a_number == 1 then goto Group1
+- if $choose_a_number == 2 then goto Group2
+
+l: Group1
+t: experiment
+- experiment_order1
+
+l: alwaysjump
+t: jump
+- goto GoOn
+
+l: Group2
+t: experiment
+- experiment_order2
+
+l: GoOn
+t: radio
+q: How did you like the experiment
+- I liked it
+- I did not like it</code></pre>
+<p>Vous pouvez aussi utiliser le random différemment, en choisissant des numéros parmi un ensemble de numéros :</p>
+<p><strong>Exemple d’utilisation de “random from”</strong></p>
+<pre><code>l: choose_a_number
+t: set
+- random from 1 2 4 5</code></pre>
+</div>
+</div>
+<div id="maxtime-questions-temporisées-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.21</span> maxtime : questions temporisées <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#maxtime" id="maxtime"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Parfois, vous voulez donner aux gens un temps limité pour répondre à une question. Vous pouvez le faire avec l’option “maxtime”. Indiquez le temps maximum en millisecondes (par exemple, 1000), secondes (par exemple, 1s) ou minutes (par exemple, 5m).</p>
+<p>Vous pouvez également afficher le compte à rebours dans le bouton “Continuer”.</p>
+<p><strong>Exemple 1 de maxtime</strong></p>
+<pre><code>l: sports
+t: textbox
+o: maxtime 2m
+q: Write in short why you like sports, or why you do not. You have maximally 2 minutes.
+- Why I do or do not like sports:</code></pre>
+<p>Vous pouvez cacher le compte à rebours</p>
+<p><strong>Exemple 2 de maxtime</strong></p>
+<pre><code>l: sports
+t: textbox
+o: maxtime 30s hide
+q: Write 3 reasons why you like tea. You have maximally 30 seconds.
+- Why I do or do not like sports:</code></pre>
+<p>Vous pouvez afficher un comptage.</p>
+<p><strong>Exemple 3 de maxtime</strong></p>
+<pre><code>l: sports
+t: textbox
+o: maxtime 30s up
+q: Write 3 reasons why you like tea. You have maximally 30 seconds.
+- Why I do or do not like sports:</code></pre>
+<p>Vous pouvez “verrouiller” la question jusqu’à ce que le temps soit écoulé (de cette façon, le participant doit attendre que le temps soit écoulé ; c’est une fonction rarement nécessaire).</p>
+<p><strong>Exemple 4 de maxtime</strong></p>
+<pre><code>l: sports
+t: textbox
+o: maxtime 30s lock
+q: Write 3 reasons why you like tea. You have maximally 30 seconds.
+- Why I do or do not like sports:</code></pre>
+<p>Vous pouvez vérrouiller et faire un comptage si vous le souhaitez.</p>
+<p><strong>Exemple 5 de maxtime</strong></p>
+<pre><code>l: sports
+t: textbox
+o: maxtime 30s up lock
+q: Write 3 reasons why you like tea. You have maximally 30 seconds.
+- Why I do or do not like sports:</code></pre>
+</div>
+<div id="mintime-questions-temporisées-ukflag" class="section level4">
+<h4><span class="header-section-number">8.1.4.22</span> mintime : questions temporisées <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#mintime" id="mintime"><img src="img/ukflag.png" alt="ukflag" /></a></h4>
+<p>Parfois, vous voulez que les gens passent au moins un certain temps sur une question sans qu’ils puissent appuyer sur le bouton “continuer”. Pour cela, nous avons l’option mintime. Elle est presque identique à la maxtime.</p>
+<p>Vous pouvez optionnellement afficher le compte à rebours dans le bouton continuer</p>
+<p><strong>Exemple 1 de mintime</strong></p>
+<pre><code>l: sports
+t: textbox
+o: mintime 2m
+q: Write in short why you like sports, or why you do not.
+You have to spend at least 2 minutes on it and you will only be able to continue after 2 minutes
+- Why I do or do not like sports:</code></pre>
+<p>Vous pouvez cacher le compte à rebours</p>
+<p><strong>Exemple 2 de mintime</strong></p>
+<pre><code>l: sports
+t: textbox
+o: mintime 30s hide
+q: Write 3 reasons why you like tea. You should spend at least 30 seconds on this question.
+- Why I do or do not like sports:</code></pre>
+<p>Vous pouvez montrer un comptage</p>
+<p><strong>Exemple 3 de mintime</strong></p>
+<pre><code>l: sports
+t: textbox
+o: mintime 30s up
+q: Write 3 reasons why you like tea. You should spend at least 30 seconds on this question.
+- Why I do or do not like sports:</code></pre>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="les-questionnnaires.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="audio-et-vidéo-dans-les-questionnaires.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Documentation_Psytoolkit.pdf", "Documentation_Psytoolkit.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

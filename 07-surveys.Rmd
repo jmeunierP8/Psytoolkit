@@ -1,0 +1,159 @@
+# Les questionnnaires [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html){#s7}
+
+Ceci est une introduction, pour une présentation complète, regardez [ici](#s8). Avec PsyToolkit, vous pouvez réaliser différents types d'enquêtes en ligne :
+
+* De simples enquêtes en ligne sans expérimentation sur le temps de réaction (elles peuvent être réalisées sur des plateformes mobiles, comme les téléphones). Par exemple, une enquête sur la satisfaction des étudiants ou sur les attitudes et opinions des gens. Consultez également [la bibliothèque](http://www.psytoolkit.org/survey-library/) qui propose des questionnaires prêts à l'emploi.
+* Enquêtes en ligne **avec** expérimentation des temps de réaction. C'est l'idéal pour les études de psychologie cognitive ; vous pouvez utiliser l'enquête pour obtenir des informations générales sur les participants et ensuite lancer l'expérience dans le navigateur.
+* Vous pouvez poser un nombre illimité de questions.
+* Prise en charge des instructions aux participants en 5 langues (anglais américain et britannique, chinois simplifié, néerlandais et allemand). Par exemple, si vous choisissez le chinois simplifié, le texte (par exemple, "continue") des boutons est en chinois.
+* Outils d'analyse en ligne de base des enquêtes complétées.
+* Saut conditionnel aux questions basées sur les réponses données précédemment.
+* Randomisation de l'ordre des questions de sections spécifiques d'un questionnaire.
+* Tous les types de questions courantes, telles que les questions à choix unique, les questions à choix multiples, les échelles de Likert, les curseurs, les lignes de texte, les zones de texte, etc.
+
+*****
+Le support multilingue fait référence à l'interface utilisateur, comme le texte des boutons, etc. Bien entendu, vous devez toujours rédiger vos questions dans la langue dans laquelle vous voulez qu'elles soient présentées.
+Jetez un coup d'œil aux enquêtes/questionnaires prêts à être téléchargés dans la [bibliothèque d'enquêtes](http://www.psytoolkit.org/survey-library/).
+*****
+
+## Introduction [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_introduction){#s7-1}
+
+Internet est idéal pour réaliser des enquêtes en ligne, et il existe divers très bons outils web que vous pouvez utiliser gratuitement (il suffit de faire une recherche sur Google pour trouver "enquête en ligne gratuite"). Il est possible qu'il existe d'autres outils plus adaptés à vos besoins (PsyToolkit est gratuit et il n'y a aucun intérêt à vous le "vendre" - le but est simplement de vous donner la meilleure information possible sur ce qu'il est et vous décidez vous-même).
+
+PsyToolkit a son propre interface de conception de questionnaires, mais il n'a pas d'interface utilisateur sophistiquée (comme certains autres outils en ligne). Toutes les questions doivent être tapées dans une zone de texte au format texte, en suivant un protocole de formatage spécial. cependant, Ce n'est pas difficile. 
+PsyToolkit vous aide à créer des enquêtes très simples avec des types de questions standard, telles que des questions dans lesquelles vous pouvez choisir un élément parmi plusieurs, choisir plusieurs éléments parmi plusieurs, saisir une ligne de texte, etc. C'est similaire à ce que proposent d'autres outils d'enquête, et si c'est tout ce que vous voulez faire, vous pouvez utiliser d'autres outild (par exemple, [zoho.com] qui est assez bon).
+
+Vous pouvez également avoir des conditions, c'est-à-dire que certaines questions ne seront posées qu'en fonction des réponses à d'autres questions.
+
+Lorsque vous avez créé et compilé votre enquête, vous obtenez un lien URL. Vous pouvez envoyer ce lien aux personnes que vous souhaitez faire participer à l'enquête. Les données collectées seront enregistrées sur le serveur du PsyToolkit et peuvent être téléchargées sous forme de données brutes (avec quelques informations supplémentaires, comme l'heure à laquelle la réponse a été donnée) et d'un fichier tableur des réponses/scores par participant.
+
+Une possibilité unique des enquêtes en ligne dans PsyToolkit est que vous pouvez y intégrer des expériences sur les temps de réaction typiques de la psychologie cognitive. En fait, c'est la seule raison pour laquelle j'ai développé les enquêtes en ligne avec PsyToolkit.
+
+Les données des enquêtes et les données sur les temps de réaction peuvent être téléchargées et analysées sur votre propre ordinateur. Ainsi, les enquêtes en ligne avec PsyToolkit sont principalement destinées aux psychologues qui souhaitent mener des expériences en ligne sur les temps de réaction. Bien entendu, si vous souhaitez simplement faire un questionnaire, vous pouvez également le faire. En ce sens, les questionnaires PsyToolkit en ligne peuvent être utiles à toute personne souhaitant réaliser une enquête en ligne.
+
+Dans de nombreuses expérience, vous souhaitez obtenir des informations de base sur les participants, comme leur sexe et leur âge. c'est la raison qui nous a conduit à intégrer une expérience sur le temps de réaction dans une enquête. Si vous voulez savoir comment programmer une expérience sur le temps de réaction dans le PsyToolkit, vous devez lire [l'introduction au script d'expérience du PsyToolkit](#s4).
+
+## Comment créer une enquête [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_how_to_create_a_survey){#s7-2}
+Les enquêtes sont créées sous forme de texte dans une zone de texte du navigateur. Cette méthode est différente des autres sites d'enquêtes en ligne. PsyToolkit ne dispose pas d'une interface graphique de type "pointer-cliquer" permettant de créer chaque question (qui sera peut-être créée à l'avenir). Néanmoins, la création d'une enquête n'est pas très difficile !
+
+La première chose à faire est de créer [votre propre compte sur le site web de PsyToolkit](http://psytoolkit.gla.ac.uk). Ensuite, explorez-le pour vous familiariser avec l'interface. Si vous sélectionnez "créer une enquête", vous obtiendrez un exemple de question. Vous pouvez supprimer l'exemple et entrer un nouveau questionnaire. La programmation d'un questionnaire est expliquée ci-dessous. La façon de l'exécuter réellement est expliquée ci-dessous dans la section "Exécution des enquêtes".
+
+Ce qu'il faut vraiment savoir, c'est qu'il existe différents types de questions. Chaque question doit être décrite en quelques lignes, et la façon de le faire suit un format très spécifique (je l'appelle la **syntaxe de l'enquête**). Ce qu'il faut comprendre, c'est que chaque question comporte un certain nombre de champs, qui sont marqués d'un symbole au début de la ligne. Le premier champ de chaque question est le "label", qui s'écrit simplement "l :". Ce qui suit est l'étiquette proprement dite. Les étiquettes ne doivent pas comporter d'espaces !
+
+Les enquêtes sont simplement constituées de texte et sont très simples à écrire. Chaque question est constituée de quelques lignes de texte. Entre les questions, il y a une ligne vide. Il est préférable de regarder l'exemple à la fin de ce document pour le comprendre.
+
+## Réalisation des enquêtes [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_running_surveys){#s7-3}
+
+Maintenant que vous savez comment rédiger les bases d'un questionnaire, vous pourriez en faire un. Vous devez "compiler" les informations que vous avez saisies rendre l'enquête exécutable.
+
+## Exemple complet [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_full_examples){#s7-4}
+Exemple sans expérience intégrée. Notez que dans l'exemple suivant, il n'y a que deux questions (avec une ligne vide entre les deux questions). La deuxième question utilise également des balises html, dans ce cas, le texte entre <b> et </b> est affiché en gras.
+
+**Exemple**
+````
+option: survey-name: Childhood memory
+
+l: gender
+t: radio
+q: What is your gender?
+- Female
+- Male
+
+l: age
+t: range
+q: What is your age?
+- {min=60,max=120} Select your age
+
+l: earliest
+t: textbox
+q: Please write down your <b>earliest 3 memories of personal event</b>. For each even, say how old you were (1 year, 2 years, 3 years, 4 years, 5 years, etc).
+- event1
+- event2
+- event3
+````
+
+Notez que l'exemple suivant comporte une expérience et une question de l'échelle intégrée Big 5 sur la personnalité. Notez deux choses importantes : Chaque étiquette n'a pas d'espace, c'est toujours un seul mot. Et deuxièmement, entre les questions, il y a une ligne vide.
+
+**Exemple**
+````
+option: survey-name: Psychological Studies cognitive demonstration
+
+scale: agree
+- Disagree strongly
+- Disagree moderately
+- Disagree a little
+- Neither agree nor disagree
+- Agree a little
+- Agree moderately
+- Agree strongly
+
+l: firsttime
+t: radio
+q: Is this the first time that you do this specific study?
+- Yes, first try
+- No. I already tried and finished it before and wanted to try it again
+- No. I tried it before, but it did technically not work, and therefore try again
+
+l: where
+t: radio
+q: Where are you right now?
+- Alone in a room, and it is quiet
+- Alone in a room, but it is not quiet at all (for example because of listening to music/tv)
+- Outside university, in a room with other people, but it is pretty quiet
+- Outside university, in a room with other people, and it is not quiet
+- In a university room or library
+- Somewhere else
+
+l: gender
+q: Are you male or female?
+t: radio
+- Male
+- Female
+- Do not want to answer
+
+l: student
+q: Are you a psychology student?
+t: radio
+- Yes
+- No
+
+l: computer
+q: Do you regularly play computer games?
+t: radio
+- Yes, at least once a week
+- No, less than once a week or never
+
+l: tired
+q: How fit do you feel?
+t: radio
+- Very awake and fit
+- Neither fit nor tired
+- I feel a bit tired
+- I feel very tired
+
+l: tipi
+q: I see myself as ...
+t: scale agree
+- I see myself as Extraverted, enthusiastic
+- I see myself as Critical, quarrelsome
+- I see myself as Dependable, self-disciplined
+- I see myself as Anxious, easily upset
+- I see myself as Open to new experiences, complex
+- I see myself as Reserved, quiet
+- I see myself as Sympathetic, warm
+- I see myself as Disorganized, careless
+- I see myself as Calm, emotionally stable
+- I see myself as Conventional, uncreative
+
+l: simontask
+q: Please carry out the experiment now, it takes around 10 minutes
+t: experiment
+- classroom_simon
+
+l: comments
+t: textbox
+q: Do you have any comments?
+- Type comments in the box below:
+````
+
+

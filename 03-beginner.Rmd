@@ -1,0 +1,49 @@
+# Départ pour débutant absolu [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/absolutebeginners.html){#s3}
+
+## Ce que vous pouvez faire avec PsyToolkit [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/absolutebeginners.html#_what_type_of_things_you_can_do_with_psytoolkit){#s3-1}
+
+* Programmez une expérience psychologique cognitive, telle que la tâche Simon, et exécutez-la dans votre navigateur (sans aucun plugin).
+* Créer un questionnaire d'enquête en ligne.
+* Exécutez des expériences et des enquêtes par questionnaire en ligne, et recueillez des données auprès des participants en ligne.
+* Bien que le système basé sur le web soit pratique, vous pouvez à la place installer un ordinateur de laboratoire autonome en utilisant PsyToolkit (système d'exploitation Linux requis). Celui-ci prend en charge les claviers externes courants (Blackbox, Cedrus et autres matériels dédiés).
+
+## Pour qui est fait PsyToolkit ? [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/absolutebeginners.html#_what_type_of_things_you_can_do_with_psytoolkit){#s3-2}
+
+* Étudiants en psychologie
+* Chercheurs (psychologues, chercheurs en comportement)
+
+PsyToolkit peut être utilisé dans le monde entier. Il peut être utilisé gratuitement (mais il ne peut pas être utilisé à des fins commerciales). Utilisez-le de manière responsable ([voir les conditions juridiques](#s14)).
+
+## Combien de temps faut-il pour apprendre ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/#lessons4){#s3-3}
+
+Vous pouvez l'apprendre même sans aucune connaissance en programmation. Apprendre quelque chose de nouveau prend du temps !!! Le temps d'apprentissage prévu pour les étudiants en psychologie (avec au moins une année d'études derrière eux) est, approximativement, le suivant :
+
+1. Comprendre les bases du PsyToolkit : Au moins 1 heure (jusqu'à quelques heures).
+2. Apprendre à mettre en place une étude par questionnaire : 1 à 5 heures.
+3. Apprendre à mettre en place une expérience sur le temps de réaction : 2 à 10 heures.
+4. Apprendre à analyser les données d'un questionnaire : 2 heures.
+5. Apprendre à analyser les données d'une expérience : 5 heures.
+6. Apprendre à dessiner des stimuli avec Inkscape : 20 minutes à 1 jour (selon le niveau de complexité).
+7. Comprendre tout cela très bien : Une semaine
+
+## Étapes de l'apprentissage de PsyToolkit  [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/absolutebeginners.html#_steps_of_learning_psytoolkit){#s3-4}
+
+Il existe différentes façons d'utiliser PsyToolkit :
+
+* **Utilisation de base** : Il suffit de parcourir le site web pour découvrir les expériences et questionnaires psychologiques cognitifs existants. Pour cela, il est recommandé de lire les [leçons en ligne](http://www.psytoolkit.org/lessons) et d'utiliser la [bibliothèque d'enquêtes](http://www.psytoolkit.org/survey-library) ou la [bibliothèque d'expériences](http://www.psytoolkit.org/survey-library).
+
+* **Mener ses propres études** : Vous pouvez utiliser PsyToolkit pour concevoir et mener vos propres études, et vous pouvez utiliser le serveur web de PsyToolkit pour collecter des données en ligne. Vous devrez apprendre le codage du PsyToolkit. N'ayez crainte, il y a beaucoup de documentation et de nombreux exemples complets à copier et à coller provenant des bibliothèques gratuites. Toutes les informations nécessaires pour apprendre PsyToolkit sont en ligne.
+
+Le meilleur moyen d'apprendre le PsyToolkit est de regarder des exemples, de lire la documentation en ligne et de travailler en essayant et en faisant des erreurs jusqu'à ce que cela fonctionne (essai et erreur). Un exemple détaillé de A à Z avec des vidéos peut être [consulté ici](#s6).
+
+### Étape 1{-}
+Assurez-vous de bien comprendre les bases des expériences psychologiques cognitives. [Cliquez sur ce lien où ces concepts sont expliqués](https://www.psytoolkit.org/lessons/commonterms.html).
+
+### Étape 2{-}
+Les expériences ont besoin de stimuli. Vous avez besoin d'un programme de "dessin" pour créer de tels stimuli. [Voici une leçon sur la façon de le faire avec Inkscape, qui est un outil gratuit](https://www.psytoolkit.org/lessons/inkscape.html)
+
+### Étape 3{-}
+Vous êtes maintenant prêt à créer un compte PsyToolkit. Il vous suffit d'envoyer un courriel et de créer votre compte via la page principale ([créez votre compte](https://www.psytoolkit.org/c/3.1.0/)).
+
+### Étape 4{-}
+Passez en revue [ces leçons détaillées](http://www.psytoolkit.org/lessons/#lessons4) sur la façon de mettre en place une enquête ou une expérience en ligne avec PsyToolkit.

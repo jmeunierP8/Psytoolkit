@@ -1,0 +1,27 @@
+# Questions juridiques [![ukflag](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/legal.html){#legal}
+Avant d'utiliser le PsyToolkit, assurez-vous de bien comprendre vos responsabilités légales^[NdT. Vous pouvez vérifier si l'auteur a mis à jour ses condition d'utilisation directement sur son site [https://www.psytoolkit.org/doc3.1.0/legal.html](https://www.psytoolkit.org/doc3.1.0/legal.html)]
+
+* PsyToolkit est gratuit pour tout utilisateur non commercial.
+* PsyToolkit est la propriété intellectuelle de Gijsbert Stoet.
+* PsyToolkit est livré sans garantie. L'utilisateur est entièrement responsable des conséquences de l'utilisation du logiciel et du site web.
+* Le site web PsyToolkit peut être désactivé à tout moment et les utilisateurs peuvent ne pas être avertis ou informés. Évidemment, cela n'est pas prévu et presque impossible, étant donné que le serveur est placé dans un centre de données professionnel. Mais il n'y a tout simplement aucune garantie. Les problèmes éventuels ne sont pas de la responsabilité de Gijsbert Stoet. (Ne me poursuivez donc pas en justice pour perte de données, etc !)
+* Toute utilisation inappropriée suspectée (par exemple, le téléchargement d'images illégales indécentes) n'est pas autorisée et, si elle est détectée, elle sera signalée aux autorités compétentes.
+* L'utilisation commerciale (par exemple, les enquêtes en ligne) doit d'abord être discutée avec Gijsbert Stoet.
+* Gijsbert Stoet n'est pas responsable des études réalisées avec le PsyToolkit. Pour la recherche professionnelle ou étudiante, les utilisateurs doivent eux-mêmes s'assurer que l'approbation (éthique) de la recherche a été donnée, le cas échéant.
+* PsyToolkit peut être utilisé gratuitement pour un usage non commercial, mais si vous l'utilisez et que vous rédigez des rapports et/ou publiez des enquêtes et/ou des expériences en l'utilisant, vous devez toujours le citer correctement et créditer Gijsbert Stoet pour la création du logiciel.
+* En cas de doute, n'hésitez pas à contacter Gijsbert Stoet par e-mail au professeur Gijsbert stoet via psytoolkit@gmx.com.
+
+## Copyright [![](img/ukflag.png)](https://www.psytoolkit.org/copyright.html){#s14-1}
+PsyToolkit est développé par et appartient au professeur Gijsbert Stoet. Tout le monde peut utiliser le PsyToolkit pour des recherches non commerciales et des projets éducatifs non commerciaux, à condition que le professeur Gijsbert Stoet et le PsyToolkit soient mentionnés dans toute publication qui en résulte.
+
+* Le droit d'auteur de tout le matériel de PsyToolkit (voir exceptions au point suivant) appartient au professeur Gijsbert Stoet. Le code et les leçons du PsyToolkit peuvent être utilisés librement à des fins éducatives et de recherche non commerciales, pour autant que le professeur Gijsbert Stoet soit reconnu. Pour une utilisation commerciale, par exemple dans des manuels scolaires, vous devez en demander officiellement l'autorisation. En cas de doute, vous devez également contacter le professeur Gijsbert Stoet.
+* La bibliothèque d'enquêtes contient des enquêtes élaborées par d'autres. Chaque entrée d'enquête comporte une description des droits d'auteur, qui s'appliquent. La bibliothèque d'expériences contient des expériences qui ont été développées par d'autres et dont les droits d'auteur leur appartiennent - les détails sur les droits d'auteur, s'ils s'appliquent, se trouvent dans les références.
+* Ce site web présente diverses implémentations d'et  de questionnaires dans PsyToolkit. Pour chaque échelle, le développeur du PsyToolkit a fait de son mieux pour savoir si les chercheurs et les étudiants peuvent utiliser le test. Vous trouverez ces informations pour chaque questionnaire dans les notes légales. Si vous avez connaissance d'une erreur, veuillez la signaler. Les droits d'auteur de ces échelles appartiennent généralement aux auteurs qui les ont créées (mais pour chaque échelle, vous devez vérifier les notes juridiques). Vous devez toujours remercier les personnes qui ont conçu les questionnaires en citant leur travail.
+* Toute violation des droits d'auteur ou utilisation abusive du PsyToolkit sera signalée aux autorités compétentes. Toute personne qui télécharge du matériel illégal sur le site web sera signalée aux autorités compétentes.
+* La reproduction/utilisation d'images de cette page web pour la publication dans des revues ou des livres n'est pas autorisée, à moins d'un arrangement payant avec le professeur Gijsbert Stoet.
+
+## Des questions ? [![](img/ukflag.png)](https://www.psytoolkit.org/copyright.html#_any_questions){#s14-2}
+
+Si vous avez des questions sur le droit d'auteur, veuillez m'envoyer un courriel ([psytoolkit\@gmx.com](mailto:psytoolkit\@gmx.com)).
+
+Je reçois régulièrement des demandes d'originaux de questionnaires ou de documents que je mentionne sur la page web. Vous pouvez trouver les originaux via les liens ou les références que je fournis pour chaque questionnaire ; en d'autres termes, vous pouvez obtenir l'original via l'internet ou votre bibliothèque. Je ne les envoie pas par courrier électronique et je ne répondrai pas à ces demandes de documents/questionnaires originaux par courrier électronique, car j'en reçois trop, désolé ! Les seuls documents que je peux vous envoyer sont ceux que j'ai rédigés moi-même, par exemple sur le PsyToolkit.

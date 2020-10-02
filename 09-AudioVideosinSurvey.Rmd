@@ -1,0 +1,248 @@
+# Audio et vidéo dans les questionnaires [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html){#surveyaudiovideo}
+
+## Introduction [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_introduction){#av_introduction}
+
+Vous pouvez jouer des sons et des vidéos dans vos enquêtes PsyToolkit. Il existe de nombreuses façons de choisir les options. Par exemple, il est possible que les gens ne puissent écouter/regarder un son/une vidéo qu'une seule fois.
+
+Les gens posent souvent des questions sur l'option de lecture automatique. La lecture automatique des sons et des vidéos n'est généralement pas recommandée dans les navigateurs. Les gens n'aiment tout simplement pas aller sur un site web et, tout à coup, entendre un son ou voir une vidéo. Cela peut, par exemple, perturber les autres personnes présentes dans la pièce. Certains navigateurs le permettent à condition que le son soit désactivé, ce qui n'est pas vraiment automatique (parce que le son doit toujours être activé et que cela complique la tâche des participants). Par conséquent, PsyToolkit n'offre pas cette option.
+
+Vous pouvez télécharger de petits fichiers audio sur le serveur du PsyToolkit. Les fichiers audio plus volumineux et tous les fichiers vidéo doivent être téléchargés sur un serveur séparé. PsyToolkit recommande Google Drive, qui fonctionne très bien et vous permet d'accéder rapidement aux fichiers audio/vidéo. Vous apprendrez ci-dessous comment faire.
+
+## Audio/sons [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_audio_sound){#audio_sound}
+
+Vous pouvez avoir un ou plusieurs sons (c'est-à-dire des pistes audio) au-dessus de chaque question. Pour cela, nous utilisons l'option *a:* dans la description de la question. [Voir aussi la documentation principale](#s8), notamment les commandes [play a sound](#playasound) et [play a video](#playavideo)
+
+### Quel format sonore utiliser ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_what_sound_format_to_use){#what_sound_format_to_use}
+
+Il est fortement recommandé d'utiliser des fichiers sonores compressés. Le format audio compressé le plus courant est le célèbre MP3. Les fichiers non compressés tels que le WAV prennent beaucoup plus de bande passante et demanderont plus de temps de chargement aux participants.
+
+### Comment télécharger un fichier son sur PsyToolkit ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_upload_a_sound_file_to_psytoolkit){#how_to_upload_a_sound_file_to_psytoolkit}
+
+Vous pouvez placer les fichiers sonores sur le serveur PsyToolkit ou sur un autre serveur, comme Google Drive et Dropbox. Si vous avez des fichiers volumineux, il est recommandé d'utiliser le Google Drive car il est plus facile à utiliser (voir les conseils ci-dessous).
+
+Voici ce que vous devez faire :
+1. Allez à votre enquête.
+2. Cliquez sur le bouton "Télécharger des fichiers (images ou fichiers audio)" sous la zone de script
+3. Sélectionnez le fichier audio sur votre ordinateur à partir de votre disque dur local.
+4. Cliquez sur le bouton "Enregistrer".
+5. Votre fichier est maintenant en cours de téléchargement (vous pouvez vérifier avec le bouton "Voir les fichiers")
+
+### Comment ajouter l'audio à votre question ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_add_the_audio_to_your_question){how_to_add_the_audio_to_your_question}
+
+C'est très facile à faire. Il suffit d'ajouter une ligne commençant par *a:* et d'ajouter ensuite dans cette ligne le nom du fichier audio (y compris son extension, par exmple mp3). Le *a:* est utilisé parce que "a" est la première lettre de "audio". L'exemple suivant suppose que vous avez téléchargé un fichier audio appelé *piano_sound.mp3*.
+
+````
+l: my_question
+a: piano_sound.mp3
+t: radio
+q: What do you think of this music?
+- I like it a lot
+- I neither like it nor dislike it
+- I do not like it
+````
+
+### Comment avoir plus d'une piste audio dans votre question ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_have_more_than_one_audio_track_in_your_question){#how_to_have_more_than_one_audio_track_in_your_question}
+
+Vous pouvez avoir plus d'un fichier audio. Dans ce cas, vous disposez de plusieurs lecteurs audio. Les participants peuvent alors jouer l'un après l'autre et, par exemple, décider quel son ils préfèrent. L'exemple suivant suppose que vous avez téléchargé un fichier audio appelé *piano_sound.mp3*.
+
+````
+l: my_question
+a: piano.mp3 violin.mp3 organ.mp3
+t: radio
+q: Which of the sounds did you like best?
+- The piano
+- The violin
+- The organ
+````
+
+### Comment jouer un son une seule fois ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_play_a_sound_only_one_time){#how_to_play_a_sound_only_one_time}
+Parfois, les chercheurs ne veulent jouer un son qu'une seule fois. Ils ne veulent pas que le participant puisse écouter le son plus d'une fois. C'est assez courant dans les études, et il existe une simple ligne d'option que vous pouvez ajouter à votre question.
+
+````
+l: my_question
+a: piano.mp3
+o: no_sound_replay
+t: radio
+q: Listen to the sound and tell us if which pitch the tone was
+- C sharp
+- C minor
+- Somthing else
+````
+### Comment jouer un son à partir de mon Google Drive ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_play_a_sound_from_my_google_drive){#how_to_play_a_sound_from_my_google_drive}
+
+Pour cela, vous devez d'abord créer un compte Google. Le Google Drive est un endroit où vous pouvez stocker des fichiers téléchargés, et l'accès à celui-ci est assez rapide et facile à utiliser.
+
+1.Téléchargez le fichier son sur votre Google Drive
+2.Dans votre Google Drive, pointez à droite sur le nom du fichier et sélectionnez "share" (et non "get shareable link"). Si vous faites cela, vous obtenez une petite fenêtre popup "Partager avec d'autres".
+3. Dans cette fenêtre, cliquez sur "Obtenir un lien partageable" (dans le coin supérieur droit de la fenêtre) et vous verrez alors apparaître un long lien web. Il suffit de le laisser à la disposition de toute personne disposant du lien. Ensuite, vous cliquez sur Copier le lien
+4. Dans votre question, écrivez un : suivi d'un espace, puis collez le lien
+5. Maintenant, cela devrait ressembler à la question suivante
+
+* Le format du lien doit être un peu comme celui de l'exemple ci-dessous. Il commence par https://drive.google.com/ suivi de quelque chose comme /file/d/ (ou une autre lettre), un long numéro, puis se termine par _/view
+* Dans l'étape 2 ci-dessus, il serait erroné de choisir déjà d'obtenir un lien partageable, car cela vous donnerait alors un lien dans un format différent qui ne fonctionne pas avec PsyToolkit. Veillez donc à suivre les 5 étapes exactement dans cet ordre.
+
+````
+l: testquestion
+t: radio
+a: https://drive.google.com/file/d/1oHhasFAFZdkadakdlJsjXasJ/view?usp=sharing
+o: no_sound_replay
+q: Play the sound and say whether you like it
+- Like it
+- Don't like it
+- No opinion
+````
+### Comment faire jouer un son de DropBox [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_play_a_sound_from_dropbox){#how_to_play_a_sound_from_dropbox}
+
+Pour cela, vous devez d'abord créer un compte Dropbox. Suivez ces étapes :
+
+1. Téléchargez votre fichier son sur votre compte Dropbox.
+2. Dans la boîte de dépôt, vous voyez une liste de vos fichiers, cliquez sur le bouton Partager pour le fichier sonore téléchargé
+3. Sélectionnez les options "Partager un lien" et "Copier le lien".
+4. Dans le script de votre enquête PsyToolkit, écrivez "a :" et collez le lien.
+5. A la fin, remplacez dl=0 par raw=1 (c'est super important)
+6. Il devrait maintenant ressembler à quelque chose comme ci-dessous
+
+````
+l: testd
+t: radio
+a: https://www.dropbox.com/s/frwz3v2xddsdadjhh/myfile.wav?raw=1
+q: Play the sound and say whether you like it
+- Like it
+- Don't like it
+- No opinion
+````
+
+### Comment jouer un son encore et encore (en boucle) [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_play_a_sound_again_and_again_loop){#how_to_play_a_sound_again_and_again_loop}
+
+Il suffit d'ajouter la ligne *o:* loop à votre question et elle sera diffusée encore et encore.
+
+````
+l: mysound
+t: radio
+a: https://www.dropbox.com/s/frwz3v2xddsdadjhh/myfile.wav?raw=1
+o: loop
+q: Play the sound and say whether you like it
+- Like it
+- Don't like it
+- No opinion
+````
+
+## Video [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_video){#av_video}
+
+Cette leçon spécifique ne concerne pas les vidéos YouTube. Elles sont traitées différemment et il y a une [leçon séparée à ce sujet](https://www.psytoolkit.org/lessons/youtube_video.html).
+
+Vous pouvez avoir un ou plusieurs fichiers vidéo au-dessus de chaque question. Pour cela, nous utilisons l'option *a:* dans la description de la question. Voir aussi la [documentation principale](#s8).
+
+### Pourquoi ne puis-je pas télécharger un fichier vidéo sur PsyToolkit ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_why_can_i_not_upload_a_video_file_to_psytoolkit){#why_can_i_not_upload_a_video_file_to_psytoolkit}
+
+Ce n'est pas possible, car les fichiers vidéo sont trop volumineux et ce n'est en fait pas nécessaire. Au lieu de télécharger une vidéo sur PsyToolkit, vous pouvez utiliser des fichiers vidéo stockés sur d'autres serveurs. Ci-dessous, vous voyez comment vous pouvez facilement lire une vidéo à partir de Google Drive dans PsyToolkit.
+
+### Comment avoir plus d'une piste vidéo dans votre question ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_have_more_than_one_audio_track_in_your_question){#how_to_have_more_than_one_audio_track_in_your_question}
+
+Vous pouvez simplement avoir plusieurs vidéos. Il est peu probable que ce soit une fonction souvent utilisée, mais si vous en avez besoin, c'est possible.
+
+### Comment lire une vidéo une seule fois ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_play_a_video_only_one_time){#how_to_play_a_video_only_one_time}
+Choisissez l'option video_no_replay dans une question pour vous assurer que les gens ne peuvent jouer une vidéo qu'une seule fois. Il s'agit de la ligne *o: no_video_replay*
+
+````
+l: my_video_question
+v: https://drive.google.com/file/d/1842323jsdxrandomXJs/view?usp=sharing
+o: no_video_replay
+t: radio
+q: What do you think of this movie?
+- I like it a lot
+- I neither like it nor dislike it
+- I do not like it
+````
+
+### Comment agrandir la vidéo ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_make_the_video_larger){#how_to_make_the_video_larger}
+
+Votre vidéo aura la taille dans laquelle vous l'avez téléchargée. Ainsi, si votre vidéo téléchargée a une largeur de 2000 pixels, elle sera affichée comme cela. Vous pouvez facilement modifier la largeur de la zone du lecteur vidéo. Pour ce faire, ajoutez une ligne *o: video_width* qui doit inclure la largeur en [pixels](https://fr.wikipedia.org/wiki/Pixel).
+
+Notez que la hauteur est automatiquement modifiée lorsque vous modifiez la largeur. La vidéo conservera son [rapport hauteur/largeur](https://fr.wikipedia.org/wiki/Aspect_ratio).
+
+Notez que dans les questions, vous pouvez avoir plusieurs lignes *o:*, comme le montre également l'exemple ci-dessous.
+
+````
+l: my_video_question
+v: https://drive.google.com/file/d/1842323jsdxrandomXJs/view?usp=sharing
+o: video_width 800
+o: no_video_replay
+t: radio
+q: What do you think of this movie?
+- I like it a lot
+- I neither like it nor dislike it
+- I do not like it
+````
+
+### Comment jouer une vidéo à partir de mon Google Drive ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_play_a_video_from_my_google_drive){#how_to_play_a_video_from_my_google_drive}
+
+Pour cela, vous devez d'abord créer un compte Google, puis, vous devez procéder comme suit :
+
+1. Téléchargez un fichier vidéo (idéalement mp4 ou webm) sur votre Google Drive.
+2. Dans votre Google Drive, pointez à droite sur le nom du fichier et sélectionnez "share". Si vous faites cela, vous obtenez une petite fenêtre popup "Partager avec d'autres".
+3. Dans cette fenêtre, sélectionnez "Get sharable link" et vous verrez alors un long lien web. Il suffit de le laisser à la disposition de toute personne disposant du lien. Ensuite, vous cliquez sur Copier le lien
+4. Maintenant, dans votre enquête, assurez-vous d'ajouter à votre question une ligne commençant par *v: * (n'oubliez pas l'espace après le :, c'est vraiment nécessaire). Collez le lien partagé depuis votre disque dur Google ici (cliquez sur le bouton droit de la souris et sélectionnez coller, ou tapez control-v).
+
+C'est tout ce dont vous avez besoin. Une telle question peut ressembler, par exemple, à ceci :
+
+````
+l: my_video_question
+v: https://drive.google.com/file/d/1842323jsdxrandomXJs/view?usp=sharing
+t: radio
+q: What do you think of this movie?
+- I like it a lot
+- I neither like it nor dislike it
+- I do not like it
+````
+
+### Comment jouer une vidéo de DropBox ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_play_a_sound_from_dropbox){#how_to_play_a_sound_from_dropbox}
+
+Pour cela, vous devez d'abord créer un compte Dropbox, puis suivre les étapes suivantes :
+
+1. Téléchargez votre fichier vidéo sur votre compte Dropbox.
+2. Dans la boîte de dépôt, vous verrez une liste de vos fichiers, cliquez sur le bouton "Partager" pour le fichier vidéo téléchargé
+3. Sélectionnez les options "Partager un lien" et "Copier le lien".
+4. Dans le script de votre enquête PsyToolkit, écrivez "a :" et collez le lien.
+5. A la fin, remplacez dl=0 par raw=1 (c'est super important)
+
+Il devrait maintenant ressembler à quelque chose comme ci-dessous
+
+````
+l: testd
+t: radio
+a: https://www.dropbox.com/s/frwz3v2xddsdadjhh/myfile.wav?raw=1
+q: Play the sound and say whether you like it
+- Like it
+- Don't like it
+- No opinion
+````
+### Comment lire une vidéo encore et encore (en boucle) ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_play_a_video_again_and_again_loop){#how_to_play_a_video_again_and_again_loop}
+
+Il suffit d'ajouter la ligne *o: loop* à votre question et elle sera diffusée encore et encore (la même fonction est également disponible pour l'audio, voir l'exemple [ici](#how_to_play_a_sound_again_and_again_loop)).
+
+## Vidéo YouTube [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_youtube_video){#av_youtube_video}
+
+En plus des exemples de vidéos ci-dessus, vous pouvez utiliser les vidéos de YouTube. YouTube est une plate-forme de diffusion vidéo en continu très populaire, propriété de Google. Vous pouvez utiliser des vidéos existantes que vous pourriez vouloir inclure dans votre étude.
+
+L'inconvénient des vidéos de YouTube est qu'elles sont souvent accompagnées de <u>publicités et de suggestions pour d'autres vidéos</u>, etc. - c'est une distraction que vous ne souhaitez pas toujours dans votre étude psychologique.
+
+Il y a deux façons d'inclure une vidéo YouTube.
+
+##### Méthode 1
+
+Il existe un type de question sur YouTube. Il y a une [leçon séparée à ce sujet](https://www.psytoolkit.org/lessons/youtube_video.html)).
+
+##### Méthode 2
+
+Chaque heure de questions peut inclure une vidéo YouTube en incluant une ligne y :. Le code lettre-numéro est l'identifiant de la vidéo YouTube. Consultez [la leçon YouTube](https://www.psytoolkit.org/lessons/youtube_video.html) pour savoir comment trouver ce code.
+
+````
+l: testd
+t: radio
+y: Lq8bpo9KWa8
+q: Play the video and say whether you like it
+- Like it
+- Don't like it
+- No opinion
+````

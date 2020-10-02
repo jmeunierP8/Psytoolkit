@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapitre 7 Les questionnnaires  | Documentation en ligne de PsyToolkit</title>
+  <meta name="description" content="Ce ebook est une traduction de la documentation de PsyToolkit" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapitre 7 Les questionnnaires  | Documentation en ligne de PsyToolkit" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Ce ebook est une traduction de la documentation de PsyToolkit" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapitre 7 Les questionnnaires  | Documentation en ligne de PsyToolkit" />
+  
+  <meta name="twitter:description" content="Ce ebook est une traduction de la documentation de PsyToolkit" />
+  
+
+<meta name="author" content="Gijsbert Stoet, Jean-Marc Meunier (Trad)" />
+
+
+<meta name="date" content="2020-10-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="un-projet-complet-de-recherche-en-ligne-ukflag.html"/>
+<link rel="next" href="s8.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Documentation en ligne de PsyToolkit</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Note du traducteur</a></li>
+<li class="chapter" data-level="1" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html"><i class="fa fa-check"></i><b>1</b> Présentation de PsyToolkit <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="1.1" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#pourquoi-utiliser-psytoolkit"><i class="fa fa-check"></i><b>1.1</b> Pourquoi utiliser PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.2" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#environnement-weblogin"><i class="fa fa-check"></i><b>1.2</b> Environnement web/login <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.3" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#les-caractéristiques-de-psytoolkit-en-bref"><i class="fa fa-check"></i><b>1.3</b> Les caractéristiques de PsyToolkit en bref <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.4" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#leçons"><i class="fa fa-check"></i><b>1.4</b> Leçons <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="1.5" data-path="présentation-de-psytoolkit.html"><a href="présentation-de-psytoolkit.html#liens-utiles"><i class="fa fa-check"></i><b>1.5</b> Liens utiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="vue-densemble.html"><a href="vue-densemble.html"><i class="fa fa-check"></i><b>2</b> Vue d’ensemble <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="2.1" data-path="vue-densemble.html"><a href="vue-densemble.html#expériences-et-enquêtes"><i class="fa fa-check"></i><b>2.1</b> Expériences et enquêtes <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="2.1.1" data-path="vue-densemble.html"><a href="vue-densemble.html#programmation-dexpériences"><i class="fa fa-check"></i><b>2.1.1</b> Programmation d’expériences <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.1.2" data-path="vue-densemble.html"><a href="vue-densemble.html#exemples-dexpériences-avec-psytoolkit"><i class="fa fa-check"></i><b>2.1.2</b> Exemples d’expériences avec PsyToolkit <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.1.3" data-path="vue-densemble.html"><a href="vue-densemble.html#enquêtesquestionnaires-en-ligne"><i class="fa fa-check"></i><b>2.1.3</b> Enquêtes/questionnaires en ligne <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="vue-densemble.html"><a href="vue-densemble.html#expériences-en-ligne-et-hors-ligne"><i class="fa fa-check"></i><b>2.2</b> Expériences en ligne et hors ligne <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.3" data-path="vue-densemble.html"><a href="vue-densemble.html#comment-analyser-les-données"><i class="fa fa-check"></i><b>2.3</b> Comment analyser les données <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="2.3.1" data-path="vue-densemble.html"><a href="vue-densemble.html#expériences"><i class="fa fa-check"></i><b>2.3.1</b> Expériences<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.3.2" data-path="vue-densemble.html"><a href="vue-densemble.html#enquêtes"><i class="fa fa-check"></i><b>2.3.2</b> Enquêtes <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="2.3.3" data-path="vue-densemble.html"><a href="vue-densemble.html#enquêtes-avec-expériences-intégrées"><i class="fa fa-check"></i><b>2.3.3</b> Enquêtes avec expériences intégrées <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html"><i class="fa fa-check"></i><b>3</b> Départ pour débutant absolu <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="3.1" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#ce-que-vous-pouvez-faire-avec-psytoolkit"><i class="fa fa-check"></i><b>3.1</b> Ce que vous pouvez faire avec PsyToolkit <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="3.2" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#pour-qui-est-fait-psytoolkit"><i class="fa fa-check"></i><b>3.2</b> Pour qui est fait PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="3.3" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#combien-de-temps-faut-il-pour-apprendre"><i class="fa fa-check"></i><b>3.3</b> Combien de temps faut-il pour apprendre ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="3.4" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étapes-de-lapprentissage-de-psytoolkit"><i class="fa fa-check"></i><b>3.4</b> Étapes de l’apprentissage de PsyToolkit <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-1"><i class="fa fa-check"></i>Étape 1</a></li>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-2"><i class="fa fa-check"></i>Étape 2</a></li>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-3"><i class="fa fa-check"></i>Étape 3</a></li>
+<li class="chapter" data-level="" data-path="départ-pour-débutant-absolu.html"><a href="départ-pour-débutant-absolu.html#étape-4"><i class="fa fa-check"></i>Étape 4</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="s4.html"><a href="s4.html"><i class="fa fa-check"></i><b>4</b> Programmer des expériences</a><ul>
+<li class="chapter" data-level="4.1" data-path="s4.html"><a href="s4.html#les-scripts-ddexpérimentation-dans-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.1</b> Les Scripts d’d’expérimentation dans PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="4.1.1" data-path="s4.html"><a href="s4.html#définition-dun-script-ukflag"><i class="fa fa-check"></i><b>4.1.1</b> Définition d’un script <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.1.2" data-path="s4.html"><a href="s4.html#étapes-typiques-dune-expérience-ukflag"><i class="fa fa-check"></i><b>4.1.2</b> Étapes typiques d’une expérience <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="s4.html"><a href="s4.html#les-stimuli-dans-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.2</b> Les stimuli dans PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="4.2.1" data-path="s4.html"><a href="s4.html#comment-créer-des-stimuli-pour-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.2.1</b> Comment créer des stimuli pour PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.2" data-path="s4.html"><a href="s4.html#comment-charger-les-stimuli-ukflag"><i class="fa fa-check"></i><b>4.2.2</b> Comment charger les stimuli <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.3" data-path="s4.html"><a href="s4.html#comment-présenter-les-stimuli-ukflag"><i class="fa fa-check"></i><b>4.2.3</b> Comment présenter les stimuli <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.4" data-path="s4.html"><a href="s4.html#système-de-coordonnées-psytoolkit-ukflag"><i class="fa fa-check"></i><b>4.2.4</b> Système de coordonnées PsyToolkit <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.2.5" data-path="s4.html"><a href="s4.html#questions-de-temps-ukflag"><i class="fa fa-check"></i><b>4.2.5</b> Questions de temps <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="s4.html"><a href="s4.html#syntaxe-pour-les-feedback-ukflag"><i class="fa fa-check"></i><b>4.3</b> Syntaxe pour les feedback <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="4.3.1" data-path="s4.html"><a href="s4.html#contexte-ukflag"><i class="fa fa-check"></i><b>4.3.1</b> Contexte <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.2" data-path="s4.html"><a href="s4.html#ce-dont-vous-avez-besoin-pour-pouvoir-donner-un-feedback-ukflag"><i class="fa fa-check"></i><b>4.3.2</b> Ce dont vous avez besoin pour pouvoir donner un feedback <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.3" data-path="s4.html"><a href="s4.html#syntaxe-ukflag"><i class="fa fa-check"></i><b>4.3.3</b> Syntaxe <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.4" data-path="s4.html"><a href="s4.html#text-ukflag"><i class="fa fa-check"></i><b>4.3.4</b> text <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.5" data-path="s4.html"><a href="s4.html#définir-des-variables-ukflag"><i class="fa fa-check"></i><b>4.3.5</b> définir des variables <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.3.6" data-path="s4.html"><a href="s4.html#lineplot-et-xyplot-ikflag"><i class="fa fa-check"></i><b>4.3.6</b> Lineplot et xyplot <span><img src="img/ukflag.png" alt="ikflag" /></span></a></li>
+<li class="chapter" data-level="4.3.7" data-path="s4.html"><a href="s4.html#wait_for_key-ikflag"><i class="fa fa-check"></i><b>4.3.7</b> wait_for_key <span><img src="img/ukflag.png" alt="ikflag" /></span></a></li>
+<li class="chapter" data-level="4.3.8" data-path="s4.html"><a href="s4.html#save-ikflag"><i class="fa fa-check"></i><b>4.3.8</b> save <span><img src="img/ukflag.png" alt="ikflag" /></span></a></li>
+<li class="chapter" data-level="4.3.9" data-path="s4.html"><a href="s4.html#exemple-complet-de-tâche-avec-feedback-ukflag"><i class="fa fa-check"></i><b>4.3.9</b> Exemple complet de tâche avec feedback <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="s4.html"><a href="s4.html#partager-une-expérience-ukflag"><i class="fa fa-check"></i><b>4.4</b> Partager une expérience <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="4.5" data-path="s4.html"><a href="s4.html#collecter-des-données-expérimentales-en-ligne-ukflag"><i class="fa fa-check"></i><b>4.5</b> Collecter des données expérimentales en ligne <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html"><i class="fa fa-check"></i><b>5</b> Syntaxe pour les scripts <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#comment-utiliser-cette-page-de-présentation-des-scripts-dexpériences"><i class="fa fa-check"></i><b>5.1</b> Comment utiliser cette page de présentation des scripts d’expériences <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#structure-des-scripts"><i class="fa fa-check"></i><b>5.2</b> Structure des scripts <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#option-de-base"><i class="fa fa-check"></i><b>5.3</b> Option de base <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.3.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#resolution"><i class="fa fa-check"></i><b>5.3.1</b> resolution <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#background-color"><i class="fa fa-check"></i><b>5.3.2</b> background color <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#fullscreen"><i class="fa fa-check"></i><b>5.3.3</b> fullscreen <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#mouse"><i class="fa fa-check"></i><b>5.3.4</b> mouse <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#set"><i class="fa fa-check"></i><b>5.3.5</b> set <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.3.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#start-messages"><i class="fa fa-check"></i><b>5.3.6</b> start messages <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#options-avancées"><i class="fa fa-check"></i><b>5.4</b> Options avancées <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.4.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#var-in"><i class="fa fa-check"></i><b>5.4.1</b> var in <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.4.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#var-out"><i class="fa fa-check"></i><b>5.4.2</b> var out <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.4.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#origin"><i class="fa fa-check"></i><b>5.4.3</b> origin <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.4.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#fontdirdatadirbitmapdirsounddir"><i class="fa fa-check"></i><b>5.4.4</b> fontdir,datadir,bitmapdir,sounddir <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#options-pour-linux"><i class="fa fa-check"></i><b>5.5</b> Options pour Linux <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.5.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#escape-c-seulement"><i class="fa fa-check"></i><b>5.5.1</b> escape (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#parallelport-c-seulement"><i class="fa fa-check"></i><b>5.5.2</b> parallelport (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#pcidio24-c-seulement"><i class="fa fa-check"></i><b>5.5.3</b> pcidio24 (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#cedrus-c-seulement"><i class="fa fa-check"></i><b>5.5.4</b> cedrus (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#iolab-c-seulement"><i class="fa fa-check"></i><b>5.5.5</b> iolab (C seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#et-linux-seulement"><i class="fa fa-check"></i><b>5.5.6</b> et (Linux seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.7" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sprites-first-linux-seulement"><i class="fa fa-check"></i><b>5.5.7</b> sprites first (Linux seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.8" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#executable"><i class="fa fa-check"></i><b>5.5.8</b> executable <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.9" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#egi-c-only"><i class="fa fa-check"></i><b>5.5.9</b> egi (C only) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.10" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#vsync-onoff"><i class="fa fa-check"></i><b>5.5.10</b> vsync on|off <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.11" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#window-c-only"><i class="fa fa-check"></i><b>5.5.11</b> window (C only) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.12" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#screensize-and-screendistance-c-only"><i class="fa fa-check"></i><b>5.5.12</b> screensize and screendistance (C only) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.13" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#version"><i class="fa fa-check"></i><b>5.5.13</b> version <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.5.14" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#check_refresh_rate"><i class="fa fa-check"></i><b>5.5.14</b> check_refresh_rate <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#chargement-des-stimuli"><i class="fa fa-check"></i><b>5.6</b> Chargement des stimuli <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.6.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#bitmaps"><i class="fa fa-check"></i><b>5.6.1</b> bitmaps <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#move"><i class="fa fa-check"></i><b>5.6.2</b> move <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#relocate"><i class="fa fa-check"></i><b>5.6.3</b> relocate <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sounds"><i class="fa fa-check"></i><b>5.6.4</b> sounds <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#fonts"><i class="fa fa-check"></i><b>5.6.5</b> fonts <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.6.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#videos"><i class="fa fa-check"></i><b>5.6.6</b> videos <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#les-tâches"><i class="fa fa-check"></i><b>5.7</b> Les tâches <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.7.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#comment-les-tâches-sont-structurées"><i class="fa fa-check"></i><b>5.7.1</b> Comment les tâches sont structurées <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#le-concept-de-variables"><i class="fa fa-check"></i><b>5.7.2</b> le concept de variables <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#le-concept-dhorodatage"><i class="fa fa-check"></i><b>5.7.3</b> Le concept d’horodatage <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#la-fonction-set"><i class="fa fa-check"></i><b>5.7.4</b> La fonction set <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.7.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#synthèse-de-la-fonction-set"><i class="fa fa-check"></i><b>5.7.5</b> Synthèse de la fonction set <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#instructions-de-base"><i class="fa fa-check"></i><b>5.8</b> Instructions de base <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.8.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#keys"><i class="fa fa-check"></i><b>5.8.1</b> keys <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#mouse-on-or-off"><i class="fa fa-check"></i><b>5.8.2</b> mouse on or off <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#table"><i class="fa fa-check"></i><b>5.8.3</b> table <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.4" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-imgukflag.png"><i class="fa fa-check"></i><b>5.8.4</b> show [<embed src="https://www.psytoolkit.org/doc3.2.0/syntax.html#task-show" id="task-show" /></a></li>
+<li class="chapter" data-level="5.8.5" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-bitmap"><i class="fa fa-check"></i><b>5.8.5</b> show bitmap <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.6" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-rectangle"><i class="fa fa-check"></i><b>5.8.6</b> show rectangle<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.7" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-circle"><i class="fa fa-check"></i><b>5.8.7</b> show circle <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.8" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-background"><i class="fa fa-check"></i><b>5.8.8</b> show background <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.9" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-text"><i class="fa fa-check"></i><b>5.8.9</b> show text <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.10" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#show-video"><i class="fa fa-check"></i><b>5.8.10</b> show video <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.11" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#clear"><i class="fa fa-check"></i><b>5.8.11</b> clear <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.12" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#hideunhide"><i class="fa fa-check"></i><b>5.8.12</b> hide/unhide <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.13" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#rotate"><i class="fa fa-check"></i><b>5.8.13</b> rotate</a></li>
+<li class="chapter" data-level="5.8.14" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#delay"><i class="fa fa-check"></i><b>5.8.14</b> delay <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.15" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#readkey"><i class="fa fa-check"></i><b>5.8.15</b> readkey <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.16" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#keystatus"><i class="fa fa-check"></i><b>5.8.16</b> keystatus <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.17" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#readkeys"><i class="fa fa-check"></i><b>5.8.17</b> readkeys <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.18" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#readmouse"><i class="fa fa-check"></i><b>5.8.18</b> readmouse <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.19" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#progress"><i class="fa fa-check"></i><b>5.8.19</b> progress <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.20" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#choose"><i class="fa fa-check"></i><b>5.8.20</b> choose <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.21" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#rate"><i class="fa fa-check"></i><b>5.8.21</b> rate <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.22" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#save"><i class="fa fa-check"></i><b>5.8.22</b> save <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.23" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sound"><i class="fa fa-check"></i><b>5.8.23</b> sound <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.24" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#if"><i class="fa fa-check"></i><b>5.8.24</b> if <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.8.25" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#while"><i class="fa fa-check"></i><b>5.8.25</b> while <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.9" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#instructions-moyennement-avancées"><i class="fa fa-check"></i><b>5.9</b> Instructions moyennement avancées <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.9.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#font"><i class="fa fa-check"></i><b>5.9.1</b> font <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.10" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#s5-10"><i class="fa fa-check"></i><b>5.10</b> Fonctions avancées</a><ul>
+<li class="chapter" data-level="5.10.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#end"><i class="fa fa-check"></i><b>5.10.1</b> end <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.10.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#timestamp"><i class="fa fa-check"></i><b>5.10.2</b> timestamp <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.10.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#sprite"><i class="fa fa-check"></i><b>5.10.3</b> sprite <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.11" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#instructions-pour-les-équipements-spéciaux"><i class="fa fa-check"></i><b>5.11</b> Instructions pour les équipements spéciaux <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.11.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#cedrusreadkey"><i class="fa fa-check"></i><b>5.11.1</b> cedrus readkey</a></li>
+</ul></li>
+<li class="chapter" data-level="5.12" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#tables"><i class="fa fa-check"></i><b>5.12</b> Tables <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.13" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#block"><i class="fa fa-check"></i><b>5.13</b> block <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="5.13.1" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#blockorder"><i class="fa fa-check"></i><b>5.13.1</b> blockorder <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.13.2" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#include-usage-avancé-seulement"><i class="fa fa-check"></i><b>5.13.2</b> include (usage avancé seulement) <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.13.3" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#part-pour-utilisateur-avancé"><i class="fa fa-check"></i><b>5.13.3</b> part (pour utilisateur avancé) <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5.14" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#vue-densemble-de-toutes-les-variables-du-système"><i class="fa fa-check"></i><b>5.14</b> Vue d’ensemble de toutes les variables du système <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="5.15" data-path="syntaxe-pour-les-scripts.html"><a href="syntaxe-pour-les-scripts.html#liens-vers-toutes-les-instructions"><i class="fa fa-check"></i><b>5.15</b> Liens vers toutes les instructions <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html"><i class="fa fa-check"></i><b>6</b> Un projet complet de recherche en ligne <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="6.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-1.-réfléchissez-à-votre-expérience-et-créez-des-stimuli"><i class="fa fa-check"></i><b>6.1</b> Étape 1. Réfléchissez à votre expérience et créez des stimuli<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-2.-créez-les-stimuli"><i class="fa fa-check"></i><b>6.2</b> Étape 2. Créez les stimuli <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-3.-créer-une-nouvelle-expérience"><i class="fa fa-check"></i><b>6.3</b> Étape 3. Créer une nouvelle expérience <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-4.-coder-lexpérience"><i class="fa fa-check"></i><b>6.4</b> Étape 4. Coder l’expérience <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="6.4.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#définition-et-mise-en-ligne-des-stimuli"><i class="fa fa-check"></i><b>6.4.1</b> Définition et mise en ligne des stimuli <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#définir-les-conditions"><i class="fa fa-check"></i><b>6.4.2</b> Définir les conditions <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#décrire-les-événements"><i class="fa fa-check"></i><b>6.4.3</b> Décrire les événements <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.4.4" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#blocs"><i class="fa fa-check"></i><b>6.4.4</b> Blocs <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-5.-compiler-et-exécuter"><i class="fa fa-check"></i><b>6.5</b> Étape 5. Compiler et exécuter <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.6" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-6.-analysez-votre-dossier-de-test"><i class="fa fa-check"></i><b>6.6</b> Étape 6. Analysez votre dossier de test <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.7" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-7.-mise-en-place-du-projet-en-ligne"><i class="fa fa-check"></i><b>6.7</b> Étape 7. Mise en place du projet en ligne <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="6.7.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#mettre-en-place-une-enquête-en-ligne"><i class="fa fa-check"></i><b>6.7.1</b> Mettre en place une enquête en ligne <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.7.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#commencez-par-des-questions-et-une-enquête-test"><i class="fa fa-check"></i><b>6.7.2</b> Commencez par des questions et une enquête test <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.7.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#terminer-lenquête"><i class="fa fa-check"></i><b>6.7.3</b> Terminer l’enquête <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6.8" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#étape-8.-analyser-les-données"><i class="fa fa-check"></i><b>6.8</b> Étape 8. Analyser les données <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="6.8.1" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#assurez-vous-que-lanalyse-de-votre-expérience-est-paramétrée"><i class="fa fa-check"></i><b>6.8.1</b> Assurez-vous que l’analyse de votre expérience est paramétrée <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.8.2" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#téléchargez-vos-données"><i class="fa fa-check"></i><b>6.8.2</b> Téléchargez vos données <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.8.3" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#ouvrez-votre-fichier-de-données-dans-spss"><i class="fa fa-check"></i><b>6.8.3</b> Ouvrez votre fichier de données dans SPSS <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="6.8.4" data-path="un-projet-complet-de-recherche-en-ligne-ukflag.html"><a href="un-projet-complet-de-recherche-en-ligne-ukflag.html#et-cest-tout"><i class="fa fa-check"></i><b>6.8.4</b> Et c’est tout</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html"><i class="fa fa-check"></i><b>7</b> Les questionnnaires <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="7.1" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#introduction"><i class="fa fa-check"></i><b>7.1</b> Introduction <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="7.2" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#comment-créer-une-enquête"><i class="fa fa-check"></i><b>7.2</b> Comment créer une enquête <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="7.3" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#réalisation-des-enquêtes"><i class="fa fa-check"></i><b>7.3</b> Réalisation des enquêtes <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="7.4" data-path="les-questionnnaires.html"><a href="les-questionnnaires.html#exemple-complet"><i class="fa fa-check"></i><b>7.4</b> Exemple complet <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="s8.html"><a href="s8.html"><i class="fa fa-check"></i><b>8</b> Les questionnaire en ligne</a><ul>
+<li class="chapter" data-level="8.1" data-path="s8.html"><a href="s8.html#structure-dun-questionnaire-ukflag"><i class="fa fa-check"></i><b>8.1</b> Structure d’un questionnaire <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="8.1.1" data-path="s8.html"><a href="s8.html#structure-générale-dune-question-ukflag"><i class="fa fa-check"></i><b>8.1.1</b> Structure générale d’une question <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="8.1.2" data-path="s8.html"><a href="s8.html#commentaires-pour-les-programmateurs-ukflag"><i class="fa fa-check"></i><b>8.1.2</b> Commentaires pour les programmateurs <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="8.1.3" data-path="s8.html"><a href="s8.html#formatage-du-texte-ukflag"><i class="fa fa-check"></i><b>8.1.3</b> Formatage du texte <span><img src="img/ukflag.png" alt="ukflag" /></span></a></li>
+<li class="chapter" data-level="8.1.4" data-path="s8.html"><a href="s8.html#types-de-questions-ukflagplay"><i class="fa fa-check"></i><b>8.1.4</b> Types de questions <span><img src="img/ukflag.png" alt="ukflag" /></span>{play}</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html"><i class="fa fa-check"></i><b>9</b> Audio et vidéo dans les questionnaires <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="9.1" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#introduction-1"><i class="fa fa-check"></i><b>9.1</b> Introduction <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#audiosons"><i class="fa fa-check"></i><b>9.2</b> Audio/sons <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="9.2.1" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#quel-format-sonore-utiliser"><i class="fa fa-check"></i><b>9.2.1</b> Quel format sonore utiliser ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.2" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-télécharger-un-fichier-son-sur-psytoolkit"><i class="fa fa-check"></i><b>9.2.2</b> Comment télécharger un fichier son sur PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.3" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-ajouter-laudio-à-votre-question-how_to_add_the_audio_to_your_question"><i class="fa fa-check"></i><b>9.2.3</b> Comment ajouter l’audio à votre question ? <span><img src="img/ukflag.png" /></span>{how_to_add_the_audio_to_your_question}</a></li>
+<li class="chapter" data-level="9.2.4" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-avoir-plus-dune-piste-audio-dans-votre-question"><i class="fa fa-check"></i><b>9.2.4</b> Comment avoir plus d’une piste audio dans votre question ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.5" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-un-son-une-seule-fois"><i class="fa fa-check"></i><b>9.2.5</b> Comment jouer un son une seule fois ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.6" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-un-son-à-partir-de-mon-google-drive"><i class="fa fa-check"></i><b>9.2.6</b> Comment jouer un son à partir de mon Google Drive ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.7" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-faire-jouer-un-son-de-dropbox"><i class="fa fa-check"></i><b>9.2.7</b> Comment faire jouer un son de DropBox <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.2.8" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-un-son-encore-et-encore-en-boucle"><i class="fa fa-check"></i><b>9.2.8</b> Comment jouer un son encore et encore (en boucle) <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#video"><i class="fa fa-check"></i><b>9.3</b> Video <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="9.3.1" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#pourquoi-ne-puis-je-pas-télécharger-un-fichier-vidéo-sur-psytoolkit"><i class="fa fa-check"></i><b>9.3.1</b> Pourquoi ne puis-je pas télécharger un fichier vidéo sur PsyToolkit ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.2" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-avoir-plus-dune-piste-vidéo-dans-votre-question"><i class="fa fa-check"></i><b>9.3.2</b> Comment avoir plus d’une piste vidéo dans votre question ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.3" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-lire-une-vidéo-une-seule-fois"><i class="fa fa-check"></i><b>9.3.3</b> Comment lire une vidéo une seule fois ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.4" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-agrandir-la-vidéo"><i class="fa fa-check"></i><b>9.3.4</b> Comment agrandir la vidéo ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.5" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-une-vidéo-à-partir-de-mon-google-drive"><i class="fa fa-check"></i><b>9.3.5</b> Comment jouer une vidéo à partir de mon Google Drive ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.6" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-jouer-une-vidéo-de-dropbox"><i class="fa fa-check"></i><b>9.3.6</b> Comment jouer une vidéo de DropBox ? <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="9.3.7" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#comment-lire-une-vidéo-encore-et-encore-en-boucle"><i class="fa fa-check"></i><b>9.3.7</b> Comment lire une vidéo encore et encore (en boucle) ? <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="audio-et-vidéo-dans-les-questionnaires.html"><a href="audio-et-vidéo-dans-les-questionnaires.html#vidéo-youtube"><i class="fa fa-check"></i><b>9.4</b> Vidéo YouTube <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html"><i class="fa fa-check"></i><b>10</b> Une enquête en ligne complète <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="10.1" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-1.-hypothèse-prédiction-et-échelles"><i class="fa fa-check"></i><b>10.1</b> Étape 1. Hypothèse, prédiction et échelles <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.2" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-2.-mise-en-place-de-létude-en-ligne"><i class="fa fa-check"></i><b>10.2</b> Étape 2. Mise en place de l’étude en ligne <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.3" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-3.-mettre-en-place-les-questions-et-les-échelles"><i class="fa fa-check"></i><b>10.3</b> Étape 3. Mettre en place les questions et les échelles <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.4" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-4.-mettez-votre-questionnaire-en-ligne-et-testez"><i class="fa fa-check"></i><b>10.4</b> Étape 4. Mettez votre questionnaire en ligne et testez <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.5" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-5.-passer-en-mode-réel-et-collecter-les-données"><i class="fa fa-check"></i><b>10.5</b> Étape 5. Passer en mode “réel” et collecter les données <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.6" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-6.-télécharger-les-données"><i class="fa fa-check"></i><b>10.6</b> Étape 6. Télécharger les données <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.7" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#étape-7.-importer-et-analyser-dans-spss"><i class="fa fa-check"></i><b>10.7</b> Étape 7. Importer et analyser dans SPSS <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="10.8" data-path="une-enquête-en-ligne-complète.html"><a href="une-enquête-en-ligne-complète.html#des-questions"><i class="fa fa-check"></i><b>10.8</b> Des questions ?</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><i class="fa fa-check"></i><b>11</b> Echange d’informations entre les enquêtes et les expériences <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="11.1" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#comment-cela-fonctionne-t-il"><i class="fa fa-check"></i><b>11.1</b> Comment cela fonctionne-t-il ?<span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.2" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#comment-le-faire-pas-à-pas"><i class="fa fa-check"></i><b>11.2</b> Comment le faire pas à pas <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.3" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#étape-1.-lexemple-de-plan-dexpérience"><i class="fa fa-check"></i><b>11.3</b> Étape 1. L’exemple de plan d’expérience <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.4" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#étape-2.-mettre-en-place-une-enquête"><i class="fa fa-check"></i><b>11.4</b> Étape 2. Mettre en place une enquête <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.5" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#étape-2.-mettre-en-place-une-expérience"><i class="fa fa-check"></i><b>11.5</b> Étape 2. Mettre en place une expérience <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.6" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#exécution-du-code"><i class="fa fa-check"></i><b>11.6</b> Exécution du code <span><img src="img.ukflag.png" /></span></a></li>
+<li class="chapter" data-level="11.7" data-path="echange-dinformations-entre-les-enquêtes-et-les-expériences.html"><a href="echange-dinformations-entre-les-enquêtes-et-les-expériences.html#code-psytoolkit"><i class="fa fa-check"></i><b>11.7</b> Code PsyToolkit <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html"><i class="fa fa-check"></i><b>12</b> Analyser vos fichiers de données <span><img src="img/ukflag.png" /></span></a><ul>
+<li class="chapter" data-level="12.1" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html#importer-un-fichier-de-données-dans-votre-logiciel"><i class="fa fa-check"></i><b>12.1</b> Importer un fichier de données dans votre logiciel <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="12.2" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html#distinction-entre-lanalyse-de-fichiers-de-données-individuels-et-de-données-de-groupe"><i class="fa fa-check"></i><b>12.2</b> Distinction entre l’analyse de fichiers de données individuels et de données de groupe <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="12.3" data-path="analyser-vos-fichiers-de-données.html"><a href="analyser-vos-fichiers-de-données.html#comment-approfondir"><i class="fa fa-check"></i><b>12.3</b> Comment approfondir</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="questions-juridiques-ukflag.html"><a href="questions-juridiques-ukflag.html"><i class="fa fa-check"></i><b>13</b> Questions juridiques <span><img src="img/ukflag.png" alt="ukflag" /></span></a><ul>
+<li class="chapter" data-level="13.1" data-path="questions-juridiques-ukflag.html"><a href="questions-juridiques-ukflag.html#copyright"><i class="fa fa-check"></i><b>13.1</b> Copyright <span><img src="img/ukflag.png" /></span></a></li>
+<li class="chapter" data-level="13.2" data-path="questions-juridiques-ukflag.html"><a href="questions-juridiques-ukflag.html#des-questions-1"><i class="fa fa-check"></i><b>13.2</b> Des questions ? <span><img src="img/ukflag.png" /></span></a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="références.html"><a href="références.html"><i class="fa fa-check"></i><b>14</b> Références</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Documentation en ligne de PsyToolkit</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="les-questionnnaires" class="section level1">
+<h1><span class="header-section-number">Chapitre 7</span> Les questionnnaires <a href="https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html" id="s7"><img src="img/ukflag.png" /></a></h1>
+<p>Ceci est une introduction, pour une présentation complète, regardez <a href="s8.html#s8">ici</a>. Avec PsyToolkit, vous pouvez réaliser différents types d’enquêtes en ligne :</p>
+<ul>
+<li>De simples enquêtes en ligne sans expérimentation sur le temps de réaction (elles peuvent être réalisées sur des plateformes mobiles, comme les téléphones). Par exemple, une enquête sur la satisfaction des étudiants ou sur les attitudes et opinions des gens. Consultez également <a href="http://www.psytoolkit.org/survey-library/">la bibliothèque</a> qui propose des questionnaires prêts à l’emploi.</li>
+<li>Enquêtes en ligne <strong>avec</strong> expérimentation des temps de réaction. C’est l’idéal pour les études de psychologie cognitive ; vous pouvez utiliser l’enquête pour obtenir des informations générales sur les participants et ensuite lancer l’expérience dans le navigateur.</li>
+<li>Vous pouvez poser un nombre illimité de questions.</li>
+<li>Prise en charge des instructions aux participants en 5 langues (anglais américain et britannique, chinois simplifié, néerlandais et allemand). Par exemple, si vous choisissez le chinois simplifié, le texte (par exemple, “continue”) des boutons est en chinois.</li>
+<li>Outils d’analyse en ligne de base des enquêtes complétées.</li>
+<li>Saut conditionnel aux questions basées sur les réponses données précédemment.</li>
+<li>Randomisation de l’ordre des questions de sections spécifiques d’un questionnaire.</li>
+<li>Tous les types de questions courantes, telles que les questions à choix unique, les questions à choix multiples, les échelles de Likert, les curseurs, les lignes de texte, les zones de texte, etc.</li>
+</ul>
+<hr />
+<p>Le support multilingue fait référence à l’interface utilisateur, comme le texte des boutons, etc. Bien entendu, vous devez toujours rédiger vos questions dans la langue dans laquelle vous voulez qu’elles soient présentées.
+Jetez un coup d’œil aux enquêtes/questionnaires prêts à être téléchargés dans la <a href="http://www.psytoolkit.org/survey-library/">bibliothèque d’enquêtes</a>.
+*****</p>
+<div id="introduction" class="section level2">
+<h2><span class="header-section-number">7.1</span> Introduction <a href="https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_introduction" id="s7-1"><img src="img/ukflag.png" /></a></h2>
+<p>Internet est idéal pour réaliser des enquêtes en ligne, et il existe divers très bons outils web que vous pouvez utiliser gratuitement (il suffit de faire une recherche sur Google pour trouver “enquête en ligne gratuite”). Il est possible qu’il existe d’autres outils plus adaptés à vos besoins (PsyToolkit est gratuit et il n’y a aucun intérêt à vous le “vendre” - le but est simplement de vous donner la meilleure information possible sur ce qu’il est et vous décidez vous-même).</p>
+<p>PsyToolkit a son propre interface de conception de questionnaires, mais il n’a pas d’interface utilisateur sophistiquée (comme certains autres outils en ligne). Toutes les questions doivent être tapées dans une zone de texte au format texte, en suivant un protocole de formatage spécial. cependant, Ce n’est pas difficile.
+PsyToolkit vous aide à créer des enquêtes très simples avec des types de questions standard, telles que des questions dans lesquelles vous pouvez choisir un élément parmi plusieurs, choisir plusieurs éléments parmi plusieurs, saisir une ligne de texte, etc. C’est similaire à ce que proposent d’autres outils d’enquête, et si c’est tout ce que vous voulez faire, vous pouvez utiliser d’autres outild (par exemple, [zoho.com] qui est assez bon).</p>
+<p>Vous pouvez également avoir des conditions, c’est-à-dire que certaines questions ne seront posées qu’en fonction des réponses à d’autres questions.</p>
+<p>Lorsque vous avez créé et compilé votre enquête, vous obtenez un lien URL. Vous pouvez envoyer ce lien aux personnes que vous souhaitez faire participer à l’enquête. Les données collectées seront enregistrées sur le serveur du PsyToolkit et peuvent être téléchargées sous forme de données brutes (avec quelques informations supplémentaires, comme l’heure à laquelle la réponse a été donnée) et d’un fichier tableur des réponses/scores par participant.</p>
+<p>Une possibilité unique des enquêtes en ligne dans PsyToolkit est que vous pouvez y intégrer des expériences sur les temps de réaction typiques de la psychologie cognitive. En fait, c’est la seule raison pour laquelle j’ai développé les enquêtes en ligne avec PsyToolkit.</p>
+<p>Les données des enquêtes et les données sur les temps de réaction peuvent être téléchargées et analysées sur votre propre ordinateur. Ainsi, les enquêtes en ligne avec PsyToolkit sont principalement destinées aux psychologues qui souhaitent mener des expériences en ligne sur les temps de réaction. Bien entendu, si vous souhaitez simplement faire un questionnaire, vous pouvez également le faire. En ce sens, les questionnaires PsyToolkit en ligne peuvent être utiles à toute personne souhaitant réaliser une enquête en ligne.</p>
+<p>Dans de nombreuses expérience, vous souhaitez obtenir des informations de base sur les participants, comme leur sexe et leur âge. c’est la raison qui nous a conduit à intégrer une expérience sur le temps de réaction dans une enquête. Si vous voulez savoir comment programmer une expérience sur le temps de réaction dans le PsyToolkit, vous devez lire <a href="s4.html#s4">l’introduction au script d’expérience du PsyToolkit</a>.</p>
+</div>
+<div id="comment-créer-une-enquête" class="section level2">
+<h2><span class="header-section-number">7.2</span> Comment créer une enquête <a href="https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_how_to_create_a_survey" id="s7-2"><img src="img/ukflag.png" /></a></h2>
+<p>Les enquêtes sont créées sous forme de texte dans une zone de texte du navigateur. Cette méthode est différente des autres sites d’enquêtes en ligne. PsyToolkit ne dispose pas d’une interface graphique de type “pointer-cliquer” permettant de créer chaque question (qui sera peut-être créée à l’avenir). Néanmoins, la création d’une enquête n’est pas très difficile !</p>
+<p>La première chose à faire est de créer <a href="http://psytoolkit.gla.ac.uk">votre propre compte sur le site web de PsyToolkit</a>. Ensuite, explorez-le pour vous familiariser avec l’interface. Si vous sélectionnez “créer une enquête”, vous obtiendrez un exemple de question. Vous pouvez supprimer l’exemple et entrer un nouveau questionnaire. La programmation d’un questionnaire est expliquée ci-dessous. La façon de l’exécuter réellement est expliquée ci-dessous dans la section “Exécution des enquêtes”.</p>
+<p>Ce qu’il faut vraiment savoir, c’est qu’il existe différents types de questions. Chaque question doit être décrite en quelques lignes, et la façon de le faire suit un format très spécifique (je l’appelle la <strong>syntaxe de l’enquête</strong>). Ce qu’il faut comprendre, c’est que chaque question comporte un certain nombre de champs, qui sont marqués d’un symbole au début de la ligne. Le premier champ de chaque question est le “label”, qui s’écrit simplement “l :”. Ce qui suit est l’étiquette proprement dite. Les étiquettes ne doivent pas comporter d’espaces !</p>
+<p>Les enquêtes sont simplement constituées de texte et sont très simples à écrire. Chaque question est constituée de quelques lignes de texte. Entre les questions, il y a une ligne vide. Il est préférable de regarder l’exemple à la fin de ce document pour le comprendre.</p>
+</div>
+<div id="réalisation-des-enquêtes" class="section level2">
+<h2><span class="header-section-number">7.3</span> Réalisation des enquêtes <a href="https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_running_surveys" id="s7-3"><img src="img/ukflag.png" /></a></h2>
+<p>Maintenant que vous savez comment rédiger les bases d’un questionnaire, vous pourriez en faire un. Vous devez “compiler” les informations que vous avez saisies rendre l’enquête exécutable.</p>
+</div>
+<div id="exemple-complet" class="section level2">
+<h2><span class="header-section-number">7.4</span> Exemple complet <a href="https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_full_examples" id="s7-4"><img src="img/ukflag.png" /></a></h2>
+<p>Exemple sans expérience intégrée. Notez que dans l’exemple suivant, il n’y a que deux questions (avec une ligne vide entre les deux questions). La deuxième question utilise également des balises html, dans ce cas, le texte entre <b> et </b> est affiché en gras.</p>
+<p><strong>Exemple</strong></p>
+<pre><code>option: survey-name: Childhood memory
+
+l: gender
+t: radio
+q: What is your gender?
+- Female
+- Male
+
+l: age
+t: range
+q: What is your age?
+- {min=60,max=120} Select your age
+
+l: earliest
+t: textbox
+q: Please write down your &lt;b&gt;earliest 3 memories of personal event&lt;/b&gt;. For each even, say how old you were (1 year, 2 years, 3 years, 4 years, 5 years, etc).
+- event1
+- event2
+- event3</code></pre>
+<p>Notez que l’exemple suivant comporte une expérience et une question de l’échelle intégrée Big 5 sur la personnalité. Notez deux choses importantes : Chaque étiquette n’a pas d’espace, c’est toujours un seul mot. Et deuxièmement, entre les questions, il y a une ligne vide.</p>
+<p><strong>Exemple</strong></p>
+<pre><code>option: survey-name: Psychological Studies cognitive demonstration
+
+scale: agree
+- Disagree strongly
+- Disagree moderately
+- Disagree a little
+- Neither agree nor disagree
+- Agree a little
+- Agree moderately
+- Agree strongly
+
+l: firsttime
+t: radio
+q: Is this the first time that you do this specific study?
+- Yes, first try
+- No. I already tried and finished it before and wanted to try it again
+- No. I tried it before, but it did technically not work, and therefore try again
+
+l: where
+t: radio
+q: Where are you right now?
+- Alone in a room, and it is quiet
+- Alone in a room, but it is not quiet at all (for example because of listening to music/tv)
+- Outside university, in a room with other people, but it is pretty quiet
+- Outside university, in a room with other people, and it is not quiet
+- In a university room or library
+- Somewhere else
+
+l: gender
+q: Are you male or female?
+t: radio
+- Male
+- Female
+- Do not want to answer
+
+l: student
+q: Are you a psychology student?
+t: radio
+- Yes
+- No
+
+l: computer
+q: Do you regularly play computer games?
+t: radio
+- Yes, at least once a week
+- No, less than once a week or never
+
+l: tired
+q: How fit do you feel?
+t: radio
+- Very awake and fit
+- Neither fit nor tired
+- I feel a bit tired
+- I feel very tired
+
+l: tipi
+q: I see myself as ...
+t: scale agree
+- I see myself as Extraverted, enthusiastic
+- I see myself as Critical, quarrelsome
+- I see myself as Dependable, self-disciplined
+- I see myself as Anxious, easily upset
+- I see myself as Open to new experiences, complex
+- I see myself as Reserved, quiet
+- I see myself as Sympathetic, warm
+- I see myself as Disorganized, careless
+- I see myself as Calm, emotionally stable
+- I see myself as Conventional, uncreative
+
+l: simontask
+q: Please carry out the experiment now, it takes around 10 minutes
+t: experiment
+- classroom_simon
+
+l: comments
+t: textbox
+q: Do you have any comments?
+- Type comments in the box below:</code></pre>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="un-projet-complet-de-recherche-en-ligne-ukflag.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="s8.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Documentation_Psytoolkit.pdf", "Documentation_Psytoolkit.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

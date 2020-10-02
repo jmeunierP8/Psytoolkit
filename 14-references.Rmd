@@ -1,0 +1,12 @@
+<!-- `r if (knitr::is_html_output()) '
+# References {-}
+'`
+ -->
+ 
+# Références
+
+- Stoet, G. (2020) Documentation de PsyToolkit (version 3.2.0), J.M. Meunier & E. Zibetti, Trad. [lien vers le document](#lien vers le document)
+
+- Stoet, G. (2010). PsyToolkit - A software package for programming psychological experiments using Linux. Behavior Research Methods, 42(4), 1096-1104. http://link.springer.com/article/10.3758%2FBRM.42.4.1096
+
+- Stoet, G. (2017). PsyToolkit: A novel web-based method for running online questionnaires and reaction-time experiments. Teaching of Psychology, 44(1), 24-31. https://journals.sagepub.com/doi/abs/10.1177/0098628316677643?journalCode=topa

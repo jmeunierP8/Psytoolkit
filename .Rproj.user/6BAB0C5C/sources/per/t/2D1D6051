@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601571016314.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1991018990",
+    "id" : "2D1D6051",
+    "lastKnownWriteTime" : 1601571300,
+    "last_content_update" : 1601571301010,
+    "path" : "~/GitHub/Psytoolkit/05-ExperimentSyntax.Rmd",
+    "project_path" : "05-ExperimentSyntax.Rmd",
+    "properties" : {
+        "cursorPosition" : "1299,0",
+        "scrollLine" : "1279"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

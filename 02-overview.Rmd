@@ -1,0 +1,75 @@
+# Vue d'ensemble [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/#_overview){#overview}
+
+Cet aperçu s'adresse aux personnes qui souhaitent utiliser PsyToolkit pour mettre en place une expérience psychologique cognitive ou un questionnaire en ligne.
+<!-- Changer les liens --> 
+1. [Cliquez ici](#s1) pour lire une introduction de 2 minutes sur les objectifs de PsyToolkit
+
+2. Un [guide de 5 minutes pour débutants absolus](#s3) pour la mise en place des études
+
+3. [Mise en place d'expériences](#s4) (langage de script d'expérience)
+
+4. [Mise en place de questionnaires/enquêtes](#s7) (langage de script d'enquête)
+
+5. [Foire aux questions](http://www.psytoolkit.org/faq.html)
+
+
+![](img/attention.png) Lisez les [notes juridiques](#legal) avant d'utiliser le PsyToolkit
+
+## Expériences et enquêtes [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/#_experiments_and_surveys){#experiments_and_surveys}
+
+### Programmation d'expériences [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/#experiments){#experiments}
+
+L'une des principales caractéristiques de PsyToolkit est que vous pouvez programmer des expériences de psychologie cognitive. Il existe les ressources suivantes :
+
+
+| Niveau          | Temps de lecture    | Thèmes                                                                                                    |
+|-----------------|---------------------|-----------------------------------------------------------------------------------------------------------|
+| Facile          | 5 minutes           | Brève introduction à l'idée des scénarios d'expérimentation. [Lire ici](#s4-1)                            |
+| Facile          | 5 minutes           | Comprendre la présentation des stimuli dans le PsyToolkit [Lire ici](#s4-2)                               |
+| Avancé          | 15 minutes          | Comment programmer le feedback pour les des participants dans le cadre des expériences. [Lire ici](#s4-3) |
+| Facile          | 2 minutes           | Partager ou envoyer une expérience à quelqu'un d'autre. [Lire ici](#s4-4)                                 |
+| Facile          | 2 minutes           | Comment mener une expérience en ligne et collecter des données en ligne. [Lire ici](#s4-5)                |
+| Facile + avancé | Voir les références | Syntaxe de script détaillée, toutes les commandes sont expliquées. [Lire ici](#s5)                        |
+
+### Exemples d'expériences avec PsyToolkit [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/#_experiments_and_surveys){#experiments_and_surveys}
+
+Souvent, il est plus facile de tirer des leçons des exemples. Il existe différentes façons de le faire :
+1. Regardez les exemples de codes dans la [section des leçons](https://www.psytoolkit.org/lessons/#lessons4).
+2. Regardez les exemples de code dans la [bibliothèque d'expériences](https://www.psytoolkit.org/experiment-library).
+3. Si vous utilisez Linux, regardez les exemples de code qui accompagnent le package. Ils se trouvent dans /usr/share/doc/psytoolkit/3.1.0/examples/. [Lisez ici](https://www.psytoolkit.org/linux.html#local_examples) comment les utiliser.
+
+### Enquêtes/questionnaires en ligne [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/#surveys){#survey}
+
+Vous pouvez faire plus que de simples expériences avec PsyToolkit. Vous pouvez mettre en place des enquêtes par questionnaire en ligne, et si vous le souhaitez, vous pouvez intégrer des expériences dans ces questionnaires en ligne et ensuite collecter les données des réponses au questionnaire et les données expérimentales hors ligne.
+
+
+| Niveau          | Temps de lecture         | Thème                                                                        |
+|-----------------|--------------------------|------------------------------------------------------------------------------|
+| Facile          | 15 minutes               | Introduction au questionnaire en ligne. [Lire ici](#s7)                      |
+| Facile          | 5 minutes                | Exemple complet . [Lire ici](#s7-4)                                          |
+| Facile + Avancé | Consultez les références | Tous les détails sur la façon d'écrire les questionnaires. [Lire ici](#s8)   |
+
+## Expériences en ligne et hors ligne [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/#_offline_vs_online_experiments){#offline_vs_online_experiments}
+
+Faire des expériences dans le navigateur, c'est bien, mais vous pouvez aussi utiliser PsyToolkit sur les ordinateurs de bureau du laboratoire. C'est plutôt pour les utilisateurs avancés qui sont prêts à faire un pas de plus, bien que tout le monde puisse le faire. Vous devez installer Linux, et même cela est beaucoup plus simple que vous ne le pensez.
+
+[Cliquez ici pour en savoir plus sur l'installation et la configuration de PsyToolkit sur Linux](https://www.psytoolkit.org/linux.html)
+
+## Comment analyser les données [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/#_how_to_analyze_data){#how_to_analyze_data}
+
+### Expériences[![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/#_experiments){#analyse_experiments}
+
+Lorsque vous réalisez une expérience, un fichier de données est créé pour chaque participant.
+Le fichier de données est un simple fichier texte et peut être ouvert avec n'importe quel programme de statistiques ou de tableur. Plus d'informations ici.
+
+### Enquêtes [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/#_surveys){#analyse_surveys}
+
+Lorsque les participants remplissent des enquêtes en ligne, toutes leurs données sont stockées sur le serveur du PsyToolkit. Cela vous facilite la vie.
+
+Vous pouvez télécharger les résultats de vos enquêtes en ligne à tout moment sous forme de fichier zip. Ce fichier zip contient un tableur appelé data.csv (en format [CSV](https://fr.wikipedia.org/wiki/Comma-separated_values#:~:text=Comma%2Dseparated%20values%2C%20connu%20sous,valeurs%20s%C3%A9par%C3%A9es%20par%20des%20virgules.)). Ce format est compatible avec la quasi totalité des logiciels de statistique : R, jamovi, JMP etc.. Vous pouvez également les télécharger au format Excel, qui est plus facile à importer dans SPSS. En outre, tous les fichiers de données brutes (en format texte) sont également disponibles, bien que vous n'en ayez généralement pas besoin.
+
+* Le fichier *data.csv* (ou *data.xlsx*) contient une ligne de données de chaque participant. Chaque colonne de ce fichier représente une réponse.
+* Le fichier *data_times.csv* (ou *data_times.xlsx*) contient le temps de réponse, c'est-à-dire letemps qu'il faut à un participant pour appuyer sur le bouton "continuer" pour chaque question (en millisecondes).
+
+### Enquêtes avec expériences intégrées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/#_surveys_with_embedded_experiments){#surveys_with_embedded_experiments}
+Si votre enquête contient des expériences, les fichiers de données des expériences seront également sauvegardés. L'obtention des données est relativement simple. Vous pouvez obtenir les temps de réponse moyens et les taux d'erreur par condition pour chaque participant dans un fichier de tableur. Consultez la section "Analyser" des enquêtes pour plus d'informations. Vous pouvez également obtenir tous les fichiers de données brutes de chaque participant.
