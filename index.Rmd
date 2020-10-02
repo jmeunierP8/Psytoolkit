@@ -12,7 +12,7 @@ bibliography:
 - book.bib
 - packages.bib
 site: bookdown::bookdown_site
-biblio-style: apalike
+biblio-style: apalike 
 ---
 
 # Note du traducteur{-}
@@ -30,7 +30,7 @@ COnsidérant ces quelques caractéristiques (et il y en a bien d'autres), il m'e
 
 Je me suis permis également de structurer un peu différemment la documentation tout en conservant dans la mesure du possible les liens entre les différentes sections. Cela tient avant tout au fait que ce document est un support de cours pour moi. L'enchainement des chapitres suit donc la progression que je souhaite suivre avec mes étudiants. 
 
-Je n'ai pas la prétention de proposer une traduction parfaite, ni exhaustive. Elle comporte sûrement des erreurs et des coquilles que je corrigerai si vous voulez bien me les signaler. Je suis ouvert également à des propositions, voir à un coup de main pour la traduction (notamment pour sous-titrer les vidéos dans les leçons). pour tout cela, vous pouvez utiliser le fil d'annotation. Chacun pourra consulter les commentaires et propositions de correction. En cas de doute ou d'incompréhension d'un passage, n'hésitez pas à le consulter ou la section originale en anglais.
+Je n'ai pas la prétention de proposer une traduction parfaite, ni exhaustive. Elle comporte sûrement des erreurs et des coquilles que je corrigerai si vous voulez bien me les signaler. Je suis ouvert également à des propositions, voir à un coup de main pour la traduction (notamment pour sous-titrer les vidéos dans les leçons). Pour tout cela, vous pouvez utiliser [**le fil d'annotation**](https://hyp.is/go?url=https%3A%2F%2Fjmeunierp8.github.io%2FPsytoolkit%2F&group=__world__). Chacun pourra consulter les commentaires et propositions de correction. En cas de doute ou d'incompréhension d'un passage, n'hésitez pas à le consulter ou la section originale en anglais.
 
 La traduction des bibliothèque de questionnaires et d'expériences a été entreprise par ma collègue Elisabetta Zibetti et sera bientôt ajoutée à ce document. 
 
@@ -38,7 +38,7 @@ Ce document est mis à disposition de la communauté avec l'accord de l'auteur e
 
 Pour citer ce document, utilisez la référence suivante :
 
-- Stoet, G. (2020) Documentation de PsyToolkit (version 3.2.0), J.M. Meunier & E. Zibetti, Trad. [lien vers le document](#lien vers le document)
+- Stoet, G. (2020) Documentation de PsyToolkit (version 3.2.0), J.M. Meunier & E. Zibetti, Trad. [https://jmeunierp8.github.io/Psytoolkit/](https://jmeunierp8.github.io/Psytoolkit/)
 
 Nous rappelons par ailleurs qu'à la demande de l'auteur que pour utiliser PsyToolkit, vous devez citer les deux articles suivants : 
 

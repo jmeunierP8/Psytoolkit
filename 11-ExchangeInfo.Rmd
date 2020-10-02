@@ -57,7 +57,7 @@ options
   var in tired
   var out speed_result
 ````
-## Exécution du code [![](img.ukflag.png)](https://www.psytoolkit.org/lessons/var_in_out.html#_running_the_code){#running_the_code}
+## Exécution du code [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/var_in_out.html#_running_the_code){#running_the_code}
 
 Ici, vous pouvez voir ce que fait cette enquête et cette expérience. On vous demande d'abord si vous êtes fatigué. Ensuite, cette variable est utilisée dans l'expérience. Il vous suffit d'appuyer sur la touche b aussi vite que possible lorsque l'on vous le demande. Plus vous avez de temps, plus vous dites que vous êtes fatigué (vous obtenez 1000 ms + 100 ms supplémentaires pour chaque point de fatigue, vous pouvez donc obtenir jusqu'à 2000 ms de plus)
 

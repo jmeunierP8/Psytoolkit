@@ -1,4 +1,4 @@
-# Questions juridiques [![ukflag](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/legal.html){#legal}
+# Questions juridiques [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/legal.html){#legal}
 Avant d'utiliser le PsyToolkit, assurez-vous de bien comprendre vos responsabilités légales^[NdT. Vous pouvez vérifier si l'auteur a mis à jour ses condition d'utilisation directement sur son site [https://www.psytoolkit.org/doc3.1.0/legal.html](https://www.psytoolkit.org/doc3.1.0/legal.html)]
 
 * PsyToolkit est gratuit pour tout utilisateur non commercial.

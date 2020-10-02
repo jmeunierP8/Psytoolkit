@@ -173,13 +173,7 @@ Regardez la vidéo (4 minutes) sur la façon de mettre en place des blocs d'essa
 Maintenant que votre code est tapé et que vos stimuli sont téléchargés, essayez de compiler. Le compilateur a probablement dit qu'il y avait une erreur, simplement parce qu'il est très facile de faire une quelque part. Ne vous inquiétez pas, l'ordinateur vous aidera à trouver où l'erreur s'est produite.
 
 Regardez la vidéo (5 minutes) qui explique comment compiler et exécuter votre expérience dans votre navigateur, et comment enregistrer les données automatiquement.
-==> rmarkdown::render_site(output_format = 'word_document', encoding = 'UTF-8')
 
-
-
-processing file: Documentation_Psytoolkit.Rmd
-  |......................................................................| 100%
-  
 <iframe width="550" height="360" src="https://www.youtube.com/embed/FQ5w2-805as" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Le codage est souvent un processus d'essais et d'erreurs. Le retour d'information sur les erreurs dans l'encadré jaune devrait vous donner un indice sur ce qu'il faut améliorer. Pouvez-vous déterminer ce que vous avez fait de mal ?
