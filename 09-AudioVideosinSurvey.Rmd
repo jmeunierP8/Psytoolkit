@@ -27,7 +27,7 @@ Voici ce que vous devez faire :
 4. Cliquez sur le bouton "Enregistrer".
 5. Votre fichier est maintenant en cours de téléchargement (vous pouvez vérifier avec le bouton "Voir les fichiers")
 
-### Comment ajouter l'audio à votre question ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_add_the_audio_to_your_question){how_to_add_the_audio_to_your_question}
+### Comment ajouter l'audio à votre question ? [![](img/ukflag.png)](https://www.psytoolkit.org/lessons/surveyaudiovideo.html#_how_to_add_the_audio_to_your_question){#how_to_add_the_audio_to_your_question}
 
 C'est très facile à faire. Il suffit d'ajouter une ligne commençant par *a:* et d'ajouter ensuite dans cette ligne le nom du fichier audio (y compris son extension, par exmple mp3). Le *a:* est utilisé parce que "a" est la première lettre de "audio". L'exemple suivant suppose que vous avez téléchargé un fichier audio appelé *piano_sound.mp3*.
 
