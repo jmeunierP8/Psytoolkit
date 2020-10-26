@@ -83,6 +83,7 @@ Il existe différents items de contrôle :
 * [jump](#jump) saut vers un label de question (conditionnel ou inconditionnel)
 * [set](#scoring) Fixer une étiquette de question (pour la notation et les nombres aléatoires)
 * [random](#randomization) aléatoriser des questions
+* [random jum](#randomjump) contrebalancer les versions d'un questionnaire
 
 Vous pouvez insérer dans une question du son ou une vidéo : 
 
@@ -673,7 +674,7 @@ q: What did you just drink?
 ````
 Notez que vous pouvez également avoir différents exemples d'utilisation de la fonction "skip". Si vous avez juste "passez à la suite", une seule question sera ignorée si la condition est vraie. Vous pouvez aussi écrire, par exemple, **skip 1**, **skip 2**, où le nombre est le nombre de questions que vous voulez sauter.
 
-#### textline : saisie d'une ligne de texte{#textline} [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#textline){#textline}
+#### textline : saisie d'une ligne de texte [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#textline){#textline}
 
 Parfois, vous souhaitez qu'un participant saisisse une ligne de texte, pour indiquer par exemple son numéro de participant, son âge, son adresse électronique ou son nom. Vous pouvez utiliser **textline** pour cela.
 
@@ -1489,7 +1490,7 @@ t: set
 ````
 Dans cet exemple, vous pouvez attribuer un score catégorique à quelque chose. Dans ce cas, si une personne a un score de 1 pour "aime énormément le pain", elle a un score de 4 ou plus. Il s'agit d'une option un peu plus avancée.
 
-#### utiliser différentes sections section de questionnaire pour différents participants [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#randomjump){#randomjump}
+#### utiliser différentes sections de questionnaire pour différents participants [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#randomjump){#randomjump}
 
 Certains chercheurs veulent s'assurer que les différentes personnes qui cliquent sur le même lien questionnaire/enquête font en fait des questionnaires différents. C'est une sorte d'affectation aléatoire des participants à une condition. Cela peut être fait. Voici les étapes à suivre :
 

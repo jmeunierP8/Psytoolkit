@@ -421,6 +421,7 @@ q: What is your &lt;i&gt;favourite&lt;/i&gt; movie?
 <li><a href="s8.html#jump">jump</a> saut vers un label de question (conditionnel ou inconditionnel)</li>
 <li><a href="s8.html#scoring">set</a> Fixer une étiquette de question (pour la notation et les nombres aléatoires)</li>
 <li><a href="s8.html#randomization">random</a> aléatoriser des questions</li>
+<li><a href="s8.html#randomjump">random jum</a> contrebalancer les versions d’un questionnaire</li>
 </ul>
 <p>Vous pouvez insérer dans une question du son ou une vidéo :</p>
 <ul>
@@ -943,8 +944,8 @@ q: What did you just drink?
 - Alcoholic beverage</code></pre>
 <p>Notez que vous pouvez également avoir différents exemples d’utilisation de la fonction “skip”. Si vous avez juste “passez à la suite”, une seule question sera ignorée si la condition est vraie. Vous pouvez aussi écrire, par exemple, <strong>skip 1</strong>, <strong>skip 2</strong>, où le nombre est le nombre de questions que vous voulez sauter.</p>
 </div>
-<div id="textline-saisie-dune-ligne-de-textetextline" class="section level4">
-<h4><span class="header-section-number">8.1.4.11</span> textline : saisie d’une ligne de texte{#textline} <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#textline" id="textline"><img src="img/ukflag.png" /></a></h4>
+<div id="textline-saisie-dune-ligne-de-texte" class="section level4">
+<h4><span class="header-section-number">8.1.4.11</span> textline : saisie d’une ligne de texte <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#textline" id="textline"><img src="img/ukflag.png" /></a></h4>
 <p>Parfois, vous souhaitez qu’un participant saisisse une ligne de texte, pour indiquer par exemple son numéro de participant, son âge, son adresse électronique ou son nom. Vous pouvez utiliser <strong>textline</strong> pour cela.</p>
 <p><strong>Exemple</strong></p>
 <pre><code>l: MyQuestion6
@@ -1638,8 +1639,8 @@ t: set
 - if $my_first_question &gt;= 4 then 1</code></pre>
 <p>Dans cet exemple, vous pouvez attribuer un score catégorique à quelque chose. Dans ce cas, si une personne a un score de 1 pour “aime énormément le pain”, elle a un score de 4 ou plus. Il s’agit d’une option un peu plus avancée.</p>
 </div>
-<div id="utiliser-différentes-sections-section-de-questionnaire-pour-différents-participants" class="section level4">
-<h4><span class="header-section-number">8.1.4.20</span> utiliser différentes sections section de questionnaire pour différents participants <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#randomjump" id="randomjump"><img src="img/ukflag.png" /></a></h4>
+<div id="utiliser-différentes-sections-de-questionnaire-pour-différents-participants" class="section level4">
+<h4><span class="header-section-number">8.1.4.20</span> utiliser différentes sections de questionnaire pour différents participants <a href="https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#randomjump" id="randomjump"><img src="img/ukflag.png" /></a></h4>
 <p>Certains chercheurs veulent s’assurer que les différentes personnes qui cliquent sur le même lien questionnaire/enquête font en fait des questionnaires différents. C’est une sorte d’affectation aléatoire des participants à une condition. Cela peut être fait. Voici les étapes à suivre :</p>
 <ol style="list-style-type: decimal">
 <li>Décidez du nombre de versions différentes que vous voulez ? Deux, ou peut-être plus ?</li>
