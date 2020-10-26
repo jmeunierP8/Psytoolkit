@@ -82,8 +82,7 @@ Il existe différents items de contrôle :
 
 * [jump](#jump) saut vers un label de question (conditionnel ou inconditionnel)
 * [set](#scoring) Fixer une étiquette de question (pour la notation et les nombres aléatoires)
-* [random](#randomization) aléatoriser des questions
-* [random jum](#randomjump) contrebalancer les versions d'un questionnaire
+* [random](#randomization) aléatoriser des questions ou [contrebalancer](#randomjump) les versions d'un questionnaire
 
 Vous pouvez insérer dans une question du son ou une vidéo : 
 
