@@ -11,8 +11,8 @@ Les questionnaires sont de simples fichiers texte. Chaque ligne a une significat
 * Chaque question se compose de quelques lignes
 * Les questions sont séparées les unes des autres par une (ou plusieurs) ligne vide
 * Chaque question, quel qu'en soit le type, a une structure de base simple ([pour en savoir plus sur la structure des questions](#s8-1-1))
-* Chaque questionnaire peut avoir des sections qui randomisent l'ordre ([en savoir plus sur l'ordre randomisé](#))
-* Chaque questionnaire peut comporter des [commentaires](#) sur les lignes commençant par le signe hashtag (#)
+* Chaque questionnaire peut avoir des sections qui randomisent l'ordre ([en savoir plus sur l'ordre randomisé](#randomization))
+* Chaque questionnaire peut comporter des [commentaires](#) sur les lignes commençant par le signe hashtag (#comment)
 
 ### Structure générale d'une question [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questionstructure){#s8-1-1}
 * Chaque question est composée d'un certain nombre de lignes de texte.
@@ -38,7 +38,7 @@ q: What is your favourite movie? <-- this is text of the question the participan
 * Chaque question peut faire apparaître une image en haut. Vous devez télécharger le fichier image (png, bmp, gif, jpg, etc.). Voir les images.
 * Vous pouvez utiliser la ligne d'option **o: random** pour rendre aléatoire l'ordre des options de réponses.
 
-### Commentaires pour les programmateurs [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questionstructure){#s8-1-2}
+### Commentaires pour les programmateurs{#comment} [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questionstructure){#s8-1-2}
 Lorsque vous programmez votre enquête, vous pouvez parfois vouloir faire un commentaire qui vous est destiné et que l'ordinateur doit ignorer. Vous pouvez utiliser le hashtag pour cela.
 
 Contrairement aux scripts d'expérimentation du PsyToolkit, le symbole de commentaire "#" doit se trouver au début d'une ligne. En d'autres termes, vous ne pouvez pas avoir de commentaires commençant au milieu d'une ligne.
@@ -61,7 +61,7 @@ q: What is your <i>favourite</i> movie?
 - Ratatouille
 ````
 
-### Types de questions [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questiontypes){play}
+### Types de questions [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questiontypes){#type_questions}
 Il y a les types de questions suivants :
 
 * [radio](#radio) Un choix parmi de nombreuses options
@@ -69,20 +69,20 @@ Il y a les types de questions suivants :
 * [experiment](#experiment) Intégrer une expérience
 * [scale](#scale) Utiliser des échelles de type Likert
 * [range](#range) Permet à l'utilisateur de saisir une plage de nombres entre deux valeurs
-* [textline](#textiline) Le participant peut saisir seulement une ligne de texte
+* [textline](#textline) Le participant peut saisir seulement une ligne de texte
 * [textbox](#textbox) Le participant peut saisir plusieurs lignes de texte
 * [multiradio](#multiradio) Plusieurs éléments à choix unique dans une question
 
 Il existe les types suivants qui ne présentent que des informations et un bouton "Continuer
 
-* [info](#) Montrez juste quelques informations, un message, etc.
-* [youtube](#) Montrer une vidéo YouTube
+* [info](#info) Montrez juste quelques informations, un message, etc.
+* [youtube](#youtube) Montrer une vidéo YouTube
 
 Il existe différents items de contrôle :
 
-* [jump](#) saut vers un label de question (conditionnel ou inconditionnel)
-* [set](#) Fixer une étiquette de question (pour la notation et les nombres aléatoires)
-* [random](#) aléatoriser des questions
+* [jump](#jump) saut vers un label de question (conditionnel ou inconditionnel)
+* [set](#scoring) Fixer une étiquette de question (pour la notation et les nombres aléatoires)
+* [random](#randomization) aléatoriser des questions
 
 Vous pouvez insérer dans une question du son ou une vidéo : 
 
@@ -403,7 +403,7 @@ q: Play the sound. Which animal do you hear?
 Pour chaque type de question, vous pouvez ajouter une (ou plusieurs) vidéo(s). Vous trouverez ci-dessous deux exemples. **Vous ne pouvez pas télécharger de fichiers vidéo sur le serveur PsyToolkit**. Vous devez les placer sur votre propre serveur ou, par exemple, sur Google drive.
 Dans l'exemple 1, nous jouons simplement une vidéo qui se trouve quelque part sur un serveur :
 
-Notez que vous pouvez également visionner des vidéos sur YouTube, [cliquez ici](#Youtube).
+Notez que vous pouvez également visionner des vidéos sur YouTube, [cliquez ici](#youtube).
 
 **Exemple 1**
 ````
@@ -673,7 +673,7 @@ q: What did you just drink?
 ````
 Notez que vous pouvez également avoir différents exemples d'utilisation de la fonction "skip". Si vous avez juste "passez à la suite", une seule question sera ignorée si la condition est vraie. Vous pouvez aussi écrire, par exemple, **skip 1**, **skip 2**, où le nombre est le nombre de questions que vous voulez sauter.
 
-#### textline : saisie d'une ligne de texte [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#textline){#textline}
+#### textline : saisie d'une ligne de texte{#textline} [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#textline){#textline}
 
 Parfois, vous souhaitez qu'un participant saisisse une ligne de texte, pour indiquer par exemple son numéro de participant, son âge, son adresse électronique ou son nom. Vous pouvez utiliser **textline** pour cela.
 
