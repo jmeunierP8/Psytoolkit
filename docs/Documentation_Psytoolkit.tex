@@ -5503,11 +5503,11 @@ Vous pouvez formater le texte en utilisant les balises HTML standard. Les plus c
 \begin{itemize}
 \tightlist
 \item
-  Tout ce qui se trouve entre et sera présenté en caractères gras.
+  Tout ce qui se trouve entre \textless b\textgreater{} et \textless/b\textgreater{} sera présenté en caractères gras.
 \item
-  Tout ce qui se trouve entre et sera présenté en italique.
+  Tout ce qui se trouve entre \textless i\textgreater{} et \textless/i\textgreater{} sera présenté en italique.
 \item
-  Tout ce qui se trouve entre et sera présenté en rouge, etc.
+  Tout ce qui se trouve entre \textless font color=`red'\textgreater{} et \textless/font\textgreater{} sera présenté en rouge, etc.
 \end{itemize}
 
 \textbf{Exemple de formatage du texte}
@@ -5530,21 +5530,25 @@ Il y a les types de questions suivants :
 \begin{itemize}
 \tightlist
 \item
-  \protect\hyperlink{radio}{radio} Un choix parmi de nombreuses options
+  \protect\hyperlink{survey_radio}{radio} Un choix parmi de nombreuses options
 \item
-  \protect\hyperlink{check}{check} les choix multiples parmi les nombreuses options (cases à cocher)
+  \protect\hyperlink{survey_drop}{drop} sélectionner la réponse dans un menu
 \item
-  \protect\hyperlink{experiment}{experiment} Intégrer une expérience
+  \protect\hyperlink{survey_check}{check} les choix multiples parmi les nombreuses options (cases à cocher)
 \item
-  \protect\hyperlink{scale}{scale} Utiliser des échelles de type Likert
+  \protect\hyperlink{survey_rank}{rank} Ordonner des propositions
 \item
-  \protect\hyperlink{range}{range} Permet à l'utilisateur de saisir une plage de nombres entre deux valeurs
+  \protect\hyperlink{survey_experiment}{experiment} Intégrer une expérience
 \item
-  \protect\hyperlink{textline}{textline} Le participant peut saisir seulement une ligne de texte
+  \protect\hyperlink{survey_scale}{scale} Utiliser des échelles de type Likert
 \item
-  \protect\hyperlink{textbox}{textbox} Le participant peut saisir plusieurs lignes de texte
+  \protect\hyperlink{survey_range}{range} Permet à l'utilisateur de saisir une plage de nombres entre deux valeurs
 \item
-  \protect\hyperlink{multiradio}{multiradio} Plusieurs éléments à choix unique dans une question
+  \protect\hyperlink{survey_textline}{textline} Le participant peut saisir seulement une ligne de texte
+\item
+  \protect\hyperlink{surveytextbox}{textbox} Le participant peut saisir plusieurs lignes de texte
+\item
+  \protect\hyperlink{survey_multiradio}{multiradio} Plusieurs éléments à choix unique dans une question
 \end{itemize}
 
 Il existe les types suivants qui ne présentent que des informations et un bouton "Continuer
@@ -5554,19 +5558,19 @@ Il existe les types suivants qui ne présentent que des informations et un bouto
 \item
   \protect\hyperlink{info}{info} Montrez juste quelques informations, un message, etc.
 \item
-  \protect\hyperlink{youtube}{youtube} Montrer une vidéo YouTube
+  \protect\hyperlink{survey_youtube}{youtube} Jouer une vidéo youtube dans une question
 \end{itemize}
 
-Il existe différents items de contrôle :
+Il existe différents type de contrôle :
 
 \begin{itemize}
 \tightlist
 \item
-  \protect\hyperlink{jump}{jump} saut vers un label de question (conditionnel ou inconditionnel)
+  \protect\hyperlink{survey_jump}{jump} saut vers un label de question (conditionnel ou inconditionnel)
 \item
-  \protect\hyperlink{scoring}{set} Fixer une étiquette de question (pour la notation et les nombres aléatoires)
+  \protect\hyperlink{survey_scoring}{set} Fixer une étiquette de question (pour la notation et les nombres aléatoires)
 \item
-  \protect\hyperlink{randomization}{random} aléatoriser des questions ou \protect\hyperlink{randomjump}{contrebalancer} les versions d'un questionnaire
+  \protect\hyperlink{survey_randomization}{random} aléatoriser des questions ou \protect\hyperlink{survey_randomjump}{contrebalancer} les versions d'un questionnaire
 \end{itemize}
 
 Vous pouvez insérer dans une question du son ou une vidéo :
@@ -5574,11 +5578,9 @@ Vous pouvez insérer dans une question du son ou une vidéo :
 \begin{itemize}
 \tightlist
 \item
-  \protect\hyperlink{playasound}{Play a sound} Présenter un son dans une question
+  \protect\hyperlink{survey_playasound}{Play a sound} Présenter un son dans une question
 \item
-  \protect\hyperlink{playavideo}{Play a video} Présenter une vidéo dans une question
-\item
-  \protect\hyperlink{youtube}{youtube} Jouer une vidéo youtube dans une question
+  \protect\hyperlink{survey_playavideo}{Play a video} Présenter une vidéo dans une question
 \end{itemize}
 
 \hypertarget{radio-suxe9lectionner-un-parmi-plusieurs}{%
@@ -5698,6 +5700,26 @@ q: What food do you like?
 - Bread
 \end{verbatim}
 
+\hypertarget{drop-suxe9lectionner-les-ruxe9ponses-dans-un-menu}{%
+\subsection[drop : sélectionner les réponses dans un menu ]{\texorpdfstring{drop : sélectionner les réponses dans un menu \href{https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html\#drop}{\protect\includegraphics{img/ukflag.png}}}{drop : sélectionner les réponses dans un menu }}\label{drop-suxe9lectionner-les-ruxe9ponses-dans-un-menu}}
+
+Une question de type \emph{drop} est analogue au type radio, sauf que les réponses se trouvent dans un menu déroulant cliquable. Cette option est utile pour les listes plus longues ou si vous souhaitez gagner de la place à l'écran. En outre, il n'y a pas d'option \emph{other} comme dans le cas de la radio.
+
+\textbf{Exemple d'option libre}
+
+\begin{verbatim}
+l: days
+t: drop
+q: What day of the week would like to play chess?
+- Monday
+- Tuesday
+- Wednesday
+- Thursday
+- Friday
+- Saturday
+- Sunday
+\end{verbatim}
+
 \hypertarget{check-suxe9lectionner-un-ou-plus-parmi-plusieurs}{%
 \subsection[check : sélectionner un ou plus parmi plusieurs ]{\texorpdfstring{check : sélectionner un ou plus parmi plusieurs \href{https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html\#check}{\protect\includegraphics{img/ukflag.png}}}{check : sélectionner un ou plus parmi plusieurs }}\label{check-suxe9lectionner-un-ou-plus-parmi-plusieurs}}
 
@@ -5786,7 +5808,7 @@ q: Order of the following foods, starting with the one you like most.
 - Soup
 \end{verbatim}
 
-Vous pouvez aléatoriser l'ordre de départ des éléments d'une question de classement en définissant les options \textbf{o: random} (voir le deuxième exemple).
+Vous pouvez aléatoriser l'ordre de départ des éléments d'une question de classement en définissant les options \emph{o: random} (voir le deuxième exemple).
 
 \textbf{Exemple}
 
@@ -5803,7 +5825,7 @@ q: Order of the following foods, starting with the one you like most.
 - Soup
 \end{verbatim}
 
-L'option \textbf{o: numbers} indiquent un classement numéroté
+L'option \emph{o: numbers} indiquent un classement numéroté
 
 \textbf{Exemple avec des numéros devant les items}
 
@@ -6203,7 +6225,7 @@ q: Do you take birth control pills?
 - No
 \end{verbatim}
 
-Enfin, dans les questions de type \protect\hyperlink{check}{check}, vous pouvez vérifier si un élément spécifique de votre liste a été coché Voici un exemple courant :
+Enfin, dans les questions de type \protect\hyperlink{survey_check}{check}, vous pouvez vérifier si un élément spécifique de votre liste a été coché Voici un exemple courant :
 
 \textbf{Exemple de jump à partir d'un item de question de type check}
 
@@ -6244,7 +6266,7 @@ q: What did you just drink?
 \item
   entendu, cela ne fonctionne pas pour les questions de type radio, dans lesquelles vous devez simplement vérifier la valeur de \$food (qu'elle soit de 4 ou non).
 \item
-  Pour le saut inconditionnel, il suffit également de faire \textbf{j:} vers la fin de l'enquête
+  Pour le saut inconditionnel, il suffit également de faire \emph{j:} vers la fin de l'enquête
 \end{itemize}
 
 La possibilité d'utiliser l'instruction \textbf{skip} est une nouveauté depuis la version 3.0.0. Souvent, vous voulez juste avoir une question supplémentaire lorsque les gens choisissent une réponse spécifique, dans ce cas vous pouvez la coder comme suit :
@@ -7591,7 +7613,7 @@ Vous ne pouvez pas mettre les types de question \emph{experiment}, \emph{saut}ju
 \end{itemize}
 
 \hypertarget{avantages-de-multiple-questions-par-page}{%
-\subsection{Avantages de multiple questions par page}\label{avantages-de-multiple-questions-par-page}}
+\subsection[Avantages de multiple questions par page ]{\texorpdfstring{Avantages de multiple questions par page \href{https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html\#_advantages_of_multiple_questions_per_screen}{\protect\includegraphics{img/ukflag.png}}}{Avantages de multiple questions par page }}\label{avantages-de-multiple-questions-par-page}}
 
 \begin{itemize}
 \tightlist

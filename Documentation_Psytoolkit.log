@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2020.4.10)  22 DEC 2021 10:31
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2020.4.10)  22 DEC 2021 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1840,13 +1840,13 @@ File: img/ukflag.png Graphic file (type bmp)
 File: img/question1.png Graphic file (type bmp)
 <img/question1.png>
 [138]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 5625--5625
+Overfull \hbox (6.75pt too wide) in paragraph at lines 5627--5627
 []\TU/lmtt/m/n/10 q: In the following question, we would like to which movie yo
 u like[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 5649--5649
+Overfull \hbox (6.75pt too wide) in paragraph at lines 5651--5651
 []\TU/lmtt/m/n/10 q: In the following question, we would like to which movie yo
 u like[] 
  []
@@ -1858,13 +1858,16 @@ File: img/radio_other.png Graphic file (type bmp)
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [141]
-Overfull \hbox (12.0pt too wide) in paragraph at lines 5733--5733
+File: img/ukflag.png Graphic file (type bmp)
+<img/ukflag.png>
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 5755--5755
 []\TU/lmtt/m/n/10 q: Which of the following food do you like? Select at least 2
  items.[] 
  []
 
-
-Overfull \hbox (148.5pt too wide) in paragraph at lines 5750--5750
+[142]
+Overfull \hbox (148.5pt too wide) in paragraph at lines 5772--5772
 []\TU/lmtt/m/n/10 q: Which of the following food do you like? Select at least 2
  items, but no more than 3 items.[] 
  []
@@ -1872,28 +1875,27 @@ Overfull \hbox (148.5pt too wide) in paragraph at lines 5750--5750
 File: img/check.png Graphic file (type bmp)
 <img/check.png>
 
-Overfull \hbox (148.5pt too wide) in paragraph at lines 5770--5770
+Overfull \hbox (148.5pt too wide) in paragraph at lines 5792--5792
 []\TU/lmtt/m/n/10 q: Which of the following food do you like? Select at least 2
  items, but no more than 3 items.[] 
  []
 
-[142]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 5787--5787
-[]\TU/lmtt/m/n/10 q: Order of the following foods, starting with the one you li
-ke most.[] 
- []
-
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 5804--5804
-[]\TU/lmtt/m/n/10 q: Order of the following foods, starting with the one you li
-ke most.[] 
- []
-
 [143]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 5821--5821
+Overfull \hbox (17.25pt too wide) in paragraph at lines 5809--5809
+[]\TU/lmtt/m/n/10 q: Order of the following foods, starting with the one you li
+ke most.[] 
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 5826--5826
+[]\TU/lmtt/m/n/10 q: Order of the following foods, starting with the one you li
+ke most.[] 
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 5843--5843
 []\TU/lmtt/m/n/10 q: Order of the following foods, starting with the one you li
 ke most.[] 
  []
@@ -1904,7 +1906,7 @@ File: img/ukflag.png Graphic file (type bmp)
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [145]
-Overfull \hbox (122.25pt too wide) in paragraph at lines 5896--5896
+Overfull \hbox (122.25pt too wide) in paragraph at lines 5918--5918
 []\TU/lmtt/m/n/10 Please <a href=[]http://www.google.com[]>click this link to l
 eave</a>, or close the window.[] 
  []
@@ -1917,9 +1919,9 @@ File: img/ukflag.png Graphic file (type bmp)
 [147]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
+[148]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
-[148]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [149] [150] [151] [152] [153]
@@ -1928,14 +1930,14 @@ File: img/ukflag.png Graphic file (type bmp)
 [154] [155]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 6396--6396
+[156]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 6418--6418
 []\TU/lmtt/m/n/10 q: Please enter your feedback and (optionally) your name and 
 address[] 
  []
 
-[156]
-Overfull \hbox (101.25pt too wide) in paragraph at lines 6409--6409
+
+Overfull \hbox (101.25pt too wide) in paragraph at lines 6431--6431
 []\TU/lmtt/m/n/10 - {w=100,h=5} Your second comment (here we have 100 character
 s width and 5 lines high[] 
  []
@@ -1944,106 +1946,109 @@ File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 File: img/slider.png Graphic file (type bmp)
 <img/slider.png>
-[157]
+[157] [158]
 File: img/slider2.png Graphic file (type bmp)
 <img/slider2.png>
-[158]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
+[159]
 File: img/scale-example.png Graphic file (type bmp)
 <img/scale-example.png>
-[159] [160] [161] [162] [163] [164]
-File: img/ukflag.png Graphic file (type bmp)
-<img/ukflag.png>
-[165]
+[160] [161] [162] [163] [164] [165]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [166]
+File: img/ukflag.png Graphic file (type bmp)
+<img/ukflag.png>
 File: img/screenshot-inkblot.png Graphic file (type bmp)
 <img/screenshot-inkblot.png>
 [167]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
+[168]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
-[168] [169] [170] [171] [172]
+[169] [170] [171] [172]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [173]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 7145--7145
+Overfull \hbox (90.75pt too wide) in paragraph at lines 7167--7167
 []\TU/lmtt/m/n/10 q: We are sorry you did not like the food. If you wish, pleas
 e leave a comment here[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 7145--7145
+Overfull \hbox (33.0pt too wide) in paragraph at lines 7167--7167
 []\TU/lmtt/m/n/10 - Please leave a comment about why you were not so happy with
  the dinner[] 
  []
 
-[174] [175]
+[174] [175] [176]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
-[176] [177]
+[177]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
-[178]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[178] [179]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
-[179]
-Overfull \hbox (111.75pt too wide) in paragraph at lines 7404--7404
+
+Overfull \hbox (111.75pt too wide) in paragraph at lines 7426--7426
 []\TU/lmtt/m/n/10 q: Write in short why you like sports, or why you do not. You
  have maximally 2 minutes.[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 7416--7416
+Overfull \hbox (6.75pt too wide) in paragraph at lines 7438--7438
 []\TU/lmtt/m/n/10 q: Write 3 reasons why you like tea. You have maximally 30 se
 conds.[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 7428--7428
+Overfull \hbox (6.75pt too wide) in paragraph at lines 7450--7450
+[]\TU/lmtt/m/n/10 q: Write 3 reasons why you like tea. You have maximally 30 se
+conds.[] 
+ []
+
+[180]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 7462--7462
 []\TU/lmtt/m/n/10 q: Write 3 reasons why you like tea. You have maximally 30 se
 conds.[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 7440--7440
-[]\TU/lmtt/m/n/10 q: Write 3 reasons why you like tea. You have maximally 30 se
-conds.[] 
- []
-
-
-Overfull \hbox (6.75pt too wide) in paragraph at lines 7452--7452
+Overfull \hbox (6.75pt too wide) in paragraph at lines 7474--7474
 []\TU/lmtt/m/n/10 q: Write 3 reasons why you like tea. You have maximally 30 se
 conds.[] 
  []
 
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
-[180]
-Overfull \hbox (159.0pt too wide) in paragraph at lines 7470--7470
+
+Overfull \hbox (159.0pt too wide) in paragraph at lines 7492--7492
 []\TU/lmtt/m/n/10 You have to spend at least 2 minutes on it and you will only 
 be able to continue after 2 minutes[] 
  []
 
-
-Overfull \hbox (132.75pt too wide) in paragraph at lines 7482--7482
+[181]
+Overfull \hbox (132.75pt too wide) in paragraph at lines 7504--7504
 []\TU/lmtt/m/n/10 q: Write 3 reasons why you like tea. You should spend at leas
 t 30 seconds on this question.[] 
  []
 
 
-Overfull \hbox (132.75pt too wide) in paragraph at lines 7494--7494
+Overfull \hbox (132.75pt too wide) in paragraph at lines 7516--7516
 []\TU/lmtt/m/n/10 q: Write 3 reasons why you like tea. You should spend at leas
 t 30 seconds on this question.[] 
  []
 
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
-[181]
-Overfull \hbox (132.75pt too wide) in paragraph at lines 7510--7510
+
+Overfull \hbox (132.75pt too wide) in paragraph at lines 7532--7532
 []\TU/lmtt/m/n/10 q: Write 3 reasons why you like tea. You should spend at leas
 t 30 seconds on this question.[] 
  []
@@ -2053,9 +2058,11 @@ File: img/ukflag.png Graphic file (type bmp)
 [182]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
+[183]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
-[183]
+File: img/ukflag.png Graphic file (type bmp)
+<img/ukflag.png>
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [184] [185] [186
@@ -2083,7 +2090,7 @@ File: img/ukflag.png Graphic file (type bmp)
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [189]
-Overfull \hbox (59.25pt too wide) in paragraph at lines 7745--7745
+Overfull \hbox (59.25pt too wide) in paragraph at lines 7767--7767
 []\TU/lmtt/m/n/10 a: https://drive.google.com/file/d/1oHhasFAFZdkadakdlJsjXasJ/
 view?usp=sharing[] 
  []
@@ -2102,7 +2109,7 @@ File: img/ukflag.png Graphic file (type bmp)
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [191]
-Overfull \hbox (33.0pt too wide) in paragraph at lines 7826--7826
+Overfull \hbox (33.0pt too wide) in paragraph at lines 7848--7848
 []\TU/lmtt/m/n/10 v: https://drive.google.com/file/d/1842323jsdxrandomXJs/view?
 usp=sharing[] 
  []
@@ -2110,7 +2117,7 @@ usp=sharing[]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 7847--7847
+Overfull \hbox (33.0pt too wide) in paragraph at lines 7869--7869
 []\TU/lmtt/m/n/10 v: https://drive.google.com/file/d/1842323jsdxrandomXJs/view?
 usp=sharing[] 
  []
@@ -2118,7 +2125,7 @@ usp=sharing[]
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [192]
-Overfull \hbox (33.0pt too wide) in paragraph at lines 7877--7877
+Overfull \hbox (33.0pt too wide) in paragraph at lines 7899--7899
 []\TU/lmtt/m/n/10 v: https://drive.google.com/file/d/1842323jsdxrandomXJs/view?
 usp=sharing[] 
  []
@@ -2191,19 +2198,19 @@ File: img/RT.jpg Graphic file (type bmp)
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [201]
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8223--8223
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8245--8245
 []    \TU/lmtt/m/n/10 text -200 -200 &tired ; prefix "You tiredness score from 
 survey was: "[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 8223--8223
+Overfull \hbox (38.25pt too wide) in paragraph at lines 8245--8245
 []    \TU/lmtt/m/n/10 text -200 -50 &my_max_speed ; prefix "Your maximally allo
 wed speed: "[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 8223--8223
+Overfull \hbox (38.25pt too wide) in paragraph at lines 8245--8245
 []    \TU/lmtt/m/n/10 text -200 100 &speed_result ; prefix "Your speed in corre
 ct trials: "[] 
  []
@@ -2234,7 +2241,7 @@ File: img/ukflag.png Graphic file (type bmp)
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 [205]
-Overfull \hbox (58.13498pt too wide) in paragraph at lines 8292--8293
+Overfull \hbox (58.13498pt too wide) in paragraph at lines 8314--8315
 []\TU/lmr/m/n/10 Il suffit de taper : monfichierdedonnées = read.table(“nomdufi
 chierdedonnées.txt”) 
  []
@@ -2242,7 +2249,7 @@ chierdedonnées.txt”)
 File: img/ukflag.png Graphic file (type bmp)
 <img/ukflag.png>
 
-Underfull \hbox (badness 2478) in paragraph at lines 8297--8297
+Underfull \hbox (badness 2478) in paragraph at lines 8319--8319
 \TU/lmr/bx/n/14.4 données individuels et de données de
  []
 
@@ -2274,12 +2281,12 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8377.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8399.
 [215]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 8377.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8399.
 (./Documentation_Psytoolkit.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 8377.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8377.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 8399.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8399.
 
 Package rerunfilecheck Info: File `Documentation_Psytoolkit.out' has not change
 d.
@@ -2287,13 +2294,13 @@ d.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8377.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8399.
  ) 
 Here is how much of TeX's memory you used:
- 17389 strings out of 481765
- 311390 string characters out of 5934635
- 744623 words of memory out of 5000000
- 34138 multiletter control sequences out of 15000+600000
+ 17390 strings out of 481765
+ 311441 string characters out of 5934635
+ 744706 words of memory out of 5000000
+ 34139 multiletter control sequences out of 15000+600000
  538829 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  52i,8n,115p,1279b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
