@@ -1,4 +1,4 @@
-# Syntaxe pour  les scripts [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html){#syntax}
+# Syntaxe pour  les scripts [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html){#syntax}
 
 Cette page est simplement destinée à rechercher les instructions des scripts du PsyToolkit. Elle suppose que vous savez plus ou moins ce que vous recherchez. Si vous êtes nouveau à PsyToolkit, il est plus facile de commencer à regarder certains des exemples ici ou des exemples plus détaillés dans la bibliothèque d'expériences.
 
@@ -10,7 +10,7 @@ Autres documents pertinents (en anglais) :
 * [Informations générales sur les scripts](https://www.psytoolkit.org/doc3.1.0/introscripting.html)
 * [Aide détaillée sur les scripts et la version hors ligne](http://www.psytoolkit.org/software/)
 
-## Comment utiliser cette page de présentation des scripts d'expériences [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_how_to_use_this_experiment_script_overview_page){#how_to_use_this_experiment_script_overview_page}
+## Comment utiliser cette page de présentation des scripts d'expériences [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_how_to_use_this_experiment_script_overview_page){#how_to_use_this_experiment_script_overview_page}
 
 Cette page énumère tous les éléments possibles d'un script PsyToolkit. Elle donne également une brève description syntaxique. Une syntaxe est une description de la manière dont les instructions peuvent être utilisées. Dans la description syntaxique, les arguments obligatoires d'une instruction sont entre crochets []. Les arguments optionnels entre crochets normaux (). Un signe | indique différentes valeurs valides pour un argument.
 
@@ -20,7 +20,7 @@ Par exemple, prenons l'exemple de l'instruction "show rectangle". L'exemple ci-d
 
 Les parenthèses dans la description de la syntaxe ne sont bien sûr pas tapées dans le vrai script ; c'est juste une façon de décrire une syntaxe. Regardez attentivement les exemples donnés pour chaque instruction pour voir comment utiliser les instructions.
 
-## Structure des scripts [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_structure_of_scripts){#structure_of_scripts}
+## Structure des scripts [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_structure_of_scripts){#structure_of_scripts}
 
 Il existe différentes sections dans les scripts, et chaque section est séparée des autres par au moins une ligne vide.
 Tout ce qui suit un hashtag (#) est un commentaire uniquement pour les yeux humain, l'ordinateur l'ignorera.
@@ -35,13 +35,13 @@ Les principales sections qui contiennent chacune plusieurs lignes sont les suiva
 * [le bloc](#s5-9) peut être utilisé plusieurs fois pour exécuter des blocs d'essais
 * [l'ordre des blocs](#s5-10) peut être fixé de manière différente (utilisateurs avancés uniquement)
 
-## Option de base [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options){#options}
+## Option de base [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options){#options}
 
 Chaque fois que vous programmez une expérience, vous pouvez vouloir vous écarter des valeurs par défaut. Par exemple, la taille d'écran par défaut d'une expérience est de 800 par 600 pixels, mais vous pouvez la modifier en utilisant l'option "resolution". Les options disponibles sont énumérées ci-dessous. Au bas de cette section se trouve un exemple complet.
 
 Il existe de nombreuses options, mais elles sont surtout destinées aux utilisateurs avancés. Si vous êtes nouvel utilisateur de PsyToolkit, ignorez dans un premier temps les options.
 
-### resolution [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-resolution){#options-resolution}
+### resolution [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-resolution){#options-resolution}
 
 Cela détermine la résolution de l'expérience. Cette résolution par défaut est de 800 par 600. Lorsque vous spécifiez la résolution, il s'agit de la largeur par la hauteur, séparées seulement par un espace. Voir l'exemple ci-dessous.
 
@@ -66,7 +66,38 @@ block MyBlock
   
 ````
 
-### background color [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-background){#options-backgroundcolor}
+### frame [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-frame){#option-frame}
+
+Ceci définit la taille du cadre de l'expérience dans une expérience en ligne lorsqu'elle n'est pas en mode plein écran. Cette fonction est rarement nécessaire, mais il est bon de savoir que vous pouvez l'ajuster.
+
+Dans l'exemple ci-dessous, vous travaillez avec une résolution de 1000 800. Mais sans l'option *frame*, elle serait réduite à 800 par 600 en mode non plein écran. Si vous voulez que dans le mode non plein écran, la boîte apparaisse plus grande, vous pouvez ajuster cela avec *frame*.
+
+**Exemple de frame**
+````
+options
+  fullscreen
+  resolution 1000 800
+  frame 1000 800
+  ````
+Frame n'est peut-être pas souvent nécessaire. Lorsque vous l'utiliserez, il aura probablement les mêmes valeurs que le plein écran.
+
+### scale [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-scale){#options-scale}
+L'option d'échelle *scale* vous permet de mettre l'écran à l'échelle. Ceci est pratique en mode plein écran ou pour des résolutions plus grandes que la zone par défaut de 800 par 600 pixels. PsyToolkit conservera toujours le rapport d'aspect correct.
+
+Quand cela prend-il effet ?
+
+* Lorsque vous passez en mode plein écran (la taille augmente).
+* Lorsque vous avez une résolution supérieure à 800 x 600 et que vous n'êtes pas en mode plein écran (l'échelle sera réduite).
+
+**Exemple de scale**
+````
+options
+  fullscreen
+  scale
+  resolution 1600 1200
+  ````
+
+### background color [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-background){#options-backgroundcolor}
 
 Vous pouvez spécifier la couleur de fond de l'écran. Par défaut, il est noir, mais vous pouvez le régler ici sur une couleur différente. Vous pouvez la spécifier en utilisant un nom de couleur (rouge, vert, bleu, blanc, jaune, rose, violet, noir, orange) ou un triplet RVB (255 0 0 pour le rouge), ou une combinaison hexadécimale de six lettres/chiffres (FF0000 pour le rouge).
 
@@ -102,7 +133,7 @@ options
   background color FFFF00
 ````
 
-### fullscreen [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-fullscreen){#options-fullscreen}
+### fullscreen [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-fullscreen){#options-fullscreen}
 
 Exécute l'expérience en mode plein écran. Sous Linux, c'est le mode par défaut, alors que dans le navigateur, ce n'est pas le cas.
 
@@ -124,7 +155,7 @@ block MyBlock
   end
 ````
 
-### mouse [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-mouse){#options-mouse}
+### mouse [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-mouse){#options-mouse}
 
 Par défaut, le curseur de la souris n'est pas affiché, car d'un point de vue psychologique, il peut être un stimulus distrayant. Mais pour certaines expériences, la souris est nécessaire en tant que dispositif de pointage. Cette option permet de s'assurer que le curseur de la souris est visible. La seule valeur utile est "on".
 
@@ -135,7 +166,7 @@ options
 ````
 L'option ne met la souris en marche qu'au début de l'expérience. Vous pouvez toujours l'éteindre plus tard dans une tâche en utilisant les instructions de masquage et d'affichage de la souris. [Cliquez ici pour en savoir plus sur ces deux instructions](#task-mouse).
 
-### set [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-set){#options-set}
+### set [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-set){#options-set}
 
 Cela vous permet de définir une variable globale. Cela peut être pratique si vous souhaitez tester un paramètre expérimental (par exemple, l'intervalle intertrial) à une valeur spécifique tout au long de l'expérience. Si vous n'utilisez la variable nulle part, cette valeur sera simplement ignorée.
 
@@ -162,7 +193,7 @@ block MyBlock
 
 Il est parfois pratique d'avoir défini certains paramètres de base dans les options en tant que variables globales. De cette façon, vous pouvez facilement les retrouver. De bons exemples sont les intervalles entre les essais, les temps de réponse maximums autorisés, la taille du stimulus, etc.
 
-### start messages [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-start-messages){#options-start-messages}
+### start messages [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-start-messages){#options-start-messages}
 
 Dans la version en ligne, chaque expérience commence par une case rouge et le message en anglais "Click to start". En outre, selon le temps nécessaire pour charger les messages, vous verrez un message attendre une seconde. Vous pouvez modifier ces deux messages avec les deux options suivantes :
 
@@ -173,9 +204,9 @@ options
   loading text My own wait-a-second message
 ````
 
-## Options avancées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#advanced_options){#advanced_options}
+## Options avancées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#advanced_options){#advanced_options}
 
-### var in [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_var_in){#var_in}
+### var in [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_var_in){#var_in}
 
 [Voir l'échange d'information entre les questionnnaires et les expériences](#s11)
 
@@ -228,7 +259,7 @@ block
   end
 ````
 
-### var out [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_var_out){#var_out}
+### var out [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_var_out){#var_out}
 
 [Voir l'échange d'information entre les questionnnaires et les expériences](#s11)
 
@@ -248,7 +279,7 @@ t: info
 q: Your score was {$my_score}
 ````
 
-### origin [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-origin){#options-origin}
+### origin [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-origin){#options-origin}
 
 Les stimuli visuels sont présentés à l'écran, et vous devez donner une coordonnée X et une coordonnée Y pour les placer. L'option d'origine indique à l'ordinateur où se trouve le point X=0,Y=0 (ou 0,0).
 
@@ -261,40 +292,40 @@ options
   origin topleft
 ````
 
-### fontdir,datadir,bitmapdir,sounddir [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-sounddir){#options-sounddir}
+### fontdir,datadir,bitmapdir,sounddir [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-sounddir){#options-sounddir}
 
 Les options fontdir,datadir,bitmapdir,sounddir vous permettent de modifier les dossiers dans lesquels l'ordinateur s'attend à ce que les stimuli soient enregistrés. Vous n'avez pas besoin de le préciser si les fichiers de stimuli se trouvent dans le même répertoire que votre code de script.
 
 Cette option est particulièrement utile si vous travaillez en C ou si vous faites de grandes expériences.
 
-## Options pour Linux [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-sounddir){#options-sounddir}
+## Options pour Linux [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-sounddir){#options-sounddir}
 
-### escape (C seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-escape){#options-escape}
+### escape (C seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-escape){#options-escape}
 
 Dans la version Linux Desktop, cela permet de terminer le programme en appuyant sur la touche d'échappement. Veuillez noter que l'ordinateur vérifie uniquement si la touche d'échappement a été enfoncée à la fin de chaque essai. Par conséquent, si vous utilisez cette option, et si vous souhaitez interrompre votre expérience, vous devez maintenir le bouton d'échappement (ou tout autre bouton utilisé pour l'échappement) pendant la durée d'au moins un essai.
 
 Dans le navigateur, vous pouvez toujours vous échapper de votre expérience, et là, cette option n'est pas nécessaire.
 
-### parallelport (C seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-parallelport){#options-parallelport}
+### parallelport (C seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-parallelport){#options-parallelport}
 
 Il s'agit d'un codage avancé du port parallèle.
 
-### pcidio24 (C seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-pcidio24){#options-pcidio24}
+### pcidio24 (C seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-pcidio24){#options-pcidio24}
 
 This is for advanced coding of the pcidio24 port
 
-### cedrus (C seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-cedrus){#options-cedrus}
+### cedrus (C seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-cedrus){#options-cedrus}
 
 Cela indique que vous avez attaché un clavier Cedrus. En option, vous pouvez spécifier un modèle. Si vous spécifiez un modèle, le script ne fonctionnera qu'avec ce modèle. Cette rigueur n'est nécessaire que dans le cas où vous voulez forcer les gens à utiliser un clavier Cedrus spécifique.
 
-### iolab (C seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-iolab){#options-iolab}
+### iolab (C seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-iolab){#options-iolab}
 
 
 Il semble que cet appareil ne soit plus produit. PsyToolkit le supporte toujours.
 
 Cela indique que vous avez connecté le dispositif IoLab (un clavier spécial avec des boutons poussoirs). En option, vous pouvez spécifier les paramètres des touches vocales (voir psycc -s)
 
-### et (Linux seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-et){#options-et}
+### et (Linux seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-et){#options-et}
 
 Le soutien à l'eye-tracker Tobii est en cours de développement. Actuellement, le code est en cours de développement pour le modèle tx300. Cela ne fonctionne que sur linux
 
@@ -306,19 +337,19 @@ options
 
 Le numéro 12345 est ici un exemple d'identification d'un tracker Tobii. Il est facultatif de donner ce numéro d'identification.
 
-### sprites first (Linux seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-sprites-first){#options-sprites-first}
+### sprites first (Linux seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-sprites-first){#options-sprites-first}
 
 **Utilisation avancée uniquement**
 
 L'option "sprites first" attirera les sprites avant qu'elle n'attire d'autres stimuli. Cela signifie que les sprites seront dessinés en arrière-plan, ce que vous souhaitez pour certaines situations.
 
-### executable [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-executable){#options-executable}
+### executable [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-executable){#options-executable}
 
 Le nom de fichier du programme exécutable. Par défaut, c'est *experiment*, mais il peut être défini avec l'option de ligne de commande -o et avec cette option.
 
 L'option -o remplacera cette option. Dans la version en ligne, cette option sera ignorée.
 
-### egi (C only) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-egi){#options-egi}
+### egi (C only) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-egi){#options-egi}
 
 Avec le nom ou l'adresse IP de l'hôte et le port IP (facultatif), il établit une connexion avec le système d'Electrical Geodesics, Inc. Ce système n'a pas été bien testé et est basé sur un ancien code. Vous n'avez pas besoin d'utiliser d'options si vous ne le souhaitez pas.
 
@@ -331,7 +362,7 @@ options
   set &my_variable 100
 ````
 
-### vsync on|off [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options_vsync_off){#options_vsync_off}
+### vsync on|off [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options_vsync_off){#options_vsync_off}
 
 **Non pertinent pour la version en ligne et pour utilisateurs avancés uniquement**. En mode Linux, il est "activé" par défaut, mais peut être désactivé, car certaines cartes graphiques ne permettent pas d'utiliser le vsync. PsyToolkit affichera un message d'erreur s'il n'est pas disponible.
 
@@ -343,21 +374,21 @@ option
   vsync off
 ````
 
-### window (C only) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-window){#options-window}
+### window (C only) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-window){#options-window}
 
 Cela vous permet de mener l'expérience dans une fenêtre plutôt qu'en plein écran. C'est pratique pour les tests. Notez que le mode plein écran est le mode par défaut dans Linux, sauf si vous exécutez en mode test.
 
 Comme PsyToolkit peut fonctionner dans deux environnements de programmation différents, certaines fonctions ne marchent pas dans tous les environnements. Les fonctions C ne fonctionnent que sur la version Linux qui est basée sur le langage de programmation C. Si vous utilisez la version en ligne, vous pouvez les ignorer complètement.
 
-### screensize and screendistance (C only) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-screendistance){#options-screendistance}
+### screensize and screendistance (C only) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-screendistance){#options-screendistance}
 
 Vous pouvez définir les dimensions de l'écran et la distance entre les yeux et l'écran. Les unités sont en millimètres. Ces chiffres sont nécessaires si vous voulez utiliser l'option coordonnées polaires ou si vous voulez utiliser l'option de ligne de commande de la taille du stimulus du rapport. Si vous utilisez un système de coordonnées polaires (ce qui est rare), toutes les coordonnées xy doivent être spécifiées en centièmes de degrés (donc 100 = 1 degré, 200 = 2 degrés d'angle visuel). Ceci n'est pas encore bien implémenté (faites-moi savoir si vous en avez besoin).
 
-### version [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-version){#options-version}
+### version [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-version){#options-version}
 
 Ce service est réservé aux utilisateurs avancés. Cela permettra uniquement de compiler un script avec la version psycc correspondante. C'est pratique si vous avez plusieurs versions de psycc installées, et si vous voulez juste vous assurer que le code fonctionne. Cette commande n'a aucun effet dans la version en ligne.
 
-### check_refresh_rate [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#options-check-refresh-rate){#options-check-refresh-rate}
+### check_refresh_rate [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#options-check-refresh-rate){#options-check-refresh-rate}
 
 Linux seulement. Vous pouvez vérifier si le taux de rafraîchissement est conforme aux attentes, et si ce n'est pas le cas, un message sera affiché à l'écran.
 
@@ -397,14 +428,14 @@ options
   sprites first
 ````
 
-## Chargement des stimuli [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#loadingstimuli){#loadingstimuli}
+## Chargement des stimuli [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#loadingstimuli){#loadingstimuli}
 
 L'ordinateur doit savoir quels stimuli vous utilisez. Les stimuli sont généralement des images ou des sons, qui doivent être chargés. Vous pouvez également charger des polices de caractères. Vous trouverez ci-dessous des explications sur la manière de charger des images, des sons et des polices.
 
 ![](img/attention.png) Les noms de fichiers bitmap et sons **ne doivent pas commencer par un chiffre**, ni contenir d'espaces ou de caractères spéciaux (à l'exception du soulignement).
 
 
-### bitmaps [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_bitmaps){#bitmaps}
+### bitmaps [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_bitmaps){#bitmaps}
 
 La commande bitmaps vous permet de définir un certain nombre de images que vous souhaitez utiliser dans votre expérience. Les images peuvent être de formats courants, png, jpg, bmp et autres.
 
@@ -458,7 +489,7 @@ task MyTask
   show bitmap testimage
 ````
 
-### move [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#move){#move}
+### move [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#move){#move}
 
 *move* et relocate ne sont pas souvent utilisés. Ils sont surtout réservés aux animations de base et sont alors très pratiques.
 *move* ne donne pas une animation fluide, c'est juste un changement de lieu. Voir la leçon sur les animations simples pour plus de détails.
@@ -482,7 +513,7 @@ task MyTask
   move 1 20 0
 ````
 
-### relocate [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#relocate){#relocate}
+### relocate [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#relocate){#relocate}
 
 *relocate* est très similaire à *move*, sauf que vous ne faites que donner les nouvelles coordonnées.
 
@@ -498,11 +529,11 @@ task MyTask
   relocate 1 100 150
 ````
 
-### sounds [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#sounds){#sounds}
+### sounds [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#sounds){#sounds}
 
 Cela fonctionne comme les commandes "bitmaps", simplement pour indiquer à l'ordinateur quels sons sont chargés. Vous pouvez utiliser n'importe quel format de fichier son, bien que le format de fichier wav soit le plus largement utilisé et recommandé pour les études en ligne.
 
-**Exemple de sons et comment s'y référer dans une [tâche](#s5-7)**
+**Exemple de sons et comment s'y référer dans une tâche**
 
 ````
 sounds
@@ -517,7 +548,50 @@ Comme pour les images bitmap, vous pouvez également charger un son à partir d'
 
 Vous pouvez également utiliser des sons dans le bloc, par exemple pour faire jouer de la musique lorsque le participant effectue la tâche. Cela peut être utilisé pour tester l'effet de différents types de sons, de musique, de bruit de fond sur l'exécution de la tâche. [Voir le son dans un bloc](#block-sound).
 
-### fonts [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#fonts){#fonts}
+### sound frequencies[![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#sounds_as_frequencies){#sounds-frequencies}
+Apart from playing sound files, you can also play specific tones or frequencies. This also uses the sound instruction, but now followed by the word freq. Below are various examples:
+
+Outre la lecture de fichiers sonores, vous pouvez également lire des tonalités ou des fréquences spécifiques. Pour ce faire, on utilise également l'instruction *sound*, mais elle est suivie du mot *freq*. Vous trouverez ci-dessous plusieurs exemples :
+
+**Jouez un son sinusoïdal de 500 Herz (Hz) pendant 1 seconde (1000 ms)**
+
+````
+  sound freq sine 400 2000
+````
+
+**Jouez un son d'onde carrée de 400 Herz (Hz) pendant 2 secondes (2000 ms)**
+
+````
+sound freq sine 400 2000
+````
+
+**Jouez un son d'onde triangulaire de 700 Herz (Hz) pendant 1,5 seconde (1500 ms)**
+
+````
+Jouez un son d'onde triangulaire de 700 Herz (Hz) pendant 1,5 seconde (1500 ms).
+````
+
+**Faites jouer une onde en dents de scie de 600 Herz (Hz) pendant une demi-seconde (500 ms)**
+
+````
+  sound freq sawtooth 600 500
+````
+
+Comment arrêter une fréquence sonore. Pour cela, vous utilisez l'instrcuction  *silence*, mais vous devez utiliser un nombre négatif. Le dernier son commencé est -1, celui qui a commencé avant est -2, etc. Voir l'exemple ci-dessous.
+
+**Arrêter un son de fréquence avant sa durée réelle**
+
+````
+  sound freq sine 400 5000
+  delay 500
+  sound freq sawtooth 700 5000
+  delay 500
+  silence -1 # stops the sawtooth
+  delay 500
+  silence -2 # stops the sine
+````
+
+### fonts [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#fonts){#fonts}
 
 Par défaut, si vous ne précisez pas à l'ordinateur quelle police vous souhaitez utiliser, PsyToolkit utilisera Arial 20 points. Vous n'avez pas besoin de définir une police si vous ne voulez rien d'autre qu'un Arial de taille 20 points.
 
@@ -551,7 +625,7 @@ task MyTask
 
 voir aussi [Show text](#task-show-text)
 
-### videos [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#videos){#videos}
+### videos [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#videos){#videos}
 
 Vous pouvez utiliser des vidéos dans votre expérience. Vous devez indiquer à PsyToolkit où les vidéos sont stockées sur Internet. Vous ne pouvez pas les stocker sur le serveur PsyToolkit lui-même.
 
@@ -565,7 +639,7 @@ videos
   clip1 https://www.dropbox.com/s/kzo7sx7hkdai16i/beetle.mp4?dl=0
   clip2 https://www.dropbox.com/s/bzbs6qpk7ht9yyu/frog.mp4?dl=0
 ````
-## Les tâches [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task){#task}
+## Les tâches [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task){#task}
 
 Dans PsyToolkit, une tâche décrit (typiquement) la séquence d'un seul essai d'une expérience.
 
@@ -573,7 +647,7 @@ Les tâches sont la partie la plus difficile du langage de script, car elles imp
 
 Avant de décrire les instructions, un certain nombre d'éléments fondamentaux du langage sont décrits, à savoir la structure des tâches, les variables et les repères temporelles
 
-### Comment les tâches sont structurées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_how_tasks_are_structured){#how_tasks_are_structured}
+### Comment les tâches sont structurées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_how_tasks_are_structured){#how_tasks_are_structured}
 
 Les tâches servent en fait à programmer ce qui se passe dans un essai de paradigme expérimental. Une tâche n'est qu'une séquence d'instructions, terminée par une ligne vide. Les instructions contiennent les grandes parties d'information suivantes :
 
@@ -582,7 +656,7 @@ Les tâches servent en fait à programmer ce qui se passe dans un essai de parad
 * Les stimuli utilisés, ainsi que le moment et le lieu où ils doivent être présentés. Cela peut se faire avec [show](#task-show) et [sound](#task-sound).
 * Les données qui doivent être enregistrées dans un fichier pour une analyse ultérieure des données. Cela se fait avec l'instruction [save](#task-save)
 
-### le concept de variables [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#variables-explained){#variables-explained}
+### le concept de variables [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#variables-explained){#variables-explained}
 
 Comme tout langage informatique, vous pouvez utiliser des variables. Il existe des variables globales et des variables locales. En principe, vous pouvez toujours utiliser des variables globales. Les variables locales ne sont utilisées que dans une tâche, tandis que les variables globales peuvent être utilisées n'importe où dans la tâche et le code de bloc (voir aussi blocs). Vous pouvez définir les valeurs initiales des variables globales dans les options.
 
@@ -616,11 +690,11 @@ De bons exemples.
 
 Il existe également des types particuliers de variables écrites en majuscules, comme RT, STATUS, TABLEROW, TASKNAME, BLOCKNAME, BLOCKNUMBER, BLOCKORDER. Elles vous donnent simplement accès à des informations importantes sur une réponse ou sur l'état de la tâche.
 
-### Le concept d'horodatage [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#timestamp){#timestamp}
+### Le concept d'horodatage [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#timestamp){#timestamp}
 
 l'horodatage (timestamps) est un type spécial de variable, mais il n'est utilisé que dans des scripts très avancés et n'est normalement pas nécessaire. Chaque fois que vous définissez un timestamps, l'heure courante est enregistrée.
 
-### La fonction set [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-set){#task-set}
+### La fonction set [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-set){#task-set}
 
 Avec set, vous pouvez assigner des valeurs à des [variables](#variables-explained).
 
@@ -634,7 +708,7 @@ Comme  nous l'avons expliqué à propos des "variables", la fonction set peut fi
 * set est une fonction relativement avancée, et lors de l'apprentissage de PsyToolkit, vous n'en avez pas immédiatement besoin, et vous pouvez écrire des scripts sans set.
 * set est une fonction relativement avancée, et lorsque vous apprenez PsyToolkit, vous n'en avez pas immédiatement besoin, et vous pouvez écrire des scripts sans set. set est une variable locale qui a une valeur (le $ indique qu'elle est locale)
 
-**définir une variable locale à une valeur (le $ indique qu'elle est locale)**
+**Définir une variable locale à une valeur (le $ indique qu'elle est locale)**
 ````
 set $x 10
 ````
@@ -646,24 +720,24 @@ set &x 10
 
 Dans ce qui suit, la nature locale ou globale de la variable n'est pas pertinente pour expliquer l'ensemble, et nous travaillons simplement avec $x
 
-**prendre la valeur d'une autre variable**
+**Prendre la valeur d'une autre variable**
 ````
 set $x &y
 ````
 
-**augmenter la valeur d'une variable**
+**Augmenter la valeur d'une variable**
 ````
 set $x 10
 set $x increase 2  # after this, $x has value 12
 ````
 
-**diminuer la valeur d'une variable (le pas par défaut est de 1)**
+**Diminuer la valeur d'une variable (le pas par défaut est de 1)**
 ````
 set $x 10
 set $x decrease # after this, $x has value 9
 ````
 
-**utiliser une expression mathématique**
+**Utiliser une expression mathématique**
 ````
 set $x expression $x / 2 + $a + 1
 ````
@@ -683,17 +757,17 @@ set $x random 2 100 2
 set $x random from 1 2 3 5 10
 ````
 
-**régler la valeur de la carte d'entrée/sortie pcidio24 (si vous en avez une !) (pour les utilisateurs avancés, Linux uniquement)**
+**Régler la valeur de la carte d'entrée/sortie pcidio24 (si vous en avez une !) (pour les utilisateurs avancés, Linux uniquement)**
 ````
 set $x pcidio24 a # set to value of register A
 ````
 
-**régler sur les millisecondes qui se sont écoulées depuis le début de l'expérience (pour les utilisateurs avancés)**
+**Régler sur les millisecondes qui se sont écoulées depuis le début de l'expérience (pour les utilisateurs avancés)**
 ````
 set $x time-since-start
 ````
 
-**régler sur la différence en millisecondes de deux horodatages (pour les utilisateurs avancés)**
+**Régler sur la différence en millisecondes de deux horodatages (pour les utilisateurs avancés)**
 ````
 timestamp MyTime1
 delay 500
@@ -730,9 +804,269 @@ task test
   set $myMouseX MOUSE_X # current mouse x-coordinate
   set $myMouseY MOUSE_Y # current mouse x-coordinate
   set $x bitmap-under-mouse $myMouseX $myMouseY ## $x should be 1
+  
   ````
 
-### Synthèse de la fonction set [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_summary_of_set){#summary_of_set}
+Vous pouvez définir des variables de texte. Les variables de texte commencent toujours par le caractère %, juste pour indiquer à PsyToolkit que nous avons une variable de texte ici.
+
+Vous pouvez créer une nouvelle variable de texte en collant différents éléments ensemble, puis l'afficher. Ceci est particulièrement utile pour donner à un participant un feedback sur le TR ou le nombre d'erreurs, comme dans l'exemple ci-dessous.
+
+**définir une variable texte**
+
+````
+task test
+  keys x
+  show rectangle 0 0 100 100  255 0 0
+  readkey 1 2000
+  set $myvar random 1 100
+  set %y "Hello " RT " " $myvar
+  show text %y
+  delay 2000
+
+block testx
+  tasklist
+      test 2
+  end
+````
+
+**fixer la variable à la durée du stimulus sonore (fichier)**
+
+````
+  set $x duration my_sound
+````
+
+**mettre une variable texte comme sous-chaîne d'une autre variable texte ; ici, on prend les lettres 1 à 5**
+
+````
+task test
+  keys x
+  show rectangle 0 0 100 100  255 0 0
+  readkey 1 2000
+  set $myvar random 1 100
+  set %y "Hello " RT " " $myvar
+  set %k %y[1,5]
+  show text %k
+  delay 2000
+
+block testx
+  tasklist
+      test 2
+  end
+````
+
+Pour les sous-chaînes, vous utilisez un système d'indexation :
+
+set %text1 "PsyToolkit"
+
+set %text2 text1[1] → text2 est "P" set %text2 text1[-1] → text2 est "t" (dernière lettre) set %text2 text1[-2] → text2 est "i" (avant-dernière lettre)
+
+set %text2 text1[1,-1] → text2 est "PsyToolkit" (première à dernière lettre) set %text2 text1[1,3] → text2 est "Psy" (lettre 1 à lettre 3) set %text2 text1[-3,-1] → text2 est "kit" (troisième à dernière lettre)
+
+### définir une variable liste [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#set_array){#array-variable}
+
+*Ces instruyctions sont destinés aux utilisateurs un peu plus expérimentés. Assurez-vous d'abord de comprendre les instructions relatives aux tableaux.
+* Dans PsyToolkit, un tableau est simplement une liste de nombres entiers, tels que 1 2 3 4 5.
+* Chaque variable de tableau est une variable globale, c'est-à-dire qu'elle reste la même tout au long des essais et des différentes tâches.
+
+En bref, vous pouvez appliquer les fonctions suivantes (vous trouverez des exemples plus détaillés plus loin) :
+
+|-------------------|-----------------------------------------------------------|-----------------------|
+| Instruction	      | Ce que cela fait	                                        | Exemple               |
+|-------------------|-----------------------------------------------------------|-----------------------|
+| set	              | définir une liste comme une suite de valeurs              |	set &&x 4 2 10 -1     |
+| sort              | trier une suite de valeur	                                | set &&x sort          |
+| range	            | Remplir une liste avec un intervalle                      | set &&x range 1 5     |
+| shuffle	          | mélanger les valeurs d'une liste de façon aléatoire	      | set &&x shuffle       |
+| remove	          | supprimer une valeur d'une liste                          | set &&x remove first  |
+| sample	          | prendre n valeurs dans une liste de façon aléatoire       |	set &&x &&y sample 10 |
+| uniq              |	supprimer toutes les valeurs apparaissant plus d'une fois	| set &&x uniq          |
+| append            |	ajoute une valeur à la fin de la liste	                  | set &&x prepend 10    |
+| clear	            | supprimer toutes les valeurs d'une liste	                | set &&xx clear        |
+| *value* times *n* |	répéter une valeur (ou une liste) plusieurs fois         	| set &&x 10 times 5    |
+|-------------------|-----------------------------------------------------------|-----------------------|
+
+Toutes les instructions de cette sous-section s'appliquent uniquement aux tableaux entiers (texte ou numérique). Une section distincte est consacrée à l'extraction de valeurs de tableaux.
+
+
+**Définir une liste de nombre**
+
+````
+task test
+  set &&my_array 1 2 5 2 4 1 0 10
+````
+
+**Supprime toutes les valeurs d'une (après quoi elle sera vide)**
+
+````
+task test
+  set &&my_array clear
+````
+
+**Remplir la liste avec un intervalle, dans ce cas 1 2 3 4 5**
+
+````
+task test
+  set &&my_array range 1 5
+````
+
+L'instruction ci-dessous supprime une valeur du tableau, mais vous ne saurez pas laquelle (voir ci-dessous pour l'autre suppression pour faire cela).
+
+**Si une liste a une valeur, supprimer cette valeur (dans ce cas, la valeur 3)**
+
+````
+task test
+  set &&my_array 1 2 3 4
+  set &&my_array remove value 3
+````
+
+**Supprimez la première valeur de la liste Par exemple : 1 2 3 4 devient 2 3 4**
+
+````
+task test
+  set &&my_array 1 2 3 4
+  set &&my_array remove first
+````
+
+**Supprimez la dernière valeur de la liste. Par exemple : 1 2 3 4 devient 1 2 3**
+
+````
+task test
+  set &&my_array 1 2 3 4
+  set &&my_array remove last
+````
+
+**Retirer une position spécifique de la liste. Par exemple : 10 4 20 100 devient 10 20 100**
+````
+task test
+  set &&my_array 10 4 20 100
+  set &&my_array remove position 2
+````
+
+**Retirer au hasard une position de la liste **
+
+````
+task test
+  set &&my_array remove random
+Fill the array with the value 2, repeated 10x (thus becoming 2 2 2 2 2).
+task test
+  set &&my_array 2 times 5
+````
+
+**Remplir la liste avec 3 valeurs aléatoires entre 5 et 10**
+
+````
+task test
+  set &&my_array random 5 10 times 3
+````
+
+Vous pouvez également répéter des listes Ainsi, dans l'exemple suivant, nous avons une liste &&mes_numéros avec le contenu 1 2 3. Après avoir fait cela fois 3, nous avons 1 2 3 1 2 3 1 2 3.
+
+**Répétez unne liste 3 fois**
+
+````
+task test
+  set &&my_numbers 1 2 3
+  set &&my_array &&my_numbers times 3
+````
+  
+**Trier les valeurs d'une liste (du plus petit au plus grand)**
+
+````
+task test
+  set &&my_numbers sort
+````
+
+**Trier les valeurs d'une liste (de la plus grande à la plus petite)**
+
+````
+task test
+  set &&my_numbers sort reverse
+````
+
+**Supprimez toutes les valeurs d'une liste qui apparaissent plus d'une fois**
+
+````
+task test
+  set &&my_numbers uniq
+````
+Vous pouvez également utiliser des tableaux de texte, en les faisant commencer par %%, voir l'exemple ci-dessous.
+
+**Supprimez toutes les valeurs d'une liste qui apparaissent plus d'une fois**
+
+````
+task test
+  set %%my_list "Hello" "this" "is" "PsyToolkit"
+````
+### définir une variable à partir d'une liste [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#set_from_array){#set_from_array}
+
+* Ces instructions sont destinées aux utilisateurs un peu plus expérimentés. Assurez-vous d'abord de bien comprendre les instructions *set*.
+* Dans PsyToolkit, un tableau est simplement une série de nombres entiers, tels que 1 2 3 4 5.
+
+|--------|------------------------------------------------------------------------------------------------------|
+| code   | Ce que cela fait                                                                                     |
+|---------------------------------------|-----------------------------------------------------------------------|
+| locate | trouver la position d'une valeur dans la liste                                                       |
+| remove | prendre et enlever d'une liste (first, last ou une position spécifique dans la liste)                |
+| use    | utiliser mais pas enlever d'une liste (first, last, random ou  une position spécifique dans la liste)|
+| size   | prendre un nombre d'items dans une liste                                                             |
+| join   | mettre dans une varaible text la réunion d'éléments textuels d'une liste                             |
+|--------|------------------------------------------------------------------------------------------------------|
+
+Dans l'exemple ci-dessous, nous pouvons définir une liste avec les valeurs 4 5 2 10. Dans cette liste, la deuxième valeur (c'est-à-dire la position 2) contient 5. Ainsi, &x sera égal à 2 après cela.
+
+**Repérer la position d'une valeur spécifique dans une liste**
+
+````
+task test
+  set &&my_area 4 5 2 10
+  set &x &&my_array locate 5
+````
+
+Dans l'exemple suivant, la variable globale &x aura la valeur 4 (la première), et la liste &&my_area sera réduit à 5 2 10.
+
+**Obtenir et supprimer une valeur d'une liste**
+
+````
+task test
+  set &&my_area 4 5 2 10
+  set &x &&my_array remove first
+````
+
+Dans l'exemple suivant, la variable globale &x obtiendra la valeur 10 (la dernière), et la liste &&my_area sera réduit à 4 5 2.
+
+**Obtenir et supprimer une valeur d'une liste**
+````
+task test
+  set &&my_area 4 5 2 10
+  set &x &&my_array remove last
+````
+
+Dans l'exemple suivant, la variable globale &x prendra la valeur 5 (qui se trouve à la position retirée 2). Le tableau sera alors 4 2 10
+
+**Obtenir et supprimer une valeur d'une liste**
+
+````
+task test
+  set &&my_area 4 5 2 10
+  set &x &&my_array remove 2
+````
+
+* Note : au lieu de *remove*, vous pouvez utiliser l'instruction *use*. La seule différence est que le tableau ne sera pas modifié. vous pouvez également supprimer une valeur au hasard.
+
+*Obtenir la taille d'une liste (dans l'exemple, &x deviendra donc 4)*
+
+````
+task test
+  set &&my_area 7 5 2 10
+  set &x &&my_array size
+Sort and join an array with spaces
+task test
+  set %%my_array "Smith" "hello" "John"
+  set %%my_array sort
+  set %my_sentence %%my_array join " "
+````
+
+### Synthèse de la fonction set [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_summary_of_set){#summary_of_set}
 
 Le set n'est pas nécessaire pour les débutants ! Il permet vraiment une flexibilité dans votre code, si vous le voulez et en avez besoin.
 Pour chaque fonction set, vous pouvez utiliser des variables locales ou globales. Ne vous inquiétez pas de la différence entre les variables locales et globales ; en cas de doute, utilisez des variables globales (en commençant par le signe &).
@@ -799,7 +1133,7 @@ Pour chaque fonction set, vous pouvez utiliser des variables locales ou globales
 | Position y courante à l'écran du symbole         | set \$y sprite-y 2      | Si on affiche un symbole 2, met dans \$y la coordonnée y à l'écran du symbole   |
 +--------------------------------------------------+-------------------------+---------------------------------------------------------------------------------+
 
-## Instructions de base [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_commonly_used_instructions){#commonly_used_instructions}
+## Instructions communément utilisées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_commonly_used_instructions){#commonly_used_instructions}
 Il existe de nombreuses instructions différentes pour montrer les stimuli, enregistrer et sauvegarder les réponses. Elles sont toutes énumérées ci-dessous avec un bref exemple de leur utilisation. Cette section décrit ceux qui sont le plus souvent utilisés, et que vous devez vraiment comprendre.
 
 Avant de commencer, voici une liste alphabétique des instructions les plus couramment utilisées :
@@ -816,6 +1150,7 @@ Avant de commencer, voici une liste alphabétique des instructions les plus cour
 * [readkey](#task-readkey) attend une pression sur le clavier
 * [readkeys](#task-readkeys) attent qu'on appuie plusieurs fois sur le clavier
 * [readmouse](#task-readkeys) attend un clic ou un mouvement de souris
+* [textbox](#textbox) permet d'entrer du texte, y compris des caractère spéciaux
 * [choose](#task-choose) la sélection de stimuli multiples avec la souris
 * [rate](#task-rate),  la façon la plus simple d'inclure l'échelle de Likert dans votre expérience
 
@@ -836,10 +1171,11 @@ Avant de commencer, voici une liste alphabétique des instructions les plus cour
 * [if](#task-if), faire quelque chose qui dépend de d'une ou des variable(s)
 * [while](#task-while) faire quelque chose qui dépend de d'une ou des variable(s)
 * [set](#task-set) définir une variable
+* [set form array](#array-variable) paramétrer une variable à partir d'une valeur d'une liste
 
 Chacune de ces instructions est détaillée ci-dessous.
 
-### keys [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-keys){#task-keys}
+### keys [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-keys){#task-keys}
 
 **syntaxe**
 ````
@@ -872,7 +1208,7 @@ Les touches suivantes ne sont pas disponibles en mode Javascript
 * touches alt : lalt ralt
 * touches logo : lsuper rsuper
 
-### mouse on or off [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-mouse){#task-mouse}
+### mouse on or off [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-mouse){#task-mouse}
 
 Vous pouvez masquer (off) ou afficher (on) le curseur de la souris. Regardez les lignes suivantes que vous pouvez utiliser dans une tâche.
 
@@ -887,7 +1223,7 @@ task MyTask
   delay 1000
 ````
 
-### table [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#table){#task-table}
+### table [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#table){#task-table}
 
 **syntaxe**
 ````
@@ -903,7 +1239,7 @@ Si vous avez plus d'une tâche et plus d'une table, vous devez spécifier dans v
 table MyTable
 ````
 
-### show [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-show){#task-show}
+### show [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-show){#task-show}
 
 **syntaxe**
 ````
@@ -914,14 +1250,14 @@ C'est une instruction essentielle qui permet de montrer les stimuli des types su
 
 * [un rectangle](#task-show-rectangle)
 * [un cercle](#task-show-circle)
-* [une ligne](#task-show-text)
+* [une ligne de texte](#task-show-text)
 * [une image](#task-show-bitmap) 
 * [une vidéo](#task-show-video)
 * [un fond de couleur](#task-show-background)
 
 Le nombre de paramètres donnés pour une instruction *show* peut varié. Vous trouverez [ici une explication détaillée](#s4-2) de la façon dont vous présentez vos stimuli à l'écran, là où vous voulez qu'ils soient.
 
-### show bitmap [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-show-bitmap){#task-show-bitmap}
+### show bitmap [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-show-bitmap){#task-show-bitmap}
 **syntaxe**
 ````
 show bitmap [nom de l'image](X,Y)
@@ -938,7 +1274,7 @@ Plus d'informations sur la façon de montrer les images sont disponibles dans [c
 
 ****
 
-### show rectangle[![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-show-rectangle){#task-show-rectangle}
+### show rectangle[![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-show-rectangle){#task-show-rectangle}
 *syntaxe**
 ````
 show rectangle X,Y,Width,Height, Red,Green,Blue
@@ -973,7 +1309,7 @@ PsyToolkit utilise le modèle de couleur Rouge-Vert-Bleu (RVB). Chaque couleur p
 ````
 show rectangle 0 0 100 100 255 0 0
 ````
-### show circle [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-show-circle){#task-show-circle}
+### show circle [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-show-circle){#task-show-circle}
 Montrer un cercle. Simailaire à *show rectangle*. 
 
 **syntaxe**
@@ -987,7 +1323,7 @@ Le troisième paramètre est  le rayon en pixels (donc le diametre est le double
 show circle 0 0 100   255 0 0
 ````
 
-### show background [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-show-background){#task-show-background}
+### show background [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-show-background){#task-show-background}
 
 **syntaxe**
 ````
@@ -1012,7 +1348,7 @@ Vous n'avez pas besoin d'effacer le fond d'écran. Il restera jusqu'au prochain 
 
 ****
 
-### show text [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-show-text){#task-show-text}
+### show text [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-show-text){#task-show-text}
 
 L'instruction *show text* montre un texte.
 
@@ -1071,8 +1407,8 @@ block test
     MyTask 1
   end
 ````
-Les   couleurs de mots suivantes sont actuellement implémentées : blanc, jaune, rouge, vert, bleu, rose, violet, noir, gris, orange, rose.
-Pour la "couleur du texte", vous pouvez également spécifier la couleur avec trois valeurs décimales ou sous forme de code hexadécimal à 6 caractères. Dans l'exemple ci-dessous pour la même couleur jaune es décalrée de trois manières différentes. Cet exemple n'a aucun sens dans une expérience réelle (pourquoi spécifier la même couleur trois fois de suite ?), mais montre simplement comment utiliser l'instruction "text color".
+* Les   couleurs de mots suivantes sont actuellement implémentées : blanc, jaune, rouge, vert, bleu, rose, violet, noir, gris, orange, rose.
+* Pour la "couleur du texte", vous pouvez également spécifier la couleur avec trois valeurs décimales ou sous forme de code hexadécimal à 6 caractères. Dans l'exemple ci-dessous pour la même couleur jaune est déclarée de trois manières différentes. Cet exemple n'a aucun sens dans une expérience réelle (pourquoi spécifier la même couleur trois fois de suite ?), mais montre simplement comment utiliser l'instruction "text color".
 
 **Exemple d'usage de text color**
 ````
@@ -1083,7 +1419,16 @@ Pour la "couleur du texte", vous pouvez également spécifier la couleur avec tr
   # specify color as Hexadecimal value:
   text color FFFF00
 ````
-### show video [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-show-video){#task-show-video}
+
+Vous pouvez également utiliser un nom de couleur directement dans la ligne de texte de l'instriction *show*, comme suit :
+
+**Exemple de nom de couleur**
+
+````
+  show text "Hello" 0 0 red
+````
+
+### show video [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-show-video){#task-show-video}
 
 **Exemple de vidéo au centre de l'écran**
 ````
@@ -1100,7 +1445,7 @@ Pour la "couleur du texte", vous pouvez également spécifier la couleur avec tr
    videocontrol my_clip mute
    show video my_clip -100 100
 ````
-### clear [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-clear){#task-clear}
+### clear [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-clear){#task-clear}
 
 **syntaxe**
 ````
@@ -1133,7 +1478,7 @@ clear 1 2 # clears both bitmaps
 Parfois, vous voulez effacer tellement de stimuli qu'il est désagréable de devoir taper tous les numéros S'ils sont dans une plage. Vous pouvez spécifier la plage. Par exemple, *clear range 1 10* efface les stimuli 1 2 3 4 5 6 8 9 10.
 Il est rare que vous souhaitiez effacer tout l'écran. Ce n'est pas recommandé pour raisons de temps, car cela peut être plus lent que de changer de petites parties de l'écran, mais vous pouvez vouloir effacer tout l'écran au début ou à la fin d'un essai. Pour ce faire, vous pouvez utiliser la fonction *clear screen*.
 
-### hide/unhide [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-hide){#task-hide}
+### hide/unhide [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-hide){#task-hide}
 
 La fonction de *hide* fait exactement ce que fait la fonction de *clear*, sauf que de cette façon, vous pouvez aussi à nouveau afficher le stimulus (unhide). En utilisant *hide*, vous ne changez pas le numéro d'ordre du stimulus. Cela peut parfois être pratique.
 
@@ -1156,7 +1501,7 @@ delay 500
 rotate 1 900
 ````
 
-### delay [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-delay){#task-delay}
+### delay [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-delay){#task-delay}
 
 L'instruction de delay met le programme en pause pendant le nombre de millisecondes spécifié. Vous aurez souvent besoin de cette fonction, par exemple, si vous souhaitez afficher un stimulus pendant un intervalle de temps spécifique, ou pour attendre entre deux essais.
 
@@ -1172,7 +1517,7 @@ clear -1
 ````
 Le paramètre de delay (dans l'exemple 200) peut être une variable ou une entrée de tableau. Regardez bien les exmples pour savoir comment faire.
 
-### readkey [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-readkey){#task-readkey}
+### readkey [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-readkey){#task-readkey}
 
 L'instruction readkeys demande à l'ordinateur d'attendre un appui touche au clavier. Le premier argument est la touche correcte corresondant aux touches dans l'instruction [keys](#keys).
 
@@ -1196,7 +1541,7 @@ Après un appel à readkey, l'utilisateur peut utiliser les variables suivantes 
 * TT (l'heure à laquelle la touche a été libérée)
 * STATUT (avec les valeurs CORRECT, FAUX, ou TIMEOUT, ou 1,2, ou 3)
 
-### keystatus [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-keystatus){#task-keystatus}
+### keystatus [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-keystatus){#task-keystatus}
 
 La commande keystatus est réservée à un usage avancé et ne fonctionne que sous Linux (c'est-à-dire pas la version web)
 Sous certaines conditions, vous souhaitez vérifier directement l'état du clavier. Vous pouvez le faire avec la commande keystatus. Vous pouvez (en option) spécifier quelle touche vous souhaitez que le clavier soit correct.
@@ -1220,7 +1565,7 @@ task checkKey
    nap ## give the computer some rest in the while loop
   while-end
 ````
-### readkeys [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-readkeys){#task-readkeys}
+### readkeys [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-readkeys){#task-readkeys}
 
 La fonction "readkey" est utile pour la plupart des expériences, où il suffit d'appuyer sur une seule touche en réponse à un stimulus. Dans un certain nombre d'expériences, vous pouvez souhaiter que les gens puissent taper un mot (ou une séquence de lettres). La commande readkeys vous permet de le faire. Regardez l'exemple ci-dessous. La commande readkeys comporte de nombreuses options, ce qui peut sembler un peu plus difficile (voir la liste ci-dessous).La commande permet d'effacer un caractère. La touche Retour "termine" la saisie des readkeys.
 Il y a également un exemple de code dans la leçon (en anglais) sur la [mesure des temps de réponses avec readkeys](https://www.psytoolkit.org/lessons/readkeys.html).
@@ -1294,7 +1639,25 @@ Quelques explications sur l'exemple ci-dessus :
 
 Dans l'exemple ci-dessus, la dernière ligne de readkeys attend pendant 10 000 ms que les personnes aient entré une ou plusieurs lettres (le participant appuyant sur la touche retour/entrée met fin à l'entrée). Si les personnes ont saisi "apple", leur statut est réglé sur "correct" (c'est-à-dire la valeur 1).
 
-### readmouse [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-readmouse){#task-readmouse}
+### textbox [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-textbox){#textbox}
+
+L'instruction *textbox* crée une boîte dans laquelle les gens peuvent saisir du texte. Contrairement à l'instruction readkeys, la textbox permet également la saisie de caractères spéciaux (y compris la saisie de texte en chinois, les caractères spéciaux des langues européennes, etc.
+
+Elle a été introduite dans la version 3.4.0 et sera développé ultérieurement. Actuellement, une zone de texte est affichée avec l'instruction *textbox new* et vous pouvez fournir plusieurs arguments. Voici un exemple dans lequel les arguments suivants sont utilisés : x-position, y-position, width, height, textcolor, background color, font size et font family (comme arial ou times).
+
+````
+task my_task
+  show text "Enter words" 0 -280
+  show rectangle 300 250 100 100 green
+  textbox new 0 0 500 400 white blue 30 arial
+  readmouse l 2 99999 range 2 2
+  set %%my_list textbox
+  save %%my_list
+````
+
+Utilisez set pour enregistrer le texte dans une variable de texte (comme %my_word) ou une liste de texte (comme %%my_list).
+
+### readmouse [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-readmouse){#task-readmouse}
 
 Pour la version sans clic de readmouse, cela a légèrement changé dans la version 3.1.0
 
@@ -1359,7 +1722,164 @@ task checkMouse
 ````
 Dans le cas ci-dessus, vous pouvez survoler le rectangle de droite, mais PsyToolkit l'ignorera complètement et ne considérera que le stimulus de gauche. Cela peut être utile dans certaines situations. Par exemple, si vous voulez qu'un participant trouve un objet parmi d'autres. Le participant peut passer le curseur sur tous les objets jusqu'à ce quil ait vu l'objet cible. Vous pouvez bien sûr aussi le faire avec une *range*, mais cette solution est un raccourci car ici, vous n'avez pas besoin de connaître exactement les numéros du paramètre *range*, ce qui simplifie les choses.
 
-### progress [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-progress){#task-progress}
+### drag [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-drag){#task-drag}
+La fonction *drag* vous permet de faire glisser un stimulus d'un endroit à un autre. Il existe de nombreuses options pour ce faire. Souvent, il est plus facile de regarder d'abord un exemple simple. Le mieux est de lire la leçon sur [drag](https:/lessons/drag.html) pour des exemples détaillés.
+
+Vous trouverez ci-dessous des exemples simples, mais d'abord un aperçu. Notez que les valeurs en italique doivent être remplacées par les numéros des variables. Les valeurs entre crochets sont des options différentes. Plus de détails plus bas.
+
+**Aperçu de drag**
+
+````
+drag option from [*&&array* or *sequence*]
+drag option to [*&&array* or *sequence*]
+drag option snap ([left|center|right][top|center|bottom][no_overlap *&&array* or *sequence*])
+drag option *xlim value value*
+drag option *ylim value value*
+drag *maximum_duration*
+````
+
+Dans sa forme la plus simple possible, vous pouvez avoir un exemple comme celui-ci. Notez que vous devrez toujours fournir des lignes *drag option* pour indiquer à PsyToolkit quel stimulus doit être déplacé.
+
+Dans cet exemple, vous montrez un stimulus (stimulus numéro 1) en jaune (le jaune est RGB : 255 255 0). Vous dites à PsyToolkit que le stimulus qui peut être glissé de quelque part est dans ce cas le stimulus numéro 1. Vous donnez jusqu'à 60 000 millisecondes (c'est-à-dire 60 secondes) pour le déplacement.
+
+**Exemple super simple et fonctionnel de déplacement**
+
+````
+task my_drag
+  show rectangle 0 0 100 100   255 255 0
+  drag option from 1
+  drag 99999
+
+block test
+  tasklist
+     my_drag 1
+  end
+````
+
+Il y a d'autres ptions. Par exemple, avec  PsyToolkit vous pouvez avoir plusieurs de stimuli qui peuvent être déplacés. Dans *drag option from" vous pouvez spécifier plusieurs stimuli ou même une liste, comme dans l'exemple ci-dessous.
+
+**Vous pouvez faire glisser le rouge et le vert, mais pas le rectangle blanc**
+
+````
+task my_drag
+  show rectangle -100 0 100 100   255 0 0      # red
+  show rectangle    0 0 100 100     0 255 0    # green
+  show rectangle  100 0 100 100   255 255 255  # white
+  drag option from 1 2
+  drag 99999
+
+block test
+  tasklist
+     my_drag 1
+  end
+````
+
+L'instruction *drag* permet de spécifier la ou les valeurs d'un ou de plusieurs stimuli. Dans sa forme la plus simple, vous pouvez avoir un exemple tel que celui-ci :
+
+**Faites glisser le rouge sur le rectangle vert**
+
+````
+task my_drag
+  show rectangle  100 0 120 120     0 255 0    # green
+  show rectangle -100 0 100 100     255 0 0      # red
+  drag option from 2
+  drag option to 1
+  drag 99999
+  show text "Now wait 1000 ms" 0 150
+  delay 1000
+
+block test
+  tasklist
+     my_drag 1
+  end
+````
+
+Dans l'exemple ci-dessus, vous auriez pu ajouter *drag option snap* pour que le rectangle rouge s'accroche exactement sur le rectangle vert. Vous pouvez même spécifier la manière dont vous souhaitez que l'accrochage se fasse, voici quelques exemples :
+
+*exemples d'accrochage par glisser-déposer*
+
+````
+drag option snap # par défaut, l'accroche se fait au centre du rectangle
+drag option snap center center # même chose, mais en indiquant explicitement l'alignement horizontal et vertical de l'accrochage
+drag option snap left center # cet alignement est horizontal à gauche mais vertical au centre.
+````
+
+Plus d'informations sur les variables liées à l'instruction [ici](#drag-variables).
+
+### dragging [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-dragging){#task-dragging}
+
+La fonction *dragging* permet à votre participant de continuer à faire glisser les stimuli sur l'écran jusqu'à ce qu'il ait terminé. Lorsqu'il a terminé (mais avant le temps de réponse maximal), il doit appuyer sur le bouton de sortie. Pour cela, vous pouvez spécifier un stimulus spécifique.
+
+Toutes les options de *drag* peuvent également être utilisées avec *dragging*, mais il existe une option supplémentaire.
+
+**Aperçu de dragging**
+
+````
+drag option exit *stimulus*
+dragging *maximum_duration*
+````
+
+Dans l'exemple ci-dessous, deux rectangles rouges et deux rectangles verts sont représentés. Un cinquième rectangle jaune (sur lequel figure le texte "Exit") fait office de bouton de sortie. Vous devez faire glisser les rectangles rouges sur les rectangles verts.
+
+Notez que si vous ne les faites pas glisser sur les cibles, ils reviennent à leur position initiale.
+
+**Exemple super simple et fonctionnel de dragging**
+
+````
+task my_dragging
+  show rectangle  100 -100 120 120     0 255 0    # green
+  show rectangle  100  100 120 120     0 255 0    # green
+  show rectangle -100 -100 100 100     255 0 0    # red
+  show rectangle -100  100 100 100     255 0 0    # red
+  show rectangle 250 0 100 80   255 255 0
+  show text "Exit" 250 0   0 0 0
+  drag option from 3 4
+  drag option to 1 2
+  drag option snap center center
+  drag option exit 5
+  dragging 60000
+  save RT
+
+block test
+  tasklist
+    my_dragging 1
+  end
+````
+Plus d'informations sur les variables liées l'instruction *dragging* [ici](#drag-variables).
+
+### variables utilisées avec drag et dragging [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#drag-variables){#drag-variables}
+
+Les variables suivantes peuvent être utilisées pour accéder aux informations relatives aux actions de glisser-déposer. Vous n'en avez pas nécessairement besoin.
+
+**Vue d'ensemble**
+
+````
+DRAGGED the stimulus that was being dragged
+DRAGGED_ON the stimulus that it was move on (only with "drag option to")
+DRAG_CHANGED if a stimulus had been moved at all (1 if changed, 0 if not)
+DRAG_OLD_X the stimulus X coordinate when drag started
+DRAG_OLD_Y the stimulus Y coordinate when drag started
+DRAG_X the stimulus X coordinate of (last) dragged stimulus
+DRAG_Y the stimulus Y coordinate of (last) dragged stimulus
+````
+
+**DRAGGED** contains the number of the stimulus a participant dragged. This is interesting when a participant can choose to drag one out of multiple stimuli.
+
+**DRAGGED_ON** contient le numéro du stimulus sur lequel le participant a glissé.
+
+**DRAGGED_CHANGED** Contient 1 si le participant a traîné un stimulus, et 0 si rien n'a été traîné.
+
+**DRAG_OLD_X** Si un stimulus a été traîné, sa position X précédente avant le début du traînage.
+
+**DRAG_OLD_Y** Si un stimulus a été déplacé, sa position Y précédente avant le début du déplacement.
+
+**DRAG_X** Si un stimulus a été traîné, sa position X actuelle.
+
+**DRAG_Y** Si un stimulus a été traîné, sa position actuelle en Y.
+
+Les expériences utilisant *drag* ou *dragging* peuvent être assez complexes. Apprenez à les écrire dans la section leçons.
+
+### progress [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-progress){#task-progress}
 
 PsyToolkit peut afficher une barre de progression. Cela peut être utile si vous voulez dire aux gens combien d'essais ont été effectués et combien de temps il faudra pour les terminer.
 
@@ -1408,7 +1928,7 @@ Notez qu'au lieu de color1 et de color2, vous pouvez aussi simplement écrire :
 progress option colors 255 255 0    128 128 128
 ````
 
-### choose [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-choose){#task-choose}
+### choose [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-choose){#task-choose}
 
 Dans certaines circonstances, vous souhaitez demander au participant de cliquer sur plusieurs stimuli à l'écran. Idéalement, vous voudriez permettre au participant de sélectionner des objets et de les désélectionner également. Tout cela est possible avec la fonction "choisir".
 
@@ -1456,7 +1976,7 @@ Il existe plusieurs autres options :
 
 La commande choose est particulièrement utile pour les tâches de mémoire.
 
-### rate [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-rate){#task-rate}
+### rate [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-rate){#task-rate}
 
 Parfois, les gens veulent une échelle de Likert dans leur expérience. Par exemple, vous pouvez montrer un article de shopping et demander aux gens quelle est la probabilité que vous l'achetiez la semaine suivante sur une échelle de un à cinq. C'est maintenant super facile à faire.
 
@@ -1508,7 +2028,7 @@ task wantit
   save RATE RATE_RT RATE_STATUS
 ````
 
-### save [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-save){#task-save}
+### save [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-save){#task-save}
 
 Sauvegarde des variables. En général, une tâche se termine par une ligne de sauvegarde.
 
@@ -1526,7 +2046,7 @@ save[liste de variables]
 save BLOCKNAME RT STATUS
 ````
 
-### sound [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-sound){#task-sound}
+### sound [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-sound){#task-sound}
 
 Utilisé pour jouer des sons. Un son commence juste à jouer, le code continue. Si vous ne voulez rien faire pendant le son, vous devez le faire suivre d'un délai. Vous pouvez également arrêter le son à tout moment en utilisant l'instruction *silence.*
 
@@ -1543,7 +2063,7 @@ delay 200
 silence MySoundFile
 ````
 
-### if [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-if){#task-if}
+### if [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-if){#task-if}
 
 Vous pouvez utiliser *if* pour exécuter seulement quelques commandes. Cela est souvent nécessaire pour afficher un feedback si les gens font une erreur. Le contraire de if est fi. fi sert à clore la liste de commandes conditionnelles
 
@@ -1567,7 +2087,43 @@ task MyTask
   fi
 ````
 
-### while [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-while){#task-while}
+**Exemples de if avec else**
+
+````
+task MyTask
+  show bitmap stimulus
+  readkey 1 1000
+  if STATUS == CORRECT
+    show bitmap WellDone
+    delay 1000
+    clear -1
+  else
+    show bitmap Mistake
+    delay 2000
+    clear -1
+  fi
+  if $x == &y
+    show bitmap SmileyFace $x $y
+  fi
+````
+
+L'instruction else doit être sur sa propre ligne.
+Avec if, vous pouvez également comparer deux listes
+
+Exemples de if avec des listes
+
+````
+task MyTask
+  set &a 1 2 3 4
+  set &b 1 2 3 4
+  if &&a == &&b
+    show text "Arrays a and b are exactly the same"
+  else
+    show text "Arrays a and b are different"
+  fi
+````
+
+### while [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-while){#task-while}
 
 Comme pour if, vous pouvez mettre le code dans une *boucle while*. La boucle *while* se termine par la déclaration "while-end".
 
@@ -1587,11 +2143,11 @@ task MyTask
 
 Si vous faites une erreur, l'ordinateur peut être bloqué dans la boucle *while*. Par exemple, si vous n'augmentez pas la valeur de $mycounter dans l'exemple ci-dessus, le code sera bloqué et continuera à dessiner de nouveaux Smileys sur des localisations aléatoires.
 
-## Instructions moyennement avancées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_less_often_used_instructions){#less_often_used_instructions}
+## Instructions moins souvent utilisées {#s5-9} [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_less_often_used_instructions){#less_often_used_instructions}
 
 Certaines fonctions sont rarement utilisées ou nécessaires, mais elles ajoutent au potentiel des scripts du PsyToolkit.
 
-### font [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#font){#font}
+### font [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#font){#font}
 
 Vous pouvez définir la police de l'instruction *show text*.
 
@@ -1610,11 +2166,11 @@ task Mytask
   
 ## Fonctions avancées{#s5-10}
 
-### end [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#task-end){#task-end}
+### end [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#task-end){#task-end}
 
 Vous pouvez terminer la tâche à n'importe quel moment de votre liste de d'actions dans une tâche. Vous pouvez même mettre fin à la liste de tâches en cours ou à l'ensemble de l'expérience. Il vous suffit de d'ajouter *end* à la tâche, à la liste de tâches ou à l'expérience. Cela peut être utile, par exemple, lorsque les gens sont en formation et que vous voulez arrêter le blocage des procès lorsqu'ils ont fait une erreur. Il s'agit toutefois d'une déclaration dont vous aurez rarement besoin.
 
-### timestamp [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_timestamp){#timestamp}
+### timestamp [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_timestamp){#timestamp}
 
 L'horodatage (timestamp) peut être utilisé pour saisir l'heure actuelle. Cela peut être pratique si vous vérifiez l'heure passée dans une boucle while. Cela peut également être pratique si vous essayez de déboguer du code et de vérifier si le timing est conforme à ce qui est attendu.
 
@@ -1629,7 +2185,7 @@ task MyTask
   set $x timestamp-diff MyFirstTimestamp MySecondTimestamp
   save $x
 ````
-### sprite [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_sprite){#sprite}
+### sprite [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_sprite){#sprite}
 
 Dans PsyToolkit, les sprites sont un type de stimulus distinct (en plus de l'image bitmap, du rectangle, du cercle et du texte. Les sprites peuvent se déplacer et tourner. C'est idéal pour les expériences telles que le suivi d'objets multiples. Ils ont leurs propres commandes.
 
@@ -1684,15 +2240,15 @@ La vitesse des sprites en mouvement est basée sur différents facteurs. La vite
 | **commandes sur tous les sprites à la fois**                            |                                              |                                              |
 | `sprites [options] all`                                                 | agir sur tous les sprites en une seule ligne | sprites display all                          |
 
-## Instructions pour les équipements spéciaux [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#_instructions_for_special_equipment){#instructions_for_special_equipment}
+## Instructions pour les équipements spéciaux [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#_instructions_for_special_equipment){#instructions_for_special_equipment}
 
 Les équipements spéciaux sont principalement les cartes d'entrée/sortie et les claviers spéciaux. Je recommande les claviers Cedrus. Si vous le souhaitez, vous pouvez construire votre propre clavier. Cela permet d'économiser beaucoup d'argent. Vous pouvez le brancher sur le port parallèle (si vous en avez un). Ce clavier est appelé "ultra" (conçu par Felix Frey, Université de Leipzig), et un document expliquant comment le construire est disponible gratuitement.
 
 ### cedrus readkey{#cedrusreadkey}
 Attendre une touche spécifique de votre clavier USB Cedrus. Assurez-vous que vous savez quelle touche a quelle valeur numérique (vous pourriez vouloir faire quelques expériences à ce sujet, et il existe un exemple de programmation qui vous montre le numéro de chaque touche). Sous Linux, vous pouvez appeler cela en utilisant la commande "testcedrus", qui est fournie avec PsyToolkit.
 
-## Tables [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#table){#table}
-Les tableaux ont des lignes et des rangées. Chaque fois qu'un tableau est utilisé dans une tâche, une de ses lignes est choisie. Chaque colonne peut être référencée en utilisant le signe @. Par exemple, @2 fait référence à la deuxième colonne de la ligne qui est choisie pour un essai de tâche donné. Dans le bloc, l'utilisateur peut spécifier comment les lignes du tableau sont sélectionnées. La sélection par défaut est aléatoire, mais il existe d'autres moyens (par exemple : ordre fixe, répétition à l'essai).
+## table [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#table){#table}
+Les tables ont des lignes et des colonnes. Chaque fois qu'une table est utilisée dans une tâche, une de ses lignes est choisie. Chaque colonne peut être référencée en utilisant le signe @. Par exemple, @2 fait référence à la deuxième colonne de la ligne qui est choisie pour un essai de tâche donné. Dans le bloc, l'utilisateur peut spécifier comment les lignes du tableau sont sélectionnées. La sélection par défaut est aléatoire, mais il existe d'autres moyens (par exemple : ordre fixe, répétition sur un essai).
 
 **Exemple de table**
 ````
@@ -1713,7 +2269,7 @@ Chaque fois qu'une tâche est exécutée, une seule ligne du tableau associé es
 
 Dans chaque essai de tâche avec un tableau, vous avez non seulement accès aux colonnes, mais vous pouvez également obtenir le numéro de la ligne de la table. La variable est appelée TABLEROW. Cela peut être pratique pour sauvegarder des données. S'il y a beaucoup de données importantes dans chaque tableau que vous voulez les utiliser dans votre analyse, vous pouvez ainsi vous assurer quel ligne a été utilisée.
 
-## block [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#block){#block}
+## block [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#block){#block}
 
 Dans les expériences, les essais se font par blocs. Un bloc d'essais signifie que le participant effectue, par exemple, 100 essais de la tâche Stroop. Vous pouvez aussi faire une pause au milieu, et créer deux blocs de 50 essais à la place. Les blocs appellent des tâches, donc vous devez vraiment avoir au moins un bloc dans votre script PsyToolkit. Les blocs peuvent être complexes, mais ils peuvent aussi être très simples, comme cet exemple ci-dessous.
 
@@ -1725,7 +2281,7 @@ block MyBlock
   end
 ````
 
-#### bitmap [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#block-bitmap){#block-bitmap}
+### bitmap [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#block-bitmap){#block-bitmap}
 
 L'instruction [bitmap](#bitmap) est simple. Vous voulez souvent afficher une image avec une instruction et attendre qu'on appuie sur une touche.
 
@@ -1738,9 +2294,9 @@ block Myblock
     strooptask 100
   end
 ````
-L'affichage d'une bitmap dans une tâche et dans un bloc est différent. Ici, dans les blocs, il ne faut pas mettre le mot "show" avant le bitmap. Dans les tâches, vous devez le faire. Il y a de bonnes raisons à cette distinction (dans les tâches, les stimuli sont rapides, alors que dans les blocs, ils sont considérés comme des instructions).
+L'affichage d'un bitmap dans une tâche et dans un bloc sont différents. Ici, dans les blocs, il ne faut pas mettre le mot "show" avant le bitmap. Dans les tâches, vous devez le faire. Il y a de bonnes raisons à cette distinction (dans les tâches, les stimuli sont rapides, alors que dans les blocs, ils sont considérés comme des instructions).
 
-#### sound [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#block-sound){#block-sound}
+### sound [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#block-sound){#block-sound}
 
 Comme dans la tâche, vous pouvez démarrer un son avec *[sound](#sound)* et l'arrêter avec *silence*
 
@@ -1756,7 +2312,7 @@ block Myblock
   end
 ````
 
-#### delay [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#block-delay){#block-delay}
+### delay [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#block-delay){#block-delay}
 
 Comme pour les tâches, vous pouvez introduire une pause [delay](#delay). Parfois, c'est bien pour les comptes à rebours.
 
@@ -1774,7 +2330,7 @@ block Myblock
   end
 ````
 
-#### message [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#block-message){#block-message}
+### message [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#block-message){#block-message}
 
 Au lieu d'afficher un image (bitmap) et d'attendre un appui-touche, vous pouvez combiner tout cela en une seule commande, appelée *message*.
 
@@ -1812,7 +2368,7 @@ block Myblock
   message ThankYouBitmap
 ````
 
-#### pager [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#block-pager){#block-pager}
+### pager [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#block-pager){#block-pager}
 
 Parfois, vous voulez une série d'instructions et vous laissez l'utilisateur les parcourir. En d'autres termes, vous avez une série d'images (ou "pages", d'où le mot "pager") que vous voulez montrer les unes après les autres. La commande pager vous permet de faire exactement cela.
 
@@ -1847,7 +2403,7 @@ block Myblock
     strooptask 100
   end
 ````
-#### Paramétrer les variables [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#block-set){#block-set}
+### Paramétrer les variables [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#block-set){#block-set}
 
 Parfois, vous souhaitez définir une variable globale. Vous pouvez le faire tout comme vous le feriez dans les tâches. Par exemple, vous pouvez fixer le temps de réponse maximum à une valeur plus élevée pendant la formation.
 
@@ -1868,7 +2424,7 @@ block MyRealDatablock
   end
 ````
 
-#### tasklist [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#block-tasklist){#block-tasklist}
+### tasklist [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#block-tasklist){#block-tasklist}
 
 Chaque bloc comporte une liste de tâches. Celle-ci décrit les tâches qui sont appelées, combien de fois et dans quel ordre. Vous pouvez avoir une ou plusieurs tâches. Il est rare d'avoir plusieurs tâches, mais cela peut être le cas dans les paradigmes de commutation de tâches. Sur chaque ligne de la liste des tâches, vous devez au moins indiquer le nom de la tâche et le nombre d'essais.
 
@@ -1960,7 +2516,7 @@ block MyTraining
 
 Si vous avez fixé des blocs consécutifs, mais que vous utilisez la même tâche et le même tableau, vous continuerez à partir de la ligne du tableau d'où vous étiez parti. C'est une fonction pratique au cas où vous voudriez passer par de nombreuses essais, mais où les gens ont parfois besoin d'une pause. Assurez-vous que vous avez toujours une instruction end à la fin de votre liste de tâches
 
-#### maxtime [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#block-maxtime){#block-maxtime}
+#### maxtime [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#block-maxtime){#block-maxtime}
 
 Vous pouvez fixer la durée maximale d'un bloc (en millisecondes, secondes ou minutes). C'est très simple. Voici un exemple d'un bloc qui peut durer au maximum 2 minutes. Vous pouvez avoir des instructions avant la liste des tâches (par exemple, [message](#message) ou [pager](#pager), elles ne sont pas prises en compte dans le temps maximum).
 
@@ -1989,11 +2545,11 @@ block MyTraining
   end
 ````
 
-#### feedback [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#block-feedback){#block-feedback}
+#### feedback [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#block-feedback){#block-feedback}
 
-Feedback can be used to create feedback to the participant, for example about the average response speed. Creating feedback is part of the "block" structure. Feedback is described in a separate document, because it is of advanced use: [how to use feedback](https://www.psytoolkit.org/doc3.1.0/feedback.html)
+Le feedback peut être utilisé pour créer un retour d'information au participant, par exemple sur la vitesse moyenne de réponse. La création d'un feedback fait partie de la structure "bloc". Le retour d'information est décrit dans un document distinct, en raison de son utilisation avancée : [comment utiliser le feedback] (https://www.psytoolkit.org/doc3.4.0/feedback.html)
 
-### blockorder [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#blockorder){#blockorder}
+### blockorder [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#blockorder){#blockorder}
 
 Par défaut, les blocs sont effectués dans l'ordre où ils sont décrits dans votre code. Vous pouvez modifier cet ordre en réorganisant le code du bloc, mais il existe un moyen plus simple et plus rapide : l'instruction *blockorder*. En utilisant *blockorder*, vous pouvez lister les blocs que vous voulez faire et l'ordre dans lequel vous voulez les faire.
 
@@ -2036,11 +2592,11 @@ blockorder
   color_task
 ````
 
-### include (usage avancé seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#include){#include}
+### include (usage avancé seulement) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#include){#include}
 
 Vous pouvez inclure un autre fichier dans votre script. Cela peut être utile si vous travaillez avec de très grands tableaux que vous voulez stocker dans un fichier séparé. Toute ligne commençant par "include" suivie d'un nom de fichier utilisera ce nom de fichier à cet endroit du script. Les fichiers inclus doivent se trouver dans le même répertoire que le fichier principal du script utilisant *include*.
 
-### part (pour utilisateur avancé) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#part){#part}
+### part (pour utilisateur avancé) [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#part){#part}
 
 Vous pouvez écrire des "bribes" de quelques lignes et les inclure ailleurs dans votre script. C'est pratique si vous avez plusieurs tâches ou blocs qui sont globalement les mêmes à l'exception de quelques lignes. Vous pouvez ainsi utiliser *part* au lieu de retaper tout le script. *part* remplace simplement le texte dans votre code. L'objectif principal est d'avoir un code plus court et plus efficace sans avoir à répéter les mêmes choses.
 
@@ -2081,13 +2637,14 @@ block test
     another_task 10
   end
 ````
-## Vue d'ensemble de toutes les variables du système [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#sysvars){#sysvars}
+## Vue d'ensemble de toutes les variables du système [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#sysvars){#sysvars}
 
 Vous trouverez ci-dessous un aperçu rapide de presque toutes les variables "système" que vous pouvez utiliser dans votre script d'expérience. Elles sont décrites en détail dans le texte, mais ici elles sont toutes ensemble. Elles contiennent généralement toutes une valeur numérique, sauf pour TASKNAME et BLOCKNAME. Ces deux derniers ne sont utiles que dans l'instruction de sauvegarde. Les variables liées au choix ne sont pas énumérées. Elles doivent toutes être écrites en majuscules.
 
 * RT : dernier temps de réponse provenant de readkey ou readmouse
 * STATUS : de readkey(s)/readmouse, il peut être CORRECT, WRONG, TIMEOUT (or 1, 2, 3)
 * KEY : la touche qui a été préssée dansle dernier readkey/keystatus (un nombre)
+* UNDER_MOUSE : le numéro du stimulus sur lesquel le participant à cliqué
 * MOUSE_X : la position x de la souris dans le dernier état de readmouse
 * MOUSE_Y : la position x de la souris dans le dernier état de readmouse
 * TABLEROW : ligne du talbeau, choisie au hasard une fois par essai
@@ -2099,16 +2656,32 @@ Vous trouverez ci-dessous un aperçu rapide de presque toutes les variables "sys
 * RATE : La valeur choisie de l'échelle de d'évaluation
 * RATE_RT : Le RT du processus d'évaluation
 * RATE_STATUS : sera de 1 s'il est noté, ou de 3 s'il y a un délai d'attente (il n'y a pas de réponse correcte, bien sûr)
+* SHOW_COUNTER
 
-## Liens vers toutes les instructions [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/syntax.html#overview){#syntax_overview}
+**Exemple de show counter**
+
+````
+task my_task
+   show rectangle 0 0 100 100   0 255 0  # green rectangle
+   show rectangle -200 0 100 100   255 0 0  # red rectangle
+   show rectangle 200 0 100 100   0 0 255  # blue rectangle
+   show text SHOW_COUNTER ## this will be 3
+   delay 1000
+   clear SHOW_COUNTER ## delete last shown stimulus
+````
+SHOW_COUNTER remplace l'option show-counter set. C'est rarement nécessaire, mais dans un code avancé avec beaucoup de stimuli, il peut être utile d'effacer plus tard les stimuli de l'écran (parce que vous pourriez perdre la trace des numéros de compteur de stimuli).
+
+## Liens vers toutes les instructions [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/syntax.html#overview){#syntax_overview}
 
 (cette liste n'est pas encore complète)
+
+Un court document sr la syntaxe est disponible [ici](https://www.psytoolkit.org/doc3.4.0/short_syntax.html) (en anglais)
 
 * [Options basiques](#options) : [origin](#options-origin) | [bitmapdir](#options-origin) | [sounddir](#options-origin) | [fontdir](#options-origin) | [fullscreen](#options-fullscreen) | [resolution](#options-resolution) | [version](#options-version) | [mouse](#options-mouse)| [variable](#options-variable) | [window](#options-window) | [screensize](#options-screensize) | [screendistance](#options-screendistance) | [vsync](#options-vsync) | [egi](#options-egi)| [escape](#options-escape)| [parallelport](#options-parallelport)|  [pcidio24](#options-pcidio24)| [cedrus](#options-cedrus) | [iolab](#options-iolab)| [eye-tracker](#option-et)| [executable](#options-executable)
 
 * [Instructions de base](#_commonly_used_instructions) : [key](#task-key)| [show](#task-show) | [bitmap](#task-bitmap) | [text](#task-text)| [clear](#task-clear)| [sound](#task-sound)| [keys](#task-key)| [readkey](#task-readkey) | [delay](#task-delay) | [save](#task-save) | [table](#task-table)
 
-* [Instructions moyennement avancées](#less_often_used_instructions) : [readmouse](#task-readmouse) | [if](#task-if) | [while](#task-while) | [move](#task-move) | [relocate](#task-relocate) | [hide](#task-hide) | [unhide](task-unhide) | [font](#task-font)
+* [Instructions moins souvent utilisées](#less_often_used_instructions) : [readmouse](#task-readmouse) | [if](#task-if) | [while](#task-while) | [move](#task-move) | [relocate](#task-relocate) | [hide](#task-hide) | [unhide](task-unhide) | [font](#task-font) [drag](#task_drag) | [dragging](#task_dragging)
 
 * [Instructions avancées](#very_advanced_instructions) : [readkeys](#task-readkeys) | [readmouse](#task-readmouse)| [keystatus](#task-keystatus) | [choose](#task-choose) | [set](#task-set) | [progress](task-progress) | [timestamp](#timestamp) | [sprite](#sprite) | [end](#end)
 

@@ -2,7 +2,7 @@
 Pour utiliser les questionnaires en ligne, voir [l'introduction aux questionnaires en ligne](#s7). 
 Le langage de script d'enquête est complètement différent du langage de script d'expérience. Si vous souhaitez intégrer une expérience dans une enquête en ligne, vous devez suivre [ces instructions](https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#experiment).
 
-## Structure d'un questionnaire [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#_structure_of_questionnaire){#s8-1}
+## Structure d'un questionnaire [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#_structure_of_questionnaire){#s8-1}
 
 Les questionnaires sont de simples fichiers texte. Chaque ligne a une signification. L'ordinateur lit le questionnaire ligne par ligne. Le premier caractère de chaque ligne a généralement une signification particulière.
 
@@ -14,7 +14,7 @@ Les questionnaires sont de simples fichiers texte. Chaque ligne a une significat
 * Chaque questionnaire peut avoir des sections qui randomisent l'ordre ([en savoir plus sur l'ordre randomisé](#randomization))
 * Chaque questionnaire peut comporter des [commentaires](#) sur les lignes commençant par le signe hashtag (#comment)
 
-### Structure générale d'une question [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questionstructure){#s8-1-1}
+### Structure générale d'une question [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#questionstructure){#s8-1-1}
 * Chaque question est composée d'un certain nombre de lignes de texte.
 * Les questions sont séparées les unes des autres par une ligne vide
 * Chaque ligne commence (généralement) par une lettre suivie d'un deux-points. La lettre décrit une caractéristique importante, comme le nom de la question ou le type de question.
@@ -38,12 +38,12 @@ q: What is your favourite movie? <-- this is text of the question the participan
 * Chaque question peut faire apparaître une image en haut. Vous devez télécharger le fichier image (png, bmp, gif, jpg, etc.). Voir les images.
 * Vous pouvez utiliser la ligne d'option **o: random** pour rendre aléatoire l'ordre des options de réponses.
 
-### Commentaires pour les programmateurs{#comment} [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questionstructure){#s8-1-2}
+### Commentaires pour les programmateurs{#comment} [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#questionstructure){#s8-1-2}
 Lorsque vous programmez votre enquête, vous pouvez parfois vouloir faire un commentaire qui vous est destiné et que l'ordinateur doit ignorer. Vous pouvez utiliser le hashtag pour cela.
 
 Contrairement aux scripts d'expérimentation du PsyToolkit, le symbole de commentaire "#" doit se trouver au début d'une ligne. En d'autres termes, vous ne pouvez pas avoir de commentaires commençant au milieu d'une ligne.
 
-### Formatage du texte [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#Comments){#s8-1-2}
+## Formatage du texte [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#Comments){#s8-1-2}
 Vous pouvez formater le texte en utilisant les balises HTML standard. Les plus courantes sont celles pour le gras, l'italique et la couleur du texte. La couleur générale de l'écran ne peut pas être modifiée.
 
 * Tout ce qui se trouve entre <b> et </b> sera présenté en caractères gras.
@@ -61,7 +61,7 @@ q: What is your <i>favourite</i> movie?
 - Ratatouille
 ````
 
-### Types de questions [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#questiontypes){#type_questions}
+## Types de questions [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#questiontypes){#type_questions}
 Il y a les types de questions suivants :
 
 * [radio](#radio) Un choix parmi de nombreuses options
@@ -90,7 +90,7 @@ Vous pouvez insérer dans une question du son ou une vidéo :
 * [Play a video](#playavideo) Présenter une vidéo dans une question
 * [youtube](#youtube) Jouer une vidéo youtube dans une question
 
-#### Radio: Sélectionner un parmi plusieurs [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#radio){#radio}
+### Radio: Sélectionner un parmi plusieurs [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#radio){#radio}
 Utilisez cette option lorsque vous souhaitez qu'une seule réponse possible soit sélectionnée. Le nom "radio" vient des radios classiques, qui avaient un ensemble de boutons dont au maximum un pouvait être enfoncé.
 
 **Exemple**
@@ -103,7 +103,7 @@ q: What is your favourite movie?
 - Babe
 - Ratatouille
 ````
-![exemple de bouton radio](https://www.psytoolkit.org/doc3.1.0/question1.png)
+![exemple de bouton radio](img/question1.png)
 
 Le paramètre "q :" est le seule  qui peut s'étendre sur plusieurs lignes. Cela peut parfois être pratique pour poser des questions plus longues, comme dans l'exemple ci-dessous, qui utilise le format HTML.
 
@@ -170,9 +170,9 @@ q: Where do you live?
 ````
 Voici à quoi cela devrait ressembler
 
-![exemple avec autre réponse](https://www.psytoolkit.org/doc3.1.0/radio_other.png)
+![exemple avec autre réponse](img/radio_other.png)
 
-Parmi les questions fréquemment posées, il y a comment ajouter une option "autre" en utilisant une question séparée. [cliquez ici pour consulter la réponse](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#other).
+Parmi les questions fréquemment posées, il y a comment ajouter une option "autre" en utilisant une question séparée. [cliquez ici pour consulter la réponse](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#other).
 
 Vous pouvez permettre aux gens de passer complètement la question radio en utilisant l'option "free". C'est-à-dire que les gens sont libres de passer la question. Pour ce faire, procédez comme suit :
 
@@ -186,7 +186,7 @@ q: What food do you like?
 - Bread
 ````
 
-#### check : sélectionner un ou plus parmi plusieurs [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#check){#check}
+### check : sélectionner un ou plus parmi plusieurs [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#check){#check}
 
 **Exemple**
 ````
@@ -230,7 +230,7 @@ q: Which of the following food do you like? Select at least 2 items, but no more
 - Beans
 - Soup
 ````
-![utilisation de check avec contrainte sur le nombre de réponse](https://www.psytoolkit.org/doc3.1.0/check.png)
+![utilisation de check avec contrainte sur le nombre de réponse](img/check.png)
 
 Vous pouvez demander une ou plusieurs autres options, et vous pouvez définir la taille de la zone de texte avec l'option *lenght* (ou *size*).
 
@@ -245,7 +245,7 @@ q: Which of the following food do you like? Select at least 2 items, but no more
 - {other,length=30} Fill in something else
 ````
 
-#### rank: Classer ou ordonner les articles [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#rank){#rank}
+### rank: Classer ou ordonner les articles [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#rank){#rank}
 
 **Exemple**
 ````
@@ -290,7 +290,7 @@ q: Order of the following foods, starting with the one you like most.
 - Soup
 ````
 
-#### Option non listée pour les question de type radio et check [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#others){#others}
+### Option non listée pour les question de type radio et check [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#others){#others}
 
 Une question fréquente est de savoir s'il est possible d'avoir une "autre" option et une ligne où les gens peuvent donner une alternative. Cela est possible pour les questions radiophoniques sur un écran, mais vous pouvez aussi facilement le configurer comme suit :
 
@@ -327,7 +327,7 @@ Dans l'exemple ci-dessus, la ligne "if \$MyQuestion != 5 then goto MyNextQuestio
 
 Le != signifie en langage informatique n'est pas égal. Ainsi, si la ligne sélectionnée n'est pas égale à la valeur 5, alors les gens n'ont pas besoin d'entrer quoi que ce soit dans le texte. Ils sont prêts à continuer. Mais s'ils ont sélectionné la cinquième ligne, ils passeront à la question suivante où ils pourront entrer une valeur.
 
-#### info : Montrer une information, un message etc.[![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#info){#info}
+### info : Montrer une information, un message etc.[![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#info){#info}
 
 Parfois, vous voulez juste que les gens lisent quelque chose ou donnent leur avis sans poser de questions. Pour cela, vous pouvez utiliser le type info. Comme pour les autres types, vous pouvez présenter une image au-dessus. Elle ne comporte (actuellement) aucune ligne commençant par "-". Vous pouvez utiliser le HTML pour formater le texte et vous pouvez insérer des variables comme dans les autres types de questions.
 
@@ -358,7 +358,7 @@ q: Sorry, the survey ends here.
 Please <a href='http://www.google.com'>click this link to leave</a>, or close the window.
 ````
 
-#### Play a sound [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#sound){#playasound}
+### Play a sound [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#sound){#playasound}
 
 Pour chaque type de question, vous pouvez ajouter un (ou plusieurs) fichier(s) sonore(s). Vous trouverez ci-dessous deux exemples :
 
@@ -398,7 +398,7 @@ q: Play the sound. Which animal do you hear?
 - Cow
 ````
 
-#### Play a video [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#video){#playavideo}
+### Play a video [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#video){#playavideo}
 
 Pour chaque type de question, vous pouvez ajouter une (ou plusieurs) vidéo(s). Vous trouverez ci-dessous deux exemples. **Vous ne pouvez pas télécharger de fichiers vidéo sur le serveur PsyToolkit**. Vous devez les placer sur votre propre serveur ou, par exemple, sur Google drive.
 Dans l'exemple 1, nous jouons simplement une vidéo qui se trouve quelque part sur un serveur :
@@ -442,7 +442,7 @@ Vous pouvez vous-même télécharger des fichiers vidéo sur votre Google Drive.
 
 Pour plus d'informations à ce sujet, consultez la leçon sur [l'audio et la vidéo dans les enquêtes](#s10).
 
-#### youtube [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#youtube){#youtube}
+### youtube [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#youtube){#youtube}
 
 Vous pouvez intégrer une vidéo YouTube. Sur la ligne d'option "-", vous devez entrer le code de la vidéo, que vous pouvez obtenir à partir de l'URL. Il s'agit de la partie qui suit le mot "watch". Ainsi dans la ligne suivante https://www.youtube.com/watch?v=m9WxvT-82Xg, c'est le m9WxvT-82Xg
 
@@ -454,7 +454,7 @@ q: Please watch the following video
 - m9WxvT-82Xg
 ````
 
-#### experiment : Intégrer une expérience de temps de réaction [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#experiment){#experiment}
+### experiment : Intégrer une expérience de temps de réaction [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#experiment){#experiment}
 
 Vous pouvez utiliser le nom d'une de vos expériences. Assurez-vous qu'elle fonctionne avant de l'intégrer. Notez que vous pouvez omettre la ligne **q :** pour gagner de la place au-dessus de la zone où l'expérience est présentée.
 
@@ -481,7 +481,7 @@ t: experiment
 ````
 Les enquêtes et les expériences peuvent "se parler". Il y a toute une leçon à ce sujet. [Cliquez ici pour cette leçon](#s11).
 
-#### jump : passer une question (conditionnelement ou non)[![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#jump){#jump}
+### jump : passer une question (conditionnelement ou non)[![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#jump){#jump}
 
 Avec jump, vous pouvez sauter de question en question dans le questionnaire. Il n'est généralement nécessaire que si vous souhaitez poser certaines questions de manière conditionnelle. Par exemple, si vous avez une question réservée aux femmes, il est pratique de demander d'abord au participant son sexe, puis, en fonction de la réponse, de passer aux questions.
 
@@ -673,7 +673,7 @@ q: What did you just drink?
 ````
 Notez que vous pouvez également avoir différents exemples d'utilisation de la fonction "skip". Si vous avez juste "passez à la suite", une seule question sera ignorée si la condition est vraie. Vous pouvez aussi écrire, par exemple, **skip 1**, **skip 2**, où le nombre est le nombre de questions que vous voulez sauter.
 
-#### textline : saisie d'une ligne de texte [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#textline){#textline}
+### textline : saisie d'une ligne de texte [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#textline){#textline}
 
 Parfois, vous souhaitez qu'un participant saisisse une ligne de texte, pour indiquer par exemple son numéro de participant, son âge, son adresse électronique ou son nom. Vous pouvez utiliser **textline** pour cela.
 
@@ -760,7 +760,7 @@ q: xxx
 
 j: if $x.1 < 18 then end
 ````
-#### textbox : saisie d'une ou plusieurs ligne de texte [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#textbox){#textbox}
+### textbox : saisie d'une ou plusieurs ligne de texte [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#textbox){#textbox}
 
 Parfois, vous souhaitez qu'un participant saisisse un texte supplémentaire, par exemple un commentaire sur l'enquête.
 
@@ -785,7 +785,7 @@ q: Please enter your feedback
 ````
 Comme pour **textline**, une option **require** (obligatoire) peut être utilisée.
 
-#### Range : entrer une valeur numérique [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#range){#range}
+### Range : entrer une valeur numérique [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#range){#range}
 
 Parfois, vous souhaitez entrer une valeur numérique, comme l'âge ou la valeur sur une échelle de Likert. Avec "plage", vous obtenez un curseur, et vous voyez le nombre dans une case jaune éclairée à droite du curseur. Les participants peuvent utiliser la souris ou les touches fléchées pour modifier le nombre.
 
@@ -844,7 +844,7 @@ q: How much do you like coffee?
 ````
 Cela ressemble à cela (avec Firefox) :
 
-![sllider2](img/slider2.png)
+![slider2](img/slider2.png)
 
 Il est possible de désactiver la valeur numérique à droite du curseur. Pour cela, vous pouvez utiliser l'option *no_number* comme dans l'exemple ci-dessous. Certains utilisateurs pourraient trouver cela utile.
 
@@ -855,7 +855,7 @@ t: range
 q: How much do you like coffee?
 - {no_number,min=1,max=7}
 ````
-#### scale : échelles de type lickert [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#scales){#scale}
+### scale : échelles de type lickert [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-syntax.html#scales){#scale}
 
 Un type courant de question est l'échelle de Likert. Pour cela, vous devez d'abord définir une échelle à l'aide de l'instruction **scale**, que vous pouvez ensuite utiliser dans une ou plusieurs questions.
 
@@ -1053,7 +1053,7 @@ Vous pouvez simplement utiliser l'option inverse (ou le rév. plus court).
 
 Vous pouvez spécifier les scores. Vous trouverez ci-dessous deux exemples ayant exactement le même résultat. L'option inverse peut être utilisée dans les questions d'échelle et de gamme.
 
-##### scores personnalisés
+### scores personnalisés
 
 Pour chaque question de l'échelle, vous pouvez utiliser des scores personnalisés qui s'écartent de la notation standard. Cela est souvent le cas dans les questionnaires qui exigent une notation inversée pour certaines questions afin d'éviter tout biais de réponse.
 
@@ -1062,9 +1062,34 @@ Dans le PsyToolkit, il y a deux façons de procéder.
 * Vous pouvez simplement utiliser l'option *reverse* (ou en abrégé *rev*).
 * Vous pouvez spécifier les scores. Vous trouverez ci-dessus deux exemples ayant exactement le même résultat. L'option inverse peut être utilisée dans les questions de type *scale* et *range*.
 
-#### multiradio : question à choix multiple [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#multiradio){#multiradio}
+### Score avec des labels des deux côtés
+Parfois, vous voulez une échelle de Likert qui ressemble davantage à une fourchette entre deux extrêmes. Pour cela, vous pouvez mettre des étiquettes sur les deux côtés. Vous maintenant faire cela avec le type de question scale en uilisant l'option o : 2 (2 fait référence aux deux côtés).
 
-La rubrique multiradio n'est pas si courante dans les questionnaires, mais on la voit parfois. Avec ce type de questionnaire, vous pouvez demander aux participants de choisir entre plusieurs paires (ou triplets, etc.). L'exemple montre son fonctionnement :
+Pour cela, vous pouvez utiliser une échelle "vide" comme dans l'exemple ci-dessous. Cela devrait être plus approprié.
+
+Il est important que la partie qui se trouve à gauche et celle qui se trouve à droite soient séparées par le caractère | (ce symbole est connu comme la ligne verticale ou le tuyau).
+
+**Exemple de l'échelle avec des étiquettes des deux côtés.**
+````
+scale: empty
+-
+-
+-
+-
+-
+-
+
+l: mathematics
+t: scale empty
+o: 2
+q: Please indicate what applies to you.
+- I don’t like mathematics at all | I like mathematics a lot
+- Mathematics is boring | Mathematics is interesting
+````
+
+### multiradio : question à choix multiple [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#multiradio){#multiradio}
+
+L'instruction multiradio n'est pas si courante dans les questionnaires, mais on la voit parfois. Avec ce type de questionnaire, vous pouvez demander aux participants de choisir entre plusieurs paires (ou triplets, etc.). L'exemple montre son fonctionnement :
 
 **Exemple**
 ````
@@ -1103,7 +1128,7 @@ q: For each pair of activities, pick the one you like best.
  - Drinking wine
  ````
  
-#### images [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#images){#images}
+### images [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#images){#images}
 Chaque question peut afficher une ou plusieurs images au-dessus de la question. Vous pouvez télécharger les images via le bouton "parcourir les fichiers", suivi de "enregistrer" sous le code du questionnaire. Assurez-vous que ces images ne sont pas trop grandes pour un site web. Une bonne taille est de 400 par 300 pixels (notez que les images standard des appareils photo) sont beaucoup trop grandes - il vous faudrait un logiciel pour les rendre plus petites).
 
 **Exemple avec un fichier téléchargé nommé "inkblot.png"** 
@@ -1152,7 +1177,7 @@ t: radio
 - No
 ````
 
-#### Changer le texte du bouton [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#buttontext){#buttontext}
+### Changer le texte du bouton [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#buttontext){#buttontext}
 
 Vous pouvez non seulement changer la langue des boutons, mais aussi modifier le texte du bouton "Continuer" pour chaque question, si vous le souhaitez. Vous le faites avec l'opérateur *b:*, voir l'exemple ci-dessous.
 
@@ -1166,12 +1191,12 @@ q: What food did you just eat?
 - Rice
 - Potatoes
 ````
-#### Aléatoriser l'ordre des questions [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#randomization){#randomization}
+### Aléatoriser l'ordre des questions [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#randomization){#randomization}
 
 Parfois, les gens veulent aléatoriser les questions d'une partie de l'enquête. Cela peut être fait facilement dans PsyToolkit. Vous devez placer chaque fois les éléments de votre enquête  que vous voulez présenter dans un ordre aléatoire entre *random: begin* et *random: end*.
 
 * Vous pouvez avoir autant de sections que vous le souhaitez entre *random: begin* et *random: end*.
-* Dans une section à ordre aléatoire, vous pouvez faire en sorte que certaines questions suivent toujours d'autres questions ([lire ici](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#link)).
+* Dans une section à ordre aléatoire, vous pouvez faire en sorte que certaines questions suivent toujours d'autres questions ([lire ici](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#link)).
 * Assurez-vous d'avoir un espace après l'instruction *random:*, sinon cela ne fonctionnera pas. De même, avant et après l'instruction *random:*, vous devez avoir des lignes vides.
 * Dans une section aléatorisée de votre enquête, vous ne devez généralement pas avoir d'éléments de type *jump*. En effet, les sauts supposent un ordre spécifique de questions.
 
@@ -1335,7 +1360,7 @@ q: Did you enjoy the questionniare
 - yes
 - no
 ````
-#### Calculer un score avec "set" [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#scoring){#scoring}
+### Calculer un score avec "set" [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#scoring){#scoring}
 
 Parfois, vous pouvez avoir envie de calculer un score. Par exemple, si vous faites un inventaire de la dépression, vous pouvez calculer un score et l'enregistrer dans le fichier de données ou, en fonction de ce score, poser d'autres questions. Tout cela est possible. Pour cela, il existe un item spécial du questionnaire appelé "set".
 
@@ -1489,7 +1514,7 @@ t: set
 ````
 Dans cet exemple, vous pouvez attribuer un score catégorique à quelque chose. Dans ce cas, si une personne a un score de 1 pour "aime énormément le pain", elle a un score de 4 ou plus. Il s'agit d'une option un peu plus avancée.
 
-#### utiliser différentes sections de questionnaire pour différents participants [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#randomjump){#randomjump}
+### utiliser différentes sections de questionnaire pour différents participants [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#randomjump){#randomjump}
 
 Certains chercheurs veulent s'assurer que les différentes personnes qui cliquent sur le même lien questionnaire/enquête font en fait des questionnaires différents. C'est une sorte d'affectation aléatoire des participants à une condition. Cela peut être fait. Voici les étapes à suivre :
 
@@ -1549,7 +1574,7 @@ q: Did you like this survey?
 - Yes
 - No
 ````
-##### Contrebalancer des groupes [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#counterbalancing){#counterbalancing}
+### Contrebalancer des groupes [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#counterbalancing){#counterbalancing}
 
 Le contrebalancement est une caractéristique importante de la réalisation d'expériences psychologiques. Cela consiste à affecter différents participants à différents items d'une expérience dans un ordre différent.
 
@@ -1599,7 +1624,7 @@ t: set
 - random from 1 2 4 5
 ````
 
-#### maxtime : questions temporisées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#maxtime){#maxtime}
+## maxtime : questions temporisées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#maxtime){#maxtime}
 Parfois, vous voulez donner aux gens un temps limité pour répondre à une question. Vous pouvez le faire avec l'option "maxtime". Indiquez le temps maximum en millisecondes (par exemple, 1000), secondes (par exemple, 1s) ou minutes (par exemple, 5m).
 
 Vous pouvez également afficher le compte à rebours dans le bouton "Continuer".
@@ -1655,7 +1680,7 @@ q: Write 3 reasons why you like tea. You have maximally 30 seconds.
 - Why I do or do not like sports:
 ````
 
-#### mintime : questions temporisées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.1.0/online-survey-syntax.html#mintime){#mintime}
+## mintime : questions temporisées [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#mintime){#mintime}
 
 Parfois, vous voulez que les gens passent au moins un certain temps sur une question sans qu'ils puissent appuyer sur le bouton "continuer". Pour cela, nous avons l'option mintime. Elle est presque identique à la maxtime.
 
@@ -1691,3 +1716,112 @@ o: mintime 30s up
 q: Write 3 reasons why you like tea. You should spend at least 30 seconds on this question.
 - Why I do or do not like sports:
 ````
+
+## Masquer / commenter les questions [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#_hiding_commenting_questions_out){#hide}
+
+Parfois, vous voulez tester une enquête sans passer par certaines questions ou expérience. Vous pouvez la commenter, mais il est plus rapide de la masquer, il suffit d'ajouter l'option o : hide comme suit :
+
+**Exemple 3 de mintime - cette question sera en fait ignorée par PsyToolkit**
+````
+l: sports
+t: textbox
+o: hide
+o: mintime 30s up
+q: Write 3 reasons why you like tea. You should spend at least 30 seconds on this question.
+- Why I do or do not like sports:
+````
+
+## Stocker des données de manière anonyme tout en obtenant l'adresse électronique ou les données personnelles des personnes. [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#_storing_data_anonymously_and_still_getting_peoples_email_or_personal_data){#personnaldata}
+
+Voici quelques situations courantes :
+
+1. Vous voulez demander l'adresse électronique des personnes afin qu'elles puissent participer à un tirage au sort, mais en même temps, vous voulez que l'adresse électronique soit séparée des autres questions.
+
+2. Vous voulez poser une seule question qui peut potentiellement identifier une personne, même si ce n'est pas votre intention (par exemple, demander la taille de leur maison).
+
+Vous pouvez résoudre ce problème en utilisant l'option *o : sep* (ou en cliquant sur cette option dans le mode facile sous les options générales).
+
+Pour les questions avec l'option *o : sep* (sep signifie séparé), chaque réponse avec des informations d'identification sera stockée dans un fichier complètement séparé qui ne peut en aucun cas être lié aux autres fichiers de données.
+
+Les réponses séparées sont stockées dans des fichiers commençant par *sep_* suivi du label suivi d'un numéro aléatoire différent des autres numéros aléatoires de l'enquête.
+
+**Exemple**
+````
+Example
+l: email
+t: textline
+o: sep
+q: If you like, please enter your email below
+- {email} Enter your email
+````
+
+Dans ce cas, dans le fichier de données de la personne, la réponse sera toujours "...".
+
+**sep_email_49c4c523-fc06-4ca9-bff3-410d8fbeb79f.txt**
+
+Vous pourrez ensuite utiliser ces fichiers de données. Les données ne seront pas mises dans une feuille de calcul, vous devez ouvrir vous-même les fichiers commençant par sep_ et utiliser les informations comme vous le souhaitez.
+
+Tous les fichiers commençant par *sep_* auront le même horodatage 2005. Ainsi, vous ne pouvez pas déterminer le fichier de données correspondant en vous basant sur l'ordre des dates de création des fichiers.
+
+## Question multiple sur une page [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#_multiple_question_on_one_page){#multiplequestionsonepage}
+
+Vous pouvez afficher plusieurs questions de différents types ensemble si vous le souhaitez.
+
+Vous pouvez mettre *page : begin* pour commencer une page de questions multiples et *page : end* pour la terminer (assurez-vous qu'il y a un espace entre *page :** et **begin* ou *end*. Assurez-vous que vous avez une ligne vide après l'instruction *page*.
+
+Vous pouvez également le faire avec le mode facile (easymode). Au lieu d'ajouter une question, vous pouvez sélectionner le début ou la fin d'un nouvel ensemble de questions multiples.
+Dans le script de l'enquête,les questions entre les lignes **page : begin** et *page : end** seront affichées ensemble sur une page Web. En mode facile, vous le voyez clairement dans l'aperçu.
+
+Dans les options de l'enquête, vous pouvez choisir comment les différentes questions d'une page sont séparées les unes des autres (il existe actuellement trois options différentes) : Une ligne horizontale, des cases séparées pour chaque question, ou une case arrondie autour de chaque question.
+
+Ndt : Pour forcer l'odre dans lequel les questions sont présentées, utilisez l'option *o: link*.
+
+### Points importants à savoir [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#_important_things_to_be_aware_of){#importantthings}
+Vous ne pouvez pas mettre les types  de question *experiment*, *saut*jump* et *set* dans une section de questions multiples.
+
+* Si vous faites référence à la valeur d'une question à laquelle vous avez déjà répondu, cela ne fonctionnera que si cette réponse a déjà été donnée auparavant (dans un autre écran). Sinon, la valeur 0 sera affichée.
+* Si vous mettez trop de questions sur un seul écran, les participants risquent de se sentir un peu dépassés. Réfléchissez bien à la meilleure façon de présenter vos questions.
+* Les options mintime et maxtime peuvent être utilisées, mais vous devez les définir pour une seule des questions réunies. Vous pouvez choisir n'importe laquelle d'entre elles, ce peut être la première, mais ce n'est pas nécessaire.
+
+* Il est important de réaliser que le fait d'avoir une question par écran présente de nombreux avantages.
+
+### Avantages d'une question par écran [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-syntax.html#_advantages_of_one_question_per_screen){#advantageonequestion}
+
+* Vous obtenez le temps qu'il faut aux participants pour prendre une décision pour chaque question séparément.
+* Les participants n'ont pas besoin de faire défiler la page
+* Vous ne submergez pas les participants d'informations
+
+### Avantages de multiple questions par page
+* Il peut être plus rapide de remplir un questionnaire si des questions similaires sont regroupées.
+* Parfois, c'est simplement plus facile à lire pour les participants (par exemple, une question sur les données démographiques relatives au sexe, à l'âge ou à la race).
+
+**Exemple de page à questions multiples. Les deux premières questions sont présentées ensemble sur l'écran d'une page Web.**
+````
+page: begin
+
+l: gender
+t: radio
+q: How would you best describe yourself
+- Man
+- Woman
+- Other
+
+l: age
+t: textline
+q: How old are you (enter a round number)
+- {number} Enter your age in years
+
+page: end
+
+l: drink
+t: radio
+q: What do you like to drink?
+- Water
+- Tea
+- Juice
+````
+Les types de questions *set*, *jump* et *experiment*" * ne sont pas autorisés dans une partie multi-question de votre enquête. Si vous le faites, vous obtiendrez un message d'erreur lors de la compilation.
+
+La raison pour laquelle vous ne pouvez pas avoir de questions de type *set*, *jump*" * et *experiment* dans une partie multi question est que cela n'aurait aucun sens. Vous ne pouvez définir ou sauter de manière significative que directement après la réponse d'un participant. Une expérience prend beaucoup de place à l'écran et n'est pas vraiment adaptée à une partie multipages.
+
+Si vous voulez simplement que toutes les questions soient sur une seule page, vous pouvez, en principe, avoir *page : begin* au début de votre script d'enquête et vous n'avez pas besoin d'avoir *page : end* en bas.

@@ -1,4 +1,4 @@
-# Les questionnnaires [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html){#s7}
+# Les questionnnaires [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-intro.html){#s7}
 
 Ceci est une introduction, pour une présentation complète, regardez [ici](#s8). Avec PsyToolkit, vous pouvez réaliser différents types d'enquêtes en ligne :
 
@@ -16,7 +16,7 @@ Le support multilingue fait référence à l'interface utilisateur, comme le tex
 Jetez un coup d'œil aux enquêtes/questionnaires prêts à être téléchargés dans la [bibliothèque d'enquêtes](http://www.psytoolkit.org/survey-library/).
 *****
 
-## Introduction [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_introduction){#s7-1}
+## Introduction [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-intro.html#_introduction){#s7-1}
 
 Internet est idéal pour réaliser des enquêtes en ligne, et il existe divers très bons outils web que vous pouvez utiliser gratuitement (il suffit de faire une recherche sur Google pour trouver "enquête en ligne gratuite"). Il est possible qu'il existe d'autres outils plus adaptés à vos besoins (PsyToolkit est gratuit et il n'y a aucun intérêt à vous le "vendre" - le but est simplement de vous donner la meilleure information possible sur ce qu'il est et vous décidez vous-même).
 
@@ -33,7 +33,7 @@ Les données des enquêtes et les données sur les temps de réaction peuvent ê
 
 Dans de nombreuses expérience, vous souhaitez obtenir des informations de base sur les participants, comme leur sexe et leur âge. c'est la raison qui nous a conduit à intégrer une expérience sur le temps de réaction dans une enquête. Si vous voulez savoir comment programmer une expérience sur le temps de réaction dans le PsyToolkit, vous devez lire [l'introduction au script d'expérience du PsyToolkit](#s4).
 
-## Comment créer une enquête [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_how_to_create_a_survey){#s7-2}
+## Comment créer une enquête [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-intro.html#_how_to_create_a_survey){#s7-2}
 Les enquêtes sont créées sous forme de texte dans une zone de texte du navigateur. Cette méthode est différente des autres sites d'enquêtes en ligne. PsyToolkit ne dispose pas d'une interface graphique de type "pointer-cliquer" permettant de créer chaque question (qui sera peut-être créée à l'avenir). Néanmoins, la création d'une enquête n'est pas très difficile !
 
 La première chose à faire est de créer [votre propre compte sur le site web de PsyToolkit](http://psytoolkit.gla.ac.uk). Ensuite, explorez-le pour vous familiariser avec l'interface. Si vous sélectionnez "créer une enquête", vous obtiendrez un exemple de question. Vous pouvez supprimer l'exemple et entrer un nouveau questionnaire. La programmation d'un questionnaire est expliquée ci-dessous. La façon de l'exécuter réellement est expliquée ci-dessous dans la section "Exécution des enquêtes".
@@ -42,11 +42,11 @@ Ce qu'il faut vraiment savoir, c'est qu'il existe différents types de questions
 
 Les enquêtes sont simplement constituées de texte et sont très simples à écrire. Chaque question est constituée de quelques lignes de texte. Entre les questions, il y a une ligne vide. Il est préférable de regarder l'exemple à la fin de ce document pour le comprendre.
 
-## Réalisation des enquêtes [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_running_surveys){#s7-3}
+## Réalisation des enquêtes [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-intro.html#_running_surveys){#s7-3}
 
 Maintenant que vous savez comment rédiger les bases d'un questionnaire, vous pourriez en faire un. Vous devez "compiler" les informations que vous avez saisies rendre l'enquête exécutable.
 
-## Exemple complet [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/online-survey-intro.html#_full_examples){#s7-4}
+## Exemple complet [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/online-survey-intro.html#_full_examples){#s7-4}
 Exemple sans expérience intégrée. Notez que dans l'exemple suivant, il n'y a que deux questions (avec une ligne vide entre les deux questions). La deuxième question utilise également des balises html, dans ce cas, le texte entre <b> et </b> est affiché en gras.
 
 **Exemple**

@@ -24,7 +24,7 @@ PsyToolkit est une boîte à outils gratuite pour la démonstration, la programm
 * Collecte, stockage, analyse et téléchargement de données en ligne
 * Pas de limite au nombre de questions ou de participants
 * Interface d'enquête multilingue (comprenant l'espagnol, le français, l'allemand, 中文, et bien d'autres)
-* Documentation en ligne complète ([version anglaise originale](https://www.psytoolkit.org/doc3.2.0/)) et [chaîne YouTube avec tutoriels vidéos](https://www.youtube.com/channel/UCVlurdelHTebCZoa_MhaoYw/videos).
+* Documentation en ligne complète ([version anglaise originale](https://www.psytoolkit.org/doc3.4.0/)) et [chaîne YouTube avec tutoriels vidéos](https://www.youtube.com/channel/UCVlurdelHTebCZoa_MhaoYw/videos).
 * PsyToolkit est adapté à l'enseignement de la psychologie, à partir de l'enseignement secondaire
 * Idéal pour les projets de recherche des étudiants et des professionnels
 * Idéal pour l'aide à l'enseignement de la psychologie cognitive ou de la personnalité
@@ -52,7 +52,7 @@ PsyToolkit est une boîte à outils gratuite pour la démonstration, la programm
 * PsyToolkit est géré de manière fiable par un [professeur de psychologie du Royaume-Uni](https://www.psytoolkit.org/contact.html).
 
 ## Environnement web/login [![](img/ukflag.png)](https://www.psytoolkit.org/#_web_based_login){#web_based_login}
-![](img/x4.png) [Cliquez ici](https://www.psytoolkit.org/c/3.2.0/) pour entrer (ou vous inscrire) dans l'environnement web gratuit pour concevoir/réaliser des expériences et des questionnaires en ligne. C'est idéal pour travailler depuis chez soi et collecter des données en ligne dans le monde entier !
+![](img/x4.png) [Cliquez ici](https://www.psytoolkit.org/c/3.4.0/) pour entrer (ou vous inscrire) dans l'environnement web gratuit pour concevoir/réaliser des expériences et des questionnaires en ligne. C'est idéal pour travailler depuis chez soi et collecter des données en ligne dans le monde entier !
 
 * Il fonctionne dans votre navigateur, sans aucun plugin et sans logiciel supplémentaire
 * Vous pouvez programmer et mener des expériences en ligne
@@ -62,7 +62,7 @@ PsyToolkit est une boîte à outils gratuite pour la démonstration, la programm
 * Il propose des questionnaires en ligne dans de nombreuses langues, dont 中文, le néerlandais, l'espagnol, l'allemand et le français.
 *La documentation en ligne est complète et gratuite. Enregistrez votre compte gratuit dès aujourd'hui !
 
-## Les caractéristiques de PsyToolkit en bref [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.2.0/about.html#_features_of_psytoolkit_in_a_nutshell){#features_of_psytoolkit_in_a_nutshell}
+## Les caractéristiques de PsyToolkit en bref [![](img/ukflag.png)](https://www.psytoolkit.org/doc3.4.0/about.html#_features_of_psytoolkit_in_a_nutshell){#features_of_psytoolkit_in_a_nutshell}
 * PsyToolkit est un logiciel informatique gratuit
 1. pour la création d'expériences psychologiques sur ordinateur (pour afficher des stimuli à l'écran, mesurer les temps de réponse, etc.)
 2. pour la création d'enquêtes par questionnaire sur ordinateur
